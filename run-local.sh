@@ -8,7 +8,7 @@ if [[ "$1" == "--clean" ]]; then
     CLEAN_ONLY=true
 fi
 
-echo "🚗 ACME Insurance Telematics Generator"
+echo "🚗 Insurance Megacorp Telematics Generator"
 echo "======================================"
 if [ "$CLEAN_ONLY" = true ]; then
     echo "🧹 CLEAN MODE - Stopping old processes only"

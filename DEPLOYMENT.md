@@ -22,7 +22,7 @@ mvn spring-boot:run
 
 # Option 3: Build and run JAR
 mvn clean package
-java -jar target/telematics-generator-0.0.1-SNAPSHOT.jar
+java -jar target/telematicsgen-0.0.1-SNAPSHOT.jar
 ```
 
 ### Monitor Messages
@@ -46,8 +46,8 @@ mvn clean package
 # 3. Create manifest.yml
 cat > manifest.yml << EOF
 applications:
-- name: telematics-generator
-  path: target/telematics-generator-0.0.1-SNAPSHOT.jar
+- name: telematicsgen
+  path: target/telematicsgen-0.0.1-SNAPSHOT.jar
   memory: 1G
   instances: 1
   env:
@@ -66,7 +66,7 @@ cf push
 - `RABBITMQ_USERNAME`: Username (auto-configured)
 - `RABBITMQ_PASSWORD`: Password (auto-configured)
 - `TELEMATICS_QUEUE_NAME`: Queue name (default: telematics_stream)
-- `POLICY_ID`: Policy identifier (default: ACME-AUTO-98765)
+- `POLICY_ID`: Policy identifier (default: IMC-AUTO-98765)
 - `VEHICLE_LATITUDE`: Starting GPS latitude (default: 40.7128)
 - `VEHICLE_LONGITUDE`: Starting GPS longitude (default: -74.0060)
 - `SIMULATION_INTERVAL_MS`: Milliseconds between messages (default: 1500)
@@ -112,7 +112,7 @@ curl http://localhost:8080/actuator/metrics/jvm.memory.used
 2. **Application Won't Start**
    ```
    Check Java version: java -version (requires Java 21+)
-   Check logs: cf logs telematics-generator --recent
+   Check logs: cf logs telematicsgen --recent
    ```
 
 3. **No Messages in Queue**

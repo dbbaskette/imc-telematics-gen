@@ -44,7 +44,7 @@ telematics:
 # Logging Configuration
 logging:
   level:
-    com.acme.insurance.telematics: INFO
+    com.insurancemegacorp.telematicsgen: INFO
     org.springframework.amqp: WARN
     org.springframework.web.socket: INFO
   pattern:

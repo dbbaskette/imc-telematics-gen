@@ -37,7 +37,7 @@ if [ $? -eq 0 ]; then
     
     # Run the RouteGenerator
     echo "🚀 Starting RouteGenerator..."
-    mvn exec:java -Dexec.mainClass="com.acme.insurance.telematics.util.RouteGenerator" -Dexec.classpathScope="compile" -q
+    mvn exec:java -Dexec.mainClass="com.insurancemegacorp.telematicsgen.util.RouteGenerator" -Dexec.classpathScope="compile" -q
 else
     echo "❌ Compilation failed"
     exit 1

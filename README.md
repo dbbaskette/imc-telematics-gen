@@ -1,4 +1,4 @@
-# ACME Insurance Telematics Generator
+# Insurance Megacorp Telematics Generator
 
 A Spring Boot application that simulates a vehicle's telematics device, sending continuous sensor data to RabbitMQ with periodic crash events.
 
@@ -83,7 +83,7 @@ export SPRING_PROFILES_ACTIVE=cloud
 mvn clean package
 
 # Deploy to Cloud Foundry
-cf push telematics-generator -p target/telematics-generator-0.0.1-SNAPSHOT.jar
+cf push telematicsgen -p target/telematicsgen-0.0.1-SNAPSHOT.jar
 ```
 
 ## Route Management

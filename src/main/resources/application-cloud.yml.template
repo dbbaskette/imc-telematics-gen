@@ -42,7 +42,7 @@ telematics:
 # Logging Configuration (Cloud-optimized)
 logging:
   level:
-    com.acme.insurance.telematics: ${LOG_LEVEL:INFO}
+    com.insurancemegacorp.telematicsgen: ${LOG_LEVEL:INFO}
     org.springframework.amqp: WARN
     org.springframework.web.socket: INFO
   pattern:
