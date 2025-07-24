@@ -1,0 +1,42 @@
+{
+  "name" : "north_ave_corridor",
+  "description" : "North Avenue, Atlanta, GA → North Avenue, West Atlanta, GA",
+  "start_location" : "North Avenue, Atlanta, GA",
+  "end_location" : "North Avenue, West Atlanta, GA",
+  "waypoints" : [ {
+    "latitude" : 33.771306,
+    "longitude" : -84.386765,
+    "street_name" : "Start: North Avenue",
+    "speed_limit" : 35,
+    "has_traffic_light" : true,
+    "traffic_control" : "traffic_light"
+  }, {
+    "latitude" : 33.771302,
+    "longitude" : -84.387099,
+    "street_name" : "Local Street",
+    "speed_limit" : 35,
+    "has_traffic_light" : false,
+    "traffic_control" : "none"
+  }, {
+    "latitude" : 33.771271,
+    "longitude" : -84.387421,
+    "street_name" : "Local Street",
+    "speed_limit" : 35,
+    "has_traffic_light" : false,
+    "traffic_control" : "none"
+  }, {
+    "latitude" : 33.771763,
+    "longitude" : -84.387389,
+    "street_name" : "End: North Avenue",
+    "speed_limit" : 35,
+    "has_traffic_light" : false,
+    "traffic_control" : "none"
+  }, {
+    "latitude" : 33.771763,
+    "longitude" : -84.387389,
+    "street_name" : "End: North Avenue",
+    "speed_limit" : 25,
+    "has_traffic_light" : true,
+    "traffic_control" : "traffic_light"
+  } ]
+}

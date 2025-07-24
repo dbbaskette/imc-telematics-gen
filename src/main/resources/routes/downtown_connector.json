@@ -1,0 +1,126 @@
+{
+  "name" : "downtown_connector",
+  "description" : "I-75, Atlanta, GA → I-75, Downtown, Atlanta, GA",
+  "start_location" : "I-75, Atlanta, GA",
+  "end_location" : "I-75, Downtown, Atlanta, GA",
+  "waypoints" : [ {
+    "latitude" : 33.660465,
+    "longitude" : -84.394804,
+    "street_name" : "Start: I-75",
+    "speed_limit" : 70,
+    "has_traffic_light" : true,
+    "traffic_control" : "traffic_light"
+  }, {
+    "latitude" : 33.670307,
+    "longitude" : -84.397616,
+    "street_name" : "Interstate",
+    "speed_limit" : 70,
+    "has_traffic_light" : false,
+    "traffic_control" : "none"
+  }, {
+    "latitude" : 33.683505,
+    "longitude" : -84.398647,
+    "street_name" : "Interstate",
+    "speed_limit" : 70,
+    "has_traffic_light" : false,
+    "traffic_control" : "none"
+  }, {
+    "latitude" : 33.693594,
+    "longitude" : -84.403627,
+    "street_name" : "Interstate",
+    "speed_limit" : 70,
+    "has_traffic_light" : false,
+    "traffic_control" : "none"
+  }, {
+    "latitude" : 33.698627,
+    "longitude" : -84.404344,
+    "street_name" : "Interstate",
+    "speed_limit" : 70,
+    "has_traffic_light" : true,
+    "traffic_control" : "traffic_light"
+  }, {
+    "latitude" : 33.70652,
+    "longitude" : -84.40322,
+    "street_name" : "Interstate",
+    "speed_limit" : 70,
+    "has_traffic_light" : false,
+    "traffic_control" : "none"
+  }, {
+    "latitude" : 33.715235,
+    "longitude" : -84.398733,
+    "street_name" : "Interstate",
+    "speed_limit" : 70,
+    "has_traffic_light" : false,
+    "traffic_control" : "none"
+  }, {
+    "latitude" : 33.719795,
+    "longitude" : -84.396346,
+    "street_name" : "Interstate",
+    "speed_limit" : 70,
+    "has_traffic_light" : false,
+    "traffic_control" : "none"
+  }, {
+    "latitude" : 33.726708,
+    "longitude" : -84.393446,
+    "street_name" : "Interstate",
+    "speed_limit" : 70,
+    "has_traffic_light" : true,
+    "traffic_control" : "traffic_light"
+  }, {
+    "latitude" : 33.736571,
+    "longitude" : -84.391853,
+    "street_name" : "Interstate",
+    "speed_limit" : 70,
+    "has_traffic_light" : false,
+    "traffic_control" : "none"
+  }, {
+    "latitude" : 33.742859,
+    "longitude" : -84.39132,
+    "street_name" : "Interstate",
+    "speed_limit" : 70,
+    "has_traffic_light" : false,
+    "traffic_control" : "none"
+  }, {
+    "latitude" : 33.747292,
+    "longitude" : -84.38682,
+    "street_name" : "Interstate",
+    "speed_limit" : 70,
+    "has_traffic_light" : false,
+    "traffic_control" : "none"
+  }, {
+    "latitude" : 33.751162,
+    "longitude" : -84.380457,
+    "street_name" : "Interstate",
+    "speed_limit" : 70,
+    "has_traffic_light" : true,
+    "traffic_control" : "traffic_light"
+  }, {
+    "latitude" : 33.754417,
+    "longitude" : -84.378052,
+    "street_name" : "Interstate",
+    "speed_limit" : 70,
+    "has_traffic_light" : false,
+    "traffic_control" : "none"
+  }, {
+    "latitude" : 33.753216,
+    "longitude" : -84.379414,
+    "street_name" : "Interstate",
+    "speed_limit" : 70,
+    "has_traffic_light" : false,
+    "traffic_control" : "none"
+  }, {
+    "latitude" : 33.749065,
+    "longitude" : -84.383638,
+    "street_name" : "Interstate",
+    "speed_limit" : 70,
+    "has_traffic_light" : false,
+    "traffic_control" : "none"
+  }, {
+    "latitude" : 33.747025,
+    "longitude" : -84.387672,
+    "street_name" : "End: I-75",
+    "speed_limit" : 25,
+    "has_traffic_light" : true,
+    "traffic_control" : "traffic_light"
+  } ]
+}

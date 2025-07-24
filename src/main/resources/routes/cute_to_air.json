@@ -1,0 +1,126 @@
+{
+  "name" : "",
+  "description" : "City of Cumming, GA → N Terminal Pkwy Suite 4000, Atlanta, GA",
+  "start_location" : "City of Cumming, GA",
+  "end_location" : "N Terminal Pkwy Suite 4000, Atlanta, GA",
+  "waypoints" : [ {
+    "latitude" : 34.224528,
+    "longitude" : -84.111976,
+    "street_name" : "Start: City of Cumming",
+    "speed_limit" : 35,
+    "has_traffic_light" : true,
+    "traffic_control" : "traffic_light"
+  }, {
+    "latitude" : 34.22923,
+    "longitude" : -84.103378,
+    "street_name" : "Local Street",
+    "speed_limit" : 35,
+    "has_traffic_light" : true,
+    "traffic_control" : "traffic_light"
+  }, {
+    "latitude" : 34.200044,
+    "longitude" : -84.12627,
+    "street_name" : "Local Street",
+    "speed_limit" : 35,
+    "has_traffic_light" : true,
+    "traffic_control" : "traffic_light"
+  }, {
+    "latitude" : 34.159272,
+    "longitude" : -84.170126,
+    "street_name" : "Local Street",
+    "speed_limit" : 35,
+    "has_traffic_light" : true,
+    "traffic_control" : "traffic_light"
+  }, {
+    "latitude" : 34.122382,
+    "longitude" : -84.216224,
+    "street_name" : "Local Street",
+    "speed_limit" : 35,
+    "has_traffic_light" : true,
+    "traffic_control" : "traffic_light"
+  }, {
+    "latitude" : 34.087653,
+    "longitude" : -84.262241,
+    "street_name" : "Local Street",
+    "speed_limit" : 35,
+    "has_traffic_light" : true,
+    "traffic_control" : "traffic_light"
+  }, {
+    "latitude" : 34.04448,
+    "longitude" : -84.306135,
+    "street_name" : "Local Street",
+    "speed_limit" : 35,
+    "has_traffic_light" : true,
+    "traffic_control" : "traffic_light"
+  }, {
+    "latitude" : 33.988785,
+    "longitude" : -84.339005,
+    "street_name" : "Local Street",
+    "speed_limit" : 35,
+    "has_traffic_light" : true,
+    "traffic_control" : "traffic_light"
+  }, {
+    "latitude" : 33.93828,
+    "longitude" : -84.357945,
+    "street_name" : "Local Street",
+    "speed_limit" : 35,
+    "has_traffic_light" : true,
+    "traffic_control" : "traffic_light"
+  }, {
+    "latitude" : 33.895418,
+    "longitude" : -84.363975,
+    "street_name" : "Local Street",
+    "speed_limit" : 35,
+    "has_traffic_light" : true,
+    "traffic_control" : "traffic_light"
+  }, {
+    "latitude" : 33.859965,
+    "longitude" : -84.369487,
+    "street_name" : "Local Street",
+    "speed_limit" : 35,
+    "has_traffic_light" : true,
+    "traffic_control" : "traffic_light"
+  }, {
+    "latitude" : 33.838888,
+    "longitude" : -84.359781,
+    "street_name" : "Local Street",
+    "speed_limit" : 35,
+    "has_traffic_light" : true,
+    "traffic_control" : "traffic_light"
+  }, {
+    "latitude" : 33.814047,
+    "longitude" : -84.365988,
+    "street_name" : "Local Street",
+    "speed_limit" : 35,
+    "has_traffic_light" : true,
+    "traffic_control" : "traffic_light"
+  }, {
+    "latitude" : 33.796765,
+    "longitude" : -84.393666,
+    "street_name" : "Local Street",
+    "speed_limit" : 35,
+    "has_traffic_light" : true,
+    "traffic_control" : "traffic_light"
+  }, {
+    "latitude" : 33.769362,
+    "longitude" : -84.390584,
+    "street_name" : "Local Street",
+    "speed_limit" : 35,
+    "has_traffic_light" : true,
+    "traffic_control" : "traffic_light"
+  }, {
+    "latitude" : 33.756844,
+    "longitude" : -84.389062,
+    "street_name" : "Local Street",
+    "speed_limit" : 35,
+    "has_traffic_light" : true,
+    "traffic_control" : "traffic_light"
+  }, {
+    "latitude" : 33.754503,
+    "longitude" : -84.389815,
+    "street_name" : "End: N Terminal Pkwy Suite 4000",
+    "speed_limit" : 25,
+    "has_traffic_light" : true,
+    "traffic_control" : "traffic_light"
+  } ]
+}

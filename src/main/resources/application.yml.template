@@ -1,0 +1,61 @@
+# ACME Insurance Telematics Generator Configuration Template
+# Copy this file to application.yml and customize as needed
+
+# Server Configuration
+server:
+  port: 8082
+
+# Spring Configuration
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  profiles:
+    active: local
+
+# Telematics Simulation Configuration
+telematics:
+  simulation:
+    interval-ms: 500          # Update frequency (500ms for smooth UI)
+    driver-count: 3           # Number of drivers to simulate
+    crash-frequency: 50       # Messages between crash events per driver
+  
+  # Driver Behavior Configuration
+  behavior:
+    post-crash-idle-minutes: 10      # Time drivers sit idle after crash
+    random-stop-probability: 0.05    # Probability of random stops (5%)
+    break-duration-minutes: 5        # Duration of break stops
+  
+  # Location Configuration (Atlanta center)
+  location:
+    latitude: 33.7490         # Atlanta center latitude
+    longitude: -84.3880       # Atlanta center longitude
+  
+  # Policy Configuration
+  policy:
+    id: IMC-AUTO-98765  # Base policy ID (actual IDs are generated as IMC-98675, IMC-98680, etc.)      # Base policy ID
+  
+  # Queue Configuration
+  queue:
+    name: telematics_stream   # RabbitMQ queue name
+
+# Logging Configuration
+logging:
+  level:
+    com.acme.insurance.telematics: INFO
+    org.springframework.amqp: WARN
+    org.springframework.web.socket: INFO
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+
+# Management Endpoints
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics,info
+  endpoint:
+    health:
+      show-details: always

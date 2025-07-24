@@ -1,0 +1,59 @@
+# ACME Insurance Telematics Generator - Cloud Configuration Template
+# Copy this file to application-cloud.yml and customize as needed
+
+# Server Configuration
+server:
+  port: ${PORT:8080}  # Cloud platforms typically set PORT environment variable
+
+# Spring Configuration
+spring:
+  rabbitmq:
+    host: ${RABBITMQ_HOST:localhost}
+    port: ${RABBITMQ_PORT:5672}
+    username: ${RABBITMQ_USERNAME:guest}
+    password: ${RABBITMQ_PASSWORD:guest}
+
+# Telematics Simulation Configuration
+telematics:
+  simulation:
+    interval-ms: ${SIMULATION_INTERVAL_MS:500}
+    driver-count: ${DRIVER_COUNT:3}
+    crash-frequency: ${CRASH_FREQUENCY:50}
+  
+  # Driver Behavior Configuration
+  behavior:
+    post-crash-idle-minutes: ${POST_CRASH_IDLE_MINUTES:10}
+    random-stop-probability: ${RANDOM_STOP_PROBABILITY:0.05}
+    break-duration-minutes: ${BREAK_DURATION_MINUTES:5}
+  
+  # Location Configuration
+  location:
+    latitude: ${VEHICLE_LATITUDE:33.7490}
+    longitude: ${VEHICLE_LONGITUDE:-84.3880}
+  
+  # Policy Configuration
+  policy:
+    id: ${POLICY_ID:ACME-AUTO-98765}
+  
+  # Queue Configuration
+  queue:
+    name: ${TELEMATICS_QUEUE_NAME:telematics_stream}
+
+# Logging Configuration (Cloud-optimized)
+logging:
+  level:
+    com.acme.insurance.telematics: ${LOG_LEVEL:INFO}
+    org.springframework.amqp: WARN
+    org.springframework.web.socket: INFO
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+
+# Management Endpoints
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics,info
+  endpoint:
+    health:
+      show-details: when-authorized

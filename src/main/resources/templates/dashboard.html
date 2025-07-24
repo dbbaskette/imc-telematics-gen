@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC Insurance - Telematics Dashboard</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" 
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <h1>🚗 IMC Insurance - Telematics Dashboard</h1>
+            <div class="status-info">
+                <span class="driver-count">Tracking <span th:text="${driverCount}">0</span> Drivers</span>
+                <div class="connection-status" id="connectionStatus">⚪ Connecting...</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="sidebar">
+            <div class="stats-panel">
+                <h3>📊 Real-Time Stats</h3>
+                <div class="stat-item">
+                    <span class="stat-label">Active Drivers:</span>
+                    <span class="stat-value" id="activeDrivers">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Driving:</span>
+                    <span class="stat-value driving" id="drivingCount">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Parked:</span>
+                    <span class="stat-value parked" id="parkedCount">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Crashes Today:</span>
+                    <span class="stat-value crash" id="crashCount">0</span>
+                </div>
+                <div class="demo-controls">
+                    <div class="accident-trigger-section">
+                        <select id="driverSelect" class="driver-select">
+                            <option value="random">🎲 Random Driver</option>
+                        </select>
+                        <button id="triggerAccidentBtn" class="demo-button" onclick="triggerSelectedAccident()">
+                            🚨 Trigger Accident
+                        </button>
+                    </div>
+                    <div class="app-control-section">
+                        <button id="stopAppBtn" class="stop-button" onclick="stopApplication()">
+                            🛑 Stop Application
+                        </button>
+                    </div>
+                    <div id="accidentStatus" class="accident-status"></div>
+                    <div id="stopStatus" class="stop-status"></div>
+                </div>
+            </div>
+
+            <div class="drivers-panel">
+                <h3>👥 Driver Status</h3>
+                <div id="driversList"></div>
+            </div>
+
+            <div class="events-panel">
+                <h3>⚡ Recent Events</h3>
+                <div id="eventsList"></div>
+            </div>
+        </div>
+
+        <div class="map-container">
+            <div id="map"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" 
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+    <script src="/js/dashboard.js"></script>
+</body>
+</html>
