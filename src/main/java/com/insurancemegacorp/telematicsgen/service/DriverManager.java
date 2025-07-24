@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 import java.security.SecureRandom;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
-import java.util.stream.IntStream;
+
 
 @Service
 public class DriverManager {
@@ -22,6 +22,7 @@ public class DriverManager {
     private final List<Driver> drivers = new CopyOnWriteArrayList<>();
     private final FileBasedRouteService routeService;
     private final DestinationRouteService destinationRouteService;
+    private final DriverConfigService driverConfigService;
 
     @Value("${telematics.simulation.driver-count:3}")
     private int driverCount;
@@ -38,23 +39,39 @@ public class DriverManager {
     @Value("${telematics.behavior.break-duration-minutes:5}")
     private int breakDurationMinutes;
 
-    public DriverManager(FileBasedRouteService routeService, DestinationRouteService destinationRouteService) {
+    public DriverManager(FileBasedRouteService routeService, DestinationRouteService destinationRouteService, DriverConfigService driverConfigService) {
         this.routeService = routeService;
         this.destinationRouteService = destinationRouteService;
+        this.driverConfigService = driverConfigService;
     }
 
     public void initializeDrivers(String basePolicyId, double baseLatitude, double baseLongitude) {
         drivers.clear();
         
-        IntStream.range(1, driverCount + 1)
-            .forEach(i -> {
-                String driverId = String.format("DRIVER-%03d", i);
-                // Generate unique IMC policy IDs: IMC-98675, IMC-98680, IMC-98685, etc.
-                int policyNumber = 98675 + ((i - 1) * 5);
-                String policyId = String.format("IMC-%d", policyNumber);
-                
-                // Assign a random Atlanta route first
-                List<RoutePoint> route = routeService.getRandomRoute();
+        // Load driver configurations from file
+        List<com.insurancemegacorp.telematicsgen.model.DriverConfig> driverConfigs = driverConfigService.getAllDriverConfigs();
+        
+        if (driverConfigs.isEmpty()) {
+            logger.error("❌ No driver configurations found. Cannot initialize drivers.");
+            return;
+        }
+        
+        logger.info("🚗 Initializing {} drivers from file-based configuration...", driverConfigs.size());
+        
+        for (com.insurancemegacorp.telematicsgen.model.DriverConfig config : driverConfigs) {
+            try {
+                // Use preferred route if available, otherwise random route
+                List<RoutePoint> route;
+                if (config.preferredRoute() != null && !config.preferredRoute().isEmpty()) {
+                    route = routeService.getRouteByName(config.preferredRoute());
+                    if (route == null) {
+                        logger.warn("⚠️ Preferred route '{}' not found for driver {}, using random route", 
+                            config.preferredRoute(), config.getDriverId());
+                        route = routeService.getRandomRoute();
+                    }
+                } else {
+                    route = routeService.getRandomRoute();
+                }
                 
                 // Pick a random point along the route as starting position for better distribution
                 int randomIndex = random.nextInt(route.size());
@@ -66,7 +83,8 @@ public class DriverManager {
                 double driverLat = startPoint.latitude() + latOffset;
                 double driverLon = startPoint.longitude() + lonOffset;
                 
-                Driver driver = new Driver(driverId, policyId, driverLat, driverLon);
+                // Create driver with VIN from configuration
+                Driver driver = new Driver(config.getDriverId(), config.policyNumber(), config.vin(), driverLat, driverLon);
                 driver.setCurrentRoute(route);
                 driver.setCurrentStreet(startPoint.streetName());
                 driver.setRouteIndex(randomIndex); // Start at the random point along the route
@@ -77,13 +95,19 @@ public class DriverManager {
                 
                 drivers.add(driver);
                 
-                logger.info("🚗 Initialized {} at {} | Route: {} | State: {} | Speed: {} mph", 
-                    driverId, 
+                logger.info("🚗 Initialized {} ({}) at {} | Vehicle: {} | Route: {} | State: {} | Speed: {} mph", 
+                    config.getDisplayName(),
+                    config.vin(),
                     startPoint.streetName(),
+                    config.getVehicleDescription(),
                     getRouteDescription(route),
                     driver.getCurrentState(), 
                     String.format("%.1f", driver.getCurrentSpeed()));
-            });
+                    
+            } catch (Exception e) {
+                logger.error("❌ Failed to initialize driver {}: {}", config.getDriverId(), e.getMessage(), e);
+            }
+        }
         
         logger.info("✅ Initialized {} drivers for simulation", drivers.size());
     }

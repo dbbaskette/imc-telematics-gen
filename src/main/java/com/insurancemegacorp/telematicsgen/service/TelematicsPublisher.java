@@ -1,7 +1,7 @@
 package com.insurancemegacorp.telematicsgen.service;
 
 import com.insurancemegacorp.telematicsgen.model.Driver;
-import com.insurancemegacorp.telematicsgen.model.TelematicsMessage;
+import com.insurancemegacorp.telematicsgen.model.EnhancedTelematicsMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
@@ -24,17 +24,17 @@ public class TelematicsPublisher {
         this.webSocketService = webSocketService;
     }
 
-    public void publishTelematicsData(TelematicsMessage message, Driver driver) {
+    public void publishTelematicsData(EnhancedTelematicsMessage message, Driver driver) {
         try {
             rabbitTemplate.convertAndSend(queueName, message);
             
             double accelX = message.sensors().accelerometer().x();
             String driverId = extractDriverId(message.policyId());
             
-            // Just log the raw sensor data - no crash detection logic
-            logger.info("📡 {} | {} | Speed: {} mph | G-force: {}g", 
-                driverId, message.policyId(), message.speedMph(), 
-                String.format("%.2f", accelX));
+            // Enhanced logging with street information and VIN - using pre-calculated G-force
+            logger.info("📡 {} | {} | VIN: {} | Street: {} | Speed: {} mph | G-force: {}g", 
+                driverId, message.policyId(), message.vin(), message.currentStreet(), 
+                message.speedMph(), String.format("%.2f", message.gForce()));
                 
             // Broadcast to web clients (let the frontend/dashboard handle crash detection if needed)
             webSocketService.broadcastDriverUpdate(driver, message);
@@ -45,16 +45,15 @@ public class TelematicsPublisher {
         }
     }
     
-    // Legacy method for backward compatibility
-    public void publishTelematicsData(TelematicsMessage message) {
+    // Legacy method for backward compatibility - now using Enhanced messages
+    public void publishTelematicsData(EnhancedTelematicsMessage message) {
         try {
             rabbitTemplate.convertAndSend(queueName, message);
             
-            double accelX = message.sensors().accelerometer().x();
             String driverId = extractDriverId(message.policyId());
-            logger.info("📡 {} | {} | Speed: {} mph | G-force: {}g", 
-                driverId, message.policyId(), message.speedMph(), 
-                String.format("%.2f", accelX));
+            logger.info("📡 {} | {} | VIN: {} | Street: {} | Speed: {} mph | G-force: {}g", 
+                driverId, message.policyId(), message.vin(), message.currentStreet(), 
+                message.speedMph(), String.format("%.2f", message.gForce()));
                 
         } catch (Exception e) {
             logger.error("Failed to publish telematics data: {}", e.getMessage(), e);

@@ -6,6 +6,7 @@ import java.time.Instant;
 
 public record TelematicsMessage(
     @JsonProperty("policy_id") String policyId,
+    @JsonProperty("vin") String vin,
     Instant timestamp,
     @JsonProperty("speed_mph") double speedMph,
     SensorData sensors,

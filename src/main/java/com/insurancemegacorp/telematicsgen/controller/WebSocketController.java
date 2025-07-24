@@ -1,7 +1,7 @@
 package com.insurancemegacorp.telematicsgen.controller;
 
 import com.insurancemegacorp.telematicsgen.model.Driver;
-import com.insurancemegacorp.telematicsgen.model.TelematicsMessage;
+import com.insurancemegacorp.telematicsgen.model.EnhancedTelematicsMessage;
 import com.insurancemegacorp.telematicsgen.service.DriverManager;
 import com.insurancemegacorp.telematicsgen.service.TelematicsDataGenerator;
 import com.insurancemegacorp.telematicsgen.service.TelematicsPublisher;
@@ -113,7 +113,7 @@ public class WebSocketController {
                 .orElse(null);
                 
             if (crashedDriver != null) {
-                TelematicsMessage crashMessage = dataGenerator.generateCrashEventData(crashedDriver);
+                EnhancedTelematicsMessage crashMessage = dataGenerator.generateCrashEventData(crashedDriver);
                 publisher.publishTelematicsData(crashMessage, crashedDriver);
                 logger.info("🚨 Manual crash event published to RabbitMQ for driver {}", driverId);
             }

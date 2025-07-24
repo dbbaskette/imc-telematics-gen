@@ -7,6 +7,7 @@ import java.util.concurrent.atomic.AtomicLong;
 public class Driver {
     private final String driverId;
     private final String policyId;
+    private final String vin;
     private final double baseLatitude;
     private final double baseLongitude;
     private final AtomicLong messageCount;
@@ -29,9 +30,10 @@ public class Driver {
     private volatile double tripProgressPercent;
     private volatile Instant tripStartTime;
 
-    public Driver(String driverId, String policyId, double baseLatitude, double baseLongitude) {
+    public Driver(String driverId, String policyId, String vin, double baseLatitude, double baseLongitude) {
         this.driverId = driverId;
         this.policyId = policyId;
+        this.vin = vin;
         this.baseLatitude = baseLatitude;
         this.baseLongitude = baseLongitude;
         this.currentLatitude = baseLatitude;
@@ -51,6 +53,10 @@ public class Driver {
 
     public String getPolicyId() {
         return policyId;
+    }
+
+    public String getVin() {
+        return vin;
     }
 
     public double getBaseLatitude() {
