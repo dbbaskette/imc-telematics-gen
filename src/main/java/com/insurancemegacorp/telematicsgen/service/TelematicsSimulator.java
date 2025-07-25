@@ -6,9 +6,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
+import org.springframework.context.event.ContextClosedEvent;
 import org.springframework.context.event.EventListener;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
+
+import jakarta.annotation.PreDestroy;
 
 import java.security.SecureRandom;
 import java.util.concurrent.atomic.AtomicLong;
@@ -139,7 +142,23 @@ public class TelematicsSimulator {
         );
     }
 
+    @PreDestroy
+    @EventListener(ContextClosedEvent.class)
     public void stopSimulation() {
+        if (running) {
+            logger.info("🛑 Graceful shutdown initiated...");
+            running = false;
+            
+            // Give the simulation loop time to finish current iteration
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+            }
+        }
+    }
+    
+    public void forceStop() {
         running = false;
     }
     

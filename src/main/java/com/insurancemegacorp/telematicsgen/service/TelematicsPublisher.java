@@ -16,7 +16,7 @@ public class TelematicsPublisher {
     private final RabbitTemplate rabbitTemplate;
     private final WebSocketBroadcastService webSocketService;
 
-    @Value("${telematics.queue.name:telematics_stream}")
+    @Value("${telematics.queue.name:telematics_work_queue.crash-detection-group}")
     private String queueName;
 
     public TelematicsPublisher(RabbitTemplate rabbitTemplate, WebSocketBroadcastService webSocketService) {
@@ -26,14 +26,12 @@ public class TelematicsPublisher {
 
     public void publishTelematicsData(EnhancedTelematicsMessage message, Driver driver) {
         try {
+            // Direct queue publishing for work queue pattern
             rabbitTemplate.convertAndSend(queueName, message);
-            
-            double accelX = message.sensors().accelerometer().x();
-            String driverId = extractDriverId(message.policyId());
             
             // Enhanced logging with street information and VIN - using pre-calculated G-force
             logger.info("📡 {} | {} | VIN: {} | Street: {} | Speed: {} mph | G-force: {}g", 
-                driverId, message.policyId(), message.vin(), message.currentStreet(), 
+                driver.getDriverId(), message.policyId(), message.vin(), message.currentStreet(), 
                 message.speedMph(), String.format("%.2f", message.gForce()));
                 
             // Broadcast to web clients (let the frontend/dashboard handle crash detection if needed)
@@ -48,6 +46,7 @@ public class TelematicsPublisher {
     // Legacy method for backward compatibility - now using Enhanced messages
     public void publishTelematicsData(EnhancedTelematicsMessage message) {
         try {
+            // Direct queue publishing for work queue pattern
             rabbitTemplate.convertAndSend(queueName, message);
             
             String driverId = extractDriverId(message.policyId());
