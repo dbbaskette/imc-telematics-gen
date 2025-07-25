@@ -37,17 +37,28 @@ A Spring Boot application that simulates a vehicle's telematics device, sending 
 
 ## Quick Start
 
-### Easiest Way - Automated Setup
+### Using the Control Script (Recommended)
 
 ```bash
-# This script handles everything for you:
-# - Checks if Docker is running
-# - Starts RabbitMQ container if needed
-# - Waits for RabbitMQ to be ready
-# - Runs the application
-# - Cleans up on exit
-./run-local.sh
+# Start the application with all dependencies
+./imc-telematics-gen.sh --start
+
+# Check application status
+./imc-telematics-gen.sh --status
+
+# Watch logs in real-time
+./imc-telematics-gen.sh --logs
+
+# Clean shutdown
+./imc-telematics-gen.sh --stop
 ```
+
+**Control Script Features:**
+- Automatic RabbitMQ container management
+- PID file tracking and health checks
+- Graceful shutdown with proper cleanup
+- Real-time log tailing
+- Color-coded status output
 
 Once running, access the **Web Dashboard** at: http://localhost:8082
 
@@ -55,8 +66,8 @@ Once running, access the **Web Dashboard** at: http://localhost:8082
 
 1. **Start RabbitMQ**:
    ```bash
-   # Using Docker
-   docker run -d --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management-alpine
+   # Using Docker (same image as control script)
+   docker run -d --name rabbitmq-telematics -p 5672:5672 -p 15672:15672 rabbitmq:3.13-management-alpine
    
    # Or using local installation
    rabbitmq-server
@@ -71,7 +82,8 @@ Once running, access the **Web Dashboard** at: http://localhost:8082
 3. **Access Interfaces**:
    - **Web Dashboard**: http://localhost:8082 (real-time driver map)
    - **RabbitMQ Management**: http://localhost:15672 (guest/guest)
-   - Check the `telematics_stream` queue for messages
+   - **Health Check**: http://localhost:8082/actuator/health
+   - Check the `telematics_work_queue.crash-detection-group` queue for messages
 
 ### Cloud Foundry Deployment
 
@@ -142,11 +154,12 @@ Use the RouteGenerator utility to create new route files using the OpenRouteServ
 
 ### Local Configuration (`application.yml`)
 - **RabbitMQ**: localhost:5672
-- **Queue**: `telematics_stream`
-- **Base Policy ID**: `IMC-98675` (with sequential driver IDs)
+- **Queue**: `telematics_work_queue.crash-detection-group`
+- **Base Policy ID**: `IMC-AUTO-98765` (with sequential driver IDs)
 - **Routes**: File-based loading from `src/main/resources/routes/`
 - **Driver Count**: 3 drivers
-- **Crash Frequency**: Realistic low probability (1% chance every 100 messages)
+- **Simulation Interval**: 500ms
+- **Crash Frequency**: 50 messages between crash events per driver
 - **Post-Crash Idle**: 10 minutes
 - **Random Stop Probability**: 5%
 - **Break Duration**: 5 minutes
@@ -242,16 +255,57 @@ mvn test
 mvn test -Dspring.profiles.active=test
 ```
 
+## Control Script Options
+
+The `imc-telematics-gen.sh` script provides comprehensive application lifecycle management:
+
+```bash
+# Start the application (includes RabbitMQ setup)
+./imc-telematics-gen.sh --start
+
+# Stop the application gracefully
+./imc-telematics-gen.sh --stop
+
+# Restart the application
+./imc-telematics-gen.sh --restart
+
+# Check current status
+./imc-telematics-gen.sh --status
+
+# Tail application logs in real-time
+./imc-telematics-gen.sh --logs
+
+# Show help/usage
+./imc-telematics-gen.sh --help
+```
+
+**Script Features:**
+- **Automatic Dependencies**: Starts RabbitMQ container if not running
+- **Health Verification**: Waits for application to be healthy before reporting success
+- **PID Management**: Tracks process ID for reliable start/stop operations
+- **Graceful Shutdown**: Uses Spring Boot actuator endpoint for clean shutdown
+- **Log Management**: Streams all output to `logs/imc-telematics-gen.log`
+- **Status Monitoring**: Shows application status, health, uptime, and dependencies
+
 ## Monitoring
 
 The application includes Spring Boot Actuator endpoints:
 - Health: `/actuator/health`
-- Metrics: `/actuator/metrics`
+- Metrics: `/actuator/metrics` 
 - Info: `/actuator/info`
+- Shutdown: `/actuator/shutdown` (enabled for graceful shutdown)
 
 ## Stopping the Application
 
-Press `Ctrl+C` to gracefully stop the simulation.
+**Using Control Script (Recommended):**
+```bash
+./imc-telematics-gen.sh --stop
+```
+
+**Manual Shutdown:**
+- Press `Ctrl+C` to gracefully stop the simulation
+- Or use the "Stop Application" button in the web dashboard
+- Or call the actuator endpoint: `curl -X POST http://localhost:8082/actuator/shutdown`
 
 ## Driver Behavior Simulation
 
