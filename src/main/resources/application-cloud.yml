@@ -1,0 +1,53 @@
+# Cloud Profile Configuration for SCDF and Cloud Foundry
+# This profile is activated when running in cloud environments
+
+spring:
+  # Cloud-specific RabbitMQ configuration (auto-configured via service binding)
+  rabbitmq:
+    # These will be auto-configured by Cloud Foundry service bindings
+    # host: ${RABBITMQ_HOST}
+    # port: ${RABBITMQ_PORT:5672}
+    # username: ${RABBITMQ_USERNAME}
+    # password: ${RABBITMQ_PASSWORD}
+  
+  cloud:
+    stream:
+      # SCDF-specific stream bindings
+      bindings:
+        telematics-out:
+          destination: telematics_work_queue
+          content-type: application/json
+          # Cloud-specific producer settings
+          producer:
+            partition-key-expression: headers['partitionKey']
+      
+      rabbit:
+        bindings:
+          telematics-out:
+            producer:
+              # Use RabbitMQ default exchange for direct queue routing
+              exchange: ""
+              routing-key-expression: '''telematics_work_queue'''
+              # Cloud-specific settings
+              delivery-mode: PERSISTENT
+              mandatory: true
+
+# Cloud-specific logging
+logging:
+  level:
+    com.insurancemegacorp.telematicsgen: INFO
+    org.springframework.cloud.stream: DEBUG
+    org.springframework.amqp: INFO
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level [%X{traceId:-},%X{spanId:-}] %logger{36} - %msg%n"
+
+# Cloud-specific management endpoints
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics,info,env,configprops
+  endpoint:
+    health:
+      show-details: always
+      show-components: always

@@ -2,7 +2,7 @@ package com.insurancemegacorp.telematicsgen.service;
 
 import com.insurancemegacorp.telematicsgen.model.Driver;
 import com.insurancemegacorp.telematicsgen.model.DriverState;
-import com.insurancemegacorp.telematicsgen.model.TelematicsMessage;
+import com.insurancemegacorp.telematicsgen.model.EnhancedTelematicsMessage;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -13,12 +13,12 @@ class TelematicsDataGeneratorTest {
 
     @Test
     void generateTelematicsData_shouldReturnDrivingDataForDrivingState() {
-        TelematicsDataGenerator generator = new TelematicsDataGenerator();
-        Driver driver = new Driver("TEST-001", "TEST-POLICY-123", 40.7128, -74.0060);
-        driver.setCurrentState(DriverState.DRIVING);
-        driver.setCurrentSpeed(30.0);
+        TelematicsDataGenerator dataGenerator = new TelematicsDataGenerator();
+        Driver testDriver = new Driver("TEST-001", "TEST-POLICY-123", "1HGBH41JXMN109999", 40.7128, -74.0060);
+        testDriver.setCurrentState(DriverState.DRIVING);
+        testDriver.setCurrentSpeed(30.0);
 
-        TelematicsMessage message = generator.generateTelematicsData(driver);
+        EnhancedTelematicsMessage message = dataGenerator.generateTelematicsData(testDriver);
 
         assertThat(message.policyId()).isEqualTo("TEST-POLICY-123");
         assertThat(message.speedMph()).isEqualTo(30.0);
@@ -32,11 +32,11 @@ class TelematicsDataGeneratorTest {
 
     @Test
     void generateTelematicsData_shouldReturnStationaryDataForParkedState() {
-        TelematicsDataGenerator generator = new TelematicsDataGenerator();
-        Driver driver = new Driver("TEST-001", "TEST-POLICY-123", 40.7128, -74.0060);
-        driver.setCurrentState(DriverState.PARKED);
+        TelematicsDataGenerator dataGenerator = new TelematicsDataGenerator();
+        Driver testDriver = new Driver("TEST-001", "TEST-POLICY-123", "1HGBH41JXMN109999", 40.7128, -74.0060);
+        testDriver.setCurrentState(DriverState.PARKED);
 
-        TelematicsMessage message = generator.generateTelematicsData(driver);
+        EnhancedTelematicsMessage message = dataGenerator.generateTelematicsData(testDriver);
 
         assertThat(message.policyId()).isEqualTo("TEST-POLICY-123");
         assertThat(message.speedMph()).isEqualTo(0.0);
@@ -51,25 +51,25 @@ class TelematicsDataGeneratorTest {
 
     @Test
     void generateTelematicsData_shouldReturnStationaryDataForPostCrashIdle() {
-        TelematicsDataGenerator generator = new TelematicsDataGenerator();
-        Driver driver = new Driver("TEST-001", "TEST-POLICY-123", 40.7128, -74.0060);
-        driver.setCurrentState(DriverState.POST_CRASH_IDLE);
+        TelematicsDataGenerator dataGenerator = new TelematicsDataGenerator();
+        Driver testDriver = new Driver("TEST-001", "TEST-POLICY-123", "1HGBH41JXMN109999", 40.7128, -74.0060);
+        testDriver.setCurrentState(DriverState.POST_CRASH_IDLE);
 
-        TelematicsMessage message = generator.generateTelematicsData(driver);
+        EnhancedTelematicsMessage message = dataGenerator.generateTelematicsData(testDriver);
 
         assertThat(message.policyId()).isEqualTo("TEST-POLICY-123");
         assertThat(message.speedMph()).isEqualTo(0.0);
         assertThat(message.timestamp()).isNotNull();
-        assertThat(driver.isStationary()).isTrue();
+        assertThat(testDriver.isStationary()).isTrue();
     }
 
     @Test
     void generateCrashEventData_shouldReturnCrashMessage() {
-        TelematicsDataGenerator generator = new TelematicsDataGenerator();
-        Driver driver = new Driver("TEST-001", "TEST-POLICY-123", 40.7128, -74.0060);
-        driver.setCurrentSpeed(35.0);
+        TelematicsDataGenerator dataGenerator = new TelematicsDataGenerator();
+        Driver testDriver = new Driver("TEST-001", "TEST-POLICY-123", "1HGBH41JXMN109999", 40.7128, -74.0060);
+        testDriver.setCurrentSpeed(35.0);
 
-        TelematicsMessage message = generator.generateCrashEventData(driver);
+        EnhancedTelematicsMessage message = dataGenerator.generateCrashEventData(testDriver);
 
         assertThat(message.policyId()).isEqualTo("TEST-POLICY-123");
         assertThat(message.speedMph()).isEqualTo(35.0);

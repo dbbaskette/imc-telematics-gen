@@ -37,11 +37,11 @@ logs/
 
 # Local configuration files (ignore filled-out configs, keep templates)
 application.properties
-application.yml
-application.yaml
+#application.yml
+#application.yaml
 application-*.properties
-application-*.yml
-application-*.yaml
+#application-*.yml
+#application-*.yaml
 # Keep template files
 !application*.template
 !.mvn/wrapper/maven-wrapper.properties

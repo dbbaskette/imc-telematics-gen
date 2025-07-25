@@ -33,7 +33,8 @@ class DriverManagerTest {
         
         when(mockRouteService.getRandomRoute()).thenReturn(mockRoute);
         
-        driverManager = new DriverManager(mockRouteService, mockDestinationRouteService);
+        DriverConfigService mockDriverConfigService = mock(DriverConfigService.class);
+        driverManager = new DriverManager(mockRouteService, mockDestinationRouteService, mockDriverConfigService);
         ReflectionTestUtils.setField(driverManager, "driverCount", 2);
         ReflectionTestUtils.setField(driverManager, "crashFrequency", 10);
         ReflectionTestUtils.setField(driverManager, "postCrashIdleMinutes", 1);
@@ -97,7 +98,7 @@ class DriverManagerTest {
 
     @Test
     void driver_shouldTrackStateChanges() {
-        Driver driver = new Driver("TEST-001", "TEST-POLICY-001", 33.7490, -84.3880);
+        Driver driver = new Driver("TEST-001", "TEST-POLICY-001", "1HGBH41JXMN109001", 33.7490, -84.3880);
         
         assertThat(driver.getCurrentState()).isEqualTo(DriverState.PARKED);
         assertThat(driver.getCurrentSpeed()).isEqualTo(0.0);
@@ -112,7 +113,7 @@ class DriverManagerTest {
 
     @Test
     void driver_shouldHandleCrashEvents() {
-        Driver driver = new Driver("TEST-001", "TEST-POLICY-001", 33.7490, -84.3880);
+        Driver driver = new Driver("TEST-001", "TEST-POLICY-001", "1HGBH41JXMN109001", 33.7490, -84.3880);
         driver.setCurrentState(DriverState.DRIVING);
         driver.setCurrentSpeed(35.0);
         

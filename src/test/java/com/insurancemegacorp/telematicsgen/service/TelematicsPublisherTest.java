@@ -1,65 +1,66 @@
 package com.insurancemegacorp.telematicsgen.service;
 
-import com.insurancemegacorp.telematicsgen.model.AccelerometerData;
-import com.insurancemegacorp.telematicsgen.model.GpsData;
-import com.insurancemegacorp.telematicsgen.model.SensorData;
-import com.insurancemegacorp.telematicsgen.model.TelematicsMessage;
+import com.insurancemegacorp.telematicsgen.model.*;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-import org.springframework.amqp.rabbit.core.RabbitTemplate;
-import org.springframework.test.util.ReflectionTestUtils;
+import org.springframework.cloud.stream.function.StreamBridge;
+
 
 import java.time.Instant;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.mockito.ArgumentMatchers.eq;
+import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
 class TelematicsPublisherTest {
 
     @Mock
-    private RabbitTemplate rabbitTemplate;
+    private StreamBridge streamBridge;
+    
+    @Mock
+    private WebSocketBroadcastService webSocketService;
 
     @InjectMocks
     private TelematicsPublisher publisher;
 
     @Test
-    void publishTelematicsData_shouldSendMessageToQueue() {
-        ReflectionTestUtils.setField(publisher, "queueName", "test_queue");
-        
-        TelematicsMessage message = createTestMessage();
+    void publishTelematicsData_shouldSendMessageToStream() {
+        EnhancedTelematicsMessage message = createTestMessage();
         
         publisher.publishTelematicsData(message);
         
-        verify(rabbitTemplate).convertAndSend(eq("test_queue"), eq(message));
+        verify(streamBridge).send(eq("telematics-out"), eq(message));
     }
 
     @Test
     void publishTelematicsData_shouldThrowExceptionOnFailure() {
-        ReflectionTestUtils.setField(publisher, "queueName", "test_queue");
-        
-        TelematicsMessage message = createTestMessage();
+        EnhancedTelematicsMessage message = createTestMessage();
         doThrow(new RuntimeException("Connection failed"))
-            .when(rabbitTemplate).convertAndSend(anyString(), any(TelematicsMessage.class));
+            .when(streamBridge).send(anyString(), any(EnhancedTelematicsMessage.class));
         
         assertThrows(RuntimeException.class, () -> publisher.publishTelematicsData(message));
     }
 
-    private TelematicsMessage createTestMessage() {
-        GpsData gps = new GpsData(40.7128, -74.0060);
+    private EnhancedTelematicsMessage createTestMessage() {
+        EnhancedGpsData gps = new EnhancedGpsData(40.7128, -74.0060, 100.0, 5.0, 45.0, 3.0, 8, 1500L);
         AccelerometerData accel = new AccelerometerData(0.1, 0.2, 0.9);
-        SensorData sensors = new SensorData(gps, accel);
+        GyroscopeData gyro = new GyroscopeData(0.01, 0.02, 0.03);
+        MagnetometerData mag = new MagnetometerData(25.0, 30.0, 35.0, 180.0);
+        DeviceMetadata device = new DeviceMetadata(95, -70, "portrait", true, false);
+        EnhancedSensorData sensors = new EnhancedSensorData(gps, accel, gyro, mag, 1013.25, device);
         
-        return new TelematicsMessage(
+        return new EnhancedTelematicsMessage(
             "TEST-POLICY-123",
+            "TEST-VIN-123456789",
             Instant.now(),
             30.0,
-            sensors,
-            1.0 // Test G-force
+            "Test Street",
+            1.0, // Test G-force
+            sensors
         );
     }
 }
