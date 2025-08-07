@@ -134,6 +134,7 @@ class TelematicsDashboard {
                     const driverUpdate = {
                         driver_id: driver.driverId,
                         policy_id: driver.policyId,
+                        vehicle_id: driver.vehicleId,
                         latitude: driver.latitude,
                         longitude: driver.longitude,
                         bearing: driver.bearing,
@@ -247,6 +248,7 @@ class TelematicsDashboard {
         return `
             <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
                 <h4>${driverUpdate.driver_id}</h4>
+                <p><strong>Vehicle ID:</strong> ${driverUpdate.vehicle_id ?? 'N/A'}</p>
                 <p><strong>Speed:</strong> ${driverUpdate.speed_mph.toFixed(1)} mph</p>
                 <p><strong>State:</strong> ${driverUpdate.state}</p>
                 <p><strong>Street:</strong> ${driverUpdate.current_street}</p>

@@ -179,7 +179,8 @@ The application sends enhanced telemetry data with comprehensive sensor informat
 ### Enhanced Telemetry Message Structure
 ```json
 {
-  "policy_id": "IMC-98675",
+  "policy_id": 200018,
+  "vehicle_id": 300021,
   "vin": "1HGBH41JXMN109186",
   "timestamp": "2024-01-15T10:30:45.123Z",
   "speed_mph": 32.5,
@@ -227,7 +228,8 @@ The application sends enhanced telemetry data with comprehensive sensor informat
 ### Crash Event Data (High G-Force)
 ```json
 {
-  "policy_id": "IMC-98680",
+  "policy_id": 200034,
+  "vehicle_id": 300038,
   "vin": "KNDJP3A57H7123456",
   "timestamp": "2024-01-15T10:30:45.123Z", 
   "speed_mph": 0.0,

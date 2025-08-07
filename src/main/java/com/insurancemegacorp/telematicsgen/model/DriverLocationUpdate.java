@@ -6,7 +6,8 @@ import java.time.Instant;
 
 public record DriverLocationUpdate(
     @JsonProperty("driver_id") String driverId,
-    @JsonProperty("policy_id") String policyId,
+    @JsonProperty("policy_id") int policyId,
+    @JsonProperty("vehicle_id") int vehicleId,
     double latitude,
     double longitude,
     double bearing,

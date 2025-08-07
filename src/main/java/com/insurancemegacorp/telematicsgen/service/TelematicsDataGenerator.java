@@ -90,6 +90,7 @@ public class TelematicsDataGenerator {
         
         return new EnhancedTelematicsMessage(
             driver.getPolicyId(),
+            driver.getVehicleId(),
             driver.getVin(),
             Instant.now(),
             driver.getCurrentSpeed(),
@@ -158,6 +159,7 @@ public class TelematicsDataGenerator {
         
         return new EnhancedTelematicsMessage(
             driver.getPolicyId(),
+            driver.getVehicleId(),
             driver.getVin(),
             Instant.now(),
             roundToTwoDecimals(driver.getCurrentSpeed()),
@@ -226,6 +228,7 @@ public class TelematicsDataGenerator {
         
         return new EnhancedTelematicsMessage(
             driver.getPolicyId(),
+            driver.getVehicleId(),
             driver.getVin(),
             Instant.now(),
             0.0, // Zero speed when stationary

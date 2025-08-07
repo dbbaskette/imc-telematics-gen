@@ -84,7 +84,7 @@ public class DriverManager {
                 double driverLon = startPoint.longitude() + lonOffset;
                 
                 // Create driver with VIN from configuration
-                Driver driver = new Driver(config.getDriverId(), config.policyNumber(), config.vin(), driverLat, driverLon);
+                Driver driver = new Driver(config.getDriverId(), config.policyId(), config.vehicleId(), config.vin(), driverLat, driverLon);
                 driver.setCurrentRoute(route);
                 driver.setCurrentStreet(startPoint.streetName());
                 driver.setRouteIndex(randomIndex); // Start at the random point along the route

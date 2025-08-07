@@ -7,9 +7,10 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  * Contains all the essential information needed to initialize and track a driver.
  */
 public record DriverConfig(
-    @JsonProperty("driver_number") int driverNumber,
-    @JsonProperty("policy_number") String policyNumber,
+    @JsonProperty("driver_id") int driverId,
+    @JsonProperty("policy_id") int policyId,
     @JsonProperty("vin") String vin,
+    @JsonProperty("vehicle_id") int vehicleId,
     @JsonProperty("driver_name") String driverName,
     @JsonProperty("vehicle_make") String vehicleMake,
     @JsonProperty("vehicle_model") String vehicleModel,
@@ -25,14 +26,14 @@ public record DriverConfig(
      * Format: DRIVER-001, DRIVER-002, etc.
      */
     public String getDriverId() {
-        return String.format("DRIVER-%03d", driverNumber);
+        return String.format("DRIVER-%d", driverId);
     }
     
     /**
      * Get a display name combining driver number and name for UI purposes.
      */
     public String getDisplayName() {
-        return String.format("#%d - %s", driverNumber, driverName);
+        return String.format("#%d - %s", driverId, driverName);
     }
     
     /**

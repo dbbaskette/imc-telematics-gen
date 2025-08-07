@@ -35,6 +35,7 @@ public class WebSocketBroadcastService {
             DriverLocationUpdate update = new DriverLocationUpdate(
                 driver.getDriverId(),
                 driver.getPolicyId(),
+                driver.getVehicleId(),
                 driver.getCurrentLatitude(),
                 driver.getCurrentLongitude(),
                 driver.getCurrentBearing(),
@@ -70,6 +71,7 @@ public class WebSocketBroadcastService {
                 .map(driver -> new DriverLocationUpdate(
                     driver.getDriverId(),
                     driver.getPolicyId(),
+                    driver.getVehicleId(),
                     driver.getCurrentLatitude(),
                     driver.getCurrentLongitude(),
                     driver.getCurrentBearing(),

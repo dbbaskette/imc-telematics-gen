@@ -70,11 +70,11 @@ public class DriverConfigService {
                 // Log summary of loaded drivers
                 configs.forEach(config -> 
                     logger.info("🚗 Driver {}: {} - {} {} (Policy: {}, VIN: {})", 
-                        config.driverNumber(),
+                        config.driverId(),
                         config.driverName(),
                         config.vehicleYear(),
                         config.getVehicleDescription(),
-                        config.policyNumber(),
+                        config.policyId(),
                         config.vin())
                 );
 
@@ -97,7 +97,7 @@ public class DriverConfigService {
      */
     public DriverConfig getDriverConfigByNumber(int driverNumber) {
         return driverConfigs.stream()
-            .filter(config -> config.driverNumber() == driverNumber)
+            .filter(config -> config.driverId() == driverNumber)
             .findFirst()
             .orElse(null);
     }
@@ -105,9 +105,9 @@ public class DriverConfigService {
     /**
      * Get a driver configuration by policy number.
      */
-    public DriverConfig getDriverConfigByPolicyNumber(String policyNumber) {
+    public DriverConfig getDriverConfigByPolicyNumber(int policyId) {
         return driverConfigs.stream()
-            .filter(config -> config.policyNumber().equals(policyNumber))
+            .filter(config -> config.policyId() == policyId)
             .findFirst()
             .orElse(null);
     }

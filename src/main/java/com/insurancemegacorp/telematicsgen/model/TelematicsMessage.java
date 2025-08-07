@@ -5,7 +5,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.time.Instant;
 
 public record TelematicsMessage(
-    @JsonProperty("policy_id") String policyId,
+    @JsonProperty("policy_id") int policyId,
+    @JsonProperty("vehicle_id") int vehicleId,
     @JsonProperty("vin") String vin,
     Instant timestamp,
     @JsonProperty("speed_mph") double speedMph,

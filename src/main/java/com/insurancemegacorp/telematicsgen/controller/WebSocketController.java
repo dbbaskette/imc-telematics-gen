@@ -44,7 +44,7 @@ public class WebSocketController {
         return driverManager.getAllDrivers().stream()
             .map(driver -> new Object() {
                 public final String driver_id = driver.getDriverId();
-                public final String policy_id = driver.getPolicyId();
+                public final int policy_id = driver.getPolicyId();
                 public final double latitude = driver.getCurrentLatitude();
                 public final double longitude = driver.getCurrentLongitude();
                 public final double bearing = driver.getCurrentBearing();

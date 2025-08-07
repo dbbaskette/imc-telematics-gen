@@ -6,7 +6,8 @@ import java.util.concurrent.atomic.AtomicLong;
 
 public class Driver {
     private final String driverId;
-    private final String policyId;
+    private final int policyId;
+    private final int vehicleId;
     private final String vin;
     private final double baseLatitude;
     private final double baseLongitude;
@@ -30,9 +31,10 @@ public class Driver {
     private volatile double tripProgressPercent;
     private volatile Instant tripStartTime;
 
-    public Driver(String driverId, String policyId, String vin, double baseLatitude, double baseLongitude) {
+    public Driver(String driverId, int policyId, int vehicleId, String vin, double baseLatitude, double baseLongitude) {
         this.driverId = driverId;
         this.policyId = policyId;
+        this.vehicleId = vehicleId;
         this.vin = vin;
         this.baseLatitude = baseLatitude;
         this.baseLongitude = baseLongitude;
@@ -51,8 +53,12 @@ public class Driver {
         return driverId;
     }
 
-    public String getPolicyId() {
+    public int getPolicyId() {
         return policyId;
+    }
+
+    public int getVehicleId() {
+        return vehicleId;
     }
 
     public String getVin() {

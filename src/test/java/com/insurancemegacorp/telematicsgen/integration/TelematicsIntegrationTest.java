@@ -47,7 +47,7 @@ class TelematicsIntegrationTest {
 
     @Test
     void shouldPublishDrivingData() throws Exception {
-        Driver testDriver = new Driver("TEST-001", "TEST-POLICY-123", "1HGBH41JXMN109999", 40.7128, -74.0060);
+        Driver testDriver = new Driver("TEST-001", 200123, 300999, "1HGBH41JXMN109999", 40.7128, -74.0060);
         testDriver.setCurrentState(DriverState.DRIVING);
         testDriver.setCurrentSpeed(30.0);
         
@@ -66,7 +66,7 @@ class TelematicsIntegrationTest {
 
     @Test
     void shouldPublishCrashEventData() throws Exception {
-        Driver testDriver = new Driver("TEST-001", "TEST-POLICY-123", "1HGBH41JXMN109999", 40.7128, -74.0060);
+        Driver testDriver = new Driver("TEST-001", 200123, 300999, "1HGBH41JXMN109999", 40.7128, -74.0060);
         testDriver.setCurrentSpeed(35.0);
         
         EnhancedTelematicsMessage crashMessage = dataGenerator.generateCrashEventData(testDriver);

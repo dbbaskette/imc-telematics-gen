@@ -30,8 +30,8 @@ public class TelematicsPublisher {
             rabbitTemplate.convertAndSend(queueName, message);
             
             // Enhanced logging with street information and VIN - using pre-calculated G-force
-            logger.info("📡 {} | {} | VIN: {} | Street: {} | Speed: {} mph | G-force: {}g", 
-                driver.getDriverId(), message.policyId(), message.vin(), message.currentStreet(), 
+            logger.info("📡 {} | policy:{} | VEH:{} | VIN:{} | Street:{} | Speed:{} mph | G-force:{}g", 
+                driver.getDriverId(), message.policyId(), message.vehicleId(), message.vin(), message.currentStreet(), 
                 message.speedMph(), String.format("%.2f", message.gForce()));
                 
             // Broadcast to web clients (let the frontend/dashboard handle crash detection if needed)
@@ -50,8 +50,8 @@ public class TelematicsPublisher {
             rabbitTemplate.convertAndSend(queueName, message);
             
             String driverId = extractDriverId(message.policyId());
-            logger.info("📡 {} | {} | VIN: {} | Street: {} | Speed: {} mph | G-force: {}g", 
-                driverId, message.policyId(), message.vin(), message.currentStreet(), 
+            logger.info("📡 {} | policy:{} | VEH:{} | VIN:{} | Street:{} | Speed:{} mph | G-force:{}g", 
+                driverId, message.policyId(), message.vehicleId(), message.vin(), message.currentStreet(), 
                 message.speedMph(), String.format("%.2f", message.gForce()));
                 
         } catch (Exception e) {
@@ -60,10 +60,8 @@ public class TelematicsPublisher {
         }
     }
     
-    private String extractDriverId(String policyId) {
-        if (policyId.contains("DRIVER-")) {
-            return policyId.substring(policyId.lastIndexOf("DRIVER-"));
-        }
+    private String extractDriverId(int policyId) {
+        // With numeric policy IDs, driver ID cannot be inferred. Return placeholder.
         return "UNKNOWN";
     }
 }

@@ -54,7 +54,8 @@ class TelematicsPublisherTest {
         EnhancedSensorData sensors = new EnhancedSensorData(gps, accel, gyro, mag, 1013.25, device);
         
         return new EnhancedTelematicsMessage(
-            "TEST-POLICY-123",
+            200123,
+            300999,
             "TEST-VIN-123456789",
             Instant.now(),
             30.0,

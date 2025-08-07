@@ -14,13 +14,13 @@ class TelematicsDataGeneratorTest {
     @Test
     void generateTelematicsData_shouldReturnDrivingDataForDrivingState() {
         TelematicsDataGenerator dataGenerator = new TelematicsDataGenerator();
-        Driver testDriver = new Driver("TEST-001", "TEST-POLICY-123", "1HGBH41JXMN109999", 40.7128, -74.0060);
+        Driver testDriver = new Driver("TEST-001", 200123, 300999, "1HGBH41JXMN109999", 40.7128, -74.0060);
         testDriver.setCurrentState(DriverState.DRIVING);
         testDriver.setCurrentSpeed(30.0);
 
         EnhancedTelematicsMessage message = dataGenerator.generateTelematicsData(testDriver);
 
-        assertThat(message.policyId()).isEqualTo("TEST-POLICY-123");
+        assertThat(message.policyId()).isEqualTo(200123);
         assertThat(message.speedMph()).isEqualTo(30.0);
         assertThat(message.timestamp()).isNotNull();
         assertThat(message.sensors().gps().latitude()).isEqualTo(40.7128);
@@ -33,12 +33,12 @@ class TelematicsDataGeneratorTest {
     @Test
     void generateTelematicsData_shouldReturnStationaryDataForParkedState() {
         TelematicsDataGenerator dataGenerator = new TelematicsDataGenerator();
-        Driver testDriver = new Driver("TEST-001", "TEST-POLICY-123", "1HGBH41JXMN109999", 40.7128, -74.0060);
+        Driver testDriver = new Driver("TEST-001", 200123, 300999, "1HGBH41JXMN109999", 40.7128, -74.0060);
         testDriver.setCurrentState(DriverState.PARKED);
 
         EnhancedTelematicsMessage message = dataGenerator.generateTelematicsData(testDriver);
 
-        assertThat(message.policyId()).isEqualTo("TEST-POLICY-123");
+        assertThat(message.policyId()).isEqualTo(200123);
         assertThat(message.speedMph()).isEqualTo(0.0);
         assertThat(message.timestamp()).isNotNull();
         assertThat(message.sensors().gps().latitude()).isEqualTo(40.7128);
@@ -52,12 +52,12 @@ class TelematicsDataGeneratorTest {
     @Test
     void generateTelematicsData_shouldReturnStationaryDataForPostCrashIdle() {
         TelematicsDataGenerator dataGenerator = new TelematicsDataGenerator();
-        Driver testDriver = new Driver("TEST-001", "TEST-POLICY-123", "1HGBH41JXMN109999", 40.7128, -74.0060);
+        Driver testDriver = new Driver("TEST-001", 200123, 300999, "1HGBH41JXMN109999", 40.7128, -74.0060);
         testDriver.setCurrentState(DriverState.POST_CRASH_IDLE);
 
         EnhancedTelematicsMessage message = dataGenerator.generateTelematicsData(testDriver);
 
-        assertThat(message.policyId()).isEqualTo("TEST-POLICY-123");
+        assertThat(message.policyId()).isEqualTo(200123);
         assertThat(message.speedMph()).isEqualTo(0.0);
         assertThat(message.timestamp()).isNotNull();
         assertThat(testDriver.isStationary()).isTrue();
@@ -66,12 +66,12 @@ class TelematicsDataGeneratorTest {
     @Test
     void generateCrashEventData_shouldReturnCrashMessage() {
         TelematicsDataGenerator dataGenerator = new TelematicsDataGenerator();
-        Driver testDriver = new Driver("TEST-001", "TEST-POLICY-123", "1HGBH41JXMN109999", 40.7128, -74.0060);
+        Driver testDriver = new Driver("TEST-001", 200123, 300999, "1HGBH41JXMN109999", 40.7128, -74.0060);
         testDriver.setCurrentSpeed(35.0);
 
         EnhancedTelematicsMessage message = dataGenerator.generateCrashEventData(testDriver);
 
-        assertThat(message.policyId()).isEqualTo("TEST-POLICY-123");
+        assertThat(message.policyId()).isEqualTo(200123);
         assertThat(message.speedMph()).isEqualTo(35.0);
         assertThat(message.timestamp()).isNotNull();
         assertThat(message.sensors().gps().latitude()).isEqualTo(40.7128);

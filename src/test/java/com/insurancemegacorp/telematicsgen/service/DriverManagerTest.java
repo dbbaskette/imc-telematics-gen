@@ -98,7 +98,7 @@ class DriverManagerTest {
 
     @Test
     void driver_shouldTrackStateChanges() {
-        Driver driver = new Driver("TEST-001", "TEST-POLICY-001", "1HGBH41JXMN109001", 33.7490, -84.3880);
+        Driver driver = new Driver("TEST-001", 200001, 300001, "1HGBH41JXMN109001", 33.7490, -84.3880);
         
         assertThat(driver.getCurrentState()).isEqualTo(DriverState.PARKED);
         assertThat(driver.getCurrentSpeed()).isEqualTo(0.0);
@@ -113,7 +113,7 @@ class DriverManagerTest {
 
     @Test
     void driver_shouldHandleCrashEvents() {
-        Driver driver = new Driver("TEST-001", "TEST-POLICY-001", "1HGBH41JXMN109001", 33.7490, -84.3880);
+        Driver driver = new Driver("TEST-001", 200001, 300001, "1HGBH41JXMN109001", 33.7490, -84.3880);
         driver.setCurrentState(DriverState.DRIVING);
         driver.setCurrentSpeed(35.0);
         
