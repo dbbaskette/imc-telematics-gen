@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="docs/logo.svg" alt="IMC Telematics" width="360"/>
+<img src="docs/logo.svg" alt="IMC Telematics" width="540"/>
 
 <h1>Insurance Megacorp Telematics Generator</h1>
 
