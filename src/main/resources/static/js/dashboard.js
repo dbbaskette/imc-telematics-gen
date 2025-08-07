@@ -14,6 +14,20 @@ class TelematicsDashboard {
         this.initMap();
         this.connectWebSocket();
         this.loadInitialData();
+
+        // Wire controls
+        const rateSlider = document.getElementById('rateSlider');
+        const rateValue = document.getElementById('rateValue');
+        if (rateSlider && rateValue) {
+            rateSlider.addEventListener('input', () => {
+                rateValue.textContent = rateSlider.value;
+            });
+            rateSlider.addEventListener('change', async () => {
+                try {
+                    await fetch(`/api/interval?ms=${rateSlider.value}`, { method: 'POST' });
+                } catch (e) { console.error('Failed to set interval', e); }
+            });
+        }
     }
 
     initMap() {
@@ -28,6 +42,20 @@ class TelematicsDashboard {
 
         // Add Atlanta area outline
         this.addAtlantaBounds();
+
+        // Wire up map overlay controls
+        const fitAllBtn = document.getElementById('fitAllBtn');
+        if (fitAllBtn) {
+            fitAllBtn.addEventListener('click', () => this.fitMapToAllDrivers());
+        }
+        const filterDriving = document.getElementById('filterDriving');
+        const filterParked = document.getElementById('filterParked');
+        const filterCrash = document.getElementById('filterCrash');
+        [filterDriving, filterParked, filterCrash].forEach(cb => cb && cb.addEventListener('change', () => this.updateDriversList()));
+        const followSelected = document.getElementById('followSelected');
+        if (followSelected) {
+            followSelected.addEventListener('change', () => this.updateFollowMode());
+        }
     }
 
     addAtlantaBounds() {
@@ -212,6 +240,13 @@ class TelematicsDashboard {
             // Store updated marker reference
             driverUpdate.marker = marker;
         }
+
+        // Follow selected driver if enabled
+        const followSelected = document.getElementById('followSelected');
+        const driverSelect = document.getElementById('driverSelect');
+        if (followSelected && followSelected.checked && driverSelect && driverSelect.value === driverUpdate.driver_id) {
+            this.map.panTo([driverUpdate.latitude, driverUpdate.longitude]);
+        }
     }
 
     createIconForState(driverUpdate) {
@@ -313,8 +348,16 @@ class TelematicsDashboard {
     updateDriversList() {
         const driversList = document.getElementById('driversList');
         const driversArray = Array.from(this.drivers.values());
+        const filterDriving = document.getElementById('filterDriving');
+        const filterParked = document.getElementById('filterParked');
+        const filterCrash = document.getElementById('filterCrash');
+        const filtered = driversArray.filter(d =>
+            ((filterDriving?.checked ?? true) && d.state === 'DRIVING') ||
+            ((filterParked?.checked ?? true) && (d.state === 'PARKED' || d.state === 'TRAFFIC_STOP' || d.state === 'BREAK_TIME')) ||
+            ((filterCrash?.checked ?? true) && (d.is_crash_event || d.state === 'POST_CRASH_IDLE'))
+        );
         
-        driversList.innerHTML = driversArray.map(driver => {
+        driversList.innerHTML = filtered.map(driver => {
             const stateClass = driver.is_crash_event || driver.state === 'POST_CRASH_IDLE' ? 'crash' : 
                               driver.state === 'DRIVING' ? 'driving' : 'parked';
             
@@ -331,6 +374,17 @@ class TelematicsDashboard {
         
         // Update the driver selection dropdown
         this.updateDriverDropdown();
+    }
+
+    fitMapToAllDrivers() {
+        const markers = Array.from(this.drivers.values());
+        if (!markers.length) return;
+        const bounds = L.latLngBounds(markers.map(d => [d.latitude, d.longitude]));
+        this.map.fitBounds(bounds.pad(0.2));
+    }
+
+    updateFollowMode() {
+        // No-op; handled on each update
     }
     
     updateDriverDropdown() {
@@ -536,5 +590,29 @@ function stopApplication() {
         // Re-enable button
         button.disabled = false;
         button.innerHTML = '🛑 Stop Application';
+    }
+}
+
+// Pause / Resume
+async function togglePause() {
+    const btn = document.getElementById('pauseResumeBtn');
+    if (!btn) return;
+    btn.disabled = true;
+    try {
+        // naive toggle: read current label to decide
+        const isPause = btn.textContent.includes('Pause');
+        const endpoint = isPause ? '/api/pause' : '/api/resume';
+        const resp = await fetch(endpoint, { method: 'POST' });
+        const data = await resp.json();
+        if (data && 'paused' in data) {
+            btn.textContent = data.paused ? '▶️ Resume Generation' : '⏸️ Pause Generation';
+        } else {
+            // fallback toggle
+            btn.textContent = isPause ? '▶️ Resume Generation' : '⏸️ Pause Generation';
+        }
+    } catch (e) {
+        console.error('Failed to toggle pause', e);
+    } finally {
+        btn.disabled = false;
     }
 }

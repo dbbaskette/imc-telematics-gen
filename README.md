@@ -1,4 +1,14 @@
-# Insurance Megacorp Telematics Generator
+<div align="center">
+
+<img src="docs/logo.svg" alt="IMC Telematics" width="140"/>
+
+<h1>Insurance Megacorp Telematics Generator</h1>
+
+<p>
+  🚗 Realistic multi-driver telematics simulator • 🌐 Live map dashboard • 🐇 RabbitMQ JSON events
+</p>
+
+</div>
 
 A Spring Boot application that simulates a vehicle's telematics device, sending continuous sensor data to RabbitMQ with periodic crash events.
 
@@ -347,28 +357,18 @@ public void processTelematicsData(EnhancedTelematicsMessage message) {
 
 Access the real-time dashboard at http://localhost:8082 when running locally.
 
-### Features
-- **Interactive Map**: Real-time Atlanta street map showing all active drivers
-- **Driver Icons**: Different colored icons for each driver state:
-  - 🚗 **Green**: DRIVING 
-  - 🅿️ **Blue**: PARKED
-  - 🚨 **Red**: CRASHED (POST_CRASH_IDLE)
-  - 🚦 **Yellow**: TRAFFIC_STOP
-  - ☕ **Orange**: BREAK_TIME
+### What you’ll see
+- 🗺️ Interactive map with live driver markers
+- 🧭 Legend + filters (Driving / Parked / Crash) overlay
+- 🎛️ Controls: Trigger Crash, Pause/Resume, message rate slider
+- 📊 Side stats: Active, Driving, Parked, Crashes
+- ⚡ Event feed: key events like crash triggers
 
-### Dashboard Controls
-- **Driver Selection**: Dropdown to focus on specific driver
-- **Trigger Crash**: Button to manually trigger crash events for testing
-- **Stop Application**: Red button to gracefully shutdown the application
-- **Auto-refresh**: Real-time updates via WebSocket connection
-- **Driver Info**: Displays current state, speed, street location for selected driver
-
-### Real-time Updates
-The dashboard receives live updates through WebSocket connections, showing:
-- Driver positions moving along real Atlanta streets
-- State changes (parking, crashes, traffic stops)
-- Speed and location information
-- Route progress for each driver
+### Controls
+- 🎯 Fit to All: zoom map to all active drivers
+- 👣 Follow Selected: auto-pan to the chosen driver
+- ⏸️ Pause/▶️ Resume Generation: toggle simulation without stopping the app
+- ⏱️ Message Rate: tune interval (200–2000 ms)
 
 ## Testing
 

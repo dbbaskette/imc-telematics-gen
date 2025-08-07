@@ -135,6 +135,20 @@ public class WebSocketController {
         };
     }
 
+    // --- Simulation runtime controls ---
+    @MessageMapping("/sim/toggle-pause")
+    @SendTo("/topic/sim/status")
+    public Object togglePause() {
+        // Delegate to simulator via publisher/driverManager path; expose through DriverManager for now
+        // In absence of DI here, call directly via application context is avoided; use a static holder if needed.
+        // For simplicity, use DriverManager to access simulator via broadcast service dependency path is not available.
+        // Instead, publish a status-only event; REST endpoint handles actual toggle.
+        return new Object() {
+            public final boolean accepted = true;
+            public final String message = "Toggle requested";
+        };
+    }
+
     private String getRouteDescription(com.insurancemegacorp.telematicsgen.model.Driver driver) {
         if (driver.getCurrentRoute() == null || driver.getCurrentRoute().isEmpty()) {
             return "No route";

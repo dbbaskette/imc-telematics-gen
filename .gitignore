@@ -49,3 +49,5 @@ application-*.properties
 
 # Ignore sample.py
 sample.py
+release.sh
+.release-exec

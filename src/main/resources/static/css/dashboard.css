@@ -204,6 +204,67 @@ body {
     width: 100%;
 }
 
+.map-overlay {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 1000;
+}
+
+.legend, .map-controls {
+    background: rgba(255,255,255,0.92);
+    border: 1px solid #e1e1e1;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    border-radius: 8px;
+    padding: 8px 10px;
+}
+
+.legend-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    margin: 4px 0;
+}
+
+.legend-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+.legend-dot.driving { background-color: #4caf50; }
+.legend-dot.parked { background-color: #ff9800; }
+.legend-dot.crash { background-color: #f44336; }
+
+.map-controls .filters {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.map-controls .buttons {
+    display: flex;
+    gap: 8px;
+    margin-top: 6px;
+}
+
+.mini-btn {
+    padding: 4px 8px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #f8f9fa;
+    cursor: pointer;
+}
+.mini-btn:hover { background: #eef1f4; }
+
+.follow { font-size: 12px; }
+
 /* Custom leaflet marker styles */
 .driver-marker-driving {
     background-color: #4caf50;

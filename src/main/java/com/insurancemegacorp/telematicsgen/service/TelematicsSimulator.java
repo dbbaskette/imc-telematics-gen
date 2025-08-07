@@ -41,6 +41,7 @@ public class TelematicsSimulator {
     private double baseLongitude;
 
     private volatile boolean running = false;
+    private volatile boolean paused = false;
 
     public TelematicsSimulator(TelematicsDataGenerator dataGenerator, 
                              TelematicsPublisher publisher,
@@ -73,6 +74,11 @@ public class TelematicsSimulator {
         
         while (running) {
             try {
+                // If paused, wait briefly and continue loop without generating
+                if (paused) {
+                    Thread.sleep(300);
+                    continue;
+                }
                 // Select a driver for this message
                 Driver selectedDriver = driverManager.selectDriverForMessage();
                 
@@ -164,5 +170,31 @@ public class TelematicsSimulator {
     
     public long getTotalMessageCount() {
         return totalMessageCount.get();
+    }
+
+    // --- Runtime controls ---
+    public void setPaused(boolean paused) {
+        this.paused = paused;
+        logger.info(paused ? "⏸️ Simulation paused" : "▶️ Simulation resumed");
+    }
+
+    public boolean isPaused() {
+        return paused;
+    }
+
+    public void togglePause() {
+        setPaused(!paused);
+    }
+
+    public void setIntervalMs(long intervalMs) {
+        if (intervalMs < 100) {
+            intervalMs = 100; // Safety lower bound
+        }
+        this.intervalMs = intervalMs;
+        logger.info("⏱️ Simulation interval set to {} ms", this.intervalMs);
+    }
+
+    public long getIntervalMs() {
+        return intervalMs;
     }
 }

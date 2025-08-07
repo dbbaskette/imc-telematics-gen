@@ -49,9 +49,16 @@
                         </button>
                     </div>
                     <div class="app-control-section">
-                        <button id="stopAppBtn" class="stop-button" onclick="stopApplication()">
-                            🛑 Stop Application
-                        </button>
+                        <div class="control-row">
+                            <button id="pauseResumeBtn" class="stop-button" onclick="togglePause()">
+                                ⏸️ Pause Generation
+                            </button>
+                        </div>
+                        <div class="control-row">
+                            <label for="rateSlider">Message Rate (ms):</label>
+                            <input type="range" id="rateSlider" min="200" max="2000" step="50" value="500" />
+                            <span id="rateValue">500</span>
+                        </div>
                     </div>
                     <div id="accidentStatus" class="accident-status"></div>
                     <div id="stopStatus" class="stop-status"></div>
@@ -71,6 +78,24 @@
 
         <div class="map-container">
             <div id="map"></div>
+            <div class="map-overlay">
+                <div class="legend">
+                    <div class="legend-row"><span class="legend-dot driving"></span> Driving</div>
+                    <div class="legend-row"><span class="legend-dot parked"></span> Parked/Stops</div>
+                    <div class="legend-row"><span class="legend-dot crash"></span> Crash</div>
+                </div>
+                <div class="map-controls">
+                    <div class="filters">
+                        <label><input type="checkbox" id="filterDriving" checked /> Driving</label>
+                        <label><input type="checkbox" id="filterParked" checked /> Parked</label>
+                        <label><input type="checkbox" id="filterCrash" checked /> Crash</label>
+                    </div>
+                    <div class="buttons">
+                        <button id="fitAllBtn" class="mini-btn">Fit to All</button>
+                        <label class="follow"><input type="checkbox" id="followSelected" /> Follow Selected</label>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

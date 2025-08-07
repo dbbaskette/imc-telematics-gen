@@ -47,4 +47,26 @@ public class ShutdownController {
         
         return response;
     }
+
+    // Optional: Pause/Resume via REST
+    @Autowired
+    private com.insurancemegacorp.telematicsgen.service.TelematicsSimulator simulator;
+
+    @PostMapping("/pause")
+    public ResponseEntity<Map<String, Object>> pause() {
+        simulator.setPaused(true);
+        return ResponseEntity.ok(Map.of("status", "ok", "paused", true));
+    }
+
+    @PostMapping("/resume")
+    public ResponseEntity<Map<String, Object>> resume() {
+        simulator.setPaused(false);
+        return ResponseEntity.ok(Map.of("status", "ok", "paused", false));
+    }
+
+    @PostMapping("/interval")
+    public ResponseEntity<Map<String, Object>> setInterval(@org.springframework.web.bind.annotation.RequestParam("ms") long ms) {
+        simulator.setIntervalMs(ms);
+        return ResponseEntity.ok(Map.of("status", "ok", "intervalMs", simulator.getIntervalMs()));
+    }
 }
