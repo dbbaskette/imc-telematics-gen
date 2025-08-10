@@ -43,6 +43,18 @@ log_error() {
 # Create logs directory if it doesn't exist
 mkdir -p "${SCRIPT_DIR}/logs"
 
+# Function to build the application (recompile)
+build_app() {
+    log_info "Building application (clean package)..."
+    cd "$SCRIPT_DIR"
+    if [[ -x "${SCRIPT_DIR}/mvnw" ]]; then
+        ./mvnw -q -B clean package || { log_error "Build failed"; return 1; }
+    else
+        mvn -q -B clean package || { log_error "Build failed"; return 1; }
+    fi
+    log_success "Build completed"
+}
+
 # Function to check if RabbitMQ is running
 check_rabbitmq() {
     if ! docker ps --format "table {{.Names}}" | grep -q "rabbitmq-telematics"; then
@@ -248,10 +260,12 @@ show_status() {
 
 # Function to show usage
 show_usage() {
-    echo "Usage: $0 {--start|--stop|--restart|--status|--logs}"
+    echo "Usage: $0 {--start|--build-start|--build|--stop|--restart|--status|--logs}"
     echo ""
     echo "Commands:"
-    echo "  --start    Start the telematics generator"
+    echo "  --start         Start the telematics generator"
+    echo "  --build-start   Rebuild (clean package) then start the generator"
+    echo "  --build         Rebuild the project (clean package) without starting"
     echo "  --stop     Stop the telematics generator"
     echo "  --restart  Restart the telematics generator"
     echo "  --status   Show current status"
@@ -268,6 +282,12 @@ show_usage() {
 case "${1:-}" in
     --start)
         start_app
+        ;;
+    --build-start)
+        build_app && start_app
+        ;;
+    --build)
+        build_app
         ;;
     --stop)
         stop_app
