@@ -43,14 +43,23 @@ log_error() {
 # Create logs directory if it doesn't exist
 mkdir -p "${SCRIPT_DIR}/logs"
 
+# Build options
+BUILD_WITH_TESTS=${BUILD_WITH_TESTS:-0}
+
 # Function to build the application (recompile)
 build_app() {
     log_info "Building application (clean package)..."
     cd "$SCRIPT_DIR"
+    local mvn_cmd
     if [[ -x "${SCRIPT_DIR}/mvnw" ]]; then
-        ./mvnw -q -B clean package || { log_error "Build failed"; return 1; }
+        mvn_cmd=("${SCRIPT_DIR}/mvnw" -q -B)
     else
-        mvn -q -B clean package || { log_error "Build failed"; return 1; }
+        mvn_cmd=(mvn -q -B)
+    fi
+    if [[ "$BUILD_WITH_TESTS" == "1" ]]; then
+        "${mvn_cmd[@]}" clean package || { log_error "Build failed"; return 1; }
+    else
+        "${mvn_cmd[@]}" -DskipTests clean package || { log_error "Build failed"; return 1; }
     fi
     log_success "Build completed"
 }
@@ -273,6 +282,7 @@ show_usage() {
     echo "Options can be chained in order, e.g.:"
     echo "  $0 --build --start     # Rebuild, then start"
     echo "  $0 --stop --start      # Stop, then start"
+    echo "  $0 --with-tests --build  # Run tests during build"
     echo ""
     echo "Examples:"
     echo "  $0 --start           # Start the application"
@@ -310,6 +320,9 @@ while [[ $# -gt 0 ]]; do
       ;;
     --logs)
       tail_logs
+      ;;
+    --with-tests)
+      BUILD_WITH_TESTS=1
       ;;
     --build-start)
       log_warning "--build-start is deprecated; use: $0 --build --start"
