@@ -260,56 +260,70 @@ show_status() {
 
 # Function to show usage
 show_usage() {
-    echo "Usage: $0 {--start|--build-start|--build|--stop|--restart|--status|--logs}"
+    echo "Usage: $0 [options]"
     echo ""
     echo "Commands:"
     echo "  --start         Start the telematics generator"
-    echo "  --build-start   Rebuild (clean package) then start the generator"
     echo "  --build         Rebuild the project (clean package) without starting"
     echo "  --stop     Stop the telematics generator"
     echo "  --restart  Restart the telematics generator"
     echo "  --status   Show current status"
     echo "  --logs     Tail the application logs (Ctrl+C to stop)"
     echo ""
+    echo "Options can be chained in order, e.g.:"
+    echo "  $0 --build --start     # Rebuild, then start"
+    echo "  $0 --stop --start      # Stop, then start"
+    echo ""
     echo "Examples:"
-    echo "  $0 --start     # Start the application"
-    echo "  $0 --stop      # Stop the application"
-    echo "  $0 --status    # Check if running"
-    echo "  $0 --logs      # Follow the logs in real-time"
+    echo "  $0 --start           # Start the application"
+    echo "  $0 --build --start   # Rebuild and start"
+    echo "  $0 --status          # Check if running"
+    echo "  $0 --logs            # Follow the logs in real-time"
 }
 
-# Main execution
-case "${1:-}" in
+# Main execution (support multiple options in order)
+if [[ $# -eq 0 ]]; then
+  log_error "Missing command"
+  echo ""
+  show_usage
+  exit 1
+fi
+
+while [[ $# -gt 0 ]]; do
+  case "$1" in
     --start)
-        start_app
-        ;;
-    --build-start)
-        build_app && start_app
-        ;;
+      start_app
+      ;;
     --build)
-        build_app
-        ;;
+      build_app
+      ;;
     --stop)
-        stop_app
-        ;;
+      stop_app
+      ;;
     --restart)
-        stop_app
-        sleep 2
-        start_app
-        ;;
+      stop_app
+      sleep 2
+      start_app
+      ;;
     --status)
-        show_status
-        ;;
+      show_status
+      ;;
     --logs)
-        tail_logs
-        ;;
+      tail_logs
+      ;;
+    --build-start)
+      log_warning "--build-start is deprecated; use: $0 --build --start"
+      build_app && start_app
+      ;;
     --help|-h|help)
-        show_usage
-        ;;
+      show_usage
+      ;;
     *)
-        log_error "Invalid or missing command"
-        echo ""
-        show_usage
-        exit 1
-        ;;
-esac
+      log_error "Unknown option: $1"
+      echo ""
+      show_usage
+      exit 1
+      ;;
+  esac
+  shift
+done
