@@ -39,6 +39,9 @@ public class DriverManager {
     @Value("${telematics.behavior.break-duration-minutes:5}")
     private int breakDurationMinutes;
 
+    @Value("${telematics.simulation.max-drivers:0}")
+    private int maxDrivers;
+
     public DriverManager(FileBasedRouteService routeService, DestinationRouteService destinationRouteService, DriverConfigService driverConfigService) {
         this.routeService = routeService;
         this.destinationRouteService = destinationRouteService;
@@ -50,6 +53,10 @@ public class DriverManager {
         
         // Load driver configurations from file
         List<com.insurancemegacorp.telematicsgen.model.DriverConfig> driverConfigs = driverConfigService.getAllDriverConfigs();
+        if (maxDrivers > 0 && driverConfigs.size() > maxDrivers) {
+            logger.info("🔢 Applying max driver cap: {} (from {} total)", maxDrivers, driverConfigs.size());
+            driverConfigs = driverConfigs.subList(0, maxDrivers);
+        }
         
         if (driverConfigs.isEmpty()) {
             logger.error("❌ No driver configurations found. Cannot initialize drivers.");
