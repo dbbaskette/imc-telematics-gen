@@ -81,7 +81,18 @@ public class WebSocketController {
         // Select random driver and trigger accident
         var targetDriver = activeDrivers.get((int) (Math.random() * activeDrivers.size()));
         boolean success = driverManager.triggerDemoAccident(targetDriver.getDriverId());
-        
+
+        // If crash was successfully triggered, also publish a crash event so stats appear in logs
+        if (success) {
+            try {
+                var crashMessage = dataGenerator.generateCrashEventData(targetDriver);
+                publisher.publishTelematicsData(crashMessage, targetDriver);
+                logger.info("🚗💥 Demo crash event published for {}", targetDriver.getDriverId());
+            } catch (Exception e) {
+                logger.warn("⚠️ Crash event publish failed for {}: {}", targetDriver.getDriverId(), e.getMessage());
+            }
+        }
+
         logger.info("🚗💥 Demo accident {} for driver {}", 
                    success ? "triggered" : "failed", targetDriver.getDriverId());
         
@@ -113,9 +124,13 @@ public class WebSocketController {
                 .orElse(null);
                 
             if (crashedDriver != null) {
-                EnhancedTelematicsMessage crashMessage = dataGenerator.generateCrashEventData(crashedDriver);
-                publisher.publishTelematicsData(crashMessage, crashedDriver);
-                logger.info("🚨 Manual crash event published to RabbitMQ for driver {}", driverId);
+                try {
+                    EnhancedTelematicsMessage crashMessage = dataGenerator.generateCrashEventData(crashedDriver);
+                    publisher.publishTelematicsData(crashMessage, crashedDriver);
+                    logger.info("🚨 Manual crash event published to RabbitMQ for driver {}", driverId);
+                } catch (Exception e) {
+                    logger.warn("⚠️ Crash event publish failed for {}: {}", driverId, e.getMessage());
+                }
             }
         }
         
