@@ -485,37 +485,53 @@ function triggerSelectedAccident() {
     statusDiv.className = 'accident-status loading';
     
     try {
+        // Subscribe BEFORE sending to avoid missing the response
+        if (dashboardInstance.accidentSubscription) {
+            try { dashboardInstance.accidentSubscription.unsubscribe(); } catch (_) {}
+        }
+        const timeoutHandle = setTimeout(() => {
+            // Fallback if no response arrives
+            button.disabled = false;
+            button.innerHTML = '🚨 Trigger Accident';
+            statusDiv.innerHTML = '⚠️ No response received';
+            statusDiv.className = 'accident-status error';
+            if (dashboardInstance.accidentSubscription) {
+                try { dashboardInstance.accidentSubscription.unsubscribe(); } catch (_) {}
+                dashboardInstance.accidentSubscription = null;
+            }
+        }, 7000);
+
+        dashboardInstance.accidentSubscription = dashboardInstance.stompClient.subscribe('/topic/drivers/accident', (message) => {
+            const response = JSON.parse(message.body);
+            console.log('Accident response:', response);
+            clearTimeout(timeoutHandle);
+            if (response.success) {
+                statusDiv.innerHTML = `✅ ${response.message}`;
+                statusDiv.className = 'accident-status success';
+            } else {
+                statusDiv.innerHTML = `❌ ${response.message}`;
+                statusDiv.className = 'accident-status error';
+            }
+            // Re-enable button and unsubscribe after short delay
+            setTimeout(() => {
+                button.disabled = false;
+                button.innerHTML = '🚨 Trigger Accident';
+                statusDiv.innerHTML = '';
+                statusDiv.className = 'accident-status';
+                if (dashboardInstance.accidentSubscription) {
+                    try { dashboardInstance.accidentSubscription.unsubscribe(); } catch (_) {}
+                    dashboardInstance.accidentSubscription = null;
+                }
+            }, 2000);
+        });
+
         // Send appropriate accident trigger request via WebSocket
         if (isRandom) {
             dashboardInstance.stompClient.send('/app/drivers/trigger-accident', {}, JSON.stringify({}));
         } else {
             dashboardInstance.stompClient.send('/app/drivers/trigger-accident-specific', {}, selectedDriver);
         }
-        
-        // Subscribe to accident response if not already subscribed
-        if (!dashboardInstance.accidentSubscription) {
-            dashboardInstance.accidentSubscription = dashboardInstance.stompClient.subscribe('/topic/drivers/accident', (message) => {
-                const response = JSON.parse(message.body);
-                console.log('Accident response:', response);
-                
-                if (response.success) {
-                    statusDiv.innerHTML = `✅ ${response.message}`;
-                    statusDiv.className = 'accident-status success';
-                } else {
-                    statusDiv.innerHTML = `❌ ${response.message}`;
-                    statusDiv.className = 'accident-status error';
-                }
-                
-                // Re-enable button after 3 seconds
-                setTimeout(() => {
-                    button.disabled = false;
-                    button.innerHTML = '🚨 Trigger Accident';
-                    statusDiv.innerHTML = '';
-                    statusDiv.className = 'accident-status';
-                }, 3000);
-            });
-        }
-        
+
     } catch (error) {
         console.error('Error triggering accident:', error);
         statusDiv.innerHTML = 'Error: Failed to send request';

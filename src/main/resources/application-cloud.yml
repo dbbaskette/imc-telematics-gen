@@ -15,7 +15,7 @@ spring:
       # SCDF-specific stream bindings
       bindings:
         telematics-out:
-          destination: telematics_work_queue
+          destination: telematics_work_queue.vehicle-event-group
           content-type: application/json
           # Cloud-specific producer settings
           producer:
@@ -27,7 +27,7 @@ spring:
             producer:
               # Use RabbitMQ default exchange for direct queue routing
               exchange: ""
-              routing-key-expression: '''telematics_work_queue'''
+              routing-key-expression: '''telematics_work_queue.vehicle-event-group'''
               # Cloud-specific settings
               delivery-mode: PERSISTENT
               mandatory: true

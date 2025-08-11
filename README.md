@@ -53,6 +53,12 @@ A Spring Boot application that simulates a vehicle's telematics device, sending 
 # Start the application with all dependencies
 ./imc-telematics-gen.sh --start
 
+# Rebuild then start (skips tests by default)
+./imc-telematics-gen.sh --build --start
+
+# Build with tests, then start
+./imc-telematics-gen.sh --with-tests --build --start
+
 # Check application status
 ./imc-telematics-gen.sh --status
 
@@ -69,6 +75,7 @@ A Spring Boot application that simulates a vehicle's telematics device, sending 
 - Graceful shutdown with proper cleanup
 - Real-time log tailing
 - Color-coded status output
+- Chainable commands (e.g., `--build --start`); optional `--with-tests` to run tests during build
 
 Once running, access the **Web Dashboard** at: http://localhost:8082
 
@@ -93,7 +100,7 @@ Once running, access the **Web Dashboard** at: http://localhost:8082
    - **Web Dashboard**: http://localhost:8082 (real-time driver map)
    - **RabbitMQ Management**: http://localhost:15672 (guest/guest)
    - **Health Check**: http://localhost:8082/actuator/health
-   - Check the `telematics_work_queue.crash-detection-group` queue for messages
+    - Check the `telematics_work_queue.crash-detection-group` queue for messages
 
 ### Cloud Foundry Deployment
 
@@ -164,12 +171,15 @@ Use the RouteGenerator utility to create new route files using the OpenRouteServ
 
 ### Local Configuration (`application.yml`)
 - **RabbitMQ**: localhost:5672
-- **Queue**: `telematics_work_queue.crash-detection-group`
+  - **Queue**: `telematics_work_queue.crash-detection-group` (default)
+  - To use a different queue, set `telematics.queue.name` in `application.yml` or via env var `TELEMATICS_QUEUE_NAME`
 - **Base Policy ID**: `IMC-AUTO-98765` (with sequential driver IDs)
 - **Routes**: File-based loading from `src/main/resources/routes/`
-- **Driver Count**: 3 drivers
+- **Driver Count**: 3 (legacy/random mode). For file-based drivers, use `telematics.simulation.max-drivers`
+- **Max Drivers**: `telematics.simulation.max-drivers` caps how many drivers from `drivers.json` are initialized (0 = no cap)
 - **Simulation Interval**: 500ms
 - **Crash Frequency**: 50 messages between crash events per driver
+- **Minimum Crash G-Force**: `telematics.simulation.min-crash-gforce` (default 6.0) enforced for forced crashes
 - **Post-Crash Idle**: 10 minutes
 - **Random Stop Probability**: 5%
 - **Break Duration**: 5 minutes
@@ -287,10 +297,11 @@ The application sends enhanced telemetry data with comprehensive sensor informat
 ### Enhanced Data Fields
 
 **Core Message:**
-- `policy_id`: Insurance policy identifier (e.g., "IMC-98675")
-- `vin`: Vehicle Identification Number
-- `current_street`: Real street name from GPS location
-- `g_force`: Calculated G-force from accelerometer data
+- `policy_id` (int): Insurance policy identifier (e.g., 200018)
+- `vehicle_id` (int): Internal vehicle identifier (e.g., 300021)
+- `vin` (string): Vehicle Identification Number
+- `current_street` (string): Real street name from GPS location
+- `g_force` (number): Calculated G-force from accelerometer data
 
 **Enhanced GPS Data:**
 - `altitude`: Elevation in meters
@@ -320,7 +331,8 @@ To consume the enhanced telemetry messages, your client applications need to han
 **Java Record Example:**
 ```java
 public record EnhancedTelematicsMessage(
-    @JsonProperty("policy_id") String policyId,
+    @JsonProperty("policy_id") int policyId,
+    @JsonProperty("vehicle_id") int vehicleId,
     @JsonProperty("vin") String vin,
     Instant timestamp,
     @JsonProperty("speed_mph") double speedMph,
@@ -369,6 +381,7 @@ Access the real-time dashboard at http://localhost:8082 when running locally.
 - 👣 Follow Selected: auto-pan to the chosen driver
 - ⏸️ Pause/▶️ Resume Generation: toggle simulation without stopping the app
 - ⏱️ Message Rate: tune interval (200–2000 ms)
+- 🚨 Trigger Accident: sends an immediate crash event to the same queue as normal telemetry and logs a detailed publisher line with VIN/street/speed/G-force
 
 ## Testing
 
@@ -387,6 +400,12 @@ The `imc-telematics-gen.sh` script provides comprehensive application lifecycle 
 ```bash
 # Start the application (includes RabbitMQ setup)
 ./imc-telematics-gen.sh --start
+
+# Build (skip tests by default) and start
+./imc-telematics-gen.sh --build --start
+
+# Run tests during build
+./imc-telematics-gen.sh --with-tests --build --start
 
 # Stop the application gracefully
 ./imc-telematics-gen.sh --stop
