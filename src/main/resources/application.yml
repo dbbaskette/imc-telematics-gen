@@ -19,11 +19,12 @@ spring:
 # Telematics Simulation Configuration
 telematics:
   queue:
-    name: telematics_work_queue.crash-detection-group
+    name: telematics_work_queue.vehicle-event-group
   simulation:
     interval-ms: 500          # Update frequency (500ms for smooth UI)
     driver-count: 3           # Number of drivers to simulate
     crash-frequency: 50       # Messages between crash events per driver
+    min-crash-gforce: 6.0     # Enforce minimum G-force for forced crashes
   
   # Driver Behavior Configuration
   behavior:

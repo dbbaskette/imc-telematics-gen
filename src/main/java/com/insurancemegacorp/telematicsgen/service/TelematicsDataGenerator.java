@@ -16,6 +16,8 @@ import java.time.Instant;
 public class TelematicsDataGenerator {
 
     private final SecureRandom random = new SecureRandom();
+    @org.springframework.beans.factory.annotation.Value("${telematics.simulation.min-crash-gforce:6.0}")
+    private double minCrashGForce;
 
     public EnhancedTelematicsMessage generateTelematicsData(Driver driver) {
         switch (driver.getCurrentState()) {
@@ -85,8 +87,8 @@ public class TelematicsDataGenerator {
             device
         );
 
-        // Calculate G-force from accelerometer data
-        double gForce = calculateGForce(accelerometer);
+        // Calculate G-force from accelerometer data and enforce minimum threshold
+        double gForce = Math.max(minCrashGForce, calculateGForce(accelerometer));
         
         return new EnhancedTelematicsMessage(
             driver.getPolicyId(),
