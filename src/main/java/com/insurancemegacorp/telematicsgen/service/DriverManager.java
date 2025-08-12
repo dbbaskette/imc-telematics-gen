@@ -42,6 +42,8 @@ public class DriverManager {
     @Value("${telematics.simulation.max-drivers:0}")
     private int maxDrivers;
 
+    private volatile boolean randomAccidentsEnabled = false;
+
     public DriverManager(FileBasedRouteService routeService, DestinationRouteService destinationRouteService, DriverConfigService driverConfigService) {
         this.routeService = routeService;
         this.destinationRouteService = destinationRouteService;
@@ -357,6 +359,11 @@ public class DriverManager {
     }
 
     private boolean shouldSimulateCrash(Driver driver) {
+        // Only allow random crashes if the feature is enabled
+        if (!randomAccidentsEnabled) {
+            return false;
+        }
+        
         long messageCount = driver.getMessageCount();
         long timeSinceCrash = driver.getTimeSinceCrashSeconds();
         
@@ -370,8 +377,9 @@ public class DriverManager {
             return false;
         }
         
-        // Low probability crash simulation - realistic frequency
-        return messageCount % 100 == 0 && random.nextDouble() < 0.01;
+        // Very low probability crash simulation - more realistic frequency
+        // Approximately 1 crash per 10,000 messages (roughly once every 1.4 hours at 500ms intervals)
+        return random.nextDouble() < 0.0001;
     }
     
     /**
@@ -476,5 +484,14 @@ public class DriverManager {
                 driver.getMessageCount(),
                 crashInfo);
         });
+    }
+
+    public void setRandomAccidentsEnabled(boolean enabled) {
+        this.randomAccidentsEnabled = enabled;
+        logger.info("🎲 Random accidents {}", enabled ? "enabled" : "disabled");
+    }
+
+    public boolean isRandomAccidentsEnabled() {
+        return randomAccidentsEnabled;
     }
 }

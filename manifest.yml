@@ -1,0 +1,24 @@
+applications:
+  - name: imc-telematics-gen
+    memory: 1G
+    instances: 1
+    path: target/telematicsgen-1.0.0.jar
+    buildpacks:
+    - java_buildpack_offline
+    services:
+      - messaging-c856b29a-1c7e-4fd5-ab3b-0633b90869cc
+    env:
+      JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 21.+ } }'
+      SPRING_PROFILES_ACTIVE: cloud
+      # Optional overrides
+      TELEMATICS_QUEUE_NAME: telematics_work_queue.crash-detection-group
+      SIMULATION_INTERVAL_MS: 500
+      DRIVER_COUNT: 3
+      CRASH_FREQUENCY: 50
+      POST_CRASH_IDLE_MINUTES: 10
+      RANDOM_STOP_PROBABILITY: 0.05
+      BREAK_DURATION_MINUTES: 5
+      VEHICLE_LATITUDE: 33.7490
+      VEHICLE_LONGITUDE: -84.3880
+      POLICY_ID: IMC-AUTO-98765
+

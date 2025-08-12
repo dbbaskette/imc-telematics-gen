@@ -15,6 +15,9 @@
             <div class="status-info">
                 <span class="driver-count">Tracking <span th:text="${driverCount}">0</span> Drivers</span>
                 <div class="connection-status" id="connectionStatus">⚪ Connecting...</div>
+                <button id="darkModeToggle" class="dark-mode-toggle" onclick="toggleDarkMode()" title="Toggle dark mode">
+                    <span class="dark-mode-icon">🌙</span>
+                </button>
             </div>
         </div>
     </div>
@@ -40,26 +43,38 @@
                     <span class="stat-value crash" id="crashCount">0</span>
                 </div>
                 <div class="demo-controls">
-                    <div class="accident-trigger-section">
+                    <!-- Accident Controls Group -->
+                    <div class="control-group">
+                        <h4 class="control-group-title">🚨 Accident Controls</h4>
+                        <div class="stat-item">
+                            <span class="stat-label">Random Accidents:</span>
+                            <span class="stat-value" id="randomAccidentsStatus">OFF</span>
+                        </div>
+                        <button id="randomAccidentsBtn" class="toggle-button" onclick="toggleRandomAccidents()">
+                            🎲 Random Accidents: OFF
+                        </button>
                         <select id="driverSelect" class="driver-select">
                             <option value="random">🎲 Random Driver</option>
                         </select>
                         <button id="triggerAccidentBtn" class="demo-button" onclick="triggerSelectedAccident()">
-                            🚨 Trigger Accident
+                            🚨 Trigger Manual Accident
                         </button>
                     </div>
-                    <div class="app-control-section">
-                        <div class="control-row">
-                            <button id="pauseResumeBtn" class="stop-button" onclick="togglePause()">
-                                ⏸️ Pause Generation
-                            </button>
-                        </div>
+                    
+                    <!-- Simulation Controls Group -->
+                    <div class="control-group">
+                        <h4 class="control-group-title">⚙️ Simulation Controls</h4>
+                        <button id="pauseResumeBtn" class="stop-button" onclick="togglePause()">
+                            ⏸️ Pause Generation
+                        </button>
                         <div class="control-row">
                             <label for="rateSlider">Message Rate (ms):</label>
                             <input type="range" id="rateSlider" min="200" max="2000" step="50" value="500" />
                             <span id="rateValue">500</span>
                         </div>
                     </div>
+                    
+                    
                     <div id="accidentStatus" class="accident-status"></div>
                     <div id="stopStatus" class="stop-status"></div>
                 </div>

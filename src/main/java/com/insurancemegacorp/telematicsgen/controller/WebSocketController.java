@@ -164,6 +164,20 @@ public class WebSocketController {
         };
     }
 
+    @MessageMapping("/sim/toggle-random-accidents")
+    @SendTo("/topic/sim/random-accidents")
+    public Object toggleRandomAccidents(String enabled) {
+        boolean isEnabled = Boolean.parseBoolean(enabled);
+        driverManager.setRandomAccidentsEnabled(isEnabled);
+        logger.info("🎲 Random accidents {} via WebSocket", isEnabled ? "enabled" : "disabled");
+        
+        return new Object() {
+            public final boolean enabled = isEnabled;
+            public final String message = "Random accidents " + (isEnabled ? "enabled" : "disabled");
+            public final String timestamp = java.time.Instant.now().toString();
+        };
+    }
+
     private String getRouteDescription(com.insurancemegacorp.telematicsgen.model.Driver driver) {
         if (driver.getCurrentRoute() == null || driver.getCurrentRoute().isEmpty()) {
             return "No route";

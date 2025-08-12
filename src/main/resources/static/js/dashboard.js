@@ -6,7 +6,10 @@ class TelematicsDashboard {
         this.crashCount = 0;
         this.events = [];
         this.maxEvents = 20;
+        this.randomAccidentsEnabled = false;
+        this.darkModeEnabled = false;
         
+        this.loadSettings();
         this.init();
     }
 
@@ -14,6 +17,7 @@ class TelematicsDashboard {
         this.initMap();
         this.connectWebSocket();
         this.loadInitialData();
+        this.updateUIFromSettings();
 
         // Wire controls
         const rateSlider = document.getElementById('rateSlider');
@@ -30,15 +34,100 @@ class TelematicsDashboard {
         }
     }
 
+    loadSettings() {
+        try {
+            this.randomAccidentsEnabled = localStorage.getItem('randomAccidentsEnabled') === 'true';
+            this.darkModeEnabled = localStorage.getItem('darkModeEnabled') === 'true';
+        } catch (e) {
+            console.warn('Failed to load settings from localStorage:', e);
+        }
+    }
+
+    saveSettings() {
+        try {
+            localStorage.setItem('randomAccidentsEnabled', this.randomAccidentsEnabled);
+            localStorage.setItem('darkModeEnabled', this.darkModeEnabled);
+        } catch (e) {
+            console.warn('Failed to save settings to localStorage:', e);
+        }
+    }
+
+    updateUIFromSettings() {
+        // Update random accidents UI
+        this.updateRandomAccidentsUI();
+        
+        // Apply dark mode if enabled
+        if (this.darkModeEnabled) {
+            document.body.classList.add('dark-mode');
+            this.updateDarkModeButton(true);
+            // Apply dark map theme (will be called after map is initialized)
+            setTimeout(() => this.toggleMapTheme(true), 100);
+        }
+    }
+
+    updateRandomAccidentsUI() {
+        const button = document.getElementById('randomAccidentsBtn');
+        const status = document.getElementById('randomAccidentsStatus');
+        
+        if (button) {
+            button.textContent = `🎲 Random Accidents: ${this.randomAccidentsEnabled ? 'ON' : 'OFF'}`;
+            button.classList.toggle('active', this.randomAccidentsEnabled);
+        }
+        
+        if (status) {
+            status.textContent = this.randomAccidentsEnabled ? 'ON' : 'OFF';
+            status.className = `stat-value ${this.randomAccidentsEnabled ? 'driving' : ''}`;
+        }
+    }
+
+    updateDarkModeButton(enabled) {
+        const button = document.getElementById('darkModeToggle');
+        if (button) {
+            button.classList.toggle('active', enabled);
+            // Update tooltip
+            button.title = enabled ? 'Switch to light mode' : 'Switch to dark mode';
+        }
+    }
+
+    showStatusMessage(message, type = 'success', duration = 3000) {
+        // Remove existing status message
+        const existing = document.querySelector('.status-message');
+        if (existing) {
+            existing.remove();
+        }
+
+        // Create new status message
+        const statusDiv = document.createElement('div');
+        statusDiv.className = `status-message ${type}`;
+        statusDiv.textContent = message;
+        document.body.appendChild(statusDiv);
+
+        // Show with animation
+        setTimeout(() => statusDiv.classList.add('show'), 10);
+
+        // Auto-hide after duration
+        setTimeout(() => {
+            statusDiv.classList.remove('show');
+            setTimeout(() => statusDiv.remove(), 300);
+        }, duration);
+    }
+
     initMap() {
         // Center on Atlanta
         // Zoom out to level 9 to ensure the 80-mile boundary is visible
         this.map = L.map('map').setView([33.7490, -84.3880], 9);
         
-        // Add OpenStreetMap tiles
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        // Create light and dark tile layers
+        this.lightTileLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '© OpenStreetMap contributors'
-        }).addTo(this.map);
+        });
+        
+        this.darkTileLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+            attribution: '© OpenStreetMap contributors, © CARTO'
+        });
+        
+        // Add initial tile layer based on dark mode setting
+        (this.darkModeEnabled ? this.darkTileLayer : this.lightTileLayer).addTo(this.map);
 
         // Add Atlanta area outline
         this.addAtlantaBounds();
@@ -55,6 +144,18 @@ class TelematicsDashboard {
         const followSelected = document.getElementById('followSelected');
         if (followSelected) {
             followSelected.addEventListener('change', () => this.updateFollowMode());
+        }
+    }
+
+    toggleMapTheme(darkMode) {
+        if (!this.map || !this.lightTileLayer || !this.darkTileLayer) return;
+        
+        if (darkMode) {
+            this.map.removeLayer(this.lightTileLayer);
+            this.map.addLayer(this.darkTileLayer);
+        } else {
+            this.map.removeLayer(this.darkTileLayer);
+            this.map.addLayer(this.lightTileLayer);
         }
     }
 
@@ -189,7 +290,8 @@ class TelematicsDashboard {
         // Simple crash detection for counter increment
         const wasCrashed = existingDriver && existingDriver.state === 'POST_CRASH_IDLE';
         const isCrashed = driverUpdate.state === 'POST_CRASH_IDLE';
-        const isCrashEvent = driverUpdate.is_crash_event || (!wasCrashed && isCrashed);
+        // Count a crash only on transition into crash state
+        const isCrashEvent = (!wasCrashed && isCrashed);
         
         // Increment crash counter if this is a new crash
         if (isCrashEvent) {
@@ -421,7 +523,9 @@ class TelematicsDashboard {
         let eventClass = '';
         
         if (driverUpdate.is_crash_event) {
-            eventText = `💥 ${driverUpdate.driver_id} crashed on ${driverUpdate.current_street}`;
+            // Distinguish between random and manual crashes
+            const crashType = driverUpdate.manual_crash ? '🚨' : '🎲';
+            eventText = `${crashType} ${driverUpdate.driver_id} crashed on ${driverUpdate.current_street}`;
             eventClass = 'crash';
         } else if (driverUpdate.state === 'DRIVING' && this.events.length === 0) {
             eventText = `🚗 ${driverUpdate.driver_id} started driving on ${driverUpdate.current_street}`;
@@ -631,4 +735,88 @@ async function togglePause() {
     } finally {
         btn.disabled = false;
     }
+}
+
+// Random Accidents Toggle
+function toggleRandomAccidents() {
+    if (!dashboardInstance) {
+        console.error('Dashboard not initialized');
+        return;
+    }
+    
+    const newState = !dashboardInstance.randomAccidentsEnabled;
+    
+    if (!dashboardInstance.stompClient) {
+        dashboardInstance.showStatusMessage('❌ Cannot toggle - connection lost', 'error');
+        // Try to reconnect
+        dashboardInstance.connectWebSocket();
+        return;
+    }
+    
+    // Show loading state
+    dashboardInstance.showStatusMessage('⏳ Updating random accidents...', 'loading', 1000);
+    
+    try {
+        // Subscribe to response before sending
+        const subscription = dashboardInstance.stompClient.subscribe('/topic/sim/random-accidents', (message) => {
+            const response = JSON.parse(message.body);
+            
+            if (response.enabled !== undefined) {
+                dashboardInstance.randomAccidentsEnabled = response.enabled;
+                dashboardInstance.updateRandomAccidentsUI();
+                dashboardInstance.saveSettings();
+                
+                dashboardInstance.showStatusMessage(
+                    `✅ Random accidents ${response.enabled ? 'enabled' : 'disabled'}`, 
+                    'success'
+                );
+            }
+            
+            // Unsubscribe after handling
+            subscription.unsubscribe();
+        });
+        
+        // Send toggle request
+        dashboardInstance.stompClient.send('/app/sim/toggle-random-accidents', {}, String(newState));
+        
+        // Set timeout for no response
+        setTimeout(() => {
+            try {
+                subscription.unsubscribe();
+            } catch (e) { /* ignore */ }
+        }, 5000);
+        
+    } catch (error) {
+        console.error('Error toggling random accidents:', error);
+        dashboardInstance.showStatusMessage('❌ Failed to toggle random accidents', 'error');
+    }
+}
+
+// Dark Mode Toggle
+function toggleDarkMode() {
+    if (!dashboardInstance) {
+        console.error('Dashboard not initialized');
+        return;
+    }
+    
+    dashboardInstance.darkModeEnabled = !dashboardInstance.darkModeEnabled;
+    
+    // Apply/remove dark mode class
+    document.body.classList.toggle('dark-mode', dashboardInstance.darkModeEnabled);
+    
+    // Toggle map theme
+    dashboardInstance.toggleMapTheme(dashboardInstance.darkModeEnabled);
+    
+    // Update button
+    dashboardInstance.updateDarkModeButton(dashboardInstance.darkModeEnabled);
+    
+    // Save setting
+    dashboardInstance.saveSettings();
+    
+    // Show feedback
+    dashboardInstance.showStatusMessage(
+        `✅ Dark mode ${dashboardInstance.darkModeEnabled ? 'enabled' : 'disabled'}`, 
+        'success', 
+        2000
+    );
 }
