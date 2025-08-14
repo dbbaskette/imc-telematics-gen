@@ -6,7 +6,9 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-import org.springframework.cloud.stream.function.StreamBridge;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
+import org.springframework.test.util.ReflectionTestUtils;
+import org.junit.jupiter.api.BeforeEach;
 
 
 import java.time.Instant;
@@ -18,31 +20,40 @@ import static org.mockito.Mockito.*;
 @ExtendWith(MockitoExtension.class)
 class TelematicsPublisherTest {
 
+    private static final String TEST_EXCHANGE_NAME = "telematics_work_queue.crash-detection-group";
+
     @Mock
-    private StreamBridge streamBridge;
+    private RabbitTemplate rabbitTemplate;
     
     @Mock
     private WebSocketBroadcastService webSocketService;
 
-    @InjectMocks
     private TelematicsPublisher publisher;
+    
+    @BeforeEach
+    void setUp() {
+        publisher = new TelematicsPublisher(rabbitTemplate, webSocketService);
+        ReflectionTestUtils.setField(publisher, "exchangeName", TEST_EXCHANGE_NAME);
+    }
 
     @Test
     void publishTelematicsData_shouldSendMessageToStream() {
         EnhancedTelematicsMessage message = createTestMessage();
+        Driver driver = new Driver("test-driver", 1, 1, "vin", 0, 0);
         
-        publisher.publishTelematicsData(message);
+        publisher.publishTelematicsData(message, driver);
         
-        verify(streamBridge).send(eq("telematics-out"), eq(message));
+        verify(rabbitTemplate).convertAndSend(eq("telematics_work_queue.crash-detection-group"), eq(""), eq(message));
     }
 
     @Test
     void publishTelematicsData_shouldThrowExceptionOnFailure() {
         EnhancedTelematicsMessage message = createTestMessage();
+        Driver driver = new Driver("test-driver", 1, 1, "vin", 0, 0);
         doThrow(new RuntimeException("Connection failed"))
-            .when(streamBridge).send(anyString(), any(EnhancedTelematicsMessage.class));
+            .when(rabbitTemplate).convertAndSend(anyString(), anyString(), any(EnhancedTelematicsMessage.class));
         
-        assertThrows(RuntimeException.class, () -> publisher.publishTelematicsData(message));
+        assertThrows(RuntimeException.class, () -> publisher.publishTelematicsData(message, driver));
     }
 
     private EnhancedTelematicsMessage createTestMessage() {

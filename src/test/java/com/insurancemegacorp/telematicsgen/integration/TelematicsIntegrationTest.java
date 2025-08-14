@@ -55,13 +55,13 @@ class TelematicsIntegrationTest {
         
         // Test that publishing doesn't throw an exception
         assertThat(message).isNotNull();
-        assertThat(message.policyId()).isEqualTo("TEST-POLICY-123");
+        assertThat(message.policyId()).isEqualTo(200123);
         assertThat(message.speedMph()).isEqualTo(30.0);
         assertThat(message.sensors().gps().latitude()).isEqualTo(40.7128);
         assertThat(message.sensors().gps().longitude()).isEqualTo(-74.0060);
         
         // Verify publishing works without exception
-        publisher.publishTelematicsData(message);
+        publisher.publishTelematicsData(message, testDriver);
     }
 
     @Test
@@ -73,12 +73,12 @@ class TelematicsIntegrationTest {
         
         // Test crash event data generation
         assertThat(crashMessage).isNotNull();
-        assertThat(crashMessage.policyId()).isEqualTo("TEST-POLICY-123");
+        assertThat(crashMessage.policyId()).isEqualTo(200123);
         assertThat(crashMessage.speedMph()).isEqualTo(35.0);
         assertThat(crashMessage.sensors().accelerometer().x()).isGreaterThan(4.0);
         assertThat(crashMessage.sensors().accelerometer().y()).isGreaterThan(3.0);
         
         // Verify publishing works without exception
-        publisher.publishTelematicsData(crashMessage);
+        publisher.publishTelematicsData(crashMessage, testDriver);
     }
 }

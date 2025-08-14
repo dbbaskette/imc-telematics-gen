@@ -83,6 +83,10 @@ public class DriverManager {
                 }
                 
                 // Pick a random point along the route as starting position for better distribution
+                if (route.isEmpty()) {
+                    logger.error("❌ Route is empty for driver {}", config.getDriverId());
+                    continue; // Skip this driver
+                }
                 int randomIndex = random.nextInt(route.size());
                 RoutePoint startPoint = route.get(randomIndex);
                 

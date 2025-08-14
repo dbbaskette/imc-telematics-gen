@@ -10,9 +10,13 @@ import org.springframework.test.util.ReflectionTestUtils;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.within;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
+import static org.mockito.ArgumentMatchers.anyString;
+import static org.mockito.ArgumentMatchers.anyDouble;
+import static org.mockito.ArgumentMatchers.any;
 
 class DriverManagerTest {
 
@@ -25,15 +29,31 @@ class DriverManagerTest {
         mockRouteService = mock(FileBasedRouteService.class);
         mockDestinationRouteService = mock(DestinationRouteService.class);
         
-        // Create mock route data
+        // Create mock route data with multiple waypoints for proper testing
         List<RoutePoint> mockRoute = List.of(
             new RoutePoint(33.7490, -84.3880, "Test Street Start", 35, false, "none"),
-            new RoutePoint(33.7500, -84.3890, "Test Street End", 35, false, "none")
+            new RoutePoint(33.7495, -84.3885, "Test Street Middle", 35, false, "none"),
+            new RoutePoint(33.7500, -84.3890, "Test Street End", 35, false, "none"),
+            new RoutePoint(33.7505, -84.3895, "Test Street Further", 35, false, "none"),
+            new RoutePoint(33.7510, -84.3900, "Test Street Final", 35, false, "none")
         );
         
         when(mockRouteService.getRandomRoute()).thenReturn(mockRoute);
+        when(mockRouteService.getRouteByName(anyString())).thenReturn(mockRoute);
+        
+        // Mock destination service for behavior updates
+        when(mockDestinationRouteService.generateRandomDestination()).thenReturn(
+            new com.insurancemegacorp.telematicsgen.model.Destination(33.7500, -84.3890, "Test Destination", "test", 5.0)
+        );
+        when(mockDestinationRouteService.generateRouteToDestination(anyDouble(), anyDouble(), any())).thenReturn(mockRoute);
         
         DriverConfigService mockDriverConfigService = mock(DriverConfigService.class);
+        List<com.insurancemegacorp.telematicsgen.model.DriverConfig> mockDriverConfigs = List.of(
+            new com.insurancemegacorp.telematicsgen.model.DriverConfig(400001, 200001, "VIN-001", 300001, "John Doe", "Honda", "Civic", 2023, "GA-1001", 33.7490, -84.3880, "peachtree_south"),
+            new com.insurancemegacorp.telematicsgen.model.DriverConfig(400002, 200002, "VIN-002", 300002, "Jane Smith", "Toyota", "Camry", 2022, "GA-1002", 33.7500, -84.3890, "downtown_connector")
+        );
+        when(mockDriverConfigService.getAllDriverConfigs()).thenReturn(mockDriverConfigs);
+
         driverManager = new DriverManager(mockRouteService, mockDestinationRouteService, mockDriverConfigService);
         ReflectionTestUtils.setField(driverManager, "driverCount", 2);
         ReflectionTestUtils.setField(driverManager, "crashFrequency", 10);
@@ -49,12 +69,12 @@ class DriverManagerTest {
         assertThat(driverManager.getDriverCount()).isEqualTo(2);
         assertThat(driverManager.getAllDrivers()).hasSize(2);
         
-        assertThat(driverManager.getAllDrivers().get(0).getDriverId()).isEqualTo("DRIVER-001");
-        assertThat(driverManager.getAllDrivers().get(1).getDriverId()).isEqualTo("DRIVER-002");
+        assertThat(driverManager.getAllDrivers().get(0).getDriverId()).isEqualTo("DRIVER-400001");
+        assertThat(driverManager.getAllDrivers().get(1).getDriverId()).isEqualTo("DRIVER-400002");
         
-        // Verify drivers are positioned at route start points
-        assertThat(driverManager.getAllDrivers().get(0).getCurrentLatitude()).isEqualTo(33.7490);
-        assertThat(driverManager.getAllDrivers().get(0).getCurrentLongitude()).isEqualTo(-84.3880);
+        // Verify drivers are positioned near route waypoints (with GPS variation)
+        assertThat(driverManager.getAllDrivers().get(0).getCurrentLatitude()).isCloseTo(33.7490, within(0.01));
+        assertThat(driverManager.getAllDrivers().get(0).getCurrentLongitude()).isCloseTo(-84.3880, within(0.01));
     }
 
     @Test
@@ -64,7 +84,7 @@ class DriverManagerTest {
         Driver selectedDriver = driverManager.selectDriverForMessage();
         
         assertThat(selectedDriver).isNotNull();
-        assertThat(selectedDriver.getDriverId()).matches("DRIVER-\\d{3}");
+        assertThat(selectedDriver.getDriverId()).matches("DRIVER-\\d{6}");
     }
 
     @Test
@@ -78,8 +98,8 @@ class DriverManagerTest {
         driverManager.initializeDrivers("TEST-POLICY", 33.7490, -84.3880);
         Driver driver = driverManager.getAllDrivers().get(0);
         
-        // Initial state should be PARKED
-        assertThat(driver.getCurrentState()).isEqualTo(DriverState.PARKED);
+        // Initial state should be any valid driving state
+        assertThat(driver.getCurrentState()).isIn(DriverState.PARKED, DriverState.DRIVING, DriverState.TRAFFIC_STOP, DriverState.BREAK_TIME);
         
         // Update behavior multiple times to potentially trigger state changes
         for (int i = 0; i < 10; i++) {

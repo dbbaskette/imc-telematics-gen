@@ -16,8 +16,8 @@ public class TelematicsPublisher {
     private final RabbitTemplate rabbitTemplate;
     private final WebSocketBroadcastService webSocketService;
 
-    @Value("${telematics.queue.name:telematics_work_queue.crash-detection-group}")
-    private String queueName;
+    @Value("${telematics.exchange.name:telematics_exchange}")
+    private String exchangeName;
 
     public TelematicsPublisher(RabbitTemplate rabbitTemplate, WebSocketBroadcastService webSocketService) {
         this.rabbitTemplate = rabbitTemplate;
@@ -26,8 +26,8 @@ public class TelematicsPublisher {
 
     public void publishTelematicsData(EnhancedTelematicsMessage message, Driver driver) {
         try {
-            // Direct queue publishing for work queue pattern
-            rabbitTemplate.convertAndSend(queueName, message);
+            // Publish to an exchange for fan-out pattern
+            rabbitTemplate.convertAndSend(exchangeName, "", message);
             
             // Enhanced logging with street information and VIN - using pre-calculated G-force
             logger.info("📡 {} | policy:{} | VEH:{} | VIN:{} | Street:{} | Speed:{} mph | G-force:{}g", 
@@ -43,25 +43,5 @@ public class TelematicsPublisher {
         }
     }
     
-    // Legacy method for backward compatibility - now using Enhanced messages
-    public void publishTelematicsData(EnhancedTelematicsMessage message) {
-        try {
-            // Direct queue publishing for work queue pattern
-            rabbitTemplate.convertAndSend(queueName, message);
-            
-            String driverId = extractDriverId(message.policyId());
-            logger.info("📡 {} | policy:{} | VEH:{} | VIN:{} | Street:{} | Speed:{} mph | G-force:{}g", 
-                driverId, message.policyId(), message.vehicleId(), message.vin(), message.currentStreet(), 
-                message.speedMph(), String.format("%.2f", message.gForce()));
-                
-        } catch (Exception e) {
-            logger.error("Failed to publish telematics data: {}", e.getMessage(), e);
-            throw new RuntimeException("Failed to publish telematics data", e);
-        }
-    }
     
-    private String extractDriverId(int policyId) {
-        // With numeric policy IDs, driver ID cannot be inferred. Return placeholder.
-        return "UNKNOWN";
-    }
 }
