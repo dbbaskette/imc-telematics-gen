@@ -18,8 +18,8 @@ spring:
 
 # Telematics Simulation Configuration
 telematics:
-  queue:
-    name: telematics_work_queue.vehicle-event-group
+  exchange:
+    name: telematics_exchange
   simulation:
     interval-ms: 500          # Update frequency (500ms for smooth UI)
     driver-count: 3           # Legacy (random mode). Use max-drivers to cap file-based drivers
