@@ -1,7 +1,7 @@
 package com.insurancemegacorp.telematicsgen.service;
 
 import com.insurancemegacorp.telematicsgen.model.Driver;
-import com.insurancemegacorp.telematicsgen.model.EnhancedTelematicsMessage;
+import com.insurancemegacorp.telematicsgen.model.FlatTelematicsMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
@@ -85,7 +85,7 @@ public class TelematicsSimulator {
                 // Update driver behavior and state
                 driverManager.updateDriverBehavior(selectedDriver);
                 
-                EnhancedTelematicsMessage message;
+                FlatTelematicsMessage message;
                 
                 // Check if this driver should have a crash event
                 if (selectedDriver.getCurrentState().name().equals("DRIVING") && 
