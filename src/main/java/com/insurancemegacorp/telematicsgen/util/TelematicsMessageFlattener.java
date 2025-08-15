@@ -86,7 +86,7 @@ public class TelematicsMessageFlattener {
                 enhanced.speedMph(),
                 enhanced.speedLimitMph(),
                 enhanced.gForce(),
-                enhanced.driverId(),
+                Integer.parseInt(enhanced.driverId()),
                 enhanced.currentStreet(),
                 
                 // GPS data fields

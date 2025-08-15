@@ -26,7 +26,7 @@ public class DashboardController {
     public Object getAllDrivers() {
         return driverManager.getAllDrivers().stream()
             .map(driver -> new Object() {
-                public final String driverId = driver.getDriverId();
+                public final int driverId = driver.getDriverId();
                 public final int policyId = driver.getPolicyId();
                 public final int vehicleId = driver.getVehicleId();
                 public final double latitude = driver.getCurrentLatitude();

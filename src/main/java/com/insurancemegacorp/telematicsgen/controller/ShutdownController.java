@@ -133,12 +133,13 @@ public class ShutdownController {
             @org.springframework.web.bind.annotation.PathVariable String driverId) {
         logger.info("🚨 REST API crash trigger requested for specific driver: {}", driverId);
         
-        boolean success = driverManager.triggerDemoAccident(driverId);
+        int driverIdInt = Integer.parseInt(driverId);
+        boolean success = driverManager.triggerDemoAccident(driverIdInt);
         
         // If crash was successfully triggered, publish crash event to RabbitMQ
         if (success) {
             var crashedDriver = driverManager.getAllDrivers().stream()
-                .filter(d -> d.getDriverId().equals(driverId))
+                .filter(d -> d.getDriverId() == driverIdInt)
                 .findFirst()
                 .orElse(null);
                 

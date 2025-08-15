@@ -43,7 +43,7 @@ public class WebSocketController {
         logger.info("🌐 Client requested all drivers");
         return driverManager.getAllDrivers().stream()
             .map(driver -> new Object() {
-                public final String driver_id = driver.getDriverId();
+                public final int driver_id = driver.getDriverId();
                 public final int policy_id = driver.getPolicyId();
                 public final double latitude = driver.getCurrentLatitude();
                 public final double longitude = driver.getCurrentLongitude();
@@ -97,11 +97,11 @@ public class WebSocketController {
                    success ? "triggered" : "failed", targetDriver.getDriverId());
         
         final boolean finalSuccess = success;
-        final String finalDriverId = targetDriver.getDriverId();
+        final int finalDriverId = targetDriver.getDriverId();
         
         return new Object() {
             public final boolean success = finalSuccess;
-            public final String driver_id = finalDriverId;
+            public final int driver_id = finalDriverId;
             public final String message = finalSuccess ? 
                 "Accident triggered for " + finalDriverId : 
                 "Failed to trigger accident";
@@ -114,12 +114,13 @@ public class WebSocketController {
     public Object triggerSpecificAccident(String driverId) {
         logger.info("🚨 Demo accident trigger requested for specific driver: {}", driverId);
         
-        boolean success = driverManager.triggerDemoAccident(driverId);
+        int driverIdInt = Integer.parseInt(driverId);
+        boolean success = driverManager.triggerDemoAccident(driverIdInt);
         
         // If crash was successfully triggered, publish crash event to RabbitMQ
         if (success) {
             Driver crashedDriver = driverManager.getAllDrivers().stream()
-                .filter(d -> d.getDriverId().equals(driverId))
+                .filter(d -> d.getDriverId() == driverIdInt)
                 .findFirst()
                 .orElse(null);
                 
@@ -138,11 +139,11 @@ public class WebSocketController {
                    success ? "triggered" : "failed", driverId);
         
         final boolean finalSuccess = success;
-        final String finalDriverId = driverId;
+        final int finalDriverId = driverIdInt;
         
         return new Object() {
             public final boolean success = finalSuccess;
-            public final String driver_id = finalDriverId;
+            public final int driver_id = finalDriverId;
             public final String message = finalSuccess ? 
                 "Accident triggered for " + finalDriverId : 
                 "Failed to trigger accident for " + finalDriverId;
