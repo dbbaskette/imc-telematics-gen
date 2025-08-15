@@ -2,7 +2,7 @@ package com.insurancemegacorp.telematicsgen.service;
 
 import com.insurancemegacorp.telematicsgen.model.Driver;
 import com.insurancemegacorp.telematicsgen.model.DriverLocationUpdate;
-import com.insurancemegacorp.telematicsgen.model.EnhancedTelematicsMessage;
+import com.insurancemegacorp.telematicsgen.model.FlatTelematicsMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
@@ -22,10 +22,10 @@ public class WebSocketBroadcastService {
         this.driverManager = driverManager;
     }
 
-    public void broadcastDriverUpdate(Driver driver, EnhancedTelematicsMessage message) {
+    public void broadcastDriverUpdate(Driver driver, FlatTelematicsMessage message) {
         try {
             String routeDescription = getRouteDescription(driver);
-            // Use pre-calculated G-force from the enhanced message instead of recalculating
+            // Use pre-calculated G-force from the flat message instead of recalculating
             double gForce = message.gForce();
             
             // Check if this might be a crash event based on driver state (for dashboard display only)
