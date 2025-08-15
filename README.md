@@ -10,7 +10,7 @@
 
 </div>
 
-A Spring Boot application that simulates realistic vehicle telematics data using an **optimized flat JSON structure** for maximum performance. Sends continuous sensor data to RabbitMQ with periodic crash events.
+A Spring Boot application that simulates realistic vehicle telematics data using an **optimized flat JSON structure** for maximum performance. Configured for **high-volume demo scenarios** with 300+ messages/second while maintaining smooth UI visualization.
 
 ## Features
 
@@ -23,7 +23,7 @@ A Spring Boot application that simulates realistic vehicle telematics data using
 - **Post-Crash Behavior**: Drivers sit still for configurable periods after crash events  
 - **Dynamic State Changes**: Drivers randomly stop, take breaks, encounter traffic, etc.
 - **Individual Tracking**: Each driver has unique policy ID, location, and message history
-- **Continuous Data Stream**: Sends realistic telemetry data every 1.5 seconds
+- **High-Volume Data Stream**: Sends realistic telemetry data every 50ms (20 messages/second)
 - **High G-Force Simulation**: Realistic crash events generate high G-force sensor readings
 - **Crash Simulation**: Periodic crash events with high G-force readings
 - **Web Dashboard**: Real-time map visualization of all drivers and their states
@@ -52,7 +52,14 @@ A Spring Boot application that simulates realistic vehicle telematics data using
 
 ## Recent Improvements
 
-### ✨ v2.0 - Performance & Consistency Overhaul
+### ✨ v3.0 - High-Volume Demo & Architecture Cleanup
+- **🚀 High-Volume Configuration**: 300+ messages/second with 15 drivers for impressive demos
+- **🧹 Code Cleanup**: Removed unused Enhanced message classes for simpler architecture  
+- **⚡ Performance Optimized**: Reduced logging overhead and optimized WebSocket throttling
+- **🎯 Demo Ready**: Balanced high throughput with smooth UI for professional demonstrations
+- **🔧 ID Type Safety**: Fixed driver_id type consistency issues throughout codebase
+
+### ✨ v2.0 - Performance & Consistency Overhaul  
 - **🔥 Flat JSON Architecture**: Complete migration from nested to flat structure
 - **📈 Performance Boost**: 50-70% improvement in processing speed
 - **🔧 ID Consistency**: Unified numeric ID format (`driver_id: 400018`)
@@ -197,7 +204,7 @@ Use the RouteGenerator utility to create new route files using the OpenRouteServ
 - **Routes**: File-based loading from `src/main/resources/routes/`
 - **Driver Count**: 3 (legacy/random mode). For file-based drivers, use `telematics.simulation.max-drivers`
 - **Max Drivers**: `telematics.simulation.max-drivers` caps how many drivers from `drivers.json` are initialized (0 = no cap)
-- **Simulation Interval**: 500ms
+- **Simulation Interval**: 50ms (high-volume demo configuration)
 - **Crash Frequency**: 50 messages between crash events per driver
 - **Minimum Crash G-Force**: `telematics.simulation.min-crash-gforce` (default 6.0) enforced for forced crashes
 - **Post-Crash Idle**: 10 minutes
@@ -214,7 +221,9 @@ Uses environment variables for Cloud Foundry deployment:
 
 ## Message Format
 
-The application sends **flattened telemetry data** with comprehensive sensor information in JSON format to RabbitMQ. The flat structure provides optimal performance for downstream processing and direct SQL mapping.
+The application sends **flattened telemetry data** with comprehensive sensor information in JSON format to RabbitMQ. The flat structure provides optimal performance for downstream processing and direct SQL mapping. 
+
+**Demo Performance**: With 15 drivers at 50ms intervals, the system generates **~300 messages/second** for high-volume downstream processing while maintaining smooth UI visualization through intelligent WebSocket throttling.
 
 ### Flat Telemetry Message Structure (Optimized)
 ```json
@@ -429,6 +438,61 @@ Access the real-time dashboard at http://localhost:8082 when running locally.
 - ⏸️ Pause/▶️ Resume Generation: toggle simulation without stopping the app
 - ⏱️ Message Rate: tune interval (200–2000 ms)
 - 🚨 Trigger Accident: sends an immediate crash event to the same queue as normal telemetry and logs a detailed publisher line with VIN/street/speed/speed limit/G-force
+
+## Performance & Demo Configuration
+
+### 🚀 High-Volume Demo Setup
+
+The application is optimized for impressive demo scenarios with the following configuration:
+
+**Message Generation:**
+- **Interval**: 50ms (20 messages/second per driver)
+- **Drivers**: 15 active drivers from `drivers.json`
+- **Total Throughput**: ~300 messages/second to downstream systems
+
+**UI Protection:**
+- **WebSocket Throttling**: Every 10th message sent to UI (30 updates/second)
+- **Logging**: Debug level to reduce console overhead
+- **Crash Events**: Always sent to UI for immediate visualization
+
+**Volume Projections:**
+- **Per Hour**: 1.08 million messages
+- **Per Day**: 25.9 million messages
+- **UI Updates**: Smooth 30 fps for professional demos
+
+### ⚡ Performance Optimizations
+
+1. **Flat JSON Architecture**: Zero nested object traversal
+2. **Direct Message Generation**: No transformation overhead
+3. **Intelligent WebSocket Throttling**: UI stays responsive at high volumes
+4. **Reduced Logging**: Debug-level telemetry logging in production mode
+5. **Type-Safe IDs**: Consistent numeric driver_id format throughout
+
+### 🎛️ Tuning for Different Scenarios
+
+**For Maximum Throughput:**
+```yaml
+telematics:
+  simulation:
+    interval-ms: 10        # 100 msg/s per driver = 1500 msg/s total
+    max-drivers: 15        # Use all available drivers
+```
+
+**For UI-Focused Demos:**
+```yaml
+telematics:
+  simulation:
+    interval-ms: 200       # Slower rate for smooth visualization
+    max-drivers: 5         # Fewer drivers for cleaner map view
+```
+
+**For Development/Testing:**
+```yaml
+telematics:
+  simulation:
+    interval-ms: 1000      # 1 second intervals for debugging
+    max-drivers: 3         # Small fleet for focused testing
+```
 
 ## Testing
 

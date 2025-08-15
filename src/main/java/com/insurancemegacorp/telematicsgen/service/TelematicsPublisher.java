@@ -30,7 +30,7 @@ public class TelematicsPublisher {
             // Publish flat message directly to RabbitMQ for optimal downstream processing
             rabbitTemplate.convertAndSend(exchangeName, "", message);
             
-            logger.info("📡 TELEMETRY | {} | VEH:{} | VIN:{} | Street:{} | Speed:{} mph (Limit: {} mph) | G-force:{}g",
+            logger.debug("📡 TELEMETRY | {} | VEH:{} | VIN:{} | Street:{} | Speed:{} mph (Limit: {} mph) | G-force:{}g",
                 message.driverId(),
                 message.vehicleId(),
                 message.vin(),
