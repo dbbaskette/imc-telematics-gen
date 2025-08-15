@@ -69,8 +69,8 @@ class DriverManagerTest {
         assertThat(driverManager.getDriverCount()).isEqualTo(2);
         assertThat(driverManager.getAllDrivers()).hasSize(2);
         
-        assertThat(driverManager.getAllDrivers().get(0).getDriverId()).isEqualTo("DRIVER-400001");
-        assertThat(driverManager.getAllDrivers().get(1).getDriverId()).isEqualTo("DRIVER-400002");
+        assertThat(driverManager.getAllDrivers().get(0).getDriverId()).isEqualTo("400001");
+        assertThat(driverManager.getAllDrivers().get(1).getDriverId()).isEqualTo("400002");
         
         // Verify drivers are positioned near route waypoints (with GPS variation)
         assertThat(driverManager.getAllDrivers().get(0).getCurrentLatitude()).isCloseTo(33.7490, within(0.01));
@@ -84,7 +84,7 @@ class DriverManagerTest {
         Driver selectedDriver = driverManager.selectDriverForMessage();
         
         assertThat(selectedDriver).isNotNull();
-        assertThat(selectedDriver.getDriverId()).matches("DRIVER-\\d{6}");
+        assertThat(selectedDriver.getDriverId()).matches("\\d{6}");
     }
 
     @Test

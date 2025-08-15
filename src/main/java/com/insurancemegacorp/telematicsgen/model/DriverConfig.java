@@ -22,11 +22,11 @@ public record DriverConfig(
 ) {
     
     /**
-     * Generate a driver ID for internal use based on the driver number.
-     * Format: DRIVER-001, DRIVER-002, etc.
+     * Get the driver ID as a string representation of the numeric ID.
+     * Returns the raw numeric driver ID for consistency with other ID fields.
      */
     public String getDriverId() {
-        return String.format("DRIVER-%d", driverId);
+        return String.valueOf(driverId);
     }
     
     /**

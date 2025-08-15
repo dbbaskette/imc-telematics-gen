@@ -66,7 +66,7 @@ class TelematicsPublisherTest {
             30.0,                // speedMph
             25,                  // speedLimitMph
             1.0,                 // gForce
-            "DRIVER-400123",     // driverId
+            "400123",            // driverId
             "Test Street",       // currentStreet
             
             // GPS data fields

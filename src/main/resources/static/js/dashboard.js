@@ -369,7 +369,7 @@ class TelematicsDashboard {
             className: className,
             iconSize: size,
             iconAnchor: anchor,
-            html: `<div style="width: 100%; height: 100%; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: bold; color: white;">${driverUpdate.driver_id.split('-')[1]}</div>`
+            html: `<div style="width: 100%; height: 100%; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: bold; color: white;">${driverUpdate.driver_id}</div>`
         });
     }
 
