@@ -1,0 +1,128 @@
+{
+  "name": "derek_johnson_base_to_work___hospital",
+  "description": "Derek Johnson: Base \u2192 Work___Hospital",
+  "start_location": "33.755, -84.39",
+  "end_location": "33.748, -84.385",
+  "waypoints": [
+    {
+      "latitude": 33.755,
+      "longitude": -84.39,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.754499,
+      "longitude": -84.389644,
+      "street_name": "Steve Reynolds Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.754,
+      "longitude": -84.389285,
+      "street_name": "14th Street",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.753499,
+      "longitude": -84.388928,
+      "street_name": "McFarland Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.752999,
+      "longitude": -84.388572,
+      "street_name": "Sugarloaf Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.7525,
+      "longitude": -84.388213,
+      "street_name": "Clairmont Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.752001,
+      "longitude": -84.387857,
+      "street_name": "Lawrenceville Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.7515,
+      "longitude": -84.3875,
+      "street_name": "DeKalb Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.751,
+      "longitude": -84.387144,
+      "street_name": "Powers Ferry Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.750499,
+      "longitude": -84.386787,
+      "street_name": "Collier Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.75,
+      "longitude": -84.386428,
+      "street_name": "Collier Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.749499,
+      "longitude": -84.386071,
+      "street_name": "Canton Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.749,
+      "longitude": -84.385715,
+      "street_name": "Spot Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "stop_sign"
+    },
+    {
+      "latitude": 33.748501,
+      "longitude": -84.385357,
+      "street_name": "GA-400 South",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.748,
+      "longitude": -84.385,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

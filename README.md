@@ -22,6 +22,7 @@ A Spring Boot application that simulates realistic vehicle telematics data using
 - **Route Generation Utility**: Generate new routes using OpenRouteService API
 - **Post-Crash Behavior**: Drivers sit still for configurable periods after crash events  
 - **Dynamic State Changes**: Drivers randomly stop, take breaks, encounter traffic, etc.
+- **Time-Based Activity**: Realistic day/night and rush hour driving patterns affect data volume
 - **Individual Tracking**: Each driver has unique policy ID, location, and message history
 - **High-Volume Data Stream**: Sends realistic telemetry data every 50ms (20 messages/second)
 - **High G-Force Simulation**: Realistic crash events generate high G-force sensor readings
@@ -58,6 +59,7 @@ A Spring Boot application that simulates realistic vehicle telematics data using
 - **⚡ Performance Optimized**: Reduced logging overhead and optimized WebSocket throttling
 - **🎯 Demo Ready**: Balanced high throughput with smooth UI for professional demonstrations
 - **🔧 ID Type Safety**: Fixed driver_id type consistency issues throughout codebase
+- **🌅 Time-Based Activity**: Realistic day/night cycles and rush hour patterns affect data volume
 
 ### ✨ v2.0 - Performance & Consistency Overhaul  
 - **🔥 Flat JSON Architecture**: Complete migration from nested to flat structure
@@ -210,6 +212,7 @@ Use the RouteGenerator utility to create new route files using the OpenRouteServ
 - **Post-Crash Idle**: 10 minutes
 - **Random Stop Probability**: 5%
 - **Break Duration**: 5 minutes
+- **Time-Based Activity**: Configurable day/night and rush hour behavior patterns
 
 ### Cloud Configuration (`application-cloud.yml`)
 Uses environment variables for Cloud Foundry deployment:
@@ -493,6 +496,66 @@ telematics:
     interval-ms: 1000      # 1 second intervals for debugging
     max-drivers: 3         # Small fleet for focused testing
 ```
+
+## 🌅 Time-Based Activity Patterns
+
+The simulator includes realistic time-based behavior that affects data volume throughout the day:
+
+### **📊 Activity Patterns**
+
+**🌙 Night Hours (8 PM - 6 AM):**
+- **70% reduction** in driving activity
+- **85% probability** drivers stay parked
+- Simulates realistic overnight patterns
+
+**🚗 Peak Hours (7-8 AM, 5-6 PM):**
+- **50% increase** in driving activity  
+- **30% less likely** to stop during commute times
+- Simulates rush hour traffic patterns
+
+**☀️ Normal Hours (6 AM - 8 PM):**
+- **Standard activity** levels
+- **5% random stop** probability
+- Regular daytime driving patterns
+
+### **⚙️ Time-Based Configuration**
+
+```yaml
+telematics:
+  behavior:
+    # Night time settings
+    night-start-hour: 20             # 8 PM start
+    night-end-hour: 6                # 6 AM end  
+    night-driving-reduction: 0.7     # 70% less driving
+    night-parked-probability: 0.85   # 85% stay parked
+    
+    # Peak hour settings
+    peak-hours: [7, 8, 17, 18]       # Rush hours
+    peak-driving-boost: 1.5          # 50% more activity
+```
+
+### **📈 Data Volume Impact**
+
+**Expected Message Volume by Time:**
+- **Night (8 PM - 6 AM)**: ~90 messages/second (70% reduction)
+- **Peak (7-8 AM, 5-6 PM)**: ~450 messages/second (50% boost)  
+- **Normal (6 AM - 8 PM)**: ~300 messages/second (baseline)
+
+**Daily Pattern Example:**
+```
+06:00 - Normal activity starts        → 300 msg/s
+07:00 - Morning rush begins          → 450 msg/s  
+09:00 - Normal daytime activity      → 300 msg/s
+17:00 - Evening rush begins          → 450 msg/s
+20:00 - Night reduction starts       → 90 msg/s
+```
+
+### **🎯 Demo Benefits**
+
+1. **Realistic Simulation**: Matches real-world fleet activity patterns
+2. **Variable Load Testing**: Tests downstream systems with varying data volumes
+3. **Impressive Visuals**: Dashboard shows clear activity changes throughout day
+4. **Long-Running Demos**: Can run continuously with natural volume variations
 
 ## Testing
 

@@ -1,0 +1,168 @@
+{
+  "name": "emily_carter_work___downtown_office_to_shopping_mall",
+  "description": "Emily Carter: Work___Downtown_Office \u2192 Shopping_Mall",
+  "start_location": "33.755, -84.39",
+  "end_location": "33.74, -84.375",
+  "waypoints": [
+    {
+      "latitude": 33.755,
+      "longitude": -84.39,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.754211,
+      "longitude": -84.389211,
+      "street_name": "19th Street",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.753422,
+      "longitude": -84.388421,
+      "street_name": "Castleberry Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.752631,
+      "longitude": -84.387632,
+      "street_name": "Holcomb Bridge Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.751842,
+      "longitude": -84.386842,
+      "street_name": "Perimeter Center West",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.751052,
+      "longitude": -84.386053,
+      "street_name": "Juniper Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.750263,
+      "longitude": -84.385264,
+      "street_name": "Highway 92",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.749474,
+      "longitude": -84.384474,
+      "street_name": "Webb Bridge Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.748685,
+      "longitude": -84.383685,
+      "street_name": "Broadland Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.747895,
+      "longitude": -84.382895,
+      "street_name": "Lawrenceville Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.747105,
+      "longitude": -84.382106,
+      "street_name": "Lake Lanier Islands Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.746315,
+      "longitude": -84.381315,
+      "street_name": "Windward Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.745527,
+      "longitude": -84.380526,
+      "street_name": "Satellite Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.744737,
+      "longitude": -84.379737,
+      "street_name": "Chamblee Tucker Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.743948,
+      "longitude": -84.378948,
+      "street_name": "McFarland Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.743158,
+      "longitude": -84.378158,
+      "street_name": "Cumberland Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.742369,
+      "longitude": -84.377368,
+      "street_name": "Cobb Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.741578,
+      "longitude": -84.376579,
+      "street_name": "Old Milton Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.740789,
+      "longitude": -84.37579,
+      "street_name": "Lower Roswell Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "stop_sign"
+    },
+    {
+      "latitude": 33.74,
+      "longitude": -84.375,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

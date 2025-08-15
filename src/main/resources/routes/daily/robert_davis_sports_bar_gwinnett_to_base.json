@@ -1,0 +1,160 @@
+{
+  "name": "robert_davis_sports_bar_gwinnett_to_base",
+  "description": "Robert Davis: Sports_Bar_Gwinnett \u2192 Base",
+  "start_location": "34.0154, -84.1287",
+  "end_location": "34.0032, -84.1446",
+  "waypoints": [
+    {
+      "latitude": 34.0154,
+      "longitude": -84.1287,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.014723,
+      "longitude": -84.129583,
+      "street_name": "Webb Bridge Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.014045,
+      "longitude": -84.130466,
+      "street_name": "McGinnis Ferry Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.013366,
+      "longitude": -84.131349,
+      "street_name": "Northpoint Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.012689,
+      "longitude": -84.132234,
+      "street_name": "McFarland Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.012012,
+      "longitude": -84.133118,
+      "street_name": "15th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.011333,
+      "longitude": -84.134,
+      "street_name": "Henderson Mill Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.010657,
+      "longitude": -84.134882,
+      "street_name": "Bethelview Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.009979,
+      "longitude": -84.135767,
+      "street_name": "Roswell Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.009299,
+      "longitude": -84.136649,
+      "street_name": "Cumberland Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.008623,
+      "longitude": -84.137533,
+      "street_name": "Charles Allen Drive",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.007945,
+      "longitude": -84.138416,
+      "street_name": "GA-400 North",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.007266,
+      "longitude": -84.139299,
+      "street_name": "Ponce de Leon Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.006588,
+      "longitude": -84.140184,
+      "street_name": "Greenwood Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.005912,
+      "longitude": -84.141068,
+      "street_name": "Powers Ferry Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.005233,
+      "longitude": -84.14195,
+      "street_name": "Broadland Road",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.004555,
+      "longitude": -84.142834,
+      "street_name": "Monroe Circle",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.003878,
+      "longitude": -84.143717,
+      "street_name": "Ponce de Leon Avenue",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.0032,
+      "longitude": -84.1446,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "name": "michael_wang_work___consulting_to_electronics_store",
+  "description": "Michael Wang: Work___Consulting \u2192 Electronics_Store",
+  "start_location": "33.752, -84.387",
+  "end_location": "33.76, -84.38",
+  "waypoints": [
+    {
+      "latitude": 33.752,
+      "longitude": -84.387,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.752571,
+      "longitude": -84.3865,
+      "street_name": "Windy Hill Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.753142,
+      "longitude": -84.386001,
+      "street_name": "8th Street",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.753715,
+      "longitude": -84.3855,
+      "street_name": "Collier Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.754286,
+      "longitude": -84.385,
+      "street_name": "Johnson Ferry Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.754857,
+      "longitude": -84.384499,
+      "street_name": "Roswell Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.75543,
+      "longitude": -84.383999,
+      "street_name": "McGinnis Ferry Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.756,
+      "longitude": -84.383499,
+      "street_name": "Piedmont Circle",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.756571,
+      "longitude": -84.382999,
+      "street_name": "Highway 85",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.757143,
+      "longitude": -84.3825,
+      "street_name": "Lanier Islands Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.757714,
+      "longitude": -84.382,
+      "street_name": "Penn Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.758285,
+      "longitude": -84.381499,
+      "street_name": "Steve Reynolds Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.758856,
+      "longitude": -84.381001,
+      "street_name": "Clairmont Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "stop_sign"
+    },
+    {
+      "latitude": 33.759429,
+      "longitude": -84.380499,
+      "street_name": "Ponce de Leon Avenue",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.76,
+      "longitude": -84.38,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

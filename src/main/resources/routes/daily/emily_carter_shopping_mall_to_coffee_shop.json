@@ -1,0 +1,128 @@
+{
+  "name": "emily_carter_shopping_mall_to_coffee_shop",
+  "description": "Emily Carter: Shopping_Mall \u2192 Coffee_Shop",
+  "start_location": "33.74, -84.375",
+  "end_location": "33.752, -84.382",
+  "waypoints": [
+    {
+      "latitude": 33.74,
+      "longitude": -84.375,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.740856,
+      "longitude": -84.375501,
+      "street_name": "Highway 141 (Peachtree Rd)",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.741715,
+      "longitude": -84.376,
+      "street_name": "Marietta Street",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.742571,
+      "longitude": -84.376499,
+      "street_name": "Peachtree Industrial Blvd",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.743428,
+      "longitude": -84.377,
+      "street_name": "9th Street",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.744286,
+      "longitude": -84.3775,
+      "street_name": "Juniper Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.745144,
+      "longitude": -84.378001,
+      "street_name": "Holiday Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.745999,
+      "longitude": -84.3785,
+      "street_name": "Auburn Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.746857,
+      "longitude": -84.378999,
+      "street_name": "Clifton Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.747715,
+      "longitude": -84.3795,
+      "street_name": "Howell Mill Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.748571,
+      "longitude": -84.380001,
+      "street_name": "Crossville Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.749428,
+      "longitude": -84.380501,
+      "street_name": "West Paces Ferry Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.750285,
+      "longitude": -84.381,
+      "street_name": "Argonne Avenue",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "stop_sign"
+    },
+    {
+      "latitude": 33.751143,
+      "longitude": -84.3815,
+      "street_name": "North Decatur Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.752,
+      "longitude": -84.382,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

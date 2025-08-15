@@ -1,0 +1,128 @@
+{
+  "name": "jessica_liu_dry_cleaner_to_bookstore",
+  "description": "Jessica Liu: Dry_Cleaner \u2192 Bookstore",
+  "start_location": "33.758, -84.382",
+  "end_location": "33.762, -84.388",
+  "waypoints": [
+    {
+      "latitude": 33.758,
+      "longitude": -84.382,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.758286,
+      "longitude": -84.382429,
+      "street_name": "Piedmont Circle",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.758572,
+      "longitude": -84.382856,
+      "street_name": "Juniper Street",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.758857,
+      "longitude": -84.383286,
+      "street_name": "5th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.759143,
+      "longitude": -84.383714,
+      "street_name": "Club Drive",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.759428,
+      "longitude": -84.384144,
+      "street_name": "Sawnee Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.759715,
+      "longitude": -84.384572,
+      "street_name": "Ponce de Leon Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.760001,
+      "longitude": -84.384999,
+      "street_name": "Old Milton Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.760286,
+      "longitude": -84.385428,
+      "street_name": "West Wesley Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.760571,
+      "longitude": -84.385858,
+      "street_name": "Clairmont Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.760857,
+      "longitude": -84.386286,
+      "street_name": "West Peachtree Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.761142,
+      "longitude": -84.386714,
+      "street_name": "Juniper Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.761429,
+      "longitude": -84.387142,
+      "street_name": "LaVista Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "stop_sign"
+    },
+    {
+      "latitude": 33.761714,
+      "longitude": -84.38757,
+      "street_name": "Argonne Avenue",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.762,
+      "longitude": -84.388,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

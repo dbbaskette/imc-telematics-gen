@@ -54,12 +54,21 @@ class DriverManagerTest {
         );
         when(mockDriverConfigService.getAllDriverConfigs()).thenReturn(mockDriverConfigs);
 
-        driverManager = new DriverManager(mockRouteService, mockDestinationRouteService, mockDriverConfigService);
+        DailyRoutineService mockDailyRoutineService = mock(DailyRoutineService.class);
+        driverManager = new DriverManager(mockRouteService, mockDestinationRouteService, mockDriverConfigService, mockDailyRoutineService);
         ReflectionTestUtils.setField(driverManager, "driverCount", 2);
         ReflectionTestUtils.setField(driverManager, "crashFrequency", 10);
         ReflectionTestUtils.setField(driverManager, "postCrashIdleMinutes", 1);
         ReflectionTestUtils.setField(driverManager, "randomStopProbability", 0.1);
         ReflectionTestUtils.setField(driverManager, "breakDurationMinutes", 1);
+        
+        // Set time-based behavior fields
+        ReflectionTestUtils.setField(driverManager, "nightStartHour", 20);
+        ReflectionTestUtils.setField(driverManager, "nightEndHour", 6);
+        ReflectionTestUtils.setField(driverManager, "nightDrivingReduction", 0.7);
+        ReflectionTestUtils.setField(driverManager, "nightParkedProbability", 0.85);
+        ReflectionTestUtils.setField(driverManager, "peakHours", List.of(7, 8, 17, 18));
+        ReflectionTestUtils.setField(driverManager, "peakDrivingBoost", 1.5);
     }
 
     @Test

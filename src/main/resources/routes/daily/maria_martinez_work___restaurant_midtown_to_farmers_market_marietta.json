@@ -1,0 +1,328 @@
+{
+  "name": "maria_martinez_work___restaurant_midtown_to_farmers_market_marietta",
+  "description": "Maria Martinez: Work___Restaurant_Midtown \u2192 Farmers_Market_Marietta",
+  "start_location": "33.748, -84.396",
+  "end_location": "33.9563, -84.5464",
+  "waypoints": [
+    {
+      "latitude": 33.748,
+      "longitude": -84.396,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.753341,
+      "longitude": -84.399857,
+      "street_name": "Glenwood Avenue",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.758682,
+      "longitude": -84.403712,
+      "street_name": "Steve Reynolds Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.764022,
+      "longitude": -84.40757,
+      "street_name": "Lawrenceville Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.769364,
+      "longitude": -84.411426,
+      "street_name": "Steve Reynolds Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.774706,
+      "longitude": -84.415283,
+      "street_name": "Tuxedo Road",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.780047,
+      "longitude": -84.419138,
+      "street_name": "LaVista Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.785387,
+      "longitude": -84.422994,
+      "street_name": "Austell Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "yield"
+    },
+    {
+      "latitude": 33.790728,
+      "longitude": -84.426851,
+      "street_name": "Cumberland Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.796069,
+      "longitude": -84.430708,
+      "street_name": "Virginia Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.80141,
+      "longitude": -84.434564,
+      "street_name": "Johnson Ferry Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.806751,
+      "longitude": -84.43842,
+      "street_name": "Clairmont Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.812093,
+      "longitude": -84.442277,
+      "street_name": "Beverly Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.817433,
+      "longitude": -84.446134,
+      "street_name": "Emory Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.822774,
+      "longitude": -84.449991,
+      "street_name": "Pine Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.828115,
+      "longitude": -84.453846,
+      "street_name": "Duluth Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.833457,
+      "longitude": -84.457702,
+      "street_name": "Spalding Drive",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.838798,
+      "longitude": -84.461558,
+      "street_name": "5th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.844139,
+      "longitude": -84.465415,
+      "street_name": "Virginia Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.849479,
+      "longitude": -84.469272,
+      "street_name": "Abbotts Bridge Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.854821,
+      "longitude": -84.473127,
+      "street_name": "I-20 West",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.860161,
+      "longitude": -84.476984,
+      "street_name": "Spalding Drive",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.865502,
+      "longitude": -84.48084,
+      "street_name": "I-575 North",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.870843,
+      "longitude": -84.484698,
+      "street_name": "Howell Mill Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.876186,
+      "longitude": -84.488553,
+      "street_name": "GA-400 North",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.881526,
+      "longitude": -84.49241,
+      "street_name": "Perimeter Center East",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.886867,
+      "longitude": -84.496266,
+      "street_name": "Myrtle Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.892207,
+      "longitude": -84.500123,
+      "street_name": "West Wesley Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.89755,
+      "longitude": -84.503979,
+      "street_name": "LaVista Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.902889,
+      "longitude": -84.507837,
+      "street_name": "Highway 9 (Roswell Road)",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.908231,
+      "longitude": -84.511692,
+      "street_name": "Austell Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.913571,
+      "longitude": -84.515549,
+      "street_name": "Beaver Ruin Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.918914,
+      "longitude": -84.519405,
+      "street_name": "I-20 West",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.924255,
+      "longitude": -84.523261,
+      "street_name": "Windward Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.929594,
+      "longitude": -84.527118,
+      "street_name": "Northside Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.934936,
+      "longitude": -84.530975,
+      "street_name": "I-85 South",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.940277,
+      "longitude": -84.53483,
+      "street_name": "16th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.945618,
+      "longitude": -84.538687,
+      "street_name": "Piedmont Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.950959,
+      "longitude": -84.542544,
+      "street_name": "Collier Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.9563,
+      "longitude": -84.5464,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "name": "lisa_garcia_whole_foods_to_nail_salon",
+  "description": "Lisa Garcia: Whole_Foods \u2192 Nail_Salon",
+  "start_location": "33.751, -84.388",
+  "end_location": "33.754, -84.385",
+  "waypoints": [
+    {
+      "latitude": 33.751,
+      "longitude": -84.388,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.751214,
+      "longitude": -84.387786,
+      "street_name": "Old Alabama Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.751429,
+      "longitude": -84.387571,
+      "street_name": "Jimmy Carter Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.751643,
+      "longitude": -84.387356,
+      "street_name": "Veterans Memorial Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.751857,
+      "longitude": -84.387144,
+      "street_name": "Cheshire Bridge Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.752071,
+      "longitude": -84.386929,
+      "street_name": "Canton Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.752285,
+      "longitude": -84.386715,
+      "street_name": "Highway 85",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.752499,
+      "longitude": -84.386499,
+      "street_name": "Johnson Ferry Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.752714,
+      "longitude": -84.386285,
+      "street_name": "I-985 North",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.752928,
+      "longitude": -84.386071,
+      "street_name": "Samples Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.753143,
+      "longitude": -84.385858,
+      "street_name": "Indian Trail Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.753358,
+      "longitude": -84.385643,
+      "street_name": "LaVista Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.753572,
+      "longitude": -84.385429,
+      "street_name": "Spalding Drive",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "stop_sign"
+    },
+    {
+      "latitude": 33.753786,
+      "longitude": -84.385215,
+      "street_name": "Dahlonega Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.754,
+      "longitude": -84.385,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

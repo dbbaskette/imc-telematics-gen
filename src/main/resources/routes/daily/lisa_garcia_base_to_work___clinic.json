@@ -1,0 +1,128 @@
+{
+  "name": "lisa_garcia_base_to_work___clinic",
+  "description": "Lisa Garcia: Base \u2192 Work___Clinic",
+  "start_location": "33.753, -84.386",
+  "end_location": "33.749, -84.382",
+  "waypoints": [
+    {
+      "latitude": 33.753,
+      "longitude": -84.386,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.752713,
+      "longitude": -84.385714,
+      "street_name": "Mall of Georgia Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.752429,
+      "longitude": -84.385429,
+      "street_name": "6th Street",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.752144,
+      "longitude": -84.385142,
+      "street_name": "Riverside Drive",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.751857,
+      "longitude": -84.384858,
+      "street_name": "Keith Bridge Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.751571,
+      "longitude": -84.38457,
+      "street_name": "Post Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.751286,
+      "longitude": -84.384286,
+      "street_name": "Lanier Islands Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.751,
+      "longitude": -84.384001,
+      "street_name": "Rockbridge Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.750715,
+      "longitude": -84.383715,
+      "street_name": "Satellite Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.75043,
+      "longitude": -84.383428,
+      "street_name": "Buford Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.750144,
+      "longitude": -84.383142,
+      "street_name": "Charles Allen Drive",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.749857,
+      "longitude": -84.382856,
+      "street_name": "7th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.749571,
+      "longitude": -84.38257,
+      "street_name": "I-985 North",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.749286,
+      "longitude": -84.382286,
+      "street_name": "Highway 138",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.749,
+      "longitude": -84.382,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

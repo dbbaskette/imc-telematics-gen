@@ -1,0 +1,128 @@
+{
+  "name": "christopher_thomas_base_to_work___fire_station",
+  "description": "Christopher Thomas: Base \u2192 Work___Fire_Station",
+  "start_location": "33.7411, -84.4012",
+  "end_location": "33.745, -84.398",
+  "waypoints": [
+    {
+      "latitude": 33.7411,
+      "longitude": -84.4012,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.74138,
+      "longitude": -84.400972,
+      "street_name": "I-85 North",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.741658,
+      "longitude": -84.400743,
+      "street_name": "Atlanta Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.741936,
+      "longitude": -84.400514,
+      "street_name": "Buford Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.742214,
+      "longitude": -84.400286,
+      "street_name": "Scenic Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.742492,
+      "longitude": -84.400058,
+      "street_name": "Lenox Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.742771,
+      "longitude": -84.399828,
+      "street_name": "Cumberland Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.743051,
+      "longitude": -84.3996,
+      "street_name": "Rockbridge Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.743328,
+      "longitude": -84.399371,
+      "street_name": "Beverly Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.743607,
+      "longitude": -84.399144,
+      "street_name": "Town Center Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.743887,
+      "longitude": -84.398914,
+      "street_name": "Tuxedo Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.744165,
+      "longitude": -84.398686,
+      "street_name": "9th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.744443,
+      "longitude": -84.398457,
+      "street_name": "Glenwood Avenue",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "stop_sign"
+    },
+    {
+      "latitude": 33.744721,
+      "longitude": -84.398229,
+      "street_name": "Ponce de Leon Avenue",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.745,
+      "longitude": -84.398,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

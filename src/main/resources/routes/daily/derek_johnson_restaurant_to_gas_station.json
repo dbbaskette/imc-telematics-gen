@@ -1,0 +1,128 @@
+{
+  "name": "derek_johnson_restaurant_to_gas_station",
+  "description": "Derek Johnson: Restaurant \u2192 Gas_Station",
+  "start_location": "33.752, -84.392",
+  "end_location": "33.758, -84.386",
+  "waypoints": [
+    {
+      "latitude": 33.752,
+      "longitude": -84.392,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.752428,
+      "longitude": -84.391571,
+      "street_name": "Chamblee Tucker Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.752857,
+      "longitude": -84.391143,
+      "street_name": "LaVista Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.753286,
+      "longitude": -84.390714,
+      "street_name": "Beverly Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.753715,
+      "longitude": -84.390285,
+      "street_name": "Northpoint Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.754143,
+      "longitude": -84.389857,
+      "street_name": "I-75 South",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.75457,
+      "longitude": -84.38943,
+      "street_name": "Pine Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.755001,
+      "longitude": -84.388999,
+      "street_name": "Samples Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.755429,
+      "longitude": -84.388571,
+      "street_name": "Moreland Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.755858,
+      "longitude": -84.388142,
+      "street_name": "Ponce de Leon Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.756286,
+      "longitude": -84.387714,
+      "street_name": "Scenic Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.756714,
+      "longitude": -84.387285,
+      "street_name": "Highway 316",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.757144,
+      "longitude": -84.386858,
+      "street_name": "Memorial Drive",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "stop_sign"
+    },
+    {
+      "latitude": 33.757572,
+      "longitude": -84.386428,
+      "street_name": "Browns Bridge Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.758,
+      "longitude": -84.386,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

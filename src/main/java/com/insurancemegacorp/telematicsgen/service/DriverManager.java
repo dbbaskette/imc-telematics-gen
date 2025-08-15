@@ -10,7 +10,9 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.security.SecureRandom;
+import java.time.LocalTime;
 import java.util.List;
+import java.util.Optional;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 
@@ -23,6 +25,7 @@ public class DriverManager {
     private final FileBasedRouteService routeService;
     private final DestinationRouteService destinationRouteService;
     private final DriverConfigService driverConfigService;
+    private final DailyRoutineService dailyRoutineService;
 
     @Value("${telematics.simulation.driver-count:3}")
     private int driverCount;
@@ -42,12 +45,32 @@ public class DriverManager {
     @Value("${telematics.simulation.max-drivers:0}")
     private int maxDrivers;
 
+    // Time-based behavior configuration
+    @Value("${telematics.behavior.night-start-hour:20}")
+    private int nightStartHour;
+
+    @Value("${telematics.behavior.night-end-hour:6}")
+    private int nightEndHour;
+
+    @Value("${telematics.behavior.night-driving-reduction:0.7}")
+    private double nightDrivingReduction;
+
+    @Value("${telematics.behavior.night-parked-probability:0.85}")
+    private double nightParkedProbability;
+
+    @Value("${telematics.behavior.peak-hours:#{T(java.util.Arrays).asList(7,8,17,18)}}")
+    private List<Integer> peakHours;
+
+    @Value("${telematics.behavior.peak-driving-boost:1.5}")
+    private double peakDrivingBoost;
+
     private volatile boolean randomAccidentsEnabled = false;
 
-    public DriverManager(FileBasedRouteService routeService, DestinationRouteService destinationRouteService, DriverConfigService driverConfigService) {
+    public DriverManager(FileBasedRouteService routeService, DestinationRouteService destinationRouteService, DriverConfigService driverConfigService, DailyRoutineService dailyRoutineService) {
         this.routeService = routeService;
         this.destinationRouteService = destinationRouteService;
         this.driverConfigService = driverConfigService;
+        this.dailyRoutineService = dailyRoutineService;
     }
 
     public void initializeDrivers(String basePolicyId, double baseLatitude, double baseLongitude) {
@@ -106,6 +129,9 @@ public class DriverManager {
                 // Randomize initial state for more realistic simulation
                 initializeRandomDriverState(driver);
                 
+                // Initialize daily routine if available
+                initializeDriverDailyRoutine(driver);
+                
                 drivers.add(driver);
                 
                 logger.info("🚗 Initialized {} ({}) at {} | Vehicle: {} | Route: {} | State: {} | Speed: {} mph", 
@@ -162,9 +188,11 @@ public class DriverManager {
                 }
             }
             case PARKED -> {
-                // Random chance to start driving
-                if (timeInCurrentState > 30 && random.nextDouble() < 0.3) {
-                    logger.info("🚙 {} starting to drive", driver.getDriverId());
+                // Time-based chance to start driving
+                double drivingProbability = calculateDrivingProbability();
+                if (timeInCurrentState > 30 && random.nextDouble() < drivingProbability) {
+                    logger.info("🚙 {} starting to drive ({})", driver.getDriverId(), 
+                        isNightTime() ? "night driving" : isPeakHour() ? "peak hour" : "normal hours");
                     driver.setCurrentState(DriverState.DRIVING);
                 }
             }
@@ -176,10 +204,12 @@ public class DriverManager {
                     return;
                 }
                 
-                // Random chance to stop for various reasons
-                if (random.nextDouble() < randomStopProbability) {
+                // Time-based chance to stop for various reasons
+                double stopProbability = calculateStopProbability();
+                if (random.nextDouble() < stopProbability) {
                     DriverState newState = selectRandomStopState();
-                    logger.info("🛑 {} stopping: {}", driver.getDriverId(), newState);
+                    logger.info("🛑 {} stopping: {} ({})", driver.getDriverId(), newState,
+                        isNightTime() ? "night parking" : "normal stop");
                     driver.setCurrentState(newState);
                     driver.setCurrentSpeed(0.0);
                 }
@@ -479,7 +509,7 @@ public class DriverManager {
     }
 
     public void logDriverStates() {
-        logger.info("🚗 Driver Status Summary:");
+        logger.info("🚗 Driver Status Summary - {}", getCurrentTimeStatus());
         drivers.forEach(driver -> {
             String crashInfo = driver.getLastCrashTime() != null ? 
                 String.format("Last crash: %dmin ago", driver.getTimeSinceCrashSeconds() / 60) : 
@@ -491,6 +521,12 @@ public class DriverManager {
                 driver.getMessageCount(),
                 crashInfo);
         });
+        
+        // Log activity summary based on time
+        long drivingCount = drivers.stream().mapToLong(d -> d.getCurrentState() == DriverState.DRIVING ? 1 : 0).sum();
+        long parkedCount = drivers.size() - drivingCount;
+        logger.info("📊 Activity Summary: {} driving, {} parked ({})", 
+            drivingCount, parkedCount, getCurrentTimeStatus());
     }
 
     public void setRandomAccidentsEnabled(boolean enabled) {
@@ -500,5 +536,135 @@ public class DriverManager {
 
     public boolean isRandomAccidentsEnabled() {
         return randomAccidentsEnabled;
+    }
+
+    // Time-based behavior methods
+    
+    /**
+     * Check if current time is during night hours (reduced activity)
+     */
+    private boolean isNightTime() {
+        int currentHour = LocalTime.now().getHour();
+        
+        // Handle overnight span (e.g., 20:00 to 06:00)
+        if (nightStartHour > nightEndHour) {
+            return currentHour >= nightStartHour || currentHour < nightEndHour;
+        } else {
+            return currentHour >= nightStartHour && currentHour < nightEndHour;
+        }
+    }
+    
+    /**
+     * Check if current time is during peak driving hours
+     */
+    private boolean isPeakHour() {
+        int currentHour = LocalTime.now().getHour();
+        return peakHours.contains(currentHour);
+    }
+    
+    /**
+     * Calculate probability of starting to drive based on time of day
+     */
+    private double calculateDrivingProbability() {
+        double baseProbability = 0.3; // 30% base chance
+        
+        if (isNightTime()) {
+            // Significantly reduce driving at night
+            baseProbability *= (1.0 - nightDrivingReduction);
+            logger.debug("🌙 Night time driving reduction applied: {}", baseProbability);
+        } else if (isPeakHour()) {
+            // Increase driving during peak hours
+            baseProbability *= peakDrivingBoost;
+            logger.debug("🚗 Peak hour driving boost applied: {}", baseProbability);
+        }
+        
+        return Math.min(1.0, Math.max(0.0, baseProbability));
+    }
+    
+    /**
+     * Calculate probability of stopping/parking based on time of day
+     */
+    private double calculateStopProbability() {
+        double baseStopProbability = randomStopProbability;
+        
+        if (isNightTime()) {
+            // Much higher chance to park at night
+            baseStopProbability = nightParkedProbability;
+            logger.debug("🌙 Night time parking probability: {}", baseStopProbability);
+        } else if (isPeakHour()) {
+            // Slightly lower chance to stop during peak hours (people want to get to work/home)
+            baseStopProbability *= 0.7;
+            logger.debug("🚗 Peak hour reduced stop probability: {}", baseStopProbability);
+        }
+        
+        return Math.min(1.0, Math.max(0.0, baseStopProbability));
+    }
+    
+    /**
+     * Get current time status for logging and monitoring
+     */
+    public String getCurrentTimeStatus() {
+        if (isNightTime()) {
+            return "🌙 NIGHT MODE - Reduced activity";
+        } else if (isPeakHour()) {
+            return "🚗 PEAK HOURS - Increased activity";
+        } else {
+            return "☀️ NORMAL HOURS - Standard activity";
+        }
+    }
+    
+    // Daily routine methods
+    
+    /**
+     * Initialize a driver's daily routine if configured
+     */
+    private void initializeDriverDailyRoutine(Driver driver) {
+        if (!dailyRoutineService.isAvailable()) {
+            logger.debug("📋 Daily routine system not available for driver {}", driver.getDriverId());
+            return;
+        }
+        
+        Optional<com.insurancemegacorp.telematicsgen.model.DailyRoutine> routineOpt = 
+            dailyRoutineService.getRoutineForDriver(driver.getDriverId());
+            
+        if (routineOpt.isPresent()) {
+            com.insurancemegacorp.telematicsgen.model.DailyRoutine routine = routineOpt.get();
+            
+            // Generate today's sequence (90% standard, 10% random)
+            List<String> dailySequence = dailyRoutineService.generateDailySequence(driver.getDriverId());
+            
+            logger.info("📋 Driver {} daily routine: {} → {} locations → {}", 
+                driver.getDriverId(),
+                routine.baseLocation().name(),
+                dailySequence.size() - 2, // Exclude start and end BASE
+                routine.baseLocation().name());
+                
+            // Store the sequence in driver metadata (we'll add this to Driver model later)
+            // For now, just log the initialization
+            logger.debug("🗺️ Sequence: {}", dailySequence);
+        } else {
+            logger.debug("📋 No daily routine configured for driver {}", driver.getDriverId());
+        }
+    }
+    
+    /**
+     * Get a driver's current daily routine if available
+     */
+    public Optional<com.insurancemegacorp.telematicsgen.model.DailyRoutine> getDriverDailyRoutine(int driverId) {
+        return dailyRoutineService.getRoutineForDriver(driverId);
+    }
+    
+    /**
+     * Generate a new daily sequence for a driver (for daily reset)
+     */
+    public List<String> generateNewDailySequence(int driverId) {
+        return dailyRoutineService.generateDailySequence(driverId);
+    }
+    
+    /**
+     * Check if daily routine system is enabled
+     */
+    public boolean isDailyRoutineSystemEnabled() {
+        return dailyRoutineService.isAvailable();
     }
 }

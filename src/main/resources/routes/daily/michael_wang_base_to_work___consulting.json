@@ -1,0 +1,128 @@
+{
+  "name": "michael_wang_base_to_work___consulting",
+  "description": "Michael Wang: Base \u2192 Work___Consulting",
+  "start_location": "33.765, -84.392",
+  "end_location": "33.752, -84.387",
+  "waypoints": [
+    {
+      "latitude": 33.765,
+      "longitude": -84.392,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.764072,
+      "longitude": -84.391642,
+      "street_name": "Peachtree Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.763143,
+      "longitude": -84.391285,
+      "street_name": "8th Street",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.762215,
+      "longitude": -84.390929,
+      "street_name": "Rockbridge Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.761285,
+      "longitude": -84.390571,
+      "street_name": "I-85 North",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.760357,
+      "longitude": -84.390215,
+      "street_name": "Stone Mountain Freeway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.759429,
+      "longitude": -84.389856,
+      "street_name": "Crossville Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.758501,
+      "longitude": -84.3895,
+      "street_name": "Roswell Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.757572,
+      "longitude": -84.389143,
+      "street_name": "Sugarloaf Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.756643,
+      "longitude": -84.388785,
+      "street_name": "Crossville Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.755715,
+      "longitude": -84.388429,
+      "street_name": "Webb Bridge Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.754786,
+      "longitude": -84.388071,
+      "street_name": "19th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.753857,
+      "longitude": -84.387714,
+      "street_name": "Peachtree Battle Avenue",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "stop_sign"
+    },
+    {
+      "latitude": 33.752928,
+      "longitude": -84.387358,
+      "street_name": "Virginia Avenue",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.752,
+      "longitude": -84.387,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

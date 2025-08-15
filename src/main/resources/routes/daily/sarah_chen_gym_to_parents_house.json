@@ -1,0 +1,128 @@
+{
+  "name": "sarah_chen_gym_to_parents_house",
+  "description": "Sarah Chen: Gym \u2192 Parents_House",
+  "start_location": "33.762, -84.385",
+  "end_location": "33.775, -84.39",
+  "waypoints": [
+    {
+      "latitude": 33.762,
+      "longitude": -84.385,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.762929,
+      "longitude": -84.385358,
+      "street_name": "Austell Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.763858,
+      "longitude": -84.385714,
+      "street_name": "West Paces Ferry Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.764785,
+      "longitude": -84.386071,
+      "street_name": "Pilgrim Mill Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.765714,
+      "longitude": -84.386429,
+      "street_name": "North Highland Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.766644,
+      "longitude": -84.386785,
+      "street_name": "Jimmy Carter Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.767571,
+      "longitude": -84.387144,
+      "street_name": "Holiday Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.7685,
+      "longitude": -84.3875,
+      "street_name": "Moreland Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.769428,
+      "longitude": -84.387858,
+      "street_name": "Piedmont Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.770357,
+      "longitude": -84.388215,
+      "street_name": "Old Peachtree Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.771285,
+      "longitude": -84.388571,
+      "street_name": "Clairmont Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.772215,
+      "longitude": -84.388928,
+      "street_name": "DeKalb Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.773143,
+      "longitude": -84.389286,
+      "street_name": "I-75 South",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.774071,
+      "longitude": -84.389643,
+      "street_name": "Johnson Ferry Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.775,
+      "longitude": -84.39,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

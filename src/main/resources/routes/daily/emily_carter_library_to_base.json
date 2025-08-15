@@ -1,0 +1,128 @@
+{
+  "name": "emily_carter_library_to_base",
+  "description": "Emily Carter: Library \u2192 Base",
+  "start_location": "33.746, -84.395",
+  "end_location": "33.749, -84.388",
+  "waypoints": [
+    {
+      "latitude": 33.746,
+      "longitude": -84.395,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.746215,
+      "longitude": -84.3945,
+      "street_name": "Charles Allen Drive",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.746429,
+      "longitude": -84.394,
+      "street_name": "Argonne Avenue",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.746643,
+      "longitude": -84.3935,
+      "street_name": "Howell Mill Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.746857,
+      "longitude": -84.392999,
+      "street_name": "Old Milton Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.747072,
+      "longitude": -84.3925,
+      "street_name": "I-75 North",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.747286,
+      "longitude": -84.392001,
+      "street_name": "5th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.7475,
+      "longitude": -84.391499,
+      "street_name": "13th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.747714,
+      "longitude": -84.391,
+      "street_name": "Stone Mountain Freeway",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.747928,
+      "longitude": -84.390499,
+      "street_name": "Decatur Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.748142,
+      "longitude": -84.39,
+      "street_name": "Holcomb Bridge Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.748357,
+      "longitude": -84.389499,
+      "street_name": "Scott Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.748572,
+      "longitude": -84.389,
+      "street_name": "11th Street",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "stop_sign"
+    },
+    {
+      "latitude": 33.748785,
+      "longitude": -84.3885,
+      "street_name": "Cumming City Beach Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.749,
+      "longitude": -84.388,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

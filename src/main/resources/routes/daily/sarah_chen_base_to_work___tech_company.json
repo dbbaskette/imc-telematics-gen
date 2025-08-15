@@ -1,0 +1,168 @@
+{
+  "name": "sarah_chen_base_to_work___tech_company",
+  "description": "Sarah Chen: Base \u2192 Work___Tech_Company",
+  "start_location": "33.7701, -84.3876",
+  "end_location": "33.758, -84.37",
+  "waypoints": [
+    {
+      "latitude": 33.7701,
+      "longitude": -84.3876,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.769463,
+      "longitude": -84.386674,
+      "street_name": "Broadland Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.768827,
+      "longitude": -84.385747,
+      "street_name": "Pharr Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.768189,
+      "longitude": -84.384821,
+      "street_name": "Pilgrim Mill Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.767553,
+      "longitude": -84.383894,
+      "street_name": "West Peachtree Street",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.766916,
+      "longitude": -84.382968,
+      "street_name": "Jones Bridge Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.766278,
+      "longitude": -84.382042,
+      "street_name": "Mall of Georgia Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.765642,
+      "longitude": -84.381116,
+      "street_name": "Beaver Ruin Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.765006,
+      "longitude": -84.38019,
+      "street_name": "McGinnis Ferry Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.764369,
+      "longitude": -84.379264,
+      "street_name": "Clairmont Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.763732,
+      "longitude": -84.378337,
+      "street_name": "Arden Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.763096,
+      "longitude": -84.37741,
+      "street_name": "Clairmont Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.762459,
+      "longitude": -84.376485,
+      "street_name": "Lilburn Stone Mountain Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.76182,
+      "longitude": -84.375557,
+      "street_name": "Westminster Drive",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.761183,
+      "longitude": -84.374632,
+      "street_name": "Emory Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.760547,
+      "longitude": -84.373705,
+      "street_name": "Peachtree Industrial Blvd",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.75991,
+      "longitude": -84.372779,
+      "street_name": "West Peachtree Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.759274,
+      "longitude": -84.371853,
+      "street_name": "Windy Hill Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.758637,
+      "longitude": -84.370926,
+      "street_name": "Satellite Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.758,
+      "longitude": -84.37,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

@@ -1,0 +1,328 @@
+{
+  "name": "maria_martinez_base_to_work___restaurant_midtown",
+  "description": "Maria Martinez: Base \u2192 Work___Restaurant_Midtown",
+  "start_location": "33.9526, -84.5499",
+  "end_location": "33.748, -84.396",
+  "waypoints": [
+    {
+      "latitude": 33.9526,
+      "longitude": -84.5499,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.947354,
+      "longitude": -84.545953,
+      "street_name": "Westminster Drive",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.942107,
+      "longitude": -84.542007,
+      "street_name": "McFarland Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.936862,
+      "longitude": -84.538062,
+      "street_name": "Circle 75 Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.931616,
+      "longitude": -84.534116,
+      "street_name": "15th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.926369,
+      "longitude": -84.530169,
+      "street_name": "Post Road",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.921122,
+      "longitude": -84.526222,
+      "street_name": "Perimeter Center West",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.915876,
+      "longitude": -84.522277,
+      "street_name": "Peachtree Dunwoody Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "yield"
+    },
+    {
+      "latitude": 33.910631,
+      "longitude": -84.518331,
+      "street_name": "Keith Bridge Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.905384,
+      "longitude": -84.514384,
+      "street_name": "15th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.900139,
+      "longitude": -84.510438,
+      "street_name": "Lenox Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.894892,
+      "longitude": -84.506492,
+      "street_name": "North Druid Hills Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.889647,
+      "longitude": -84.502547,
+      "street_name": "Peachtree Dunwoody Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.884401,
+      "longitude": -84.4986,
+      "street_name": "Highway 5",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.879153,
+      "longitude": -84.494654,
+      "street_name": "Ponce de Leon Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.873908,
+      "longitude": -84.490709,
+      "street_name": "9th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.868661,
+      "longitude": -84.486761,
+      "street_name": "Keith Bridge Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.863416,
+      "longitude": -84.482814,
+      "street_name": "Lawrenceville Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.85817,
+      "longitude": -84.478869,
+      "street_name": "Henderson Mill Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.852923,
+      "longitude": -84.474923,
+      "street_name": "Rockbridge Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.847676,
+      "longitude": -84.470976,
+      "street_name": "Rockbridge Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.84243,
+      "longitude": -84.467031,
+      "street_name": "Veterans Memorial Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.837184,
+      "longitude": -84.463086,
+      "street_name": "Ralph McGill Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.831938,
+      "longitude": -84.459139,
+      "street_name": "Bethelview Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.826692,
+      "longitude": -84.455193,
+      "street_name": "Mall of Georgia Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.821445,
+      "longitude": -84.451245,
+      "street_name": "Monroe Circle",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.816199,
+      "longitude": -84.4473,
+      "street_name": "Northpoint Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.810953,
+      "longitude": -84.443355,
+      "street_name": "Cypress Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.805708,
+      "longitude": -84.439408,
+      "street_name": "Northlake Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.800461,
+      "longitude": -84.435462,
+      "street_name": "Cumberland Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.795215,
+      "longitude": -84.431516,
+      "street_name": "Dahlonega Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.789969,
+      "longitude": -84.42757,
+      "street_name": "North Decatur Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.784723,
+      "longitude": -84.423623,
+      "street_name": "Powers Ferry Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.779476,
+      "longitude": -84.419678,
+      "street_name": "Old Milton Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.774231,
+      "longitude": -84.41573,
+      "street_name": "Greenwood Avenue",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.768984,
+      "longitude": -84.411784,
+      "street_name": "Cobb Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.763738,
+      "longitude": -84.407839,
+      "street_name": "West Wesley Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.758493,
+      "longitude": -84.403891,
+      "street_name": "Highway 78",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.753247,
+      "longitude": -84.399947,
+      "street_name": "Jones Bridge Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.748,
+      "longitude": -84.396,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

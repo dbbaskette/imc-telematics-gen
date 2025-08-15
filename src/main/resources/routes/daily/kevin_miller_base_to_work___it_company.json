@@ -1,0 +1,128 @@
+{
+  "name": "kevin_miller_base_to_work___it_company",
+  "description": "Kevin Miller: Base \u2192 Work___It_Company",
+  "start_location": "33.762, -84.382",
+  "end_location": "33.757, -84.387",
+  "waypoints": [
+    {
+      "latitude": 33.762,
+      "longitude": -84.382,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.761642,
+      "longitude": -84.382357,
+      "street_name": "Highway 92",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.761285,
+      "longitude": -84.382714,
+      "street_name": "Candler Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.760929,
+      "longitude": -84.383071,
+      "street_name": "Decatur Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.76057,
+      "longitude": -84.383429,
+      "street_name": "North Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.760213,
+      "longitude": -84.383786,
+      "street_name": "Crossville Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.759856,
+      "longitude": -84.384143,
+      "street_name": "Peachtree Battle Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.759499,
+      "longitude": -84.384499,
+      "street_name": "Chamblee Tucker Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.759143,
+      "longitude": -84.384858,
+      "street_name": "Piedmont Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.758786,
+      "longitude": -84.385214,
+      "street_name": "I-85 North",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.758428,
+      "longitude": -84.385572,
+      "street_name": "LaVista Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.758071,
+      "longitude": -84.385929,
+      "street_name": "Collier Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.757714,
+      "longitude": -84.386286,
+      "street_name": "19th Street",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "stop_sign"
+    },
+    {
+      "latitude": 33.757358,
+      "longitude": -84.386642,
+      "street_name": "Union Hill Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.757,
+      "longitude": -84.387,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

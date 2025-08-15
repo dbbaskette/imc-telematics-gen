@@ -1,0 +1,128 @@
+{
+  "name": "kevin_miller_work___it_company_to_best_buy",
+  "description": "Kevin Miller: Work___It_Company \u2192 Best_Buy",
+  "start_location": "33.757, -84.387",
+  "end_location": "33.765, -84.38",
+  "waypoints": [
+    {
+      "latitude": 33.757,
+      "longitude": -84.387,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.757572,
+      "longitude": -84.386499,
+      "street_name": "Dallas Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.758142,
+      "longitude": -84.386,
+      "street_name": "I-75 North",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.758714,
+      "longitude": -84.385501,
+      "street_name": "Sawnee Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.759286,
+      "longitude": -84.384999,
+      "street_name": "Old Milton Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.759858,
+      "longitude": -84.384499,
+      "street_name": "Riverside Drive",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.760429,
+      "longitude": -84.384,
+      "street_name": "Habersham Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.760999,
+      "longitude": -84.383501,
+      "street_name": "Highway 42",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.761572,
+      "longitude": -84.382999,
+      "street_name": "Peachtree Dunwoody Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.762142,
+      "longitude": -84.3825,
+      "street_name": "Town Center Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.762715,
+      "longitude": -84.382,
+      "street_name": "Glenwood Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.763286,
+      "longitude": -84.381499,
+      "street_name": "15th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.763856,
+      "longitude": -84.381001,
+      "street_name": "Veterans Memorial Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.764429,
+      "longitude": -84.3805,
+      "street_name": "Monroe Drive",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.765,
+      "longitude": -84.38,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

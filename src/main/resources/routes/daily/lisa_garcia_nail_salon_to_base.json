@@ -1,0 +1,128 @@
+{
+  "name": "lisa_garcia_nail_salon_to_base",
+  "description": "Lisa Garcia: Nail_Salon \u2192 Base",
+  "start_location": "33.754, -84.385",
+  "end_location": "33.753, -84.386",
+  "waypoints": [
+    {
+      "latitude": 33.754,
+      "longitude": -84.385,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.753929,
+      "longitude": -84.385072,
+      "street_name": "Beaver Ruin Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.753857,
+      "longitude": -84.385142,
+      "street_name": "Union Hill Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.753785,
+      "longitude": -84.385215,
+      "street_name": "5th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.753715,
+      "longitude": -84.385286,
+      "street_name": "Freedom Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.753643,
+      "longitude": -84.385356,
+      "street_name": "Peachtree Street NE",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.753571,
+      "longitude": -84.385429,
+      "street_name": "North Druid Hills Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.753501,
+      "longitude": -84.3855,
+      "street_name": "10th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.753429,
+      "longitude": -84.385571,
+      "street_name": "Spring Street",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.753357,
+      "longitude": -84.385643,
+      "street_name": "Ansley Mall",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.753285,
+      "longitude": -84.385714,
+      "street_name": "West Paces Ferry Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.753215,
+      "longitude": -84.385786,
+      "street_name": "North Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.753142,
+      "longitude": -84.385858,
+      "street_name": "Juniper Street",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "stop_sign"
+    },
+    {
+      "latitude": 33.753071,
+      "longitude": -84.385928,
+      "street_name": "15th Street",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.753,
+      "longitude": -84.386,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

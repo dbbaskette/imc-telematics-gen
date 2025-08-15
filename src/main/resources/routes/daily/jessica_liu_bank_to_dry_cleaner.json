@@ -1,0 +1,128 @@
+{
+  "name": "jessica_liu_bank_to_dry_cleaner",
+  "description": "Jessica Liu: Bank \u2192 Dry_Cleaner",
+  "start_location": "33.765, -84.39",
+  "end_location": "33.758, -84.382",
+  "waypoints": [
+    {
+      "latitude": 33.765,
+      "longitude": -84.39,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.7645,
+      "longitude": -84.389429,
+      "street_name": "Memorial Drive",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.763999,
+      "longitude": -84.388856,
+      "street_name": "Beaver Ruin Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.7635,
+      "longitude": -84.388286,
+      "street_name": "Howell Mill Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.762999,
+      "longitude": -84.387713,
+      "street_name": "Highway 124",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.7625,
+      "longitude": -84.387144,
+      "street_name": "Peachtree Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.761999,
+      "longitude": -84.386571,
+      "street_name": "Scott Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.761501,
+      "longitude": -84.385999,
+      "street_name": "Lawrenceville Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.761,
+      "longitude": -84.385428,
+      "street_name": "Kimball Bridge Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.760499,
+      "longitude": -84.384857,
+      "street_name": "I-75 South",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.76,
+      "longitude": -84.384287,
+      "street_name": "Circle 75 Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.759501,
+      "longitude": -84.383714,
+      "street_name": "Oakdale Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.759,
+      "longitude": -84.383142,
+      "street_name": "Juniper Street",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "stop_sign"
+    },
+    {
+      "latitude": 33.7585,
+      "longitude": -84.382572,
+      "street_name": "Highway 120",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.758,
+      "longitude": -84.382,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "name": "david_anderson_base_to_work___startup_office",
+  "description": "David Anderson: Base \u2192 Work___Startup_Office",
+  "start_location": "33.7512, -84.3749",
+  "end_location": "33.756, -84.372",
+  "waypoints": [
+    {
+      "latitude": 33.7512,
+      "longitude": -84.3749,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.751543,
+      "longitude": -84.374694,
+      "street_name": "Piedmont Avenue",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.751885,
+      "longitude": -84.374486,
+      "street_name": "Veterans Memorial Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.752229,
+      "longitude": -84.374279,
+      "street_name": "Peachtree Street NE",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.752572,
+      "longitude": -84.374072,
+      "street_name": "GA-400 North",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.752914,
+      "longitude": -84.373865,
+      "street_name": "Piedmont Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.753257,
+      "longitude": -84.373657,
+      "street_name": "Sugarloaf Mills Circle",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.753601,
+      "longitude": -84.37345,
+      "street_name": "Peachtree Industrial Blvd",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.753943,
+      "longitude": -84.373242,
+      "street_name": "Monroe Circle",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.754286,
+      "longitude": -84.373036,
+      "street_name": "Powers Ferry Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.754628,
+      "longitude": -84.37283,
+      "street_name": "Buford Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.754972,
+      "longitude": -84.372621,
+      "street_name": "Briarcliff Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.755315,
+      "longitude": -84.372415,
+      "street_name": "Highway 85",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.755657,
+      "longitude": -84.372206,
+      "street_name": "Club Drive",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.756,
+      "longitude": -84.372,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

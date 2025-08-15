@@ -1,0 +1,328 @@
+{
+  "name": "robert_davis_work___construction_site_atlanta_to_home_depot_duluth",
+  "description": "Robert Davis: Work___Construction_Site_Atlanta \u2192 Home_Depot_Duluth",
+  "start_location": "33.752, -84.39",
+  "end_location": "34.0089, -84.1374",
+  "waypoints": [
+    {
+      "latitude": 33.752,
+      "longitude": -84.39,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.758588,
+      "longitude": -84.383523,
+      "street_name": "Collier Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.765174,
+      "longitude": -84.377046,
+      "street_name": "Beaver Ruin Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.771762,
+      "longitude": -84.37057,
+      "street_name": "Clairmont Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.778349,
+      "longitude": -84.364092,
+      "street_name": "I-85 North",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.784936,
+      "longitude": -84.357615,
+      "street_name": "Beaver Ruin Road",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.791522,
+      "longitude": -84.351138,
+      "street_name": "15th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.79811,
+      "longitude": -84.344662,
+      "street_name": "Johnson Ferry Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "yield"
+    },
+    {
+      "latitude": 33.804698,
+      "longitude": -84.338185,
+      "street_name": "Druid Hills Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.811284,
+      "longitude": -84.331708,
+      "street_name": "Highway 141 (Peachtree Rd)",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.817872,
+      "longitude": -84.325232,
+      "street_name": "Beaver Ruin Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.824459,
+      "longitude": -84.318754,
+      "street_name": "I-75 South",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.831047,
+      "longitude": -84.312276,
+      "street_name": "6th Street",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.837633,
+      "longitude": -84.3058,
+      "street_name": "Clifton Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.84422,
+      "longitude": -84.299323,
+      "street_name": "Roswell Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.850807,
+      "longitude": -84.292846,
+      "street_name": "Indian Trail Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.857395,
+      "longitude": -84.28637,
+      "street_name": "Highway 92",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.863981,
+      "longitude": -84.279891,
+      "street_name": "Myrtle Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.870569,
+      "longitude": -84.273416,
+      "street_name": "Briarcliff Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.877156,
+      "longitude": -84.266938,
+      "street_name": "North Highland Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.883743,
+      "longitude": -84.260461,
+      "street_name": "Canton Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.89033,
+      "longitude": -84.253985,
+      "street_name": "Veterans Memorial Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.896919,
+      "longitude": -84.247507,
+      "street_name": "Cumming City Beach Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.903506,
+      "longitude": -84.241032,
+      "street_name": "Piedmont Circle",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.910092,
+      "longitude": -84.234554,
+      "street_name": "Spot Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.91668,
+      "longitude": -84.228077,
+      "street_name": "Castleberry Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.923266,
+      "longitude": -84.2216,
+      "street_name": "Broadland Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.929853,
+      "longitude": -84.215122,
+      "street_name": "Scott Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.936441,
+      "longitude": -84.208646,
+      "street_name": "Ralph McGill Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.943028,
+      "longitude": -84.202169,
+      "street_name": "Town Center Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.949615,
+      "longitude": -84.195692,
+      "street_name": "Glenwood Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.956203,
+      "longitude": -84.189216,
+      "street_name": "Edgewood Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.962789,
+      "longitude": -84.182739,
+      "street_name": "7th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.969376,
+      "longitude": -84.176262,
+      "street_name": "Monroe Drive",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.975964,
+      "longitude": -84.169784,
+      "street_name": "I-985 North",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.982552,
+      "longitude": -84.163308,
+      "street_name": "Virginia Avenue",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.989138,
+      "longitude": -84.156831,
+      "street_name": "Highway 120",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.995725,
+      "longitude": -84.150354,
+      "street_name": "Lake Lanier Islands Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.002313,
+      "longitude": -84.143877,
+      "street_name": "5th Street",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.0089,
+      "longitude": -84.1374,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

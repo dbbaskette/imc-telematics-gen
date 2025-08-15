@@ -1,0 +1,128 @@
+{
+  "name": "derek_johnson_gas_station_to_base",
+  "description": "Derek Johnson: Gas_Station \u2192 Base",
+  "start_location": "33.758, -84.386",
+  "end_location": "33.755, -84.39",
+  "waypoints": [
+    {
+      "latitude": 33.758,
+      "longitude": -84.386,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.757786,
+      "longitude": -84.386285,
+      "street_name": "Rockbridge Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.757571,
+      "longitude": -84.386571,
+      "street_name": "Highway 316",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.757357,
+      "longitude": -84.386858,
+      "street_name": "Steve Reynolds Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.757143,
+      "longitude": -84.387142,
+      "street_name": "Steve Reynolds Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.756928,
+      "longitude": -84.387428,
+      "street_name": "Argonne Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.756714,
+      "longitude": -84.387715,
+      "street_name": "Pleasant Hill Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.7565,
+      "longitude": -84.388,
+      "street_name": "Holcomb Bridge Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.756286,
+      "longitude": -84.388287,
+      "street_name": "Westminster Drive",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.756071,
+      "longitude": -84.388571,
+      "street_name": "Atlanta Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.755857,
+      "longitude": -84.388858,
+      "street_name": "Virginia Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.755643,
+      "longitude": -84.389143,
+      "street_name": "8th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.755429,
+      "longitude": -84.389428,
+      "street_name": "Peachtree Battle Avenue",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "stop_sign"
+    },
+    {
+      "latitude": 33.755214,
+      "longitude": -84.389714,
+      "street_name": "Old Peachtree Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.755,
+      "longitude": -84.39,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

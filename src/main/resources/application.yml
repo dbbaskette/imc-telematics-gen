@@ -32,6 +32,14 @@ telematics:
     post-crash-idle-minutes: 15      # Time drivers sit idle after crash
     random-stop-probability: 0.05    # Probability of random stops (5%)
     break-duration-minutes: 5        # Duration of break stops
+    
+    # Time-based Activity Configuration
+    night-start-hour: 20             # Hour when night activity begins (8 PM)
+    night-end-hour: 6                # Hour when night activity ends (6 AM)
+    night-driving-reduction: 0.7     # Reduce driving probability by 70% at night
+    night-parked-probability: 0.85   # 85% chance drivers stay parked at night
+    peak-hours: [7, 8, 17, 18]       # Rush hour times (7-8 AM, 5-6 PM)
+    peak-driving-boost: 1.5          # Increase driving activity 50% during peak hours
   
   # Location Configuration (Atlanta center)
   location:

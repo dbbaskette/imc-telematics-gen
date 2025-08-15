@@ -1,0 +1,128 @@
+{
+  "name": "amanda_wilson_starbucks_to_daycare",
+  "description": "Amanda Wilson: Starbucks \u2192 Daycare",
+  "start_location": "33.756, -84.38",
+  "end_location": "33.759, -84.376",
+  "waypoints": [
+    {
+      "latitude": 33.756,
+      "longitude": -84.38,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.756214,
+      "longitude": -84.379715,
+      "street_name": "Lindbergh Drive",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.756428,
+      "longitude": -84.379428,
+      "street_name": "Old Milton Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.756643,
+      "longitude": -84.379143,
+      "street_name": "Spring Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.756858,
+      "longitude": -84.378858,
+      "street_name": "Greenwood Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.757071,
+      "longitude": -84.378572,
+      "street_name": "6th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.757286,
+      "longitude": -84.378286,
+      "street_name": "Cumming City Beach Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.7575,
+      "longitude": -84.378001,
+      "street_name": "Austell Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.757714,
+      "longitude": -84.377715,
+      "street_name": "Pharr Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.757928,
+      "longitude": -84.377428,
+      "street_name": "Valley Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.758143,
+      "longitude": -84.377142,
+      "street_name": "Northside Drive",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.758356,
+      "longitude": -84.376857,
+      "street_name": "Highway 92",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.758571,
+      "longitude": -84.376572,
+      "street_name": "Northlake Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.758787,
+      "longitude": -84.376285,
+      "street_name": "Holiday Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.759,
+      "longitude": -84.376,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

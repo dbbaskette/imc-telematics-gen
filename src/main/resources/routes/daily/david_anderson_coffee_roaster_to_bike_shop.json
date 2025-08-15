@@ -1,0 +1,128 @@
+{
+  "name": "david_anderson_coffee_roaster_to_bike_shop",
+  "description": "David Anderson: Coffee_Roaster \u2192 Bike_Shop",
+  "start_location": "33.753, -84.373",
+  "end_location": "33.75, -84.376",
+  "waypoints": [
+    {
+      "latitude": 33.753,
+      "longitude": -84.373,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.752786,
+      "longitude": -84.373215,
+      "street_name": "Penn Avenue",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.752571,
+      "longitude": -84.373428,
+      "street_name": "North Decatur Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.752357,
+      "longitude": -84.373643,
+      "street_name": "I-575 North",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.752142,
+      "longitude": -84.373857,
+      "street_name": "14th Street",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.751928,
+      "longitude": -84.37407,
+      "street_name": "Cumming City Beach Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.751714,
+      "longitude": -84.374286,
+      "street_name": "Freedom Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.7515,
+      "longitude": -84.3745,
+      "street_name": "6th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.751286,
+      "longitude": -84.374714,
+      "street_name": "West Paces Ferry Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.751071,
+      "longitude": -84.374928,
+      "street_name": "I-85 South",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.750858,
+      "longitude": -84.375143,
+      "street_name": "Holcomb Bridge Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.750643,
+      "longitude": -84.375358,
+      "street_name": "McFarland Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.750428,
+      "longitude": -84.375571,
+      "street_name": "Mall of Georgia Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.750214,
+      "longitude": -84.375785,
+      "street_name": "Jones Bridge Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.75,
+      "longitude": -84.376,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

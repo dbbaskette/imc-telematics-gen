@@ -1,0 +1,128 @@
+{
+  "name": "jennifer_taylor_base_to_work___museum",
+  "description": "Jennifer Taylor: Base \u2192 Work___Museum",
+  "start_location": "33.7465, -84.3698",
+  "end_location": "33.751, -84.375",
+  "waypoints": [
+    {
+      "latitude": 33.7465,
+      "longitude": -84.3698,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.746822,
+      "longitude": -84.370171,
+      "street_name": "Piedmont Avenue",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.747144,
+      "longitude": -84.370543,
+      "street_name": "Marietta Street",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.747464,
+      "longitude": -84.370914,
+      "street_name": "Crossville Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.747785,
+      "longitude": -84.371285,
+      "street_name": "DeKalb Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.748108,
+      "longitude": -84.371657,
+      "street_name": "Johnson Ferry Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.748428,
+      "longitude": -84.372028,
+      "street_name": "Lawrenceville Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.74875,
+      "longitude": -84.3724,
+      "street_name": "Northpoint Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.749071,
+      "longitude": -84.372771,
+      "street_name": "Duluth Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.749392,
+      "longitude": -84.373144,
+      "street_name": "I-75 North",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.749715,
+      "longitude": -84.373515,
+      "street_name": "Old Milton Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.750035,
+      "longitude": -84.373886,
+      "street_name": "Broadland Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.750357,
+      "longitude": -84.374258,
+      "street_name": "7th Street",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "stop_sign"
+    },
+    {
+      "latitude": 33.750679,
+      "longitude": -84.374629,
+      "street_name": "Buford Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.751,
+      "longitude": -84.375,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

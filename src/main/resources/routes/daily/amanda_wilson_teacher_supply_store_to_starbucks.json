@@ -1,0 +1,128 @@
+{
+  "name": "amanda_wilson_teacher_supply_store_to_starbucks",
+  "description": "Amanda Wilson: Teacher_Supply_Store \u2192 Starbucks",
+  "start_location": "33.76, -84.375",
+  "end_location": "33.756, -84.38",
+  "waypoints": [
+    {
+      "latitude": 33.76,
+      "longitude": -84.375,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.759715,
+      "longitude": -84.375357,
+      "street_name": "Charles Allen Drive",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.759428,
+      "longitude": -84.375715,
+      "street_name": "I-75 South",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.759143,
+      "longitude": -84.376071,
+      "street_name": "Lanier Islands Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.758857,
+      "longitude": -84.376428,
+      "street_name": "Canton Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.758572,
+      "longitude": -84.376786,
+      "street_name": "Buford Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.758285,
+      "longitude": -84.377143,
+      "street_name": "West Wesley Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.758,
+      "longitude": -84.377501,
+      "street_name": "Haynes Bridge Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.757713,
+      "longitude": -84.377857,
+      "street_name": "Northlake Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.757429,
+      "longitude": -84.378214,
+      "street_name": "Steve Reynolds Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.757142,
+      "longitude": -84.378572,
+      "street_name": "Howell Mill Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.756858,
+      "longitude": -84.378929,
+      "street_name": "Freedom Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.756572,
+      "longitude": -84.379285,
+      "street_name": "15th Street",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "stop_sign"
+    },
+    {
+      "latitude": 33.756286,
+      "longitude": -84.379643,
+      "street_name": "Ansley Mall",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.756,
+      "longitude": -84.38,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

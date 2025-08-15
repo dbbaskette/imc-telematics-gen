@@ -1,0 +1,184 @@
+{
+  "daily_routines": [
+    {
+      "driver_id": 400001,
+      "driver_name": "Sarah Chen",
+      "base_location": {"name": "Home", "latitude": 33.7701, "longitude": -84.3876},
+      "remote_locations": [
+        {"id": "A", "name": "Work - Tech Company", "latitude": 33.7580, "longitude": -84.3700, "description": "Technology park office"},
+        {"id": "B", "name": "Grocery Store", "latitude": 33.7650, "longitude": -84.3780, "description": "Weekly grocery shopping"},
+        {"id": "C", "name": "Gym", "latitude": 33.7620, "longitude": -84.3850, "description": "Fitness center"},
+        {"id": "D", "name": "Parents House", "latitude": 33.7750, "longitude": -84.3900, "description": "Family visit"}
+      ],
+      "standard_sequence": ["A", "B", "C", "D"], "sequence_probability": 0.9
+    },
+    {
+      "driver_id": 400002,
+      "driver_name": "Emily Carter", 
+      "base_location": {"name": "Home", "latitude": 33.7490, "longitude": -84.3880},
+      "remote_locations": [
+        {"id": "A", "name": "Work - Downtown Office", "latitude": 33.7550, "longitude": -84.3900, "description": "Financial district office"},
+        {"id": "B", "name": "Shopping Mall", "latitude": 33.7400, "longitude": -84.3750, "description": "Shopping center"},
+        {"id": "C", "name": "Coffee Shop", "latitude": 33.7520, "longitude": -84.3820, "description": "Regular coffee meetup"},
+        {"id": "D", "name": "Library", "latitude": 33.7460, "longitude": -84.3950, "description": "Public library"}
+      ],
+      "standard_sequence": ["A", "B", "C", "D"], "sequence_probability": 0.9
+    },
+    {
+      "driver_id": 400003,
+      "driver_name": "Derek Johnson",
+      "base_location": {"name": "Home", "latitude": 33.7550, "longitude": -84.3900},
+      "remote_locations": [
+        {"id": "A", "name": "Work - Hospital", "latitude": 33.7480, "longitude": -84.3850, "description": "Medical center"},
+        {"id": "B", "name": "Pharmacy", "latitude": 33.7600, "longitude": -84.3780, "description": "Prescription pickup"},
+        {"id": "C", "name": "Restaurant", "latitude": 33.7520, "longitude": -84.3920, "description": "Dinner location"},
+        {"id": "D", "name": "Gas Station", "latitude": 33.7580, "longitude": -84.3860, "description": "Fuel stop"}
+      ],
+      "standard_sequence": ["A", "B", "C", "D"], "sequence_probability": 0.9
+    },
+    {
+      "driver_id": 400004,
+      "driver_name": "Jessica Liu",
+      "base_location": {"name": "Home", "latitude": 33.7600, "longitude": -84.3850},
+      "remote_locations": [
+        {"id": "A", "name": "Work - Law Firm", "latitude": 33.7500, "longitude": -84.3800, "description": "Legal office"},
+        {"id": "B", "name": "Bank", "latitude": 33.7650, "longitude": -84.3900, "description": "Banking services"},
+        {"id": "C", "name": "Dry Cleaner", "latitude": 33.7580, "longitude": -84.3820, "description": "Clothing services"},
+        {"id": "D", "name": "Bookstore", "latitude": 33.7620, "longitude": -84.3880, "description": "Book shopping"}
+      ],
+      "standard_sequence": ["A", "B", "C", "D"], "sequence_probability": 0.9
+    },
+    {
+      "driver_id": 400005,
+      "driver_name": "Michael Wang",
+      "base_location": {"name": "Home", "latitude": 33.7650, "longitude": -84.3920},
+      "remote_locations": [
+        {"id": "A", "name": "Work - Consulting", "latitude": 33.7520, "longitude": -84.3870, "description": "Business consulting office"},
+        {"id": "B", "name": "Electronics Store", "latitude": 33.7600, "longitude": -84.3800, "description": "Tech shopping"},
+        {"id": "C", "name": "Barber Shop", "latitude": 33.7680, "longitude": -84.3860, "description": "Grooming services"},
+        {"id": "D", "name": "Friend's House", "latitude": 33.7620, "longitude": -84.3940, "description": "Social visit"}
+      ],
+      "standard_sequence": ["A", "B", "C", "D"], "sequence_probability": 0.9
+    },
+    {
+      "driver_id": 400006,
+      "driver_name": "Ashley Brown",
+      "base_location": {"name": "Home - Cumming", "latitude": 34.2070, "longitude": -84.1400},
+      "remote_locations": [
+        {"id": "A", "name": "Work - Atlanta Marketing Agency", "latitude": 33.7550, "longitude": -84.3850, "description": "Downtown Atlanta commute"},
+        {"id": "B", "name": "Mall of Georgia", "latitude": 34.1289, "longitude": -84.0561, "description": "Suburban shopping"},
+        {"id": "C", "name": "Lake Lanier", "latitude": 34.2104, "longitude": -84.1557, "description": "Recreation"},
+        {"id": "D", "name": "Cumming City Center", "latitude": 34.2070, "longitude": -84.1450, "description": "Local errands"}
+      ],
+      "standard_sequence": ["A", "B", "C", "D"], "sequence_probability": 0.9
+    },
+    {
+      "driver_id": 400007,
+      "driver_name": "Robert Davis",
+      "base_location": {"name": "Home - Duluth", "latitude": 34.0032, "longitude": -84.1446},
+      "remote_locations": [
+        {"id": "A", "name": "Work - Construction Site Atlanta", "latitude": 33.7520, "longitude": -84.3900, "description": "I-85 South commute"},
+        {"id": "B", "name": "Home Depot Duluth", "latitude": 34.0089, "longitude": -84.1374, "description": "Tool supply"},
+        {"id": "C", "name": "Sugarloaf Mills", "latitude": 34.0061, "longitude": -84.0725, "description": "Shopping"},
+        {"id": "D", "name": "Sports Bar Gwinnett", "latitude": 34.0154, "longitude": -84.1287, "description": "Evening social"}
+      ],
+      "standard_sequence": ["A", "B", "C", "D"], "sequence_probability": 0.9
+    },
+    {
+      "driver_id": 400008,
+      "driver_name": "Amanda Wilson",
+      "base_location": {"name": "Home", "latitude": 33.7580, "longitude": -84.3780},
+      "remote_locations": [
+        {"id": "A", "name": "Work - School", "latitude": 33.7520, "longitude": -84.3820, "description": "Elementary school"},
+        {"id": "B", "name": "Teacher Supply Store", "latitude": 33.7600, "longitude": -84.3750, "description": "Classroom materials"},
+        {"id": "C", "name": "Starbucks", "latitude": 33.7560, "longitude": -84.3800, "description": "Coffee break"},
+        {"id": "D", "name": "Daycare", "latitude": 33.7590, "longitude": -84.3760, "description": "Child pickup"}
+      ],
+      "standard_sequence": ["A", "B", "C", "D"], "sequence_probability": 0.9
+    },
+    {
+      "driver_id": 400009,
+      "driver_name": "Kevin Miller",
+      "base_location": {"name": "Home", "latitude": 33.7620, "longitude": -84.3820},
+      "remote_locations": [
+        {"id": "A", "name": "Work - IT Company", "latitude": 33.7570, "longitude": -84.3870, "description": "Software development"},
+        {"id": "B", "name": "Best Buy", "latitude": 33.7650, "longitude": -84.3800, "description": "Electronics shopping"},
+        {"id": "C", "name": "Game Store", "latitude": 33.7600, "longitude": -84.3840, "description": "Gaming supplies"},
+        {"id": "D", "name": "Pizza Place", "latitude": 33.7640, "longitude": -84.3800, "description": "Dinner pickup"}
+      ],
+      "standard_sequence": ["A", "B", "C", "D"], "sequence_probability": 0.9
+    },
+    {
+      "driver_id": 400010,
+      "driver_name": "Lisa Garcia",
+      "base_location": {"name": "Home", "latitude": 33.7530, "longitude": -84.3860},
+      "remote_locations": [
+        {"id": "A", "name": "Work - Clinic", "latitude": 33.7490, "longitude": -84.3820, "description": "Medical clinic"},
+        {"id": "B", "name": "CVS Pharmacy", "latitude": 33.7550, "longitude": -84.3840, "description": "Prescription services"},
+        {"id": "C", "name": "Whole Foods", "latitude": 33.7510, "longitude": -84.3880, "description": "Organic grocery"},
+        {"id": "D", "name": "Nail Salon", "latitude": 33.7540, "longitude": -84.3850, "description": "Personal care"}
+      ],
+      "standard_sequence": ["A", "B", "C", "D"], "sequence_probability": 0.9
+    },
+    {
+      "driver_id": 400011,
+      "driver_name": "James Rodriguez",
+      "base_location": {"name": "Home - Alpharetta", "latitude": 34.0754, "longitude": -84.2941},
+      "remote_locations": [
+        {"id": "A", "name": "Work - Bank Buckhead", "latitude": 33.8484, "longitude": -84.3782, "description": "GA-400 South commute"},
+        {"id": "B", "name": "North Point Mall", "latitude": 34.0883, "longitude": -84.2946, "description": "Shopping"},
+        {"id": "C", "name": "Alpharetta Country Club", "latitude": 34.0838, "longitude": -84.2733, "description": "Golf"},
+        {"id": "D", "name": "Avalon Shopping", "latitude": 34.0912, "longitude": -84.2767, "description": "Upscale retail"}
+      ],
+      "standard_sequence": ["A", "B", "C", "D"], "sequence_probability": 0.9
+    },
+    {
+      "driver_id": 400012,
+      "driver_name": "Maria Martinez",
+      "base_location": {"name": "Home - Marietta", "latitude": 33.9526, "longitude": -84.5499},
+      "remote_locations": [
+        {"id": "A", "name": "Work - Restaurant Midtown", "latitude": 33.7480, "longitude": -84.3960, "description": "I-75 South commute"},
+        {"id": "B", "name": "Farmers Market Marietta", "latitude": 33.9563, "longitude": -84.5464, "description": "Local ingredients"},
+        {"id": "C", "name": "Town Center Cobb", "latitude": 33.8751, "longitude": -84.5816, "description": "Shopping"},
+        {"id": "D", "name": "Family Home Smyrna", "latitude": 33.8840, "longitude": -84.5144, "description": "Family visit"}
+      ],
+      "standard_sequence": ["A", "B", "C", "D"], "sequence_probability": 0.9
+    },
+    {
+      "driver_id": 400013,
+      "driver_name": "David Anderson",
+      "base_location": {"name": "Home", "latitude": 33.7512, "longitude": -84.3749},
+      "remote_locations": [
+        {"id": "A", "name": "Work - Startup Office", "latitude": 33.7560, "longitude": -84.3720, "description": "Tech startup"},
+        {"id": "B", "name": "WeWork", "latitude": 33.7490, "longitude": -84.3770, "description": "Coworking space"},
+        {"id": "C", "name": "Coffee Roaster", "latitude": 33.7530, "longitude": -84.3730, "description": "Artisan coffee"},
+        {"id": "D", "name": "Bike Shop", "latitude": 33.7500, "longitude": -84.3760, "description": "Bicycle maintenance"}
+      ],
+      "standard_sequence": ["A", "B", "C", "D"], "sequence_probability": 0.9
+    },
+    {
+      "driver_id": 400014,
+      "driver_name": "Jennifer Taylor",
+      "base_location": {"name": "Home", "latitude": 33.7465, "longitude": -84.3698},
+      "remote_locations": [
+        {"id": "A", "name": "Work - Museum", "latitude": 33.7510, "longitude": -84.3750, "description": "Art museum"},
+        {"id": "B", "name": "Art Supply Store", "latitude": 33.7440, "longitude": -84.3720, "description": "Creative materials"},
+        {"id": "C", "name": "Gallery Opening", "latitude": 33.7480, "longitude": -84.3680, "description": "Art event"},
+        {"id": "D", "name": "Design Studio", "latitude": 33.7450, "longitude": -84.3710, "description": "Freelance work"}
+      ],
+      "standard_sequence": ["A", "B", "C", "D"], "sequence_probability": 0.9
+    },
+    {
+      "driver_id": 400015,
+      "driver_name": "Christopher Thomas",
+      "base_location": {"name": "Home", "latitude": 33.7411, "longitude": -84.4012},
+      "remote_locations": [
+        {"id": "A", "name": "Work - Fire Station", "latitude": 33.7450, "longitude": -84.3980, "description": "Fire department"},
+        {"id": "B", "name": "Gym", "latitude": 33.7390, "longitude": -84.4000, "description": "Fitness training"},
+        {"id": "C", "name": "Equipment Store", "latitude": 33.7430, "longitude": -84.4030, "description": "Safety gear"},
+        {"id": "D", "name": "Brotherhood Hall", "latitude": 33.7400, "longitude": -84.3990, "description": "Firefighter social"}
+      ],
+      "standard_sequence": ["A", "B", "C", "D"], "sequence_probability": 0.9
+    }
+  ]
+}

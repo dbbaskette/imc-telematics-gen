@@ -1,0 +1,328 @@
+{
+  "name": "maria_martinez_farmers_market_marietta_to_town_center_cobb",
+  "description": "Maria Martinez: Farmers_Market_Marietta \u2192 Town_Center_Cobb",
+  "start_location": "33.9563, -84.5464",
+  "end_location": "33.8751, -84.5816",
+  "waypoints": [
+    {
+      "latitude": 33.9563,
+      "longitude": -84.5464,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.954217,
+      "longitude": -84.547302,
+      "street_name": "Lakeshore Drive",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.952136,
+      "longitude": -84.548204,
+      "street_name": "Highway 92",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.950053,
+      "longitude": -84.549107,
+      "street_name": "Highway 120",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.947971,
+      "longitude": -84.550011,
+      "street_name": "Glenwood Avenue",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.94589,
+      "longitude": -84.550912,
+      "street_name": "Steve Reynolds Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.943808,
+      "longitude": -84.551815,
+      "street_name": "Ponce de Leon Avenue",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.941726,
+      "longitude": -84.552719,
+      "street_name": "Ponce de Leon Avenue",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "yield"
+    },
+    {
+      "latitude": 33.939644,
+      "longitude": -84.553621,
+      "street_name": "Peachtree Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.937561,
+      "longitude": -84.554522,
+      "street_name": "Northside Drive",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.935479,
+      "longitude": -84.555426,
+      "street_name": "I-85 North",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.933398,
+      "longitude": -84.556329,
+      "street_name": "Virginia Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.931315,
+      "longitude": -84.557231,
+      "street_name": "North Druid Hills Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.929232,
+      "longitude": -84.558134,
+      "street_name": "Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.927151,
+      "longitude": -84.559036,
+      "street_name": "Duluth Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.925069,
+      "longitude": -84.559938,
+      "street_name": "North Highland Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.922987,
+      "longitude": -84.560841,
+      "street_name": "Chamblee Tucker Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.920904,
+      "longitude": -84.561744,
+      "street_name": "Satellite Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.918823,
+      "longitude": -84.562646,
+      "street_name": "Haynes Bridge Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.916741,
+      "longitude": -84.563548,
+      "street_name": "Dallas Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.914659,
+      "longitude": -84.564452,
+      "street_name": "Decatur Street",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.912576,
+      "longitude": -84.565353,
+      "street_name": "Canton Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.910494,
+      "longitude": -84.566256,
+      "street_name": "Piedmont Circle",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.908413,
+      "longitude": -84.567158,
+      "street_name": "Windward Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.90633,
+      "longitude": -84.568062,
+      "street_name": "I-85 South",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.904249,
+      "longitude": -84.568964,
+      "street_name": "Highway 138",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.902166,
+      "longitude": -84.569867,
+      "street_name": "McFarland Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.900084,
+      "longitude": -84.57077,
+      "street_name": "Holcomb Bridge Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.898003,
+      "longitude": -84.571672,
+      "street_name": "Dallas Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.895921,
+      "longitude": -84.572574,
+      "street_name": "Beaver Ruin Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.893838,
+      "longitude": -84.573477,
+      "street_name": "Haynes Bridge Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.891757,
+      "longitude": -84.57438,
+      "street_name": "Powers Ferry Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.889674,
+      "longitude": -84.575282,
+      "street_name": "Pilgrim Mill Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.887593,
+      "longitude": -84.576185,
+      "street_name": "Glenwood Avenue",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.885511,
+      "longitude": -84.577087,
+      "street_name": "Atlanta Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.883428,
+      "longitude": -84.577989,
+      "street_name": "I-75 South",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.881346,
+      "longitude": -84.578891,
+      "street_name": "Post Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.879264,
+      "longitude": -84.579795,
+      "street_name": "Lanier Islands Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.877181,
+      "longitude": -84.580697,
+      "street_name": "Spalding Drive",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.8751,
+      "longitude": -84.5816,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

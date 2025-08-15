@@ -1,0 +1,128 @@
+{
+  "name": "amanda_wilson_work___school_to_teacher_supply_store",
+  "description": "Amanda Wilson: Work___School \u2192 Teacher_Supply_Store",
+  "start_location": "33.752, -84.382",
+  "end_location": "33.76, -84.375",
+  "waypoints": [
+    {
+      "latitude": 33.752,
+      "longitude": -84.382,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.752571,
+      "longitude": -84.3815,
+      "street_name": "Pleasant Hill Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.753143,
+      "longitude": -84.380999,
+      "street_name": "7th Street",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.753714,
+      "longitude": -84.3805,
+      "street_name": "Highway 141 (Peachtree Rd)",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.754286,
+      "longitude": -84.38,
+      "street_name": "Pleasant Hill Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.754857,
+      "longitude": -84.3795,
+      "street_name": "Peachtree Battle Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.755429,
+      "longitude": -84.379,
+      "street_name": "16th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.756,
+      "longitude": -84.3785,
+      "street_name": "Charles Allen Drive",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.756572,
+      "longitude": -84.378,
+      "street_name": "Cumberland Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.757143,
+      "longitude": -84.377501,
+      "street_name": "North Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.757714,
+      "longitude": -84.376999,
+      "street_name": "Glen Iris Drive",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.758286,
+      "longitude": -84.376499,
+      "street_name": "Haynes Bridge Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.758857,
+      "longitude": -84.376,
+      "street_name": "16th Street",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "stop_sign"
+    },
+    {
+      "latitude": 33.759428,
+      "longitude": -84.375501,
+      "street_name": "I-75 North",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.76,
+      "longitude": -84.375,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

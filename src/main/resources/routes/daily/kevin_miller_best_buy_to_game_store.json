@@ -1,0 +1,128 @@
+{
+  "name": "kevin_miller_best_buy_to_game_store",
+  "description": "Kevin Miller: Best_Buy \u2192 Game_Store",
+  "start_location": "33.765, -84.38",
+  "end_location": "33.76, -84.384",
+  "waypoints": [
+    {
+      "latitude": 33.765,
+      "longitude": -84.38,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.764643,
+      "longitude": -84.380286,
+      "street_name": "Pilgrim Mill Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.764286,
+      "longitude": -84.380571,
+      "street_name": "Riverside Drive",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.763929,
+      "longitude": -84.380857,
+      "street_name": "Spalding Drive",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.763572,
+      "longitude": -84.381142,
+      "street_name": "Juniper Street",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.763214,
+      "longitude": -84.381428,
+      "street_name": "North Decatur Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.762856,
+      "longitude": -84.381715,
+      "street_name": "13th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.7625,
+      "longitude": -84.382,
+      "street_name": "Glen Iris Drive",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.762143,
+      "longitude": -84.382286,
+      "street_name": "Pharr Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.761786,
+      "longitude": -84.382572,
+      "street_name": "Pine Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.761428,
+      "longitude": -84.382858,
+      "street_name": "Pilgrim Mill Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.761071,
+      "longitude": -84.383142,
+      "street_name": "15th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.760715,
+      "longitude": -84.383428,
+      "street_name": "Cypress Street",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "stop_sign"
+    },
+    {
+      "latitude": 33.760357,
+      "longitude": -84.383715,
+      "street_name": "Lake Lanier Islands Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.76,
+      "longitude": -84.384,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

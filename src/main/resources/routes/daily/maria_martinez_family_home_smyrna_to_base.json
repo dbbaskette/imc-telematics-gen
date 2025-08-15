@@ -1,0 +1,328 @@
+{
+  "name": "maria_martinez_family_home_smyrna_to_base",
+  "description": "Maria Martinez: Family_Home_Smyrna \u2192 Base",
+  "start_location": "33.884, -84.5144",
+  "end_location": "33.9526, -84.5499",
+  "waypoints": [
+    {
+      "latitude": 33.884,
+      "longitude": -84.5144,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.885759,
+      "longitude": -84.51531,
+      "street_name": "7th Street",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.887519,
+      "longitude": -84.51622,
+      "street_name": "Marietta Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.889277,
+      "longitude": -84.517132,
+      "street_name": "Perimeter Center East",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.891035,
+      "longitude": -84.518041,
+      "street_name": "Piedmont Avenue",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.892794,
+      "longitude": -84.518951,
+      "street_name": "Windy Hill Road",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.894554,
+      "longitude": -84.519861,
+      "street_name": "Windy Hill Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.896313,
+      "longitude": -84.520772,
+      "street_name": "Dahlonega Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.898072,
+      "longitude": -84.521682,
+      "street_name": "GA-400 North",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.899831,
+      "longitude": -84.522591,
+      "street_name": "Powers Ferry Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.901591,
+      "longitude": -84.523504,
+      "street_name": "Cobb Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.90335,
+      "longitude": -84.524412,
+      "street_name": "9th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.905108,
+      "longitude": -84.525324,
+      "street_name": "Argonne Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.906868,
+      "longitude": -84.526234,
+      "street_name": "Highway 5",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.908625,
+      "longitude": -84.527143,
+      "street_name": "Oakdale Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.910385,
+      "longitude": -84.528054,
+      "street_name": "Piedmont Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.912143,
+      "longitude": -84.528963,
+      "street_name": "Beaver Ruin Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.913903,
+      "longitude": -84.529874,
+      "street_name": "Freedom Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.915662,
+      "longitude": -84.530785,
+      "street_name": "Emory Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.91742,
+      "longitude": -84.531695,
+      "street_name": "Rock Springs Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.919179,
+      "longitude": -84.532606,
+      "street_name": "Perimeter Center West",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.920938,
+      "longitude": -84.533515,
+      "street_name": "Spot Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.922698,
+      "longitude": -84.534425,
+      "street_name": "14th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.924456,
+      "longitude": -84.535335,
+      "street_name": "Clairmont Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.926216,
+      "longitude": -84.536247,
+      "street_name": "Druid Hills Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.927975,
+      "longitude": -84.537157,
+      "street_name": "LaVista Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.929733,
+      "longitude": -84.538067,
+      "street_name": "Spalding Drive",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.931491,
+      "longitude": -84.538977,
+      "street_name": "Charles Allen Drive",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.933251,
+      "longitude": -84.539887,
+      "street_name": "I-575 North",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.935011,
+      "longitude": -84.540798,
+      "street_name": "Atlanta Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.936768,
+      "longitude": -84.541707,
+      "street_name": "LaVista Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.938528,
+      "longitude": -84.542617,
+      "street_name": "Highway 316",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.940287,
+      "longitude": -84.543527,
+      "street_name": "Union Hill Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.942045,
+      "longitude": -84.544438,
+      "street_name": "Highway 141 (Peachtree Rd)",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.943804,
+      "longitude": -84.54535,
+      "street_name": "Friendship Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.945563,
+      "longitude": -84.54626,
+      "street_name": "Samples Road",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.947323,
+      "longitude": -84.547169,
+      "street_name": "Spalding Drive",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.949081,
+      "longitude": -84.54808,
+      "street_name": "Lawrenceville Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.950841,
+      "longitude": -84.548989,
+      "street_name": "Ponce de Leon Avenue",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.9526,
+      "longitude": -84.5499,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

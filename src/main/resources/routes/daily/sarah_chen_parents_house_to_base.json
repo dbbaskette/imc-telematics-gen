@@ -1,0 +1,128 @@
+{
+  "name": "sarah_chen_parents_house_to_base",
+  "description": "Sarah Chen: Parents_House \u2192 Base",
+  "start_location": "33.775, -84.39",
+  "end_location": "33.7701, -84.3876",
+  "waypoints": [
+    {
+      "latitude": 33.775,
+      "longitude": -84.39,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.77465,
+      "longitude": -84.389829,
+      "street_name": "14th Street",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.774299,
+      "longitude": -84.389656,
+      "street_name": "5th Street",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.773949,
+      "longitude": -84.389485,
+      "street_name": "Myrtle Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.7736,
+      "longitude": -84.389315,
+      "street_name": "Peachtree Street NE",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.773249,
+      "longitude": -84.389142,
+      "street_name": "Scott Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.772899,
+      "longitude": -84.388972,
+      "street_name": "Abbotts Bridge Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.77255,
+      "longitude": -84.388801,
+      "street_name": "Spalding Drive",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.772201,
+      "longitude": -84.388629,
+      "street_name": "Atlanta Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.77185,
+      "longitude": -84.388457,
+      "street_name": "Windy Hill Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.7715,
+      "longitude": -84.388285,
+      "street_name": "Lakeshore Drive",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.771151,
+      "longitude": -84.388114,
+      "street_name": "Canton Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.7708,
+      "longitude": -84.387943,
+      "street_name": "Highway 124",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.770449,
+      "longitude": -84.38777,
+      "street_name": "LaVista Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.7701,
+      "longitude": -84.3876,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

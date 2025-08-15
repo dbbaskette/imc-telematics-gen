@@ -1,0 +1,184 @@
+{
+  "name": "james_rodriguez_avalon_shopping_to_base",
+  "description": "James Rodriguez: Avalon_Shopping \u2192 Base",
+  "start_location": "34.0912, -84.2767",
+  "end_location": "34.0754, -84.2941",
+  "waypoints": [
+    {
+      "latitude": 34.0912,
+      "longitude": -84.2767,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.090447,
+      "longitude": -84.277529,
+      "street_name": "I-75 North",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.089695,
+      "longitude": -84.278357,
+      "street_name": "West Peachtree Street",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.088942,
+      "longitude": -84.279186,
+      "street_name": "Webb Bridge Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.088191,
+      "longitude": -84.280015,
+      "street_name": "Sugarloaf Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.087438,
+      "longitude": -84.280843,
+      "street_name": "Lower Roswell Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.086685,
+      "longitude": -84.281672,
+      "street_name": "Perimeter Center East",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.085934,
+      "longitude": -84.282499,
+      "street_name": "Penn Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.085181,
+      "longitude": -84.283328,
+      "street_name": "Greenwood Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.084428,
+      "longitude": -84.284157,
+      "street_name": "Beverly Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.083675,
+      "longitude": -84.284985,
+      "street_name": "Glen Iris Drive",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.082925,
+      "longitude": -84.285814,
+      "street_name": "Rockbridge Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.082172,
+      "longitude": -84.286643,
+      "street_name": "Marietta Street",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.081418,
+      "longitude": -84.287471,
+      "street_name": "Lindbergh Drive",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.080667,
+      "longitude": -84.288301,
+      "street_name": "North Druid Hills Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.079914,
+      "longitude": -84.289129,
+      "street_name": "Scott Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.079161,
+      "longitude": -84.289958,
+      "street_name": "Arden Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.07841,
+      "longitude": -84.290785,
+      "street_name": "Dallas Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.077656,
+      "longitude": -84.291614,
+      "street_name": "I-575 North",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.076905,
+      "longitude": -84.292444,
+      "street_name": "Duluth Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.076152,
+      "longitude": -84.293271,
+      "street_name": "Collier Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.0754,
+      "longitude": -84.2941,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

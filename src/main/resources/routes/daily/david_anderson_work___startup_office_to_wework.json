@@ -1,0 +1,128 @@
+{
+  "name": "david_anderson_work___startup_office_to_wework",
+  "description": "David Anderson: Work___Startup_Office \u2192 Wework",
+  "start_location": "33.756, -84.372",
+  "end_location": "33.749, -84.377",
+  "waypoints": [
+    {
+      "latitude": 33.756,
+      "longitude": -84.372,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.755501,
+      "longitude": -84.372357,
+      "street_name": "I-675 South",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.755,
+      "longitude": -84.372713,
+      "street_name": "Broadland Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.754499,
+      "longitude": -84.373071,
+      "street_name": "Ponce de Leon Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.753999,
+      "longitude": -84.373428,
+      "street_name": "Roswell Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.753501,
+      "longitude": -84.373786,
+      "street_name": "Greenwood Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.753,
+      "longitude": -84.374143,
+      "street_name": "Monroe Circle",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.7525,
+      "longitude": -84.3745,
+      "street_name": "17th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.752,
+      "longitude": -84.374856,
+      "street_name": "Edgewood Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.751501,
+      "longitude": -84.375215,
+      "street_name": "Post Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.751,
+      "longitude": -84.375572,
+      "street_name": "I-985 North",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.7505,
+      "longitude": -84.375928,
+      "street_name": "Ponce de Leon Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.750001,
+      "longitude": -84.376285,
+      "street_name": "Cypress Street",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "stop_sign"
+    },
+    {
+      "latitude": 33.749501,
+      "longitude": -84.376643,
+      "street_name": "Riverside Drive",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.749,
+      "longitude": -84.377,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

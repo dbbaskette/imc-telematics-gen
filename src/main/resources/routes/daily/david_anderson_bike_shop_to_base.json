@@ -1,0 +1,128 @@
+{
+  "name": "david_anderson_bike_shop_to_base",
+  "description": "David Anderson: Bike_Shop \u2192 Base",
+  "start_location": "33.75, -84.376",
+  "end_location": "33.7512, -84.3749",
+  "waypoints": [
+    {
+      "latitude": 33.75,
+      "longitude": -84.376,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.750085,
+      "longitude": -84.375922,
+      "street_name": "Rock Springs Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.750172,
+      "longitude": -84.375843,
+      "street_name": "North Druid Hills Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.750256,
+      "longitude": -84.375763,
+      "street_name": "Powder Springs Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.750342,
+      "longitude": -84.375686,
+      "street_name": "Highway 138",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.750429,
+      "longitude": -84.375607,
+      "street_name": "Marietta Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.750515,
+      "longitude": -84.375528,
+      "street_name": "Oakdale Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.7506,
+      "longitude": -84.37545,
+      "street_name": "Highway 138",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.750685,
+      "longitude": -84.375372,
+      "street_name": "Windward Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.750771,
+      "longitude": -84.375293,
+      "street_name": "Highway 138",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.750857,
+      "longitude": -84.375215,
+      "street_name": "Charles Allen Drive",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.750943,
+      "longitude": -84.375136,
+      "street_name": "McFarland Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.751029,
+      "longitude": -84.375057,
+      "street_name": "Old Alabama Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "stop_sign"
+    },
+    {
+      "latitude": 33.751113,
+      "longitude": -84.374979,
+      "street_name": "Lindbergh Drive",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.7512,
+      "longitude": -84.3749,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

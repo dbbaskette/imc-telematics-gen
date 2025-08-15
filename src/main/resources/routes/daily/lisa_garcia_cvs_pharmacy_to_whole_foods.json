@@ -1,0 +1,128 @@
+{
+  "name": "lisa_garcia_cvs_pharmacy_to_whole_foods",
+  "description": "Lisa Garcia: Cvs_Pharmacy \u2192 Whole_Foods",
+  "start_location": "33.755, -84.384",
+  "end_location": "33.751, -84.388",
+  "waypoints": [
+    {
+      "latitude": 33.755,
+      "longitude": -84.384,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.754714,
+      "longitude": -84.384285,
+      "street_name": "Union Hill Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.754428,
+      "longitude": -84.38457,
+      "street_name": "Collier Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.754143,
+      "longitude": -84.384858,
+      "street_name": "Clairmont Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.753858,
+      "longitude": -84.385143,
+      "street_name": "Stone Mountain Freeway",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.753571,
+      "longitude": -84.385429,
+      "street_name": "West Paces Ferry Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.753286,
+      "longitude": -84.385715,
+      "street_name": "Keith Bridge Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.753,
+      "longitude": -84.386,
+      "street_name": "Kimball Bridge Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.752715,
+      "longitude": -84.386285,
+      "street_name": "Pleasant Hill Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.752429,
+      "longitude": -84.386572,
+      "street_name": "Steve Reynolds Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.752143,
+      "longitude": -84.386857,
+      "street_name": "LaVista Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.751856,
+      "longitude": -84.387143,
+      "street_name": "Northpoint Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.751572,
+      "longitude": -84.387428,
+      "street_name": "Northpoint Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.751285,
+      "longitude": -84.387715,
+      "street_name": "Aqualand Drive",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.751,
+      "longitude": -84.388,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

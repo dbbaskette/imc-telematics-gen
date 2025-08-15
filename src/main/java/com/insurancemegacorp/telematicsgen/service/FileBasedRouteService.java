@@ -30,16 +30,26 @@ public class FileBasedRouteService {
         
         try {
             PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
-            Resource[] routeFiles = resolver.getResources("classpath:routes/*.json");
             
-            if (routeFiles.length == 0) {
-                logger.warn("⚠️ No route files found in classpath:routes/");
+            // Load routes from both directories
+            Resource[] basicRoutes = resolver.getResources("classpath:routes/*.json");
+            Resource[] dailyRoutes = resolver.getResources("classpath:routes/daily/*.json");
+            
+            // Combine all route files
+            List<Resource> allRoutes = new ArrayList<>();
+            Collections.addAll(allRoutes, basicRoutes);
+            Collections.addAll(allRoutes, dailyRoutes);
+            
+            if (allRoutes.isEmpty()) {
+                logger.warn("⚠️ No route files found in classpath:routes/ or classpath:routes/daily/");
                 logger.warn("⚠️ Please run RouteGenerator utility to create route files");
                 loadFallbackRoutes();
                 return;
             }
             
-            for (Resource routeFile : routeFiles) {
+            logger.info("📁 Found {} basic routes and {} daily routine routes", basicRoutes.length, dailyRoutes.length);
+            
+            for (Resource routeFile : allRoutes) {
                 try {
                     loadRouteFromFile(routeFile);
                 } catch (Exception e) {
@@ -149,5 +159,50 @@ public class FileBasedRouteService {
     
     public int getRouteCount() {
         return routes.size();
+    }
+    
+    /**
+     * Get a route for a specific driver's daily routine segment
+     */
+    public List<RoutePoint> getDailyRouteForDriver(String driverName, String fromLocation, String toLocation) {
+        // Normalize driver name (lowercase, underscores)
+        String normalizedDriverName = driverName.toLowerCase().replace(" ", "_");
+        
+        // Try exact match first
+        String routeKey = String.format("%s_%s_to_%s", normalizedDriverName, 
+            fromLocation.toLowerCase().replace(" ", "_").replace("-", "_"),
+            toLocation.toLowerCase().replace(" ", "_").replace("-", "_"));
+            
+        List<RoutePoint> route = routes.get(routeKey);
+        if (route != null) {
+            logger.debug("🎯 Found daily route: {}", routeKey);
+            return new ArrayList<>(route);
+        }
+        
+        // Try partial matches
+        String partialPattern = normalizedDriverName + "_";
+        Optional<String> matchingRoute = routes.keySet().stream()
+            .filter(key -> key.startsWith(partialPattern))
+            .filter(key -> key.contains(fromLocation.toLowerCase().replace(" ", "_")) && 
+                          key.contains(toLocation.toLowerCase().replace(" ", "_")))
+            .findFirst();
+            
+        if (matchingRoute.isPresent()) {
+            logger.debug("🔍 Found partial match route: {}", matchingRoute.get());
+            return new ArrayList<>(routes.get(matchingRoute.get()));
+        }
+        
+        logger.warn("⚠️ No daily route found for {}: {} → {}. Using random route.", 
+            driverName, fromLocation, toLocation);
+        return getRandomRoute();
+    }
+    
+    /**
+     * Check if daily routes are available for a driver
+     */
+    public boolean hasDailyRoutesForDriver(String driverName) {
+        String normalizedDriverName = driverName.toLowerCase().replace(" ", "_");
+        return routes.keySet().stream()
+            .anyMatch(key -> key.startsWith(normalizedDriverName + "_"));
     }
 }
