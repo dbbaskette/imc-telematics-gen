@@ -126,6 +126,6 @@ curl http://localhost:8080/actuator/metrics/jvm.memory.used
 ```yaml
 logging:
   level:
-    com.acme.insurance.telematics: DEBUG
+    com.insurancemegacorp.telematicsgen: DEBUG
     org.springframework.amqp: WARN
 ```
