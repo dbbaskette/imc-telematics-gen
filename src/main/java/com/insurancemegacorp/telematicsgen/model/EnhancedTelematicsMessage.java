@@ -9,7 +9,6 @@ public record EnhancedTelematicsMessage(
     @JsonProperty("vehicle_id") int vehicleId,
     @JsonProperty("vin") String vin,
     @JsonProperty("event_time") Instant eventTime,
-    @JsonProperty("is_crash_event") boolean isCrashEvent,
     EnhancedGpsData gps,
     @JsonProperty("speed_mph") double speedMph,
     @JsonProperty("speed_limit_mph") int speedLimitMph,

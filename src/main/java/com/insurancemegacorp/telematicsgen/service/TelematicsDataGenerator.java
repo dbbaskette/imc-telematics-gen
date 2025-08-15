@@ -95,7 +95,6 @@ public class TelematicsDataGenerator {
             driver.getVehicleId(),
             driver.getVin(),
             Instant.now(),
-            true, // This IS a crash event
             gps,
             0.0, // Speed is zero during crash event
             driver.getSpeedLimit(),
@@ -168,7 +167,6 @@ public class TelematicsDataGenerator {
             driver.getVehicleId(),
             driver.getVin(),
             Instant.now(),
-            false,
             gps,
             roundToTwoDecimals(driver.getCurrentSpeed()),
             driver.getSpeedLimit(),
@@ -241,7 +239,6 @@ public class TelematicsDataGenerator {
             driver.getVehicleId(),
             driver.getVin(),
             Instant.now(),
-            false,
             gps,
             0.0, // Zero speed when stationary
             driver.getSpeedLimit(),

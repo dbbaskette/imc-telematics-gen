@@ -204,7 +204,6 @@ The application sends enhanced telemetry data with comprehensive sensor informat
   "vehicle_id": 300021,
   "vin": "1HGBH41JXMN109186",
   "event_time": "2024-01-15T10:30:45.123Z",
-  "is_crash_event": false,
   "speed_mph": 32.5,
   "speed_limit_mph": 35,
   "current_street": "Peachtree Street",
@@ -256,7 +255,6 @@ The application sends enhanced telemetry data with comprehensive sensor informat
   "vehicle_id": 300038,
   "vin": "KNDJP3A57H7123456",
   "event_time": "2024-01-15T10:30:45.123Z",
-  "is_crash_event": true,
   "speed_mph": 0.0,
   "speed_limit_mph": 25,
   "current_street": "Highland Street",
@@ -308,7 +306,6 @@ The application sends enhanced telemetry data with comprehensive sensor informat
 - `vehicle_id` (int): Internal vehicle identifier (e.g., 300021)
 - `vin` (string): Vehicle Identification Number
 - `event_time` (ISO 8601): Event timestamp
-- `is_crash_event` (boolean): Whether this event represents a crash
 - `speed_mph` (number): Current vehicle speed in miles per hour
 - `speed_limit_mph` (int): Current speed limit from route data
 - `current_street` (string): Real street name from GPS location
@@ -347,7 +344,6 @@ public record EnhancedTelematicsMessage(
     @JsonProperty("vehicle_id") int vehicleId,
     @JsonProperty("vin") String vin,
     @JsonProperty("event_time") Instant eventTime,
-    @JsonProperty("is_crash_event") boolean isCrashEvent,
     EnhancedGpsData gps,
     @JsonProperty("speed_mph") double speedMph,
     @JsonProperty("speed_limit_mph") int speedLimitMph,

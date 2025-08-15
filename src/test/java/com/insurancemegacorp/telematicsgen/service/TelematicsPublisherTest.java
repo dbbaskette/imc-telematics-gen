@@ -69,7 +69,6 @@ class TelematicsPublisherTest {
             300999,              // vehicleId
             "TEST-VIN-123456789", // vin
             Instant.now(),       // eventTime
-            false,               // isCrashEvent
             gps,                 // gps
             30.0,                // speedMph
             25,                  // speedLimitMph

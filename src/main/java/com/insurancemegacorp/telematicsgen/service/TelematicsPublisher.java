@@ -29,16 +29,14 @@ public class TelematicsPublisher {
             // Publish to an exchange for fan-out pattern
             rabbitTemplate.convertAndSend(exchangeName, "", message);
             
-                    String eventType = message.isCrashEvent() ? "💥 CRASH" : "📡 TELEMETRY";
-        logger.info("{} | {} | VEH:{} | VIN:{} | Street:{} | Speed:{} mph (Limit: {} mph) | G-force:{}g",
-            eventType,
-            message.driverId(),
-            message.vehicleId(),
-            message.vin(),
-            message.currentStreet(),
-            String.format("%.1f", message.speedMph()),
-            message.speedLimitMph(),
-            String.format("%.2f", message.gForce()));
+                                logger.info("📡 TELEMETRY | {} | VEH:{} | VIN:{} | Street:{} | Speed:{} mph (Limit: {} mph) | G-force:{}g",
+                message.driverId(),
+                message.vehicleId(),
+                message.vin(),
+                message.currentStreet(),
+                String.format("%.1f", message.speedMph()),
+                message.speedLimitMph(),
+                String.format("%.2f", message.gForce()));
                 
             // Broadcast to web clients (let the frontend/dashboard handle crash detection if needed)
             webSocketService.broadcastDriverUpdate(driver, message);
