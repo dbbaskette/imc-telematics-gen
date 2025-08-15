@@ -8,10 +8,14 @@ public record EnhancedTelematicsMessage(
     @JsonProperty("policy_id") int policyId,
     @JsonProperty("vehicle_id") int vehicleId,
     @JsonProperty("vin") String vin,
-    Instant timestamp,
+    @JsonProperty("event_time") Instant eventTime,
+    @JsonProperty("is_crash_event") boolean isCrashEvent,
+    EnhancedGpsData gps,
     @JsonProperty("speed_mph") double speedMph,
-    @JsonProperty("current_street") String currentStreet,
+    @JsonProperty("speed_limit_mph") int speedLimitMph,
+    EnhancedSensorData sensors,
     @JsonProperty("g_force") double gForce,
-    EnhancedSensorData sensors
+    @JsonProperty("driver_id") String driverId,
+    @JsonProperty("current_street") String currentStreet
 ) {
 }

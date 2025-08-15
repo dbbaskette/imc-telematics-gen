@@ -65,14 +65,18 @@ class TelematicsPublisherTest {
         EnhancedSensorData sensors = new EnhancedSensorData(gps, accel, gyro, mag, 1013.25, device);
         
         return new EnhancedTelematicsMessage(
-            200123,
-            300999,
-            "TEST-VIN-123456789",
-            Instant.now(),
-            30.0,
-            "Test Street",
-            1.0, // Test G-force
-            sensors
+            200123,              // policyId
+            300999,              // vehicleId
+            "TEST-VIN-123456789", // vin
+            Instant.now(),       // eventTime
+            false,               // isCrashEvent
+            gps,                 // gps
+            30.0,                // speedMph
+            25,                  // speedLimitMph
+            sensors,             // sensors
+            1.0,                 // gForce
+            "DRIVER-400123",     // driverId
+            "Test Street"        // currentStreet
         );
     }
 }

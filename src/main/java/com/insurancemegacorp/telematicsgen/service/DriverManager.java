@@ -224,7 +224,11 @@ public class DriverManager {
             assignNewRoute(driver);
             return;
         }
-        
+
+        RoutePoint currentPoint = route.get(currentIndex);
+        driver.setCurrentStreet(currentPoint.streetName());
+        driver.setSpeedLimit(currentPoint.speedLimit());
+
         RoutePoint nextPoint = route.get(currentIndex + 1);
         
         // Calculate bearing to next point
@@ -244,7 +248,6 @@ public class DriverManager {
         if (distanceToNext < 0.00005) { 
             driver.setCurrentLatitude(nextPoint.latitude());
             driver.setCurrentLongitude(nextPoint.longitude());
-            driver.setCurrentStreet(nextPoint.streetName());
             driver.setRouteIndex(currentIndex + 1);
             
             // Update trip progress
@@ -295,13 +298,13 @@ public class DriverManager {
     }
     
     private void updateSpeedForRoutePoint(Driver driver, RoutePoint point) {
-        if (point.isIntersection()) {
+        if (point.hasTrafficLight()) {
             // Slow down at intersections
             driver.setCurrentSpeed(Math.max(10.0, driver.getCurrentSpeed() * 0.7));
         } else {
             // Use route speed limit with some variation
-            double targetSpeed = point.speedLimitMph() + (random.nextDouble() - 0.5) * 10.0;
-            driver.setCurrentSpeed(Math.max(15.0, Math.min(55.0, targetSpeed)));
+            double targetSpeed = point.speedLimit() + (random.nextDouble() - 0.5) * 10.0;
+            driver.setCurrentSpeed(Math.max(15.0, Math.min(85.0, targetSpeed))); // Allow higher speeds on highways
         }
     }
     

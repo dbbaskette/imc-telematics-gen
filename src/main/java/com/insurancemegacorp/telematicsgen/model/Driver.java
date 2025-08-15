@@ -19,6 +19,7 @@ public class Driver {
     private volatile double currentLatitude;
     private volatile double currentLongitude;
     private volatile double currentSpeed;
+    private int speedLimit;
     
     // Route-based movement
     private volatile List<RoutePoint> currentRoute;
@@ -44,6 +45,7 @@ public class Driver {
         this.currentState = DriverState.PARKED;
         this.stateChangeTime = Instant.now();
         this.currentSpeed = 0.0;
+        this.speedLimit = 0;
         this.routeIndex = 0;
         this.currentBearing = 0.0;
         this.currentStreet = "Unknown";
@@ -214,5 +216,13 @@ public class Driver {
     
     public boolean hasReachedDestination() {
         return tripProgressPercent >= 100.0;
+    }
+
+    public int getSpeedLimit() {
+        return speedLimit;
+    }
+
+    public void setSpeedLimit(int speedLimit) {
+        this.speedLimit = speedLimit;
     }
 }

@@ -95,10 +95,14 @@ public class TelematicsDataGenerator {
             driver.getVehicleId(),
             driver.getVin(),
             Instant.now(),
-            driver.getCurrentSpeed(),
-            driver.getCurrentStreet() != null ? driver.getCurrentStreet() : "Unknown Street",
+            true, // This IS a crash event
+            gps,
+            0.0, // Speed is zero during crash event
+            driver.getSpeedLimit(),
+            sensors,
             gForce,
-            sensors
+            driver.getDriverId(),
+            driver.getCurrentStreet()
         );
     }
 
@@ -164,10 +168,14 @@ public class TelematicsDataGenerator {
             driver.getVehicleId(),
             driver.getVin(),
             Instant.now(),
+            false,
+            gps,
             roundToTwoDecimals(driver.getCurrentSpeed()),
-            driver.getCurrentStreet() != null ? driver.getCurrentStreet() : "Unknown Street",
+            driver.getSpeedLimit(),
+            sensors,
             gForce,
-            sensors
+            driver.getDriverId(),
+            driver.getCurrentStreet() != null ? driver.getCurrentStreet() : "Unknown Street"
         );
     }
 
@@ -233,10 +241,14 @@ public class TelematicsDataGenerator {
             driver.getVehicleId(),
             driver.getVin(),
             Instant.now(),
+            false,
+            gps,
             0.0, // Zero speed when stationary
-            driver.getCurrentStreet() != null ? driver.getCurrentStreet() : "Unknown Street",
+            driver.getSpeedLimit(),
+            sensors,
             gForce,
-            sensors
+            driver.getDriverId(),
+            driver.getCurrentStreet() != null ? driver.getCurrentStreet() : "Unknown Street"
         );
     }
 

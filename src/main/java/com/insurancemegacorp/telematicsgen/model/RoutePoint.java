@@ -1,11 +1,13 @@
 package com.insurancemegacorp.telematicsgen.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public record RoutePoint(
     double latitude,
     double longitude,
-    String streetName,
-    int speedLimitMph,
-    boolean isIntersection,
-    String intersectionType  // "traffic_light", "stop_sign", "yield", "none"
+    @JsonProperty("street_name") String streetName,
+    @JsonProperty("speed_limit") int speedLimit,
+    @JsonProperty("has_traffic_light") boolean hasTrafficLight,
+    @JsonProperty("traffic_control") String trafficControl
 ) {
 }

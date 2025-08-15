@@ -74,7 +74,7 @@ class TelematicsIntegrationTest {
         // Test crash event data generation
         assertThat(crashMessage).isNotNull();
         assertThat(crashMessage.policyId()).isEqualTo(200123);
-        assertThat(crashMessage.speedMph()).isEqualTo(35.0);
+        assertThat(crashMessage.speedMph()).isEqualTo(0.0); // Speed is zero during crash event
         assertThat(crashMessage.sensors().accelerometer().x()).isGreaterThan(4.0);
         assertThat(crashMessage.sensors().accelerometer().y()).isGreaterThan(3.0);
         

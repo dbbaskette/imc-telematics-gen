@@ -22,7 +22,7 @@ class TelematicsDataGeneratorTest {
 
         assertThat(message.policyId()).isEqualTo(200123);
         assertThat(message.speedMph()).isEqualTo(30.0);
-        assertThat(message.timestamp()).isNotNull();
+        assertThat(message.eventTime()).isNotNull();
         assertThat(message.sensors().gps().latitude()).isEqualTo(40.7128);
         assertThat(message.sensors().gps().longitude()).isEqualTo(-74.0060);
         assertThat(message.sensors().accelerometer().x()).isBetween(-0.5, 0.5);
@@ -40,7 +40,7 @@ class TelematicsDataGeneratorTest {
 
         assertThat(message.policyId()).isEqualTo(200123);
         assertThat(message.speedMph()).isEqualTo(0.0);
-        assertThat(message.timestamp()).isNotNull();
+        assertThat(message.eventTime()).isNotNull();
         assertThat(message.sensors().gps().latitude()).isEqualTo(40.7128);
         assertThat(message.sensors().gps().longitude()).isEqualTo(-74.0060);
         // Stationary accelerometer readings should be very low
@@ -59,7 +59,7 @@ class TelematicsDataGeneratorTest {
 
         assertThat(message.policyId()).isEqualTo(200123);
         assertThat(message.speedMph()).isEqualTo(0.0);
-        assertThat(message.timestamp()).isNotNull();
+        assertThat(message.eventTime()).isNotNull();
         assertThat(testDriver.isStationary()).isTrue();
     }
 
@@ -72,8 +72,8 @@ class TelematicsDataGeneratorTest {
         EnhancedTelematicsMessage message = dataGenerator.generateCrashEventData(testDriver);
 
         assertThat(message.policyId()).isEqualTo(200123);
-        assertThat(message.speedMph()).isEqualTo(35.0);
-        assertThat(message.timestamp()).isNotNull();
+        assertThat(message.speedMph()).isEqualTo(0.0); // Speed is zero during crash event
+        assertThat(message.eventTime()).isNotNull();
         assertThat(message.sensors().gps().latitude()).isEqualTo(40.7128);
         assertThat(message.sensors().gps().longitude()).isEqualTo(-74.0060);
         assertThat(message.sensors().accelerometer().x()).isGreaterThan(4.0);

@@ -17,6 +17,7 @@ A Spring Boot application that simulates a vehicle's telematics device, sending 
 - **Multi-Driver Simulation**: Simulates multiple drivers with individual behaviors and states
 - **Realistic Driver States**: DRIVING, PARKED, POST_CRASH_IDLE, TRAFFIC_STOP, BREAK_TIME
 - **Real Road Networks**: Drivers follow actual Atlanta street routes with proper GPS coordinates
+- **Speed Limit Integration**: Real speed limits from route data included in telemetry events
 - **File-Based Route System**: Routes loaded from JSON files for realistic movement patterns
 - **Route Generation Utility**: Generate new routes using OpenRouteService API
 - **Post-Crash Behavior**: Drivers sit still for configurable periods after crash events  
@@ -202,10 +203,13 @@ The application sends enhanced telemetry data with comprehensive sensor informat
   "policy_id": 200018,
   "vehicle_id": 300021,
   "vin": "1HGBH41JXMN109186",
-  "timestamp": "2024-01-15T10:30:45.123Z",
+  "event_time": "2024-01-15T10:30:45.123Z",
+  "is_crash_event": false,
   "speed_mph": 32.5,
+  "speed_limit_mph": 35,
   "current_street": "Peachtree Street",
   "g_force": 1.18,
+  "driver_id": "DRIVER-400018",
   "sensors": {
     "gps": {
       "latitude": 33.7701,
@@ -251,10 +255,13 @@ The application sends enhanced telemetry data with comprehensive sensor informat
   "policy_id": 200034,
   "vehicle_id": 300038,
   "vin": "KNDJP3A57H7123456",
-  "timestamp": "2024-01-15T10:30:45.123Z", 
+  "event_time": "2024-01-15T10:30:45.123Z",
+  "is_crash_event": true,
   "speed_mph": 0.0,
+  "speed_limit_mph": 25,
   "current_street": "Highland Street",
   "g_force": 8.67,
+  "driver_id": "DRIVER-400034",
   "sensors": {
     "gps": {
       "latitude": 33.7701,
@@ -300,8 +307,13 @@ The application sends enhanced telemetry data with comprehensive sensor informat
 - `policy_id` (int): Insurance policy identifier (e.g., 200018)
 - `vehicle_id` (int): Internal vehicle identifier (e.g., 300021)
 - `vin` (string): Vehicle Identification Number
+- `event_time` (ISO 8601): Event timestamp
+- `is_crash_event` (boolean): Whether this event represents a crash
+- `speed_mph` (number): Current vehicle speed in miles per hour
+- `speed_limit_mph` (int): Current speed limit from route data
 - `current_street` (string): Real street name from GPS location
 - `g_force` (number): Calculated G-force from accelerometer data
+- `driver_id` (string): Unique driver identifier
 
 **Enhanced GPS Data:**
 - `altitude`: Elevation in meters
@@ -334,11 +346,15 @@ public record EnhancedTelematicsMessage(
     @JsonProperty("policy_id") int policyId,
     @JsonProperty("vehicle_id") int vehicleId,
     @JsonProperty("vin") String vin,
-    Instant timestamp,
+    @JsonProperty("event_time") Instant eventTime,
+    @JsonProperty("is_crash_event") boolean isCrashEvent,
+    EnhancedGpsData gps,
     @JsonProperty("speed_mph") double speedMph,
-    @JsonProperty("current_street") String currentStreet,
+    @JsonProperty("speed_limit_mph") int speedLimitMph,
+    EnhancedSensorData sensors,
     @JsonProperty("g_force") double gForce,
-    EnhancedSensorData sensors
+    @JsonProperty("driver_id") String driverId,
+    @JsonProperty("current_street") String currentStreet
 ) {}
 ```
 
@@ -347,6 +363,7 @@ public record EnhancedTelematicsMessage(
 - Handle the enhanced sensor data structure with GPS metadata
 - Access device information for additional crash context
 - Utilize street name information for location-based analysis
+- **Leverage speed limit data for speeding analysis and violation detection**
 - Leverage barometric pressure for environmental crash factors
 
 **Message Consumer Example:**
@@ -355,10 +372,17 @@ public record EnhancedTelematicsMessage(
 public void processTelematicsData(EnhancedTelematicsMessage message) {
     // Access enhanced data
     String location = message.currentStreet();
+    double currentSpeed = message.speedMph();
+    int speedLimit = message.speedLimitMph();
     double altitude = message.sensors().gps().altitude();
     boolean deviceCharging = message.sensors().device().charging();
     
-    // Your crash detection logic here
+    // Speed violation detection
+    if (currentSpeed > speedLimit + 5) {
+        handleSpeedingViolation(message, currentSpeed - speedLimit);
+    }
+    
+    // Crash detection logic
     if (message.gForce() > 4.0) {
         handlePotentialCrash(message);
     }
@@ -381,7 +405,7 @@ Access the real-time dashboard at http://localhost:8082 when running locally.
 - 👣 Follow Selected: auto-pan to the chosen driver
 - ⏸️ Pause/▶️ Resume Generation: toggle simulation without stopping the app
 - ⏱️ Message Rate: tune interval (200–2000 ms)
-- 🚨 Trigger Accident: sends an immediate crash event to the same queue as normal telemetry and logs a detailed publisher line with VIN/street/speed/G-force
+- 🚨 Trigger Accident: sends an immediate crash event to the same queue as normal telemetry and logs a detailed publisher line with VIN/street/speed/speed limit/G-force
 
 ## Testing
 
@@ -467,7 +491,8 @@ The application includes Spring Boot Actuator endpoints:
 - Crash events trigger immediate transition to POST_CRASH_IDLE state
 - Each driver has individual location, speed, and message tracking
 - GPS coordinates follow real street paths with realistic movement patterns
-- Speed limits and traffic controls based on actual route data
+- **Speed limits dynamically updated from route data and included in telemetry events**
+- Traffic controls based on actual route data
 
 ## Customization
 
