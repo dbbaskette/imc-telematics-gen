@@ -69,8 +69,8 @@ class DriverManagerTest {
         assertThat(driverManager.getDriverCount()).isEqualTo(2);
         assertThat(driverManager.getAllDrivers()).hasSize(2);
         
-        assertThat(driverManager.getAllDrivers().get(0).getDriverId()).isEqualTo("400001");
-        assertThat(driverManager.getAllDrivers().get(1).getDriverId()).isEqualTo("400002");
+        assertThat(driverManager.getAllDrivers().get(0).getDriverId()).isEqualTo(400001);
+        assertThat(driverManager.getAllDrivers().get(1).getDriverId()).isEqualTo(400002);
         
         // Verify drivers are positioned near route waypoints (with GPS variation)
         assertThat(driverManager.getAllDrivers().get(0).getCurrentLatitude()).isCloseTo(33.7490, within(0.01));
@@ -84,7 +84,7 @@ class DriverManagerTest {
         Driver selectedDriver = driverManager.selectDriverForMessage();
         
         assertThat(selectedDriver).isNotNull();
-        assertThat(selectedDriver.getDriverId()).matches("\\d{6}");
+        assertThat(selectedDriver.getDriverId()).isBetween(400001, 400017);
     }
 
     @Test
@@ -118,7 +118,7 @@ class DriverManagerTest {
 
     @Test
     void driver_shouldTrackStateChanges() {
-        Driver driver = new Driver("TEST-001", 200001, 300001, "1HGBH41JXMN109001", 33.7490, -84.3880);
+        Driver driver = new Driver(999001, 200001, 300001, "1HGBH41JXMN109001", 33.7490, -84.3880);
         
         assertThat(driver.getCurrentState()).isEqualTo(DriverState.PARKED);
         assertThat(driver.getCurrentSpeed()).isEqualTo(0.0);
@@ -133,7 +133,7 @@ class DriverManagerTest {
 
     @Test
     void driver_shouldHandleCrashEvents() {
-        Driver driver = new Driver("TEST-001", 200001, 300001, "1HGBH41JXMN109001", 33.7490, -84.3880);
+        Driver driver = new Driver(999001, 200001, 300001, "1HGBH41JXMN109001", 33.7490, -84.3880);
         driver.setCurrentState(DriverState.DRIVING);
         driver.setCurrentSpeed(35.0);
         

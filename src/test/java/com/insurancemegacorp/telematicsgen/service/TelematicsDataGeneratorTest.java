@@ -14,7 +14,7 @@ class TelematicsDataGeneratorTest {
     @Test
     void generateTelematicsData_shouldReturnDrivingDataForDrivingState() {
         TelematicsDataGenerator dataGenerator = new TelematicsDataGenerator();
-        Driver testDriver = new Driver("TEST-001", 200123, 300999, "1HGBH41JXMN109999", 40.7128, -74.0060);
+        Driver testDriver = new Driver(999001, 200123, 300999, "1HGBH41JXMN109999", 40.7128, -74.0060);
         testDriver.setCurrentState(DriverState.DRIVING);
         testDriver.setCurrentSpeed(30.0);
 
@@ -33,7 +33,7 @@ class TelematicsDataGeneratorTest {
     @Test
     void generateTelematicsData_shouldReturnStationaryDataForParkedState() {
         TelematicsDataGenerator dataGenerator = new TelematicsDataGenerator();
-        Driver testDriver = new Driver("TEST-001", 200123, 300999, "1HGBH41JXMN109999", 40.7128, -74.0060);
+        Driver testDriver = new Driver(999001, 200123, 300999, "1HGBH41JXMN109999", 40.7128, -74.0060);
         testDriver.setCurrentState(DriverState.PARKED);
 
         FlatTelematicsMessage message = dataGenerator.generateTelematicsData(testDriver);
@@ -52,7 +52,7 @@ class TelematicsDataGeneratorTest {
     @Test
     void generateTelematicsData_shouldReturnStationaryDataForPostCrashIdle() {
         TelematicsDataGenerator dataGenerator = new TelematicsDataGenerator();
-        Driver testDriver = new Driver("TEST-001", 200123, 300999, "1HGBH41JXMN109999", 40.7128, -74.0060);
+        Driver testDriver = new Driver(999001, 200123, 300999, "1HGBH41JXMN109999", 40.7128, -74.0060);
         testDriver.setCurrentState(DriverState.POST_CRASH_IDLE);
 
         FlatTelematicsMessage message = dataGenerator.generateTelematicsData(testDriver);
@@ -66,7 +66,7 @@ class TelematicsDataGeneratorTest {
     @Test
     void generateCrashEventData_shouldReturnCrashMessage() {
         TelematicsDataGenerator dataGenerator = new TelematicsDataGenerator();
-        Driver testDriver = new Driver("TEST-001", 200123, 300999, "1HGBH41JXMN109999", 40.7128, -74.0060);
+        Driver testDriver = new Driver(999001, 200123, 300999, "1HGBH41JXMN109999", 40.7128, -74.0060);
         testDriver.setCurrentSpeed(35.0);
 
         FlatTelematicsMessage message = dataGenerator.generateCrashEventData(testDriver);

@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 
 public class Driver {
-    private final String driverId;
+    private final int driverId;
     private final int policyId;
     private final int vehicleId;
     private final String vin;
@@ -32,7 +32,7 @@ public class Driver {
     private volatile double tripProgressPercent;
     private volatile Instant tripStartTime;
 
-    public Driver(String driverId, int policyId, int vehicleId, String vin, double baseLatitude, double baseLongitude) {
+    public Driver(int driverId, int policyId, int vehicleId, String vin, double baseLatitude, double baseLongitude) {
         this.driverId = driverId;
         this.policyId = policyId;
         this.vehicleId = vehicleId;
@@ -51,7 +51,7 @@ public class Driver {
         this.currentStreet = "Unknown";
     }
 
-    public String getDriverId() {
+    public int getDriverId() {
         return driverId;
     }
 

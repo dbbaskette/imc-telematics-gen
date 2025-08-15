@@ -55,7 +55,7 @@ A Spring Boot application that simulates realistic vehicle telematics data using
 ### ✨ v2.0 - Performance & Consistency Overhaul
 - **🔥 Flat JSON Architecture**: Complete migration from nested to flat structure
 - **📈 Performance Boost**: 50-70% improvement in processing speed
-- **🔧 ID Consistency**: Unified numeric ID format (`driver_id: "400018"`)
+- **🔧 ID Consistency**: Unified numeric ID format (`driver_id: 400018`)
 - **🚀 Zero Overhead**: Direct message generation without transformation
 - **📊 SQL-Ready**: Direct database mapping for all fields
 
@@ -227,7 +227,7 @@ The application sends **flattened telemetry data** with comprehensive sensor inf
   "speed_limit_mph": 35,
   "current_street": "Peachtree Street",
   "g_force": 1.18,
-  "driver_id": "400018",
+  "driver_id": 400018,
   
   "gps_latitude": 33.7701,
   "gps_longitude": -84.3876,
@@ -272,7 +272,7 @@ The application sends **flattened telemetry data** with comprehensive sensor inf
   "speed_limit_mph": 25,
   "current_street": "Highland Street",
   "g_force": 8.67,
-  "driver_id": "400034",
+  "driver_id": 400034,
   
   "gps_latitude": 33.7701,
   "gps_longitude": -84.3876,
@@ -317,7 +317,7 @@ The application sends **flattened telemetry data** with comprehensive sensor inf
 - `speed_limit_mph` (int): Current speed limit from route data
 - `current_street` (string): Real street name from GPS location
 - `g_force` (number): Calculated G-force from accelerometer data
-- `driver_id` (string): Numeric driver identifier (e.g., "400018")
+- `driver_id` (int): Numeric driver identifier (e.g., 400018)
 
 **GPS Data Fields (gps_*):**
 - `gps_latitude` (number): Latitude coordinate

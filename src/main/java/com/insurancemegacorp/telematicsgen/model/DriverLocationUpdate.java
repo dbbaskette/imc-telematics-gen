@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.time.Instant;
 
 public record DriverLocationUpdate(
-    @JsonProperty("driver_id") String driverId,
+    @JsonProperty("driver_id") int driverId,
     @JsonProperty("policy_id") int policyId,
     @JsonProperty("vehicle_id") int vehicleId,
     double latitude,

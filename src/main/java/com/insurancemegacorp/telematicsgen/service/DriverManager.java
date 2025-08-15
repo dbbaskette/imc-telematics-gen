@@ -392,9 +392,9 @@ public class DriverManager {
     /**
      * Manually trigger an accident for a specific driver (for demo purposes)
      */
-    public boolean triggerDemoAccident(String driverId) {
+    public boolean triggerDemoAccident(int driverId) {
         Driver driver = drivers.stream()
-            .filter(d -> d.getDriverId().equals(driverId))
+            .filter(d -> d.getDriverId() == driverId)
             .findFirst()
             .orElse(null);
             

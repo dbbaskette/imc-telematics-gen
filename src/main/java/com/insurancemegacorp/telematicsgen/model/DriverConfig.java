@@ -22,11 +22,11 @@ public record DriverConfig(
 ) {
     
     /**
-     * Get the driver ID as a string representation of the numeric ID.
-     * Returns the raw numeric driver ID for consistency with other ID fields.
+     * Get the raw numeric driver ID for consistency with other ID fields.
+     * Returns the driver ID as an integer.
      */
-    public String getDriverId() {
-        return String.valueOf(driverId);
+    public int getDriverId() {
+        return driverId;
     }
     
     /**

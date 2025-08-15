@@ -39,7 +39,7 @@ class TelematicsPublisherTest {
     @Test
     void publishTelematicsData_shouldSendMessageToStream() {
         FlatTelematicsMessage message = createTestMessage();
-        Driver driver = new Driver("test-driver", 1, 1, "vin", 0, 0);
+        Driver driver = new Driver(999999, 1, 1, "vin", 0, 0);
         
         publisher.publishTelematicsData(message, driver);
         
@@ -49,7 +49,7 @@ class TelematicsPublisherTest {
     @Test
     void publishTelematicsData_shouldThrowExceptionOnFailure() {
         FlatTelematicsMessage message = createTestMessage();
-        Driver driver = new Driver("test-driver", 1, 1, "vin", 0, 0);
+        Driver driver = new Driver(999999, 1, 1, "vin", 0, 0);
         doThrow(new RuntimeException("Connection failed"))
             .when(rabbitTemplate).convertAndSend(anyString(), anyString(), any(FlatTelematicsMessage.class));
         
@@ -66,7 +66,7 @@ class TelematicsPublisherTest {
             30.0,                // speedMph
             25,                  // speedLimitMph
             1.0,                 // gForce
-            "400123",            // driverId
+            400123,              // driverId
             "Test Street",       // currentStreet
             
             // GPS data fields

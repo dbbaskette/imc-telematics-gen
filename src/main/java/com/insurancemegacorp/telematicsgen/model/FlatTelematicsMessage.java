@@ -18,7 +18,7 @@ public record FlatTelematicsMessage(
     @JsonProperty("speed_mph") double speedMph,
     @JsonProperty("speed_limit_mph") int speedLimitMph,
     @JsonProperty("g_force") double gForce,
-    @JsonProperty("driver_id") String driverId,
+    @JsonProperty("driver_id") int driverId,
     @JsonProperty("current_street") String currentStreet,
     
     // GPS data fields (from sensors.gps)
