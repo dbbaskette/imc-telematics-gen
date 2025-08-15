@@ -2,7 +2,7 @@ applications:
   - name: imc-telematics-gen
     memory: 1G
     instances: 1
-    path: ./target/telematicsgen-1.7.0.jar
+    path: ./target/telematicsgen-2.0.0.jar
     buildpacks:
     - java_buildpack_offline
     services:
