@@ -2,7 +2,7 @@ package com.insurancemegacorp.telematicsgen.service;
 
 import com.insurancemegacorp.telematicsgen.model.Driver;
 import com.insurancemegacorp.telematicsgen.model.DriverState;
-import com.insurancemegacorp.telematicsgen.model.EnhancedTelematicsMessage;
+import com.insurancemegacorp.telematicsgen.model.FlatTelematicsMessage;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -18,16 +18,16 @@ class TelematicsDataGeneratorTest {
         testDriver.setCurrentState(DriverState.DRIVING);
         testDriver.setCurrentSpeed(30.0);
 
-        EnhancedTelematicsMessage message = dataGenerator.generateTelematicsData(testDriver);
+        FlatTelematicsMessage message = dataGenerator.generateTelematicsData(testDriver);
 
         assertThat(message.policyId()).isEqualTo(200123);
         assertThat(message.speedMph()).isEqualTo(30.0);
         assertThat(message.eventTime()).isNotNull();
-        assertThat(message.sensors().gps().latitude()).isEqualTo(40.7128);
-        assertThat(message.sensors().gps().longitude()).isEqualTo(-74.0060);
-        assertThat(message.sensors().accelerometer().x()).isBetween(-0.5, 0.5);
-        assertThat(message.sensors().accelerometer().y()).isBetween(-0.5, 0.5);
-        assertThat(message.sensors().accelerometer().z()).isBetween(0.8, 1.2);
+        assertThat(message.gpsLatitude()).isEqualTo(40.7128);
+        assertThat(message.gpsLongitude()).isEqualTo(-74.0060);
+        assertThat(message.accelerometerX()).isBetween(-0.5, 0.5);
+        assertThat(message.accelerometerY()).isBetween(-0.5, 0.5);
+        assertThat(message.accelerometerZ()).isBetween(0.8, 1.2);
     }
 
     @Test
@@ -36,17 +36,17 @@ class TelematicsDataGeneratorTest {
         Driver testDriver = new Driver("TEST-001", 200123, 300999, "1HGBH41JXMN109999", 40.7128, -74.0060);
         testDriver.setCurrentState(DriverState.PARKED);
 
-        EnhancedTelematicsMessage message = dataGenerator.generateTelematicsData(testDriver);
+        FlatTelematicsMessage message = dataGenerator.generateTelematicsData(testDriver);
 
         assertThat(message.policyId()).isEqualTo(200123);
         assertThat(message.speedMph()).isEqualTo(0.0);
         assertThat(message.eventTime()).isNotNull();
-        assertThat(message.sensors().gps().latitude()).isEqualTo(40.7128);
-        assertThat(message.sensors().gps().longitude()).isEqualTo(-74.0060);
+        assertThat(message.gpsLatitude()).isEqualTo(40.7128);
+        assertThat(message.gpsLongitude()).isEqualTo(-74.0060);
         // Stationary accelerometer readings should be very low
-        assertThat(message.sensors().accelerometer().x()).isBetween(-0.05, 0.05);
-        assertThat(message.sensors().accelerometer().y()).isBetween(-0.05, 0.05);
-        assertThat(message.sensors().accelerometer().z()).isBetween(0.98, 1.02);
+        assertThat(message.accelerometerX()).isBetween(-0.05, 0.05);
+        assertThat(message.accelerometerY()).isBetween(-0.05, 0.05);
+        assertThat(message.accelerometerZ()).isBetween(0.95, 1.05);
     }
 
     @Test
@@ -55,7 +55,7 @@ class TelematicsDataGeneratorTest {
         Driver testDriver = new Driver("TEST-001", 200123, 300999, "1HGBH41JXMN109999", 40.7128, -74.0060);
         testDriver.setCurrentState(DriverState.POST_CRASH_IDLE);
 
-        EnhancedTelematicsMessage message = dataGenerator.generateTelematicsData(testDriver);
+        FlatTelematicsMessage message = dataGenerator.generateTelematicsData(testDriver);
 
         assertThat(message.policyId()).isEqualTo(200123);
         assertThat(message.speedMph()).isEqualTo(0.0);
@@ -69,15 +69,15 @@ class TelematicsDataGeneratorTest {
         Driver testDriver = new Driver("TEST-001", 200123, 300999, "1HGBH41JXMN109999", 40.7128, -74.0060);
         testDriver.setCurrentSpeed(35.0);
 
-        EnhancedTelematicsMessage message = dataGenerator.generateCrashEventData(testDriver);
+        FlatTelematicsMessage message = dataGenerator.generateCrashEventData(testDriver);
 
         assertThat(message.policyId()).isEqualTo(200123);
         assertThat(message.speedMph()).isEqualTo(0.0); // Speed is zero during crash event
         assertThat(message.eventTime()).isNotNull();
-        assertThat(message.sensors().gps().latitude()).isEqualTo(40.7128);
-        assertThat(message.sensors().gps().longitude()).isEqualTo(-74.0060);
-        assertThat(message.sensors().accelerometer().x()).isGreaterThan(4.0);
-        assertThat(message.sensors().accelerometer().y()).isGreaterThan(3.0);
-        assertThat(message.sensors().accelerometer().z()).isBetween(-2.0, 2.0);
+        assertThat(message.gpsLatitude()).isEqualTo(40.7128);
+        assertThat(message.gpsLongitude()).isEqualTo(-74.0060);
+        assertThat(message.accelerometerX()).isGreaterThan(4.0);
+        assertThat(message.accelerometerY()).isGreaterThan(3.0);
+        assertThat(message.accelerometerZ()).isBetween(-2.0, 2.0);
     }
 }
