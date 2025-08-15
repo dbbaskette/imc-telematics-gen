@@ -5,8 +5,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.time.Instant;
 
 /**
- * Flattened version of EnhancedTelematicsMessage for simplified downstream processing.
- * All nested sensor data is flattened using prefix naming convention (e.g., gps_latitude, device_battery_level).
+ * Flat telematics message structure for simplified downstream processing.
+ * All sensor data is flattened using prefix naming convention (e.g., gps_latitude, device_battery_level).
  * This structure is optimized for RabbitMQ publishing and direct SQL mapping.
  */
 public record FlatTelematicsMessage(

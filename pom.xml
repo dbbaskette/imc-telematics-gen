@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.insurancemegacorp</groupId>
     <artifactId>telematicsgen</artifactId>
-    <version>3.0.0</version>
+    <version>3.0.1</version>
     <name>telematicsgen</name>
     <description>Vehicle telematics data generator for Insurance Megacorp</description>
     <properties>

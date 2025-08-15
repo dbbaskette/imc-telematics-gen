@@ -21,7 +21,7 @@ telematics:
   exchange:
     name: telematics_exchange
   simulation:
-    interval-ms: 500          # Update frequency (500ms for smooth UI)
+    interval-ms: 200          # Update frequency (500ms for smooth UI)
     driver-count: 3           # Legacy (random mode). Use max-drivers to cap file-based drivers
     crash-frequency: 500       # Messages between crash events per driver
     min-crash-gforce: 6.0     # Enforce minimum G-force for forced crashes
