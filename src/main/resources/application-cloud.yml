@@ -2,6 +2,8 @@
 # This profile is activated when running in cloud environments
 
 spring:
+  application:
+    name: imc-telematics-gen
   # Cloud-specific RabbitMQ configuration (auto-configured via service binding)
   rabbitmq:
     # These will be auto-configured by Cloud Foundry service bindings
@@ -46,7 +48,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: health,metrics,info,env,configprops
+        include: health,metrics,info,env,configprops,discovery
   endpoint:
     health:
       show-details: always

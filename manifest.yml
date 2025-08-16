@@ -1,12 +1,13 @@
 applications:
-  - name: imc-telematics-gen
+  - name: -v4.0.0
     memory: 1G
     instances: 1
-    path: ./target/telematicsgen-4.0.0.jar
+    path: ./target/telematicsgen-4.1.0.jar
     buildpacks:
     - java_buildpack_offline
     services:
       - messaging-c856b29a-1c7e-4fd5-ab3b-0633b90869cc
+      - imc-services
     env:
       JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 21.+ } }'
       SPRING_PROFILES_ACTIVE: cloud
