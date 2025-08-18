@@ -13,6 +13,11 @@ spring:
     # password: ${RABBITMQ_PASSWORD}
   
   cloud:
+    service-registry:
+      auto-registration:
+        enabled: true
+        register-management: true
+        fail-fast: false
     stream:
       # SCDF-specific stream bindings
       bindings:
@@ -34,12 +39,17 @@ spring:
               delivery-mode: PERSISTENT
               mandatory: true
 
+# Eureka configuration handled by Spring Cloud Services auto-configuration
+
 # Cloud-specific logging
 logging:
   level:
     com.insurancemegacorp.telematicsgen: INFO
     org.springframework.cloud.stream: DEBUG
     org.springframework.amqp: INFO
+    org.springframework.cloud.netflix.eureka: DEBUG
+    com.netflix.discovery: DEBUG
+    org.springframework.cloud.service: DEBUG
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level [%X{traceId:-},%X{spanId:-}] %logger{36} - %msg%n"
 
@@ -48,7 +58,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: health,metrics,info,env,configprops,discovery
+        include: health,metrics,info,env,configprops,discovery,prometheus
   endpoint:
     health:
       show-details: always

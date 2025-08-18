@@ -5,6 +5,7 @@ import com.insurancemegacorp.telematicsgen.model.DriverLocationUpdate;
 import com.insurancemegacorp.telematicsgen.model.FlatTelematicsMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.stereotype.Service;
 
@@ -17,7 +18,7 @@ public class WebSocketBroadcastService {
     private final SimpMessagingTemplate messagingTemplate;
     private final DriverManager driverManager;
 
-    public WebSocketBroadcastService(SimpMessagingTemplate messagingTemplate, DriverManager driverManager) {
+    public WebSocketBroadcastService(@Lazy SimpMessagingTemplate messagingTemplate, DriverManager driverManager) {
         this.messagingTemplate = messagingTemplate;
         this.driverManager = driverManager;
     }

@@ -8,6 +8,9 @@ import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
+import io.micrometer.core.instrument.Counter;
+import io.micrometer.core.instrument.MeterRegistry;
+
 @Service
 public class TelematicsPublisher {
 
@@ -15,20 +18,30 @@ public class TelematicsPublisher {
 
     private final RabbitTemplate rabbitTemplate;
     private final WebSocketBroadcastService webSocketService;
+    private final Counter messagesSentCounter;
+    private final TelematicsRateService rateService;
 
     @Value("${telematics.exchange.name:telematics_exchange}")
     private String exchangeName;
 
     public TelematicsPublisher(RabbitTemplate rabbitTemplate, 
-                              WebSocketBroadcastService webSocketService) {
+                              WebSocketBroadcastService webSocketService,
+                              MeterRegistry meterRegistry,
+                              TelematicsRateService rateService) {
         this.rabbitTemplate = rabbitTemplate;
         this.webSocketService = webSocketService;
+        this.rateService = rateService;
+        this.messagesSentCounter = Counter.builder("telematics.messages.sent")
+            .description("Total number of telematics messages sent to RabbitMQ")
+            .register(meterRegistry);
     }
 
     public void publishTelematicsData(FlatTelematicsMessage message, Driver driver) {
         try {
             // Publish flat message directly to RabbitMQ for optimal downstream processing
             rabbitTemplate.convertAndSend(exchangeName, "", message);
+            messagesSentCounter.increment();
+            rateService.incrementMessageCount();
             
             logger.debug("📡 TELEMETRY | {} | VEH:{} | VIN:{} | Street:{} | Speed:{} mph (Limit: {} mph) | G-force:{}g",
                 message.driverId(),

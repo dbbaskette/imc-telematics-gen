@@ -58,25 +58,6 @@ public class FileBasedRouteService {
             }
             
             logger.info("✅ Loaded {} routes successfully", routes.size());
-            logger.info("🛣️  Available Routes:");
-            routes.keySet().stream()
-                .sorted()
-                .forEach(routeName -> {
-                    List<RoutePoint> route = routes.get(routeName);
-                    String startStreet = route.get(0).streetName();
-                    String endStreet = route.get(route.size() - 1).streetName();
-                    
-                    // Handle routes with missing or empty names
-                    String displayName = (routeName == null || routeName.trim().isEmpty()) 
-                        ? "unnamed_route" 
-                        : routeName;
-                    
-                    logger.info("   🚗 {} ({} waypoints) | {} → {}", 
-                        displayName, 
-                        route.size(),
-                        truncateStreet(startStreet),
-                        truncateStreet(endStreet));
-                });
                 
         } catch (IOException e) {
             logger.error("❌ Failed to scan for route files", e);

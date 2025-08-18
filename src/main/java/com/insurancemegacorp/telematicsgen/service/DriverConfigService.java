@@ -67,17 +67,6 @@ public class DriverConfigService {
                 this.driverConfigs = configs;
                 logger.info("✅ Successfully loaded {} driver configurations from file", configs.size());
                 
-                // Log summary of loaded drivers
-                configs.forEach(config -> 
-                    logger.info("🚗 Driver {}: {} - {} {} (Policy: {}, VIN: {})", 
-                        config.driverId(),
-                        config.driverName(),
-                        config.vehicleYear(),
-                        config.getVehicleDescription(),
-                        config.policyId(),
-                        config.vin())
-                );
-
             }
         } catch (IOException e) {
             logger.error("❌ Failed to load driver configurations from file", e);
