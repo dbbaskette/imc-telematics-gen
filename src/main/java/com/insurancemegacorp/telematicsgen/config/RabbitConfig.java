@@ -18,6 +18,19 @@ public class RabbitConfig {
     public RabbitTemplate rabbitTemplate(ConnectionFactory connectionFactory) {
         RabbitTemplate template = new RabbitTemplate(connectionFactory);
         template.setMessageConverter(jsonMessageConverter());
+        
+        // Enable publisher confirms for reliability
+        template.setConfirmCallback((correlationData, ack, cause) -> {
+            if (!ack) {
+                // Log failed confirms for monitoring
+                org.slf4j.LoggerFactory.getLogger(RabbitConfig.class)
+                    .warn("Message publish failed: {}", cause);
+            }
+        });
+        
+        // Enable mandatory flag for returns
+        template.setMandatory(true);
+        
         return template;
     }
 }

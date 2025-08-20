@@ -32,6 +32,37 @@ class TelematicsDashboard {
                 } catch (e) { console.error('Failed to set interval', e); }
             });
         }
+        
+        // Load current interval after controls are wired
+        this.loadCurrentInterval();
+    }
+
+    async loadCurrentInterval() {
+        try {
+            const response = await fetch('/api/interval');
+            if (response.ok) {
+                const data = await response.json();
+                const currentInterval = data.interval || 50; // Default to 50ms (center of 10-100ms range)
+                
+                // Update the slider and display
+                const rateSlider = document.getElementById('rateSlider');
+                const rateValue = document.getElementById('rateValue');
+                
+                if (rateSlider && rateValue) {
+                    rateSlider.value = currentInterval;
+                    rateValue.textContent = currentInterval;
+                }
+            }
+        } catch (e) {
+            console.error('Failed to load current interval:', e);
+            // Set default value if API call fails
+            const rateSlider = document.getElementById('rateSlider');
+            const rateValue = document.getElementById('rateValue');
+            if (rateSlider && rateValue) {
+                rateSlider.value = 50;
+                rateValue.textContent = 50;
+            }
+        }
     }
 
     loadSettings() {

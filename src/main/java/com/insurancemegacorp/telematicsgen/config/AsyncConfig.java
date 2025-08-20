@@ -13,9 +13,9 @@ public class AsyncConfig {
     @Bean("taskExecutor")
     public TaskExecutor taskExecutor() {
         ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
-        executor.setCorePoolSize(2);
-        executor.setMaxPoolSize(4);
-        executor.setQueueCapacity(100);
+        executor.setCorePoolSize(10);
+        executor.setMaxPoolSize(20);
+        executor.setQueueCapacity(1000);
         executor.setThreadNamePrefix("telematics-");
         executor.initialize();
         return executor;

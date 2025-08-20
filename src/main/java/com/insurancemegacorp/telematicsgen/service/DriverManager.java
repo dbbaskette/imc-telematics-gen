@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.security.SecureRandom;
+import java.util.concurrent.ThreadLocalRandom;
 import java.time.LocalTime;
 import java.util.List;
 import java.util.Optional;
@@ -161,7 +162,7 @@ public class DriverManager {
         }
         
         // Round-robin selection with some variation
-        int index = random.nextInt(drivers.size());
+        int index = ThreadLocalRandom.current().nextInt(drivers.size());
         return drivers.get(index);
     }
 
@@ -190,7 +191,7 @@ public class DriverManager {
             case PARKED -> {
                 // Time-based chance to start driving
                 double drivingProbability = calculateDrivingProbability();
-                if (timeInCurrentState > 30 && random.nextDouble() < drivingProbability) {
+                if (timeInCurrentState > 30 && ThreadLocalRandom.current().nextDouble() < drivingProbability) {
                     logger.info("🚙 {} starting to drive ({})", driver.getDriverId(), 
                         isNightTime() ? "night driving" : isPeakHour() ? "peak hour" : "normal hours");
                     driver.setCurrentState(DriverState.DRIVING);
@@ -206,7 +207,7 @@ public class DriverManager {
                 
                 // Time-based chance to stop for various reasons
                 double stopProbability = calculateStopProbability();
-                if (random.nextDouble() < stopProbability) {
+                if (ThreadLocalRandom.current().nextDouble() < stopProbability) {
                     DriverState newState = selectRandomStopState();
                     logger.info("🛑 {} stopping: {} ({})", driver.getDriverId(), newState,
                         isNightTime() ? "night parking" : "normal stop");
@@ -216,7 +217,7 @@ public class DriverManager {
             }
             case TRAFFIC_STOP -> {
                 // Short stops (traffic lights, etc.)
-                if (timeInCurrentState >= 30 + random.nextInt(60)) {
+                if (timeInCurrentState >= 30 + ThreadLocalRandom.current().nextInt(60)) {
                     logger.info("🚦 {} resuming from traffic stop", driver.getDriverId());
                     driver.setCurrentState(DriverState.DRIVING);
                 }

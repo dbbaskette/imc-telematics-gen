@@ -51,7 +51,7 @@ public class WebSocketBroadcastService {
 
             // Only broadcast every few messages to reduce load, unless driver is in crash state
             long messageCount = driver.getMessageCount();
-            if (isInCrashState || messageCount % 10 == 0) { // Broadcast every 10th message or crash states
+            if (isInCrashState || messageCount % 50 == 0) { // Broadcast every 50th message or crash states
                 logger.debug("🌐 Broadcasting driver update: {} at ({}, {}) - {}", 
                     driver.getDriverId(), driver.getCurrentLatitude(), driver.getCurrentLongitude(), driver.getCurrentState());
                 messagingTemplate.convertAndSend("/topic/drivers", update);

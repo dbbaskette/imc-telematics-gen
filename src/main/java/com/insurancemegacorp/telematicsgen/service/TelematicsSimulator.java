@@ -14,6 +14,7 @@ import org.springframework.stereotype.Service;
 import jakarta.annotation.PreDestroy;
 
 import java.security.SecureRandom;
+import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.atomic.AtomicLong;
 
 @Service
@@ -28,7 +29,7 @@ public class TelematicsSimulator {
     private final SecureRandom random = new SecureRandom();
     private final AtomicLong totalMessageCount = new AtomicLong(0);
 
-    @Value("${telematics.simulation.interval-ms:500}")
+    @Value("${telematics.simulation.interval-ms:100}")
     private long intervalMs;
 
     @Value("${telematics.policy.id:ACME-AUTO-98765}")
@@ -104,13 +105,13 @@ public class TelematicsSimulator {
                 totalMessageCount.incrementAndGet();
                 
                 // Log driver states periodically
-                if (totalMessageCount.get() % 50 == 0) {
+                if (totalMessageCount.get() % 100 == 0) {
                     driverManager.logDriverStates();
                 }
                 
                 // Random sleep interval to simulate real-world variance
-                long sleepTime = intervalMs + random.nextInt(1000) - 500; // ±500ms variance
-                Thread.sleep(Math.max(sleepTime, 500)); // Minimum 500ms
+                long sleepTime = intervalMs + ThreadLocalRandom.current().nextInt(20) - 10; // ±10ms variance
+                Thread.sleep(Math.max(sleepTime, 10)); // Minimum 10ms for system stability
                 
             } catch (InterruptedException e) {
                 logger.info("🛑 Simulation interrupted");
@@ -187,8 +188,8 @@ public class TelematicsSimulator {
     }
 
     public void setIntervalMs(long intervalMs) {
-        if (intervalMs < 100) {
-            intervalMs = 100; // Safety lower bound
+        if (intervalMs < 10) {
+            intervalMs = 10; // Safety lower bound
         }
         this.intervalMs = intervalMs;
         logger.info("⏱️ Simulation interval set to {} ms", this.intervalMs);

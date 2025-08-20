@@ -70,6 +70,11 @@ public class ShutdownController {
         return ResponseEntity.ok(Map.of("status", "ok", "intervalMs", simulator.getIntervalMs()));
     }
 
+    @org.springframework.web.bind.annotation.GetMapping("/interval")
+    public ResponseEntity<Map<String, Object>> getInterval() {
+        return ResponseEntity.ok(Map.of("status", "ok", "interval", simulator.getIntervalMs()));
+    }
+
     @Autowired
     private com.insurancemegacorp.telematicsgen.service.DriverManager driverManager;
     
