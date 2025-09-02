@@ -59,6 +59,12 @@ management:
     web:
       exposure:
         include: health,metrics,info,env,configprops,discovery,prometheus
+      cors:
+        allowed-origin-patterns: "*"
+        allowed-methods: "GET,POST,PUT,DELETE,OPTIONS"
+        allowed-headers: "*"
+        allow-credentials: true
+        max-age: 3600
   endpoint:
     health:
       show-details: always
