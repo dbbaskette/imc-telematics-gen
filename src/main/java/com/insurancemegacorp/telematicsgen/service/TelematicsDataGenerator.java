@@ -48,8 +48,9 @@ public class TelematicsDataGenerator {
     public FlatTelematicsMessage generateCrashEventData(Driver driver, AccidentType accidentType) {
         AccidentType.SensorProfile profile = accidentType.getSensorProfile();
 
-        // Capture speed at impact (driver's speed just before crash)
-        double speedAtImpact = driver.getCurrentSpeed();
+        // Use stored speed at impact (captured before speed was set to 0)
+        Double storedSpeed = driver.getCrashSpeedAtImpact();
+        double speedAtImpact = (storedSpeed != null) ? storedSpeed : driver.getCurrentSpeed();
 
         // Generate accelerometer readings based on accident type profile
         double accelX = roundToFourDecimals(profile.generateAccelX(random));
