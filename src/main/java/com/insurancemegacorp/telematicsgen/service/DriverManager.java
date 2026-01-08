@@ -334,14 +334,24 @@ public class DriverManager {
             // Use route speed limit with variation
             double baseVariation = (random.nextDouble() - 0.5) * 10.0; // ±5 mph
             double targetSpeed;
+
             if (driver.isAggressive()) {
-                // Aggressive drivers consistently exceed speed limit by 10-20 mph
-                double speedingBonus = 10.0 + random.nextDouble() * 10.0;
-                targetSpeed = point.speedLimit() + baseVariation + speedingBonus;
+                // Aggressive drivers: 70% chance to speed, 30% drive normally
+                if (random.nextDouble() < 0.7) {
+                    double speedingBonus = 10.0 + random.nextDouble() * 15.0; // 10-25 mph over
+                    targetSpeed = point.speedLimit() + baseVariation + speedingBonus;
+                } else {
+                    targetSpeed = point.speedLimit() + baseVariation;
+                }
                 driver.setCurrentSpeed(Math.max(15.0, Math.min(95.0, targetSpeed)));
             } else {
-                // Normal drivers stay near the speed limit
-                targetSpeed = point.speedLimit() + baseVariation;
+                // Normal drivers: 20% chance to speed occasionally
+                if (random.nextDouble() < 0.2) {
+                    double speedingBonus = 5.0 + random.nextDouble() * 10.0; // 5-15 mph over
+                    targetSpeed = point.speedLimit() + baseVariation + speedingBonus;
+                } else {
+                    targetSpeed = point.speedLimit() + baseVariation;
+                }
                 driver.setCurrentSpeed(Math.max(15.0, Math.min(85.0, targetSpeed)));
             }
         }
