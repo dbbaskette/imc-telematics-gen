@@ -18,7 +18,11 @@ public class TelematicsDataGenerator {
             case DRIVING -> {
                 return generateDrivingData(driver);
             }
-            case PARKED, TRAFFIC_STOP, BREAK_TIME, POST_CRASH_IDLE -> {
+            case POST_CRASH_IDLE -> {
+                // Post-crash data should be frozen/static until state changes
+                return generatePostCrashData(driver);
+            }
+            case PARKED, TRAFFIC_STOP, BREAK_TIME -> {
                 return generateStationaryData(driver);
             }
             default -> {
@@ -27,56 +31,81 @@ public class TelematicsDataGenerator {
         }
     }
 
+    /**
+     * Generate crash event data with a random accident type.
+     */
     public FlatTelematicsMessage generateCrashEventData(Driver driver) {
-        // Generate crash-level accelerometer readings
-        double accelX = roundToFourDecimals(5.0 + random.nextDouble() * 3.0);
-        double accelY = roundToFourDecimals(4.0 + random.nextDouble() * 3.0);
-        double accelZ = roundToFourDecimals((random.nextDouble() - 0.5) * 4.0);
-        
+        AccidentType[] types = AccidentType.values();
+        AccidentType accidentType = types[random.nextInt(types.length)];
+        return generateCrashEventData(driver, accidentType);
+    }
+
+    /**
+     * Generate crash event data with a specific accident type.
+     * Each accident type has characteristic sensor signatures.
+     * Speed at impact is captured from the driver's current speed before the crash.
+     */
+    public FlatTelematicsMessage generateCrashEventData(Driver driver, AccidentType accidentType) {
+        AccidentType.SensorProfile profile = accidentType.getSensorProfile();
+
+        // Capture speed at impact (driver's speed just before crash)
+        double speedAtImpact = driver.getCurrentSpeed();
+
+        // Generate accelerometer readings based on accident type profile
+        double accelX = roundToFourDecimals(profile.generateAccelX(random));
+        double accelY = roundToFourDecimals(profile.generateAccelY(random));
+        double accelZ = roundToFourDecimals(profile.generateAccelZ(random));
+
+        // Generate gyroscope readings based on accident type profile
+        double gyroX = roundToFourDecimals(profile.generateGyroX(random));
+        double gyroY = roundToFourDecimals(profile.generateGyroY(random));
+        double gyroZ = roundToFourDecimals(profile.generateGyroZ(random));
+
         // Calculate G-force and enforce minimum threshold for crash
         double gForce = Math.max(minCrashGForce, Math.sqrt(accelX * accelX + accelY * accelY + accelZ * accelZ));
-        
+
         return new FlatTelematicsMessage(
             // Core message fields
             driver.getPolicyId(),
             driver.getVehicleId(),
             driver.getVin(),
             Instant.now(),
-            0.0, // Speed is zero during crash event
+            roundToTwoDecimals(speedAtImpact), // Speed at moment of impact
             driver.getSpeedLimit(),
             gForce,
             driver.getDriverId(),
             driver.getCurrentStreet(),
-            
+            accidentType.name(), // Accident type as string
+
             // GPS data fields
             driver.getCurrentLatitude(),
             driver.getCurrentLongitude(),
             320.5 + random.nextDouble() * 50.0,    // altitude
-            0.0,                                   // GPS speed (zero during crash)
+            speedAtImpact * 0.44704,               // GPS speed in m/s at impact
             driver.getCurrentBearing(),            // bearing from driver
             2.0 + random.nextDouble() * 3.0,       // GPS accuracy
             8 + random.nextInt(4),                 // satellite count (8-11)
             100 + random.nextLong() % 200,         // fix time in ms
-            
-            // Accelerometer data fields
+
+            // Accelerometer data fields - from accident type profile
             accelX,
             accelY,
             accelZ,
-            
-            // Gyroscope data fields (extreme readings during crash)
-            roundToFourDecimals((random.nextDouble() - 0.5) * 6.0), // High pitch rotation
-            roundToFourDecimals((random.nextDouble() - 0.5) * 8.0), // High roll rotation  
-            roundToFourDecimals((random.nextDouble() - 0.5) * 4.0), // High yaw rotation
-            
+
+            // Gyroscope data fields - from accident type profile
+            gyroX,
+            gyroY,
+            gyroZ,
+
             // Magnetometer data fields
             roundToFourDecimals(20.0 + random.nextDouble() * 10.0),
             roundToFourDecimals(-15.0 + random.nextDouble() * 10.0),
             roundToFourDecimals(40.0 + random.nextDouble() * 15.0),
             driver.getCurrentBearing(), // Compass heading
-            
+
             // Environmental data
             1010.0 + random.nextDouble() * 10.0, // Barometric pressure
-            
+
             // Device metadata fields
             75 + random.nextInt(20),               // Battery level (75-95%)
             -70 - random.nextInt(30),              // Signal strength (-70 to -100 dBm)
@@ -91,10 +120,10 @@ public class TelematicsDataGenerator {
         double accelX = roundToFourDecimals((random.nextDouble() - 0.5) * 1.0);
         double accelY = roundToFourDecimals((random.nextDouble() - 0.5) * 1.0);
         double accelZ = roundToFourDecimals(0.8 + random.nextDouble() * 0.4);
-        
+
         // Calculate G-force from accelerometer data
         double gForce = Math.sqrt(accelX * accelX + accelY * accelY + accelZ * accelZ);
-        
+
         return new FlatTelematicsMessage(
             // Core message fields
             driver.getPolicyId(),
@@ -106,7 +135,8 @@ public class TelematicsDataGenerator {
             gForce,
             driver.getDriverId(),
             driver.getCurrentStreet() != null ? driver.getCurrentStreet() : "Unknown Street",
-            
+            null, // No accident type for normal driving
+
             // GPS data fields
             driver.getCurrentLatitude(),
             driver.getCurrentLongitude(),
@@ -116,26 +146,26 @@ public class TelematicsDataGenerator {
             1.5 + random.nextDouble() * 2.0,       // GPS accuracy (better when driving)
             10 + random.nextInt(3),                // satellite count (10-12)
             50 + random.nextLong() % 100,          // fix time in ms
-            
+
             // Accelerometer data fields
             accelX,
             accelY,
             accelZ,
-            
+
             // Gyroscope data fields (normal driving - turning, lane changes)
             roundToFourDecimals((random.nextDouble() - 0.5) * 0.5), // Gentle pitch changes
             roundToFourDecimals((random.nextDouble() - 0.5) * 0.8), // Lane changes, turns
             roundToFourDecimals((random.nextDouble() - 0.5) * 1.2), // Steering movements
-            
+
             // Magnetometer data fields (compass/magnetic field)
             roundToFourDecimals(20.0 + random.nextDouble() * 10.0),
             roundToFourDecimals(-15.0 + random.nextDouble() * 10.0),
             roundToFourDecimals(40.0 + random.nextDouble() * 15.0),
             driver.getCurrentBearing(), // Compass heading
-            
+
             // Environmental data
             1013.0 + random.nextDouble() * 8.0,    // Barometric pressure
-            
+
             // Device metadata fields
             80 + random.nextInt(15),               // Battery level (80-95%)
             -60 - random.nextInt(25),              // Signal strength (-60 to -85 dBm)
@@ -145,15 +175,74 @@ public class TelematicsDataGenerator {
         );
     }
 
+    /**
+     * Generate frozen/static data for post-crash state.
+     * Values remain constant to indicate the vehicle is immobile after an accident.
+     */
+    private FlatTelematicsMessage generatePostCrashData(Driver driver) {
+        // Use crash snapshot data if available (accident type persists during post-crash)
+        String accidentType = driver.getCrashAccidentType();
+
+        return new FlatTelematicsMessage(
+            // Core message fields
+            driver.getPolicyId(),
+            driver.getVehicleId(),
+            driver.getVin(),
+            Instant.now(),
+            0.0, // Vehicle is now stationary after crash
+            driver.getSpeedLimit(),
+            1.0, // Normal G-force (vehicle at rest)
+            driver.getDriverId(),
+            driver.getCurrentStreet() != null ? driver.getCurrentStreet() : "Crash Site",
+            accidentType, // Keep showing accident type during post-crash
+
+            // GPS data fields - frozen at crash location
+            driver.getCurrentLatitude(),
+            driver.getCurrentLongitude(),
+            320.0,  // Fixed altitude
+            0.0,    // Zero speed
+            driver.getCurrentBearing(),
+            1.5,    // Fixed GPS accuracy
+            12,     // Fixed satellite count
+            40L,    // Fixed fix time
+
+            // Accelerometer data - minimal, vehicle at rest
+            0.0,
+            0.0,
+            1.0,  // Only gravity
+
+            // Gyroscope data - zero rotation
+            0.0,
+            0.0,
+            0.0,
+
+            // Magnetometer data - stable
+            25.0,
+            -10.0,
+            45.0,
+            driver.getCurrentBearing(),
+
+            // Environmental data
+            1013.0,
+
+            // Device metadata - frozen values
+            85,      // Battery level
+            -70,     // Signal strength
+            "face_up",  // Device likely thrown/displaced
+            true,    // Screen on (emergency)
+            false    // Not charging
+        );
+    }
+
     private FlatTelematicsMessage generateStationaryData(Driver driver) {
         // Minimal accelerometer data for stationary vehicle
         double accelX = roundToFourDecimals((random.nextDouble() - 0.5) * 0.1);
         double accelY = roundToFourDecimals((random.nextDouble() - 0.5) * 0.1);
         double accelZ = roundToFourDecimals(0.95 + random.nextDouble() * 0.1);
-        
+
         // Calculate G-force from accelerometer data (minimal for stationary)
         double gForce = Math.sqrt(accelX * accelX + accelY * accelY + accelZ * accelZ);
-        
+
         return new FlatTelematicsMessage(
             // Core message fields
             driver.getPolicyId(),
@@ -165,7 +254,8 @@ public class TelematicsDataGenerator {
             gForce,
             driver.getDriverId(),
             driver.getCurrentStreet() != null ? driver.getCurrentStreet() : "Unknown Street",
-            
+            null, // No accident type for stationary
+
             // GPS data fields
             driver.getCurrentLatitude(),
             driver.getCurrentLongitude(),
@@ -175,26 +265,26 @@ public class TelematicsDataGenerator {
             0.8 + random.nextDouble() * 1.0,       // GPS accuracy (excellent when stationary)
             11 + random.nextInt(2),                // satellite count (11-12)
             30 + random.nextLong() % 50,           // fix time in ms (fast when stationary)
-            
+
             // Accelerometer data fields
             accelX,
             accelY,
             accelZ,
-            
+
             // Gyroscope data fields (minimal movement when stationary)
             roundToFourDecimals((random.nextDouble() - 0.5) * 0.02), // Tiny pitch variations
             roundToFourDecimals((random.nextDouble() - 0.5) * 0.02), // Tiny roll variations
             roundToFourDecimals((random.nextDouble() - 0.5) * 0.02), // Tiny yaw variations
-            
+
             // Magnetometer data fields (stable when stationary)
             roundToFourDecimals(22.0 + random.nextDouble() * 6.0),
             roundToFourDecimals(-12.0 + random.nextDouble() * 6.0),
             roundToFourDecimals(42.0 + random.nextDouble() * 8.0),
             driver.getCurrentBearing(), // Compass heading
-            
+
             // Environmental data
             1013.2 + random.nextDouble() * 5.0,    // Stable barometric pressure
-            
+
             // Device metadata fields (potentially different when parked)
             85 + random.nextInt(10),               // Battery level (85-95%, may be charging)
             -65 - random.nextInt(20),              // Signal strength (-65 to -85 dBm)

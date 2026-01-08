@@ -2,323 +2,131 @@
   "name": "ashley_brown_work___atlanta_marketing_agency_to_mall_of_georgia",
   "description": "Ashley Brown: Work___Atlanta_Marketing_Agency \u2192 Mall_Of_Georgia",
   "start_location": "33.755, -84.385",
-  "end_location": "34.1289, -84.0561",
+  "end_location": "34.0725, -83.9892",
   "waypoints": [
     {
       "latitude": 33.755,
       "longitude": -84.385,
-      "street_name": "Residential Driveway",
+      "street_name": "Parking Exit",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.764586,
-      "longitude": -84.376566,
-      "street_name": "Haynes Bridge Road",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.774175,
-      "longitude": -84.368133,
-      "street_name": "Powers Ferry Road",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.783761,
-      "longitude": -84.359699,
-      "street_name": "Edgewood Avenue",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.793349,
-      "longitude": -84.351267,
-      "street_name": "Spalding Drive",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.802936,
-      "longitude": -84.342834,
-      "street_name": "Spot Road",
+      "latitude": 33.7600,
+      "longitude": -84.3800,
+      "street_name": "Marietta Street NW",
       "speed_limit": 35,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.812523,
-      "longitude": -84.3344,
-      "street_name": "Cypress Street",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.822111,
-      "longitude": -84.325968,
-      "street_name": "Highway 42",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.831698,
-      "longitude": -84.317532,
-      "street_name": "7th Street",
+      "latitude": 33.7650,
+      "longitude": -84.3750,
+      "street_name": "Williams Street NW",
       "speed_limit": 35,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.841284,
-      "longitude": -84.309101,
-      "street_name": "Highway 5",
+      "latitude": 33.7800,
+      "longitude": -84.3600,
+      "street_name": "I-75/I-85 North (Downtown Connector)",
       "speed_limit": 55,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.850871,
-      "longitude": -84.300667,
-      "street_name": "Clairmont Road",
-      "speed_limit": 45,
+      "latitude": 33.8000,
+      "longitude": -84.3450,
+      "street_name": "I-85 North",
+      "speed_limit": 65,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.86046,
-      "longitude": -84.292233,
-      "street_name": "Lenox Road",
-      "speed_limit": 45,
+      "latitude": 33.8400,
+      "longitude": -84.3100,
+      "street_name": "I-85 North",
+      "speed_limit": 65,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.870047,
-      "longitude": -84.2838,
-      "street_name": "Pharr Road",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 33.879633,
-      "longitude": -84.275367,
-      "street_name": "Briarcliff Road",
-      "speed_limit": 45,
+      "latitude": 33.8800,
+      "longitude": -84.2700,
+      "street_name": "I-85 North",
+      "speed_limit": 65,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.88922,
-      "longitude": -84.266934,
-      "street_name": "13th Street",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.898808,
-      "longitude": -84.258499,
-      "street_name": "GA-400 North",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.908396,
-      "longitude": -84.250068,
-      "street_name": "Union Hill Road",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 33.917983,
-      "longitude": -84.241633,
-      "street_name": "18th Street",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.927568,
-      "longitude": -84.233201,
-      "street_name": "Samples Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.937156,
-      "longitude": -84.224767,
-      "street_name": "Buford Highway",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.946744,
-      "longitude": -84.216334,
-      "street_name": "I-675 South",
+      "latitude": 33.9200,
+      "longitude": -84.2300,
+      "street_name": "I-85 North",
       "speed_limit": 70,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.956331,
-      "longitude": -84.2079,
-      "street_name": "DeKalb Avenue",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.965918,
-      "longitude": -84.199467,
-      "street_name": "Austell Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.975504,
-      "longitude": -84.191034,
-      "street_name": "Monroe Circle",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.985093,
-      "longitude": -84.1826,
-      "street_name": "West Wesley Road",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 33.99468,
-      "longitude": -84.174167,
-      "street_name": "Westminster Drive",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.004266,
-      "longitude": -84.165734,
-      "street_name": "Highway 85",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.013853,
-      "longitude": -84.1573,
-      "street_name": "15th Street",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.023441,
-      "longitude": -84.148866,
-      "street_name": "Haynes Bridge Road",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 34.033028,
-      "longitude": -84.140433,
-      "street_name": "DeKalb Avenue",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.042614,
-      "longitude": -84.131999,
-      "street_name": "7th Street",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.052202,
-      "longitude": -84.123567,
-      "street_name": "Peachtree Industrial Blvd",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.061789,
-      "longitude": -84.115134,
-      "street_name": "Clifton Road",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.071377,
-      "longitude": -84.106699,
-      "street_name": "Westminster Drive",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.080964,
-      "longitude": -84.098267,
-      "street_name": "Lower Roswell Road",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.090551,
-      "longitude": -84.089833,
-      "street_name": "Briarcliff Road",
-      "speed_limit": 35,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 34.100138,
-      "longitude": -84.0814,
-      "street_name": "Rockbridge Road",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.109725,
-      "longitude": -84.072966,
-      "street_name": "I-985 North",
+      "latitude": 33.9600,
+      "longitude": -84.1900,
+      "street_name": "I-85 North",
       "speed_limit": 70,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 34.119312,
-      "longitude": -84.064534,
-      "street_name": "Stone Mountain Freeway",
-      "speed_limit": 25,
+      "latitude": 34.0000,
+      "longitude": -84.1450,
+      "street_name": "I-85 North",
+      "speed_limit": 70,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 34.1289,
-      "longitude": -84.0561,
+      "latitude": 34.0200,
+      "longitude": -84.1100,
+      "street_name": "I-85 North",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.0400,
+      "longitude": -84.0750,
+      "street_name": "I-85 North",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.0550,
+      "longitude": -84.0400,
+      "street_name": "I-85 North",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.0650,
+      "longitude": -84.0100,
+      "street_name": "GA-20 East",
+      "speed_limit": 55,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.0700,
+      "longitude": -83.9950,
+      "street_name": "Mall of Georgia Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.0725,
+      "longitude": -83.9892,
       "street_name": "Destination Parking",
       "speed_limit": 15,
       "has_traffic_light": false,

@@ -1,125 +1,69 @@
 {
   "name": "derek_johnson_work___hospital_to_pharmacy",
-  "description": "Derek Johnson: Work___Hospital \u2192 Pharmacy",
+  "description": "Derek Johnson: Grady Memorial Hospital to CVS Pharmacy (Midtown)",
   "start_location": "33.748, -84.385",
   "end_location": "33.76, -84.378",
   "waypoints": [
     {
       "latitude": 33.748,
       "longitude": -84.385,
-      "street_name": "Residential Driveway",
+      "street_name": "Grady Memorial Hospital - Jesse Hill Jr Drive",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.748857,
-      "longitude": -84.384501,
-      "street_name": "Monroe Circle",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.749714,
-      "longitude": -84.384,
-      "street_name": "GA-400 North",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.750571,
-      "longitude": -84.3835,
-      "street_name": "Veterans Memorial Highway",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.751428,
-      "longitude": -84.383,
-      "street_name": "Collier Road",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 33.752285,
-      "longitude": -84.382501,
-      "street_name": "Arden Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.753144,
-      "longitude": -84.382,
-      "street_name": "9th Street",
+      "latitude": 33.7495,
+      "longitude": -84.3845,
+      "street_name": "Jesse Hill Jr Drive SE",
       "speed_limit": 35,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.754,
-      "longitude": -84.381501,
-      "street_name": "Highway 141 (Peachtree Rd)",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.754856,
-      "longitude": -84.380999,
-      "street_name": "Holiday Road",
-      "speed_limit": 45,
+      "latitude": 33.7510,
+      "longitude": -84.3838,
+      "street_name": "Auburn Avenue NE",
+      "speed_limit": 30,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.755714,
-      "longitude": -84.380499,
-      "street_name": "Spring Street",
+      "latitude": 33.7530,
+      "longitude": -84.3828,
+      "street_name": "Peachtree Street NE at Auburn Avenue",
       "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.756571,
-      "longitude": -84.38,
-      "street_name": "Pilgrim Mill Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
+      "latitude": 33.7550,
+      "longitude": -84.3818,
+      "street_name": "Peachtree Street NE at North Avenue",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.757429,
-      "longitude": -84.379501,
-      "street_name": "Ponce de Leon Avenue",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
+      "latitude": 33.7565,
+      "longitude": -84.3808,
+      "street_name": "Peachtree Street NE at Ponce de Leon",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.758285,
-      "longitude": -84.378999,
-      "street_name": "Candler Road",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "stop_sign"
-    },
-    {
-      "latitude": 33.759142,
-      "longitude": -84.378501,
-      "street_name": "Pine Street",
-      "speed_limit": 25,
+      "latitude": 33.7580,
+      "longitude": -84.3795,
+      "street_name": "Ponce de Leon Avenue NE",
+      "speed_limit": 35,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
       "latitude": 33.76,
       "longitude": -84.378,
-      "street_name": "Destination Parking",
+      "street_name": "CVS Pharmacy - Ponce de Leon Avenue NE",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"

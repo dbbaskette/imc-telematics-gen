@@ -1,124 +1,60 @@
 {
   "name": "christopher_thomas_gym_to_equipment_store",
   "description": "Christopher Thomas: Gym \u2192 Equipment_Store",
-  "start_location": "33.739, -84.4",
-  "end_location": "33.743, -84.403",
+  "start_location": "33.7625, -84.3985",
+  "end_location": "33.7515, -84.4085",
   "waypoints": [
     {
-      "latitude": 33.739,
-      "longitude": -84.4,
-      "street_name": "Residential Driveway",
+      "latitude": 33.7625,
+      "longitude": -84.3985,
+      "street_name": "Parking Exit",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.739285,
-      "longitude": -84.400214,
-      "street_name": "Peachtree Parkway",
-      "speed_limit": 45,
+      "latitude": 33.7612,
+      "longitude": -84.3998,
+      "street_name": "Bankhead Highway NW",
+      "speed_limit": 35,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.739571,
-      "longitude": -84.400428,
-      "street_name": "Powers Ferry Road",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.739857,
-      "longitude": -84.400642,
-      "street_name": "Keith Bridge Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.740144,
-      "longitude": -84.400857,
-      "street_name": "I-575 North",
-      "speed_limit": 70,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.740428,
-      "longitude": -84.401072,
-      "street_name": "Sawnee Avenue",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.740714,
-      "longitude": -84.401286,
-      "street_name": "I-575 North",
-      "speed_limit": 70,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.741,
-      "longitude": -84.401499,
-      "street_name": "Habersham Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.741285,
-      "longitude": -84.401713,
-      "street_name": "Haynes Bridge Road",
+      "latitude": 33.7595,
+      "longitude": -84.4015,
+      "street_name": "Northside Drive NW",
       "speed_limit": 45,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.741571,
-      "longitude": -84.401929,
-      "street_name": "Tuxedo Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.741858,
-      "longitude": -84.402143,
-      "street_name": "Haynes Bridge Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.742143,
-      "longitude": -84.402357,
-      "street_name": "LaVista Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.742428,
-      "longitude": -84.402572,
-      "street_name": "Cumberland Parkway",
-      "speed_limit": 45,
+      "latitude": 33.7572,
+      "longitude": -84.4038,
+      "street_name": "Martin Luther King Jr Drive NW",
+      "speed_limit": 35,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.742715,
-      "longitude": -84.402786,
-      "street_name": "Perimeter Center East",
-      "speed_limit": 25,
+      "latitude": 33.7548,
+      "longitude": -84.4058,
+      "street_name": "Joseph E Lowery Blvd NW",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.7528,
+      "longitude": -84.4075,
+      "street_name": "Donald Lee Hollowell Parkway NW",
+      "speed_limit": 45,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.743,
-      "longitude": -84.403,
+      "latitude": 33.7515,
+      "longitude": -84.4085,
       "street_name": "Destination Parking",
       "speed_limit": 15,
       "has_traffic_light": false,

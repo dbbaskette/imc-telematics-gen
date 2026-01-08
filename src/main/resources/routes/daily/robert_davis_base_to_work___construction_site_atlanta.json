@@ -13,308 +13,108 @@
       "traffic_control": "none"
     },
     {
-      "latitude": 33.996758,
-      "longitude": -84.150893,
-      "street_name": "Cobb Parkway",
+      "latitude": 34.0010,
+      "longitude": -84.1480,
+      "street_name": "Peachtree Industrial Boulevard",
       "speed_limit": 45,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.990319,
-      "longitude": -84.157185,
-      "street_name": "Windy Hill Road",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.983876,
-      "longitude": -84.163476,
-      "street_name": "14th Street",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.977435,
-      "longitude": -84.169769,
-      "street_name": "11th Street",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.970995,
-      "longitude": -84.176061,
-      "street_name": "Cumberland Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.964554,
-      "longitude": -84.182353,
-      "street_name": "Monroe Drive",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.958113,
-      "longitude": -84.188645,
-      "street_name": "LaVista Road",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "yield"
-    },
-    {
-      "latitude": 33.951672,
-      "longitude": -84.194938,
-      "street_name": "Roswell Road",
+      "latitude": 33.9950,
+      "longitude": -84.1550,
+      "street_name": "Peachtree Industrial Boulevard",
       "speed_limit": 45,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.945231,
-      "longitude": -84.201232,
-      "street_name": "Monroe Drive",
+      "latitude": 33.9850,
+      "longitude": -84.1650,
+      "street_name": "I-85 South On-Ramp",
       "speed_limit": 45,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.93879,
-      "longitude": -84.207523,
-      "street_name": "Highway 42",
+      "latitude": 33.9600,
+      "longitude": -84.1900,
+      "street_name": "I-85 South",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.9300,
+      "longitude": -84.2200,
+      "street_name": "I-85 South",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.9000,
+      "longitude": -84.2500,
+      "street_name": "I-85 South",
+      "speed_limit": 65,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.8700,
+      "longitude": -84.2800,
+      "street_name": "I-85 South",
+      "speed_limit": 65,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.8400,
+      "longitude": -84.3100,
+      "street_name": "I-85 South",
+      "speed_limit": 65,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.8100,
+      "longitude": -84.3400,
+      "street_name": "I-85 South",
       "speed_limit": 55,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.932349,
-      "longitude": -84.213815,
-      "street_name": "Ralph McGill Boulevard",
-      "speed_limit": 45,
+      "latitude": 33.7850,
+      "longitude": -84.3600,
+      "street_name": "I-75/I-85 South (Downtown Connector)",
+      "speed_limit": 55,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.925908,
-      "longitude": -84.220108,
-      "street_name": "18th Street",
+      "latitude": 33.7650,
+      "longitude": -84.3750,
+      "street_name": "I-75/I-85 South (Downtown Connector)",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.7580,
+      "longitude": -84.3820,
+      "street_name": "Martin Luther King Jr Drive",
       "speed_limit": 35,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.919467,
-      "longitude": -84.226401,
-      "street_name": "North Decatur Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.913027,
-      "longitude": -84.232692,
-      "street_name": "Habersham Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.906584,
-      "longitude": -84.238984,
-      "street_name": "Atlanta Highway",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.900144,
-      "longitude": -84.245277,
-      "street_name": "Northlake Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.893702,
-      "longitude": -84.25157,
-      "street_name": "Club Drive",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.887261,
-      "longitude": -84.257861,
-      "street_name": "Club Drive",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.880821,
-      "longitude": -84.264155,
-      "street_name": "Cypress Street",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.874379,
-      "longitude": -84.270446,
-      "street_name": "Memorial Drive",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 33.867939,
-      "longitude": -84.276739,
-      "street_name": "Rock Springs Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.861498,
-      "longitude": -84.28303,
-      "street_name": "Dahlonega Highway",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.855057,
-      "longitude": -84.289324,
-      "street_name": "Highway 141 (Peachtree Rd)",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.848615,
-      "longitude": -84.295615,
-      "street_name": "Arden Road",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 33.842175,
-      "longitude": -84.301908,
-      "street_name": "Briarcliff Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.835734,
-      "longitude": -84.308199,
-      "street_name": "Keith Bridge Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.829292,
-      "longitude": -84.314493,
-      "street_name": "West Peachtree Street",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.822852,
-      "longitude": -84.320784,
-      "street_name": "Old Milton Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.81641,
-      "longitude": -84.327078,
-      "street_name": "Ponce de Leon Avenue",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.809969,
-      "longitude": -84.333369,
-      "street_name": "Perimeter Center West",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.803529,
-      "longitude": -84.339661,
-      "street_name": "Powers Ferry Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.797086,
-      "longitude": -84.345954,
-      "street_name": "GA-400 South",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.790647,
-      "longitude": -84.352247,
-      "street_name": "Highway 138",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.784205,
-      "longitude": -84.358539,
-      "street_name": "Scott Boulevard",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.777765,
-      "longitude": -84.36483,
-      "street_name": "Juniper Street",
+      "latitude": 33.7550,
+      "longitude": -84.3860,
+      "street_name": "Northside Drive SW",
       "speed_limit": 35,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 33.771322,
-      "longitude": -84.371123,
-      "street_name": "Clifton Road",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.764883,
-      "longitude": -84.377416,
-      "street_name": "Marietta Street",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.758441,
-      "longitude": -84.383708,
-      "street_name": "Monroe Drive",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
     },
     {
       "latitude": 33.752,

@@ -1,125 +1,77 @@
 {
   "name": "emily_carter_coffee_shop_to_library",
-  "description": "Emily Carter: Coffee_Shop \u2192 Library",
+  "description": "Emily Carter: Coffee Shop to Atlanta-Fulton Public Library",
   "start_location": "33.752, -84.382",
   "end_location": "33.746, -84.395",
   "waypoints": [
     {
       "latitude": 33.752,
       "longitude": -84.382,
-      "street_name": "Residential Driveway",
+      "street_name": "Coffee Shop - Edgewood Avenue NE",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.751571,
-      "longitude": -84.382929,
-      "street_name": "Keith Bridge Road",
-      "speed_limit": 25,
+      "latitude": 33.7510,
+      "longitude": -84.3835,
+      "street_name": "Edgewood Avenue NE",
+      "speed_limit": 30,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.751144,
-      "longitude": -84.383858,
-      "street_name": "17th Street",
-      "speed_limit": 25,
+      "latitude": 33.7500,
+      "longitude": -84.3850,
+      "street_name": "Peachtree Center Avenue NE",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.7495,
+      "longitude": -84.3865,
+      "street_name": "Carnegie Way NW",
+      "speed_limit": 30,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.750715,
-      "longitude": -84.384785,
-      "street_name": "Highway 124",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
+      "latitude": 33.7490,
+      "longitude": -84.3880,
+      "street_name": "Centennial Olympic Park Drive NW",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.750286,
-      "longitude": -84.385714,
-      "street_name": "Perimeter Center East",
+      "latitude": 33.7480,
+      "longitude": -84.3895,
+      "street_name": "Marietta Street NW at Techwood Drive",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.7470,
+      "longitude": -84.3915,
+      "street_name": "Northside Drive NW",
       "speed_limit": 45,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.749857,
-      "longitude": -84.386642,
-      "street_name": "West Paces Ferry Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.749429,
-      "longitude": -84.387571,
-      "street_name": "Juniper Street",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.749,
-      "longitude": -84.388501,
-      "street_name": "Webb Bridge Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.748572,
-      "longitude": -84.389429,
-      "street_name": "Highway 78",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.748143,
-      "longitude": -84.390358,
-      "street_name": "Indian Trail Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.747715,
-      "longitude": -84.391287,
-      "street_name": "Keith Bridge Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.747285,
-      "longitude": -84.392214,
-      "street_name": "Clifton Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.746856,
-      "longitude": -84.393142,
-      "street_name": "Post Road",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "stop_sign"
-    },
-    {
-      "latitude": 33.746429,
-      "longitude": -84.394071,
-      "street_name": "Old Alabama Road",
-      "speed_limit": 25,
+      "latitude": 33.7465,
+      "longitude": -84.3935,
+      "street_name": "Northside Drive NW at Simpson Street",
+      "speed_limit": 40,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
       "latitude": 33.746,
       "longitude": -84.395,
-      "street_name": "Destination Parking",
+      "street_name": "Atlanta-Fulton Central Library - Carnegie Way",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"

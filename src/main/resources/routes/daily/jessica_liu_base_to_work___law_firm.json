@@ -1,125 +1,69 @@
 {
   "name": "jessica_liu_base_to_work___law_firm",
-  "description": "Jessica Liu: Base \u2192 Work___Law_Firm",
+  "description": "Jessica Liu: Home (Midtown) to Law Firm (Peachtree Center)",
   "start_location": "33.76, -84.385",
   "end_location": "33.75, -84.38",
   "waypoints": [
     {
       "latitude": 33.76,
       "longitude": -84.385,
-      "street_name": "Residential Driveway",
-      "speed_limit": 15,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.759286,
-      "longitude": -84.384643,
-      "street_name": "Spalding Drive",
+      "street_name": "Home - 10th Street NE (Midtown)",
       "speed_limit": 25,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.758572,
-      "longitude": -84.384285,
-      "street_name": "Emory Road",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
+      "latitude": 33.7590,
+      "longitude": -84.3845,
+      "street_name": "10th Street NE at Peachtree Street",
+      "speed_limit": 30,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.757858,
-      "longitude": -84.383928,
-      "street_name": "North Decatur Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.757144,
-      "longitude": -84.383572,
-      "street_name": "Highway 9 (Roswell Road)",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.756428,
-      "longitude": -84.383214,
-      "street_name": "Tuxedo Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.755715,
-      "longitude": -84.382856,
-      "street_name": "Peachtree Dunwoody Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.754999,
-      "longitude": -84.382501,
-      "street_name": "9th Street",
+      "latitude": 33.7580,
+      "longitude": -84.3838,
+      "street_name": "Peachtree Street NE",
       "speed_limit": 35,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.754287,
-      "longitude": -84.382143,
-      "street_name": "Spot Road",
-      "speed_limit": 45,
+      "latitude": 33.7565,
+      "longitude": -84.3828,
+      "street_name": "Peachtree Street NE at Ponce de Leon",
+      "speed_limit": 35,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.753571,
-      "longitude": -84.381785,
-      "street_name": "Highway 124",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
+      "latitude": 33.7545,
+      "longitude": -84.3818,
+      "street_name": "Peachtree Street NE at North Avenue",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.752856,
-      "longitude": -84.38143,
-      "street_name": "Indian Trail Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
+      "latitude": 33.7525,
+      "longitude": -84.3810,
+      "street_name": "Peachtree Street NE at Baker Street",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.752143,
-      "longitude": -84.381072,
-      "street_name": "Northside Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.751428,
-      "longitude": -84.380715,
-      "street_name": "15th Street",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "stop_sign"
-    },
-    {
-      "latitude": 33.750715,
-      "longitude": -84.380357,
-      "street_name": "Greenwood Avenue",
-      "speed_limit": 25,
+      "latitude": 33.7510,
+      "longitude": -84.3805,
+      "street_name": "Peachtree Center Avenue NE",
+      "speed_limit": 30,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
       "latitude": 33.75,
       "longitude": -84.38,
-      "street_name": "Destination Parking",
+      "street_name": "Law Firm - Peachtree Center",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"

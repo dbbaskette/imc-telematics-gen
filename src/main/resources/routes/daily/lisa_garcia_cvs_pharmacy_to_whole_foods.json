@@ -7,114 +7,34 @@
     {
       "latitude": 33.755,
       "longitude": -84.384,
-      "street_name": "Residential Driveway",
+      "street_name": "Parking Exit",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.754714,
-      "longitude": -84.384285,
-      "street_name": "Union Hill Road",
-      "speed_limit": 25,
+      "latitude": 33.7545,
+      "longitude": -84.3850,
+      "street_name": "Peachtree Street NW",
+      "speed_limit": 35,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.754428,
-      "longitude": -84.38457,
-      "street_name": "Collier Road",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.754143,
-      "longitude": -84.384858,
-      "street_name": "Clairmont Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.753858,
-      "longitude": -84.385143,
-      "street_name": "Stone Mountain Freeway",
-      "speed_limit": 45,
+      "latitude": 33.7535,
+      "longitude": -84.3860,
+      "street_name": "Luckie Street NW",
+      "speed_limit": 35,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.753571,
-      "longitude": -84.385429,
-      "street_name": "West Paces Ferry Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.753286,
-      "longitude": -84.385715,
-      "street_name": "Keith Bridge Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.753,
-      "longitude": -84.386,
-      "street_name": "Kimball Bridge Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.752715,
-      "longitude": -84.386285,
-      "street_name": "Pleasant Hill Road",
-      "speed_limit": 45,
+      "latitude": 33.7520,
+      "longitude": -84.3870,
+      "street_name": "Centennial Olympic Park Drive NW",
+      "speed_limit": 35,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 33.752429,
-      "longitude": -84.386572,
-      "street_name": "Steve Reynolds Boulevard",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.752143,
-      "longitude": -84.386857,
-      "street_name": "LaVista Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.751856,
-      "longitude": -84.387143,
-      "street_name": "Northpoint Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.751572,
-      "longitude": -84.387428,
-      "street_name": "Northpoint Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 33.751285,
-      "longitude": -84.387715,
-      "street_name": "Aqualand Drive",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
     },
     {
       "latitude": 33.751,

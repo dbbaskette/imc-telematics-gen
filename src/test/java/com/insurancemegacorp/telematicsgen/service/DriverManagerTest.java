@@ -15,20 +15,15 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 import static org.mockito.ArgumentMatchers.anyString;
-import static org.mockito.ArgumentMatchers.anyDouble;
-import static org.mockito.ArgumentMatchers.any;
 
 class DriverManagerTest {
 
     private DriverManager driverManager;
     private FileBasedRouteService mockRouteService;
-    private DestinationRouteService mockDestinationRouteService;
-
     @BeforeEach
     void setUp() {
         mockRouteService = mock(FileBasedRouteService.class);
-        mockDestinationRouteService = mock(DestinationRouteService.class);
-        
+
         // Create mock route data with multiple waypoints for proper testing
         List<RoutePoint> mockRoute = List.of(
             new RoutePoint(33.7490, -84.3880, "Test Street Start", 35, false, "none"),
@@ -37,25 +32,19 @@ class DriverManagerTest {
             new RoutePoint(33.7505, -84.3895, "Test Street Further", 35, false, "none"),
             new RoutePoint(33.7510, -84.3900, "Test Street Final", 35, false, "none")
         );
-        
+
         when(mockRouteService.getRandomRoute()).thenReturn(mockRoute);
         when(mockRouteService.getRouteByName(anyString())).thenReturn(mockRoute);
         
-        // Mock destination service for behavior updates
-        when(mockDestinationRouteService.generateRandomDestination()).thenReturn(
-            new com.insurancemegacorp.telematicsgen.model.Destination(33.7500, -84.3890, "Test Destination", "test", 5.0)
-        );
-        when(mockDestinationRouteService.generateRouteToDestination(anyDouble(), anyDouble(), any())).thenReturn(mockRoute);
-        
         DriverConfigService mockDriverConfigService = mock(DriverConfigService.class);
         List<com.insurancemegacorp.telematicsgen.model.DriverConfig> mockDriverConfigs = List.of(
-            new com.insurancemegacorp.telematicsgen.model.DriverConfig(400001, 200001, "VIN-001", 300001, "John Doe", "Honda", "Civic", 2023, "GA-1001", 33.7490, -84.3880, "peachtree_south"),
-            new com.insurancemegacorp.telematicsgen.model.DriverConfig(400002, 200002, "VIN-002", 300002, "Jane Smith", "Toyota", "Camry", 2022, "GA-1002", 33.7500, -84.3890, "downtown_connector")
+            new com.insurancemegacorp.telematicsgen.model.DriverConfig(400001, 200001, "VIN-001", 300001, "John Doe", "Honda", "Civic", 2023, "GA-1001", 33.7490, -84.3880, "peachtree_south", false),
+            new com.insurancemegacorp.telematicsgen.model.DriverConfig(400002, 200002, "VIN-002", 300002, "Jane Smith", "Toyota", "Camry", 2022, "GA-1002", 33.7500, -84.3890, "downtown_connector", true)
         );
         when(mockDriverConfigService.getAllDriverConfigs()).thenReturn(mockDriverConfigs);
 
         DailyRoutineService mockDailyRoutineService = mock(DailyRoutineService.class);
-        driverManager = new DriverManager(mockRouteService, mockDestinationRouteService, mockDriverConfigService, mockDailyRoutineService);
+        driverManager = new DriverManager(mockRouteService, mockDriverConfigService, mockDailyRoutineService);
         ReflectionTestUtils.setField(driverManager, "driverCount", 2);
         ReflectionTestUtils.setField(driverManager, "crashFrequency", 10);
         ReflectionTestUtils.setField(driverManager, "postCrashIdleMinutes", 1);

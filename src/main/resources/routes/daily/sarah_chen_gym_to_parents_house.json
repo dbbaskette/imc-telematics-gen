@@ -1,125 +1,69 @@
 {
   "name": "sarah_chen_gym_to_parents_house",
-  "description": "Sarah Chen: Gym \u2192 Parents_House",
+  "description": "Sarah Chen: Gym to Parents House (Ansley Park)",
   "start_location": "33.762, -84.385",
   "end_location": "33.775, -84.39",
   "waypoints": [
     {
       "latitude": 33.762,
       "longitude": -84.385,
-      "street_name": "Residential Driveway",
+      "street_name": "LA Fitness Midtown - West Peachtree Street",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.762929,
-      "longitude": -84.385358,
-      "street_name": "Austell Road",
-      "speed_limit": 25,
+      "latitude": 33.7640,
+      "longitude": -84.3855,
+      "street_name": "West Peachtree Street NW",
+      "speed_limit": 35,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.763858,
-      "longitude": -84.385714,
-      "street_name": "West Paces Ferry Road",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.764785,
-      "longitude": -84.386071,
-      "street_name": "Pilgrim Mill Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.765714,
-      "longitude": -84.386429,
-      "street_name": "North Highland Avenue",
-      "speed_limit": 45,
+      "latitude": 33.7660,
+      "longitude": -84.3860,
+      "street_name": "West Peachtree Street at 15th Street",
+      "speed_limit": 35,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.766644,
-      "longitude": -84.386785,
-      "street_name": "Jimmy Carter Boulevard",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
+      "latitude": 33.7680,
+      "longitude": -84.3865,
+      "street_name": "West Peachtree Street at 17th Street",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.767571,
-      "longitude": -84.387144,
-      "street_name": "Holiday Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.7685,
+      "latitude": 33.7700,
       "longitude": -84.3875,
-      "street_name": "Moreland Avenue",
-      "speed_limit": 45,
+      "street_name": "Peachtree Circle NE",
+      "speed_limit": 30,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.769428,
-      "longitude": -84.387858,
-      "street_name": "Piedmont Road",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 33.770357,
-      "longitude": -84.388215,
-      "street_name": "Old Peachtree Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.771285,
-      "longitude": -84.388571,
-      "street_name": "Clairmont Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.772215,
-      "longitude": -84.388928,
-      "street_name": "DeKalb Avenue",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.773143,
-      "longitude": -84.389286,
-      "street_name": "I-75 South",
-      "speed_limit": 70,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.774071,
-      "longitude": -84.389643,
-      "street_name": "Johnson Ferry Road",
+      "latitude": 33.7715,
+      "longitude": -84.3882,
+      "street_name": "The Prado NE (Ansley Park)",
       "speed_limit": 25,
       "has_traffic_light": false,
       "traffic_control": "none"
+    },
+    {
+      "latitude": 33.7730,
+      "longitude": -84.3890,
+      "street_name": "Westminster Drive NE (Ansley Park)",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "stop_sign"
     },
     {
       "latitude": 33.775,
       "longitude": -84.39,
-      "street_name": "Destination Parking",
+      "street_name": "Parents House - Ansley Park",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"

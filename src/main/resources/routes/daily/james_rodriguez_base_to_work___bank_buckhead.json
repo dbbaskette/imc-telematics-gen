@@ -2,7 +2,7 @@
   "name": "james_rodriguez_base_to_work___bank_buckhead",
   "description": "James Rodriguez: Base \u2192 Work___Bank_Buckhead",
   "start_location": "34.0754, -84.2941",
-  "end_location": "33.8484, -84.3782",
+  "end_location": "33.8484, -84.3682",
   "waypoints": [
     {
       "latitude": 34.0754,
@@ -13,312 +13,120 @@
       "traffic_control": "none"
     },
     {
-      "latitude": 34.069579,
-      "longitude": -84.296256,
-      "street_name": "Spalding Drive",
+      "latitude": 34.0738,
+      "longitude": -84.2955,
+      "street_name": "Devore Road",
       "speed_limit": 25,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 34.063759,
-      "longitude": -84.298413,
-      "street_name": "Ponce de Leon Avenue",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.057938,
-      "longitude": -84.300568,
-      "street_name": "6th Street",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.052117,
-      "longitude": -84.302726,
-      "street_name": "12th Street",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.046297,
-      "longitude": -84.304881,
-      "street_name": "Highway 78",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.040477,
-      "longitude": -84.307038,
-      "street_name": "GA-400 North",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.034656,
-      "longitude": -84.309194,
-      "street_name": "Windy Hill Road",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "yield"
-    },
-    {
-      "latitude": 34.028835,
-      "longitude": -84.311351,
-      "street_name": "I-20 East",
-      "speed_limit": 70,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.023015,
-      "longitude": -84.313507,
-      "street_name": "DeKalb Avenue",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.017195,
-      "longitude": -84.315665,
-      "street_name": "Perimeter Center East",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.011375,
-      "longitude": -84.31782,
-      "street_name": "16th Street",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.005553,
-      "longitude": -84.319976,
-      "street_name": "Keith Bridge Road",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 33.999734,
-      "longitude": -84.322134,
-      "street_name": "McFarland Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.993912,
-      "longitude": -84.324291,
-      "street_name": "15th Street",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.988093,
-      "longitude": -84.326447,
-      "street_name": "Tuxedo Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.982272,
-      "longitude": -84.328602,
-      "street_name": "Northside Drive",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 33.976451,
-      "longitude": -84.330759,
-      "street_name": "Argonne Avenue",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.97063,
-      "longitude": -84.332915,
-      "street_name": "Pleasant Hill Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.964811,
-      "longitude": -84.335072,
-      "street_name": "Peachtree Street NW",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.95899,
-      "longitude": -84.337228,
-      "street_name": "Atlanta Highway",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.953169,
-      "longitude": -84.339384,
-      "street_name": "Emory Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.94735,
-      "longitude": -84.341541,
-      "street_name": "Freedom Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.941528,
-      "longitude": -84.343697,
-      "street_name": "Lindbergh Drive",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.935708,
-      "longitude": -84.345854,
+      "latitude": 34.0721,
+      "longitude": -84.2968,
       "street_name": "Old Milton Parkway",
       "speed_limit": 45,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.929887,
-      "longitude": -84.34801,
-      "street_name": "Glenwood Avenue",
+      "latitude": 34.0685,
+      "longitude": -84.3012,
+      "street_name": "GA-400 South On-Ramp",
       "speed_limit": 45,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.924066,
-      "longitude": -84.350167,
-      "street_name": "Marietta Street",
-      "speed_limit": 35,
+      "latitude": 34.0542,
+      "longitude": -84.3095,
+      "street_name": "GA-400 South",
+      "speed_limit": 65,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.918247,
-      "longitude": -84.352323,
-      "street_name": "Ralph McGill Boulevard",
+      "latitude": 34.0285,
+      "longitude": -84.3248,
+      "street_name": "GA-400 South",
+      "speed_limit": 65,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.9985,
+      "longitude": -84.3398,
+      "street_name": "GA-400 South",
+      "speed_limit": 65,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.9652,
+      "longitude": -84.3512,
+      "street_name": "GA-400 South",
+      "speed_limit": 65,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.9358,
+      "longitude": -84.3585,
+      "street_name": "GA-400 South",
+      "speed_limit": 65,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.9125,
+      "longitude": -84.3612,
+      "street_name": "GA-400 South",
+      "speed_limit": 65,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.8892,
+      "longitude": -84.3625,
+      "street_name": "GA-400 South",
+      "speed_limit": 65,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.8685,
+      "longitude": -84.3642,
+      "street_name": "Lenox Road Exit",
       "speed_limit": 45,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.912425,
-      "longitude": -84.354479,
-      "street_name": "Cumberland Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.906606,
-      "longitude": -84.356636,
-      "street_name": "I-85 South",
-      "speed_limit": 70,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.900785,
-      "longitude": -84.358792,
-      "street_name": "Mansell Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.894965,
-      "longitude": -84.360948,
-      "street_name": "5th Street",
+      "latitude": 33.8612,
+      "longitude": -84.3658,
+      "street_name": "Lenox Road NE",
       "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.889144,
-      "longitude": -84.363106,
-      "street_name": "West Paces Ferry Road",
+      "latitude": 33.8558,
+      "longitude": -84.3672,
+      "street_name": "Peachtree Road NE",
       "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.883323,
-      "longitude": -84.365262,
-      "street_name": "Charles Allen Drive",
+      "latitude": 33.8512,
+      "longitude": -84.3678,
+      "street_name": "Piedmont Road NE",
       "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.877503,
-      "longitude": -84.367418,
-      "street_name": "Duluth Highway",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.871682,
-      "longitude": -84.369574,
-      "street_name": "Atlanta Highway",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.865861,
-      "longitude": -84.371732,
-      "street_name": "LaVista Road",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.860041,
-      "longitude": -84.373887,
-      "street_name": "Riverside Drive",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.85422,
-      "longitude": -84.376044,
-      "street_name": "Jones Bridge Road",
-      "speed_limit": 25,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
       "latitude": 33.8484,
-      "longitude": -84.3782,
+      "longitude": -84.3682,
       "street_name": "Destination Parking",
       "speed_limit": 15,
       "has_traffic_light": false,

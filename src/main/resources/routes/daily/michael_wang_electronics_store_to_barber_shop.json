@@ -1,125 +1,77 @@
 {
   "name": "michael_wang_electronics_store_to_barber_shop",
-  "description": "Michael Wang: Electronics_Store \u2192 Barber_Shop",
+  "description": "Michael Wang: Best Buy to Barber Shop (Virginia Highland)",
   "start_location": "33.76, -84.38",
   "end_location": "33.768, -84.386",
   "waypoints": [
     {
       "latitude": 33.76,
       "longitude": -84.38,
-      "street_name": "Residential Driveway",
+      "street_name": "Best Buy - Ponce de Leon Avenue NE",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.760571,
-      "longitude": -84.380428,
-      "street_name": "Highway 138",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.761143,
-      "longitude": -84.380857,
-      "street_name": "Cumberland Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.761715,
-      "longitude": -84.381286,
-      "street_name": "7th Street",
+      "latitude": 33.7608,
+      "longitude": -84.3808,
+      "street_name": "Ponce de Leon Avenue NE",
       "speed_limit": 35,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.762286,
-      "longitude": -84.381713,
-      "street_name": "Pilgrim Mill Road",
-      "speed_limit": 45,
+      "latitude": 33.7618,
+      "longitude": -84.3818,
+      "street_name": "Ponce de Leon Avenue NE at Piedmont Avenue",
+      "speed_limit": 35,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.762856,
-      "longitude": -84.382144,
-      "street_name": "Cumming City Beach Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.763429,
-      "longitude": -84.382572,
-      "street_name": "Windward Parkway",
-      "speed_limit": 45,
+      "latitude": 33.7628,
+      "longitude": -84.3825,
+      "street_name": "Ponce de Leon Avenue NE at Monroe Drive",
+      "speed_limit": 35,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.764,
-      "longitude": -84.383,
-      "street_name": "Kimball Bridge Road",
-      "speed_limit": 45,
+      "latitude": 33.7638,
+      "longitude": -84.3832,
+      "street_name": "Monroe Drive NE",
+      "speed_limit": 35,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.764572,
-      "longitude": -84.383428,
-      "street_name": "Habersham Road",
-      "speed_limit": 45,
+      "latitude": 33.7650,
+      "longitude": -84.3840,
+      "street_name": "Virginia Avenue NE at Monroe Drive",
+      "speed_limit": 30,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.765142,
-      "longitude": -84.383857,
-      "street_name": "Valley Road",
-      "speed_limit": 45,
+      "latitude": 33.7660,
+      "longitude": -84.3848,
+      "street_name": "Virginia Avenue NE",
+      "speed_limit": 30,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.765715,
-      "longitude": -84.384285,
-      "street_name": "Stone Mountain Highway",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.766287,
-      "longitude": -84.384714,
-      "street_name": "Old Alabama Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.766856,
-      "longitude": -84.385144,
-      "street_name": "Town Center Boulevard",
-      "speed_limit": 45,
+      "latitude": 33.7670,
+      "longitude": -84.3855,
+      "street_name": "North Highland Avenue NE",
+      "speed_limit": 35,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 33.767429,
-      "longitude": -84.385571,
-      "street_name": "Northpoint Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
     },
     {
       "latitude": 33.768,
       "longitude": -84.386,
-      "street_name": "Destination Parking",
+      "street_name": "Barber Shop - North Highland Avenue NE",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"

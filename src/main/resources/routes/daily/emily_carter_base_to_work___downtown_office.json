@@ -1,126 +1,62 @@
 {
   "name": "emily_carter_base_to_work___downtown_office",
-  "description": "Emily Carter: Base \u2192 Work___Downtown_Office",
+  "description": "Emily Carter: Home (Downtown) to Downtown Office",
   "start_location": "33.749, -84.388",
   "end_location": "33.755, -84.39",
   "waypoints": [
     {
       "latitude": 33.749,
       "longitude": -84.388,
-      "street_name": "Residential Driveway",
-      "speed_limit": 15,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.749428,
-      "longitude": -84.388143,
-      "street_name": "Ponce de Leon Avenue",
+      "street_name": "Home - Centennial Olympic Park Drive NW",
       "speed_limit": 25,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.749857,
-      "longitude": -84.388285,
-      "street_name": "Northside Drive",
-      "speed_limit": 25,
+      "latitude": 33.7500,
+      "longitude": -84.3882,
+      "street_name": "Marietta Street NW",
+      "speed_limit": 35,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.750286,
-      "longitude": -84.388428,
-      "street_name": "Lakeshore Drive",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.750715,
-      "longitude": -84.388572,
-      "street_name": "Northlake Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.751144,
-      "longitude": -84.388714,
-      "street_name": "Spalding Drive",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.751572,
-      "longitude": -84.388857,
-      "street_name": "Highway 9 (Roswell Road)",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.752001,
-      "longitude": -84.389,
-      "street_name": "Roswell Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.752428,
-      "longitude": -84.389143,
-      "street_name": "Collier Road",
-      "speed_limit": 45,
+      "latitude": 33.7510,
+      "longitude": -84.3885,
+      "street_name": "Marietta Street NW at Centennial Olympic Park",
+      "speed_limit": 35,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.752856,
-      "longitude": -84.389286,
-      "street_name": "Briarcliff Road",
-      "speed_limit": 45,
+      "latitude": 33.7520,
+      "longitude": -84.3888,
+      "street_name": "Marietta Street NW at Spring Street",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.7530,
+      "longitude": -84.3892,
+      "street_name": "Spring Street NW",
+      "speed_limit": 35,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.753286,
-      "longitude": -84.389428,
-      "street_name": "Northpoint Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.753715,
-      "longitude": -84.389571,
-      "street_name": "Samples Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.754143,
-      "longitude": -84.389714,
-      "street_name": "Marietta Street",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "stop_sign"
-    },
-    {
-      "latitude": 33.754571,
-      "longitude": -84.389857,
-      "street_name": "9th Street",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
+      "latitude": 33.7540,
+      "longitude": -84.3896,
+      "street_name": "Spring Street NW at 5th Street",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
     },
     {
       "latitude": 33.755,
       "longitude": -84.39,
-      "street_name": "Destination Parking",
-      "speed_limit": 15,
+      "street_name": "Downtown Office - Spring Street NW",
+      "speed_limit": 25,
       "has_traffic_light": false,
       "traffic_control": "none"
     }

@@ -1,124 +1,60 @@
 {
   "name": "jennifer_taylor_gallery_opening_to_design_studio",
   "description": "Jennifer Taylor: Gallery_Opening \u2192 Design_Studio",
-  "start_location": "33.748, -84.368",
-  "end_location": "33.745, -84.371",
+  "start_location": "33.7585, -84.3765",
+  "end_location": "33.7495, -84.3885",
   "waypoints": [
     {
-      "latitude": 33.748,
-      "longitude": -84.368,
-      "street_name": "Residential Driveway",
+      "latitude": 33.7585,
+      "longitude": -84.3765,
+      "street_name": "Parking Exit",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.747786,
-      "longitude": -84.368215,
-      "street_name": "Roswell Road",
+      "latitude": 33.7575,
+      "longitude": -84.3785,
+      "street_name": "Broad Street NW",
       "speed_limit": 25,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.747572,
-      "longitude": -84.368428,
-      "street_name": "Tuxedo Road",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
+      "latitude": 33.7558,
+      "longitude": -84.3812,
+      "street_name": "Marietta Street NW",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.747358,
-      "longitude": -84.368643,
-      "street_name": "Union Hill Road",
+      "latitude": 33.7535,
+      "longitude": -84.3842,
+      "street_name": "Marietta Street NW",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.7515,
+      "longitude": -84.3865,
+      "street_name": "Northside Drive NW",
       "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.747143,
-      "longitude": -84.368858,
-      "street_name": "Northlake Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.746928,
-      "longitude": -84.369072,
-      "street_name": "Cypress Street",
+      "latitude": 33.7502,
+      "longitude": -84.3878,
+      "street_name": "Howell Mill Road NW",
       "speed_limit": 35,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.746714,
-      "longitude": -84.369286,
-      "street_name": "Piedmont Circle",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.746501,
-      "longitude": -84.369501,
-      "street_name": "Mall of Georgia Boulevard",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.746286,
-      "longitude": -84.369714,
-      "street_name": "Atlanta Highway",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.74607,
-      "longitude": -84.369928,
-      "street_name": "Peachtree Dunwoody Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.745857,
-      "longitude": -84.370143,
-      "street_name": "Mall of Georgia Boulevard",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.745643,
-      "longitude": -84.370358,
-      "street_name": "Ponce de Leon Avenue",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.745428,
-      "longitude": -84.370571,
-      "street_name": "North Avenue",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "stop_sign"
-    },
-    {
-      "latitude": 33.745215,
-      "longitude": -84.370785,
-      "street_name": "Crossville Road",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.745,
-      "longitude": -84.371,
+      "latitude": 33.7495,
+      "longitude": -84.3885,
       "street_name": "Destination Parking",
       "speed_limit": 15,
       "has_traffic_light": false,

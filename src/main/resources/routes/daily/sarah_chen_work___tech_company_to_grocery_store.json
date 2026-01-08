@@ -1,125 +1,69 @@
 {
   "name": "sarah_chen_work___tech_company_to_grocery_store",
-  "description": "Sarah Chen: Work___Tech_Company \u2192 Grocery_Store",
+  "description": "Sarah Chen: Tech Company to Grocery Store (Midtown Publix)",
   "start_location": "33.758, -84.37",
   "end_location": "33.765, -84.378",
   "waypoints": [
     {
       "latitude": 33.758,
       "longitude": -84.37,
-      "street_name": "Residential Driveway",
-      "speed_limit": 15,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.758501,
-      "longitude": -84.370572,
-      "street_name": "West Paces Ferry Road",
+      "street_name": "Tech Company - 10th Street NE",
       "speed_limit": 25,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.758999,
-      "longitude": -84.371143,
-      "street_name": "Scenic Highway",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.7595,
-      "longitude": -84.371715,
-      "street_name": "Roswell Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.760001,
-      "longitude": -84.372285,
-      "street_name": "Highway 5",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.760501,
-      "longitude": -84.372858,
-      "street_name": "8th Street",
+      "latitude": 33.7590,
+      "longitude": -84.3715,
+      "street_name": "Monroe Drive NE",
       "speed_limit": 35,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.761001,
-      "longitude": -84.37343,
-      "street_name": "Castleberry Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.761501,
-      "longitude": -84.374,
-      "street_name": "Greenwood Avenue",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.761999,
-      "longitude": -84.374572,
-      "street_name": "Memorial Drive",
-      "speed_limit": 45,
+      "latitude": 33.7600,
+      "longitude": -84.3730,
+      "street_name": "Piedmont Avenue NE at 10th Street",
+      "speed_limit": 35,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.7625,
-      "longitude": -84.375142,
-      "street_name": "Sawnee Avenue",
-      "speed_limit": 45,
+      "latitude": 33.7610,
+      "longitude": -84.3745,
+      "street_name": "Piedmont Avenue NE",
+      "speed_limit": 35,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.763,
-      "longitude": -84.375715,
-      "street_name": "Scenic Highway",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
+      "latitude": 33.7620,
+      "longitude": -84.3755,
+      "street_name": "Piedmont Avenue NE at 12th Street",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.7635,
-      "longitude": -84.376285,
-      "street_name": "Northlake Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
+      "latitude": 33.7630,
+      "longitude": -84.3765,
+      "street_name": "Piedmont Avenue NE at 14th Street",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.763999,
-      "longitude": -84.376856,
-      "street_name": "17th Street",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "stop_sign"
-    },
-    {
-      "latitude": 33.764501,
-      "longitude": -84.377429,
-      "street_name": "Kimball Bridge Road",
-      "speed_limit": 25,
+      "latitude": 33.7640,
+      "longitude": -84.3772,
+      "street_name": "Piedmont Avenue NE",
+      "speed_limit": 35,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
       "latitude": 33.765,
       "longitude": -84.378,
-      "street_name": "Destination Parking",
+      "street_name": "Publix Midtown - Piedmont Avenue NE",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"

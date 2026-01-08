@@ -12,7 +12,8 @@
       "license_plate": "GA-1001",
       "base_latitude": 33.7701,
       "base_longitude": -84.3876,
-      "preferred_route": "peachtree_south"
+      "preferred_route": "peachtree_south",
+      "aggressive": false
     },
     {
       "driver_id": 400002,
@@ -26,7 +27,8 @@
       "license_plate": "GA-1002",
       "base_latitude": 33.7490,
       "base_longitude": -84.3880,
-      "preferred_route": "downtown_connector"
+      "preferred_route": "downtown_connector",
+      "aggressive": false
     },
     {
       "driver_id": 400003,
@@ -40,7 +42,8 @@
       "license_plate": "GA-1003",
       "base_latitude": 33.7550,
       "base_longitude": -84.3900,
-      "preferred_route": "cumming_to_airport"
+      "preferred_route": "cumming_to_airport",
+      "aggressive": true
     },
     {
       "driver_id": 400004,
@@ -54,7 +57,8 @@
       "license_plate": "GA-1004",
       "base_latitude": 33.7600,
       "base_longitude": -84.3850,
-      "preferred_route": "peachtree_south"
+      "preferred_route": "peachtree_south",
+      "aggressive": true
     },
     {
       "driver_id": 400006,
@@ -68,7 +72,8 @@
       "license_plate": "GA-1005",
       "base_latitude": 33.7650,
       "base_longitude": -84.3920,
-      "preferred_route": "downtown_connector"
+      "preferred_route": "downtown_connector",
+      "aggressive": false
     },
     {
       "driver_id": 400007,
@@ -82,7 +87,8 @@
       "license_plate": "GA-1006",
       "base_latitude": 33.7720,
       "base_longitude": -84.3800,
-      "preferred_route": "cumming_to_airport"
+      "preferred_route": "cumming_to_airport",
+      "aggressive": true
     },
     {
       "driver_id": 400008,
@@ -96,7 +102,8 @@
       "license_plate": "GA-1007",
       "base_latitude": 33.7480,
       "base_longitude": -84.3950,
-      "preferred_route": "peachtree_south"
+      "preferred_route": "peachtree_south",
+      "aggressive": false
     },
     {
       "driver_id": 400009,
@@ -110,7 +117,8 @@
       "license_plate": "GA-1008",
       "base_latitude": 33.7580,
       "base_longitude": -84.3780,
-      "preferred_route": "downtown_connector"
+      "preferred_route": "downtown_connector",
+      "aggressive": false
     },
     {
       "driver_id": 400010,
@@ -124,7 +132,8 @@
       "license_plate": "GA-1009",
       "base_latitude": 33.7620,
       "base_longitude": -84.3820,
-      "preferred_route": "cumming_to_airport"
+      "preferred_route": "cumming_to_airport",
+      "aggressive": false
     },
     {
       "driver_id": 400011,
@@ -138,7 +147,8 @@
       "license_plate": "GA-1010",
       "base_latitude": 33.7530,
       "base_longitude": -84.3860,
-      "preferred_route": "peachtree_south"
+      "preferred_route": "peachtree_south",
+      "aggressive": false
     },
     {
       "driver_id": 400013,
@@ -152,7 +162,8 @@
       "license_plate": "GA-1011",
       "base_latitude": 33.7709,
       "base_longitude": -84.3922,
-      "preferred_route": "north_ave_corridor"
+      "preferred_route": "north_ave_corridor",
+      "aggressive": false
     },
     {
       "driver_id": 400014,
@@ -166,7 +177,8 @@
       "license_plate": "GA-1012",
       "base_latitude": 33.7441,
       "base_longitude": -84.4001,
-      "preferred_route": "ponce_de_leon"
+      "preferred_route": "ponce_de_leon",
+      "aggressive": true
     },
     {
       "driver_id": 400015,
@@ -180,7 +192,8 @@
       "license_plate": "GA-1013",
       "base_latitude": 33.7512,
       "base_longitude": -84.3749,
-      "preferred_route": "ga400_north"
+      "preferred_route": "ga400_north",
+      "aggressive": false
     },
     {
       "driver_id": 400016,
@@ -194,7 +207,8 @@
       "license_plate": "GA-1014",
       "base_latitude": 33.7465,
       "base_longitude": -84.3698,
-      "preferred_route": "peachtree_south"
+      "preferred_route": "peachtree_south",
+      "aggressive": false
     },
     {
       "driver_id": 400017,
@@ -208,7 +222,8 @@
       "license_plate": "GA-1015",
       "base_latitude": 33.7411,
       "base_longitude": -84.4012,
-      "preferred_route": "downtown_connector"
+      "preferred_route": "downtown_connector",
+      "aggressive": false
     }
   ]
 }

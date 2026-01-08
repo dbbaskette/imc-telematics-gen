@@ -15,6 +15,8 @@ spring:
     username: guest
     password: guest
     virtual-host: /
+    publisher-confirm-type: correlated
+    publisher-returns: true
   profiles:
     active: local
 
@@ -32,8 +34,8 @@ telematics:
   # Driver Behavior Configuration
   behavior:
     post-crash-idle-minutes: 15      # Time drivers sit idle after crash
-    random-stop-probability: 0.05    # Probability of random stops (5%)
-    break-duration-minutes: 5        # Duration of break stops
+    random-stop-probability: 0.01    # Probability of random stops (5%)
+    break-duration-minutes: 2        # Duration of break stops
     
     # Time-based Activity Configuration
     night-start-hour: 20             # Hour when night activity begins (8 PM)
@@ -71,7 +73,7 @@ management:
         allowed-origin-patterns: "*"
         allowed-methods: "GET,POST,PUT,DELETE,OPTIONS"
         allowed-headers: "*"
-        allow-credentials: true
+        allow-credentials: false
         max-age: 3600
   endpoint:
     health:

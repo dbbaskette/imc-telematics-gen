@@ -1,124 +1,92 @@
 {
   "name": "jennifer_taylor_design_studio_to_base",
   "description": "Jennifer Taylor: Design_Studio \u2192 Base",
-  "start_location": "33.745, -84.371",
-  "end_location": "33.7465, -84.3698",
+  "start_location": "33.7495, -84.3885",
+  "end_location": "33.7625, -84.3525",
   "waypoints": [
     {
-      "latitude": 33.745,
-      "longitude": -84.371,
-      "street_name": "Residential Driveway",
+      "latitude": 33.7495,
+      "longitude": -84.3885,
+      "street_name": "Parking Exit",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.745108,
-      "longitude": -84.370915,
-      "street_name": "Westminster Drive",
-      "speed_limit": 25,
+      "latitude": 33.7508,
+      "longitude": -84.3872,
+      "street_name": "Howell Mill Road NW",
+      "speed_limit": 35,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.745214,
-      "longitude": -84.370829,
-      "street_name": "McFarland Parkway",
+      "latitude": 33.7525,
+      "longitude": -84.3855,
+      "street_name": "Northside Drive NW",
       "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.745321,
-      "longitude": -84.370743,
-      "street_name": "Roswell Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.745428,
-      "longitude": -84.370656,
-      "street_name": "Freedom Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.745535,
-      "longitude": -84.370571,
-      "street_name": "Lindbergh Drive",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.745643,
-      "longitude": -84.370485,
-      "street_name": "Lawrenceville Highway",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.745751,
-      "longitude": -84.370399,
-      "street_name": "Friendship Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.745856,
-      "longitude": -84.370314,
-      "street_name": "Peachtree Street NE",
+      "latitude": 33.7548,
+      "longitude": -84.3825,
+      "street_name": "Marietta Street NW",
       "speed_limit": 35,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.745964,
-      "longitude": -84.370229,
-      "street_name": "Samples Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.746071,
-      "longitude": -84.370142,
-      "street_name": "Decatur Street",
+      "latitude": 33.7575,
+      "longitude": -84.3785,
+      "street_name": "Marietta Street NW",
       "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.746178,
-      "longitude": -84.370057,
-      "street_name": "9th Street",
+      "latitude": 33.7598,
+      "longitude": -84.3752,
+      "street_name": "Peachtree Street NW",
       "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.746286,
-      "longitude": -84.369971,
-      "street_name": "Beaver Ruin Road",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "stop_sign"
-    },
-    {
-      "latitude": 33.746394,
-      "longitude": -84.369886,
-      "street_name": "Druid Hills Road",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.7465,
+      "latitude": 33.7608,
       "longitude": -84.3698,
+      "street_name": "Edgewood Avenue NE",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.7615,
+      "longitude": -84.3625,
+      "street_name": "Auburn Avenue NE",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.7618,
+      "longitude": -84.3565,
+      "street_name": "Auburn Avenue NE",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.7622,
+      "longitude": -84.3538,
+      "street_name": "Edgewood Avenue SE",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.7625,
+      "longitude": -84.3525,
       "street_name": "Destination Parking",
       "speed_limit": 15,
       "has_traffic_light": false,

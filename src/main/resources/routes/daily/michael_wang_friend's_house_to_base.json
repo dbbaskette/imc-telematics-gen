@@ -1,126 +1,54 @@
 {
   "name": "michael_wang_friend's_house_to_base",
-  "description": "Michael Wang: Friend'S_House \u2192 Base",
+  "description": "Michael Wang: Friend's House (Ansley Park) to Home (Midtown)",
   "start_location": "33.762, -84.394",
   "end_location": "33.765, -84.392",
   "waypoints": [
     {
       "latitude": 33.762,
       "longitude": -84.394,
-      "street_name": "Residential Driveway",
+      "street_name": "Friend's House - Ansley Park",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.762214,
-      "longitude": -84.393858,
-      "street_name": "18th Street",
+      "latitude": 33.7625,
+      "longitude": -84.3935,
+      "street_name": "The Prado NE (Ansley Park)",
       "speed_limit": 25,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.762429,
-      "longitude": -84.393714,
-      "street_name": "Stone Mountain Freeway",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.762642,
-      "longitude": -84.393571,
-      "street_name": "Johnson Ferry Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.762858,
-      "longitude": -84.393429,
-      "street_name": "Holiday Road",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 33.763072,
-      "longitude": -84.393286,
-      "street_name": "Lenox Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.763286,
-      "longitude": -84.393144,
-      "street_name": "Highway 85",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.7635,
-      "longitude": -84.393,
-      "street_name": "Buford Highway",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.763715,
-      "longitude": -84.392857,
-      "street_name": "Habersham Road",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 33.763928,
-      "longitude": -84.392713,
-      "street_name": "GA-400 South",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.764142,
-      "longitude": -84.392572,
-      "street_name": "Juniper Street",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.764357,
-      "longitude": -84.392429,
-      "street_name": "Decatur Street",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.764572,
-      "longitude": -84.392287,
-      "street_name": "Old Peachtree Road",
-      "speed_limit": 25,
+      "latitude": 33.7630,
+      "longitude": -84.3930,
+      "street_name": "Peachtree Circle NE",
+      "speed_limit": 30,
       "has_traffic_light": false,
       "traffic_control": "stop_sign"
     },
     {
-      "latitude": 33.764786,
-      "longitude": -84.392143,
-      "street_name": "I-985 North",
-      "speed_limit": 70,
+      "latitude": 33.7638,
+      "longitude": -84.3925,
+      "street_name": "Peachtree Circle NE at 17th Street",
+      "speed_limit": 30,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.7645,
+      "longitude": -84.3922,
+      "street_name": "17th Street NW",
+      "speed_limit": 35,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
       "latitude": 33.765,
       "longitude": -84.392,
-      "street_name": "Destination Parking",
-      "speed_limit": 15,
+      "street_name": "Home - 17th Street NW (Midtown)",
+      "speed_limit": 25,
       "has_traffic_light": false,
       "traffic_control": "none"
     }

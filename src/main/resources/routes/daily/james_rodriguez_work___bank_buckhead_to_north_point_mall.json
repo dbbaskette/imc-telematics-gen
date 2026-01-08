@@ -1,324 +1,124 @@
 {
   "name": "james_rodriguez_work___bank_buckhead_to_north_point_mall",
   "description": "James Rodriguez: Work___Bank_Buckhead \u2192 North_Point_Mall",
-  "start_location": "33.8484, -84.3782",
-  "end_location": "34.0883, -84.2946",
+  "start_location": "33.8484, -84.3682",
+  "end_location": "34.0553, -84.2721",
   "waypoints": [
     {
       "latitude": 33.8484,
-      "longitude": -84.3782,
-      "street_name": "Residential Driveway",
+      "longitude": -84.3682,
+      "street_name": "Parking Exit",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.854552,
-      "longitude": -84.376056,
-      "street_name": "Briarcliff Road",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.860703,
-      "longitude": -84.373913,
-      "street_name": "Scott Boulevard",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.866853,
-      "longitude": -84.371769,
-      "street_name": "Peachtree Street NE",
+      "latitude": 33.8512,
+      "longitude": -84.3678,
+      "street_name": "Piedmont Road NE",
       "speed_limit": 35,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.873005,
-      "longitude": -84.369625,
-      "street_name": "Collier Road",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.879157,
-      "longitude": -84.367482,
-      "street_name": "Old Milton Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.885309,
-      "longitude": -84.365338,
-      "street_name": "Lenox Road",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.891458,
-      "longitude": -84.363195,
-      "street_name": "Peachtree Industrial Blvd",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "yield"
-    },
-    {
-      "latitude": 33.897609,
-      "longitude": -84.361051,
-      "street_name": "Lower Roswell Road",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 33.903762,
-      "longitude": -84.358908,
-      "street_name": "Chamblee Tucker Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.909913,
-      "longitude": -84.356764,
-      "street_name": "Highway 138",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.916064,
-      "longitude": -84.35462,
-      "street_name": "Old Peachtree Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.922216,
-      "longitude": -84.352476,
-      "street_name": "Westminster Drive",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 33.928367,
-      "longitude": -84.350333,
-      "street_name": "North Highland Avenue",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.934518,
-      "longitude": -84.34819,
-      "street_name": "Highway 124",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.94067,
-      "longitude": -84.346046,
-      "street_name": "Boulevard",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.946821,
-      "longitude": -84.343902,
-      "street_name": "Northlake Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.952972,
-      "longitude": -84.341759,
-      "street_name": "Piedmont Avenue",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.959124,
-      "longitude": -84.339615,
-      "street_name": "Old Peachtree Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.965275,
-      "longitude": -84.337471,
-      "street_name": "Kimball Bridge Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.971426,
-      "longitude": -84.335328,
-      "street_name": "Spring Street",
+      "latitude": 33.8565,
+      "longitude": -84.3668,
+      "street_name": "Peachtree Road NE",
       "speed_limit": 35,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.977576,
-      "longitude": -84.333185,
-      "street_name": "Penn Avenue",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.983727,
-      "longitude": -84.33104,
-      "street_name": "Union Hill Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.98988,
-      "longitude": -84.328898,
-      "street_name": "Duluth Highway",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.996031,
-      "longitude": -84.326754,
-      "street_name": "Old Milton Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 34.002183,
-      "longitude": -84.324611,
-      "street_name": "Beaver Ruin Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.008334,
-      "longitude": -84.322466,
-      "street_name": "Beverly Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.014485,
-      "longitude": -84.320324,
-      "street_name": "Ponce de Leon Avenue",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.020636,
-      "longitude": -84.31818,
-      "street_name": "Briarcliff Road",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 34.026786,
-      "longitude": -84.316035,
-      "street_name": "Peachtree Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.032938,
-      "longitude": -84.313893,
-      "street_name": "Atlanta Highway",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.039089,
-      "longitude": -84.31175,
-      "street_name": "Lawrenceville Highway",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.045241,
-      "longitude": -84.309604,
-      "street_name": "Henderson Mill Road",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.051392,
-      "longitude": -84.307461,
-      "street_name": "Stone Mountain Highway",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.057543,
-      "longitude": -84.305319,
-      "street_name": "Rock Springs Road",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.063696,
-      "longitude": -84.303174,
-      "street_name": "Collier Road",
+      "latitude": 33.8625,
+      "longitude": -84.3655,
+      "street_name": "Lenox Road NE",
       "speed_limit": 35,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 34.069847,
-      "longitude": -84.301031,
+      "latitude": 33.8695,
+      "longitude": -84.3638,
+      "street_name": "GA-400 North On-Ramp",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.8925,
+      "longitude": -84.3612,
+      "street_name": "GA-400 North",
+      "speed_limit": 65,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.9285,
+      "longitude": -84.3558,
+      "street_name": "GA-400 North",
+      "speed_limit": 65,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.9625,
+      "longitude": -84.3485,
+      "street_name": "GA-400 North",
+      "speed_limit": 65,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.9985,
+      "longitude": -84.3352,
+      "street_name": "GA-400 North",
+      "speed_limit": 65,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.0285,
+      "longitude": -84.3125,
+      "street_name": "GA-400 North",
+      "speed_limit": 65,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.0458,
+      "longitude": -84.2885,
+      "street_name": "Haynes Bridge Road Exit",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.0498,
+      "longitude": -84.2812,
       "street_name": "Haynes Bridge Road",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
     },
     {
-      "latitude": 34.075998,
-      "longitude": -84.298887,
-      "street_name": "Windy Hill Road",
+      "latitude": 34.0525,
+      "longitude": -84.2758,
+      "street_name": "North Point Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.0545,
+      "longitude": -84.2735,
+      "street_name": "North Point Circle",
       "speed_limit": 25,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 34.082148,
-      "longitude": -84.296743,
-      "street_name": "I-285 (Perimeter)",
-      "speed_limit": 70,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.0883,
-      "longitude": -84.2946,
+      "latitude": 34.0553,
+      "longitude": -84.2721,
       "street_name": "Destination Parking",
       "speed_limit": 15,
       "has_traffic_light": false,

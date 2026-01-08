@@ -1,5 +1,6 @@
 package com.insurancemegacorp.telematicsgen.service;
 
+import com.insurancemegacorp.telematicsgen.model.AccidentType;
 import com.insurancemegacorp.telematicsgen.model.Driver;
 import com.insurancemegacorp.telematicsgen.model.DriverState;
 import com.insurancemegacorp.telematicsgen.model.FlatTelematicsMessage;
@@ -64,7 +65,7 @@ class TelematicsDataGeneratorTest {
     }
 
     @Test
-    void generateCrashEventData_shouldReturnCrashMessage() {
+    void generateCrashEventData_shouldReturnCrashMessageWithAccidentType() {
         TelematicsDataGenerator dataGenerator = new TelematicsDataGenerator();
         Driver testDriver = new Driver(999001, 200123, 300999, "1HGBH41JXMN109999", 40.7128, -74.0060);
         testDriver.setCurrentSpeed(35.0);
@@ -72,12 +73,43 @@ class TelematicsDataGeneratorTest {
         FlatTelematicsMessage message = dataGenerator.generateCrashEventData(testDriver);
 
         assertThat(message.policyId()).isEqualTo(200123);
-        assertThat(message.speedMph()).isEqualTo(0.0); // Speed is zero during crash event
+        assertThat(message.speedMph()).isEqualTo(35.0); // Speed at moment of impact
         assertThat(message.eventTime()).isNotNull();
         assertThat(message.gpsLatitude()).isEqualTo(40.7128);
         assertThat(message.gpsLongitude()).isEqualTo(-74.0060);
-        assertThat(message.accelerometerX()).isGreaterThan(4.0);
-        assertThat(message.accelerometerY()).isGreaterThan(3.0);
-        assertThat(message.accelerometerZ()).isBetween(-2.0, 2.0);
+        // Accident type should be set
+        assertThat(message.accidentType()).isNotNull();
+        // Should be a valid AccidentType name
+        assertThat(AccidentType.valueOf(message.accidentType())).isNotNull();
+    }
+
+    @Test
+    void generateCrashEventData_withSpecificType_shouldHaveCharacteristicSensorData() {
+        TelematicsDataGenerator dataGenerator = new TelematicsDataGenerator();
+        Driver testDriver = new Driver(999001, 200123, 300999, "1HGBH41JXMN109999", 40.7128, -74.0060);
+        testDriver.setCurrentSpeed(35.0);
+
+        // Test T-bone collision - should have high lateral (Y) acceleration
+        FlatTelematicsMessage tBoneMessage = dataGenerator.generateCrashEventData(testDriver, AccidentType.T_BONE);
+        assertThat(tBoneMessage.accidentType()).isEqualTo("T_BONE");
+        assertThat(tBoneMessage.accelerometerY()).isGreaterThan(4.0); // High lateral G
+
+        // Test rollover - should have extreme gyroscope readings
+        FlatTelematicsMessage rolloverMessage = dataGenerator.generateCrashEventData(testDriver, AccidentType.ROLLOVER);
+        assertThat(rolloverMessage.accidentType()).isEqualTo("ROLLOVER");
+        // Rollover has extreme gyroscope Y (roll): 6.0 to 12.0
+        assertThat(Math.abs(rolloverMessage.gyroscopeY())).isGreaterThan(5.0);
+    }
+
+    @Test
+    void generateDrivingData_shouldNotHaveAccidentType() {
+        TelematicsDataGenerator dataGenerator = new TelematicsDataGenerator();
+        Driver testDriver = new Driver(999001, 200123, 300999, "1HGBH41JXMN109999", 40.7128, -74.0060);
+        testDriver.setCurrentState(DriverState.DRIVING);
+        testDriver.setCurrentSpeed(30.0);
+
+        FlatTelematicsMessage message = dataGenerator.generateTelematicsData(testDriver);
+
+        assertThat(message.accidentType()).isNull();
     }
 }

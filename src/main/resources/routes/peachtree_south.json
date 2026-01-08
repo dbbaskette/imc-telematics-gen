@@ -1,140 +1,88 @@
 {
-  "name" : "peachtree_south",
-  "description" : "Peachtree Street, Midtown, Atlanta, GA → Peachtree Street, Downtown, Atlanta, GA",
-  "start_location" : "Peachtree Street, Midtown, Atlanta, GA",
-  "end_location" : "Peachtree Street, Downtown, Atlanta, GA",
-  "waypoints" : [ {
-    "latitude" : 33.776513,
-    "longitude" : -84.384497,
-    "street_name" : "Start: Peachtree Street",
-    "speed_limit" : 35,
-    "has_traffic_light" : true,
-    "traffic_control" : "traffic_light"
-  }, {
-    "latitude" : 33.774553,
-    "longitude" : -84.384689,
-    "street_name" : "Local Street",
-    "speed_limit" : 35,
-    "has_traffic_light" : false,
-    "traffic_control" : "none"
-  }, {
-    "latitude" : 33.773041,
-    "longitude" : -84.384835,
-    "street_name" : "Local Street",
-    "speed_limit" : 35,
-    "has_traffic_light" : false,
-    "traffic_control" : "none"
-  }, {
-    "latitude" : 33.772246,
-    "longitude" : -84.384911,
-    "street_name" : "Local Street",
-    "speed_limit" : 35,
-    "has_traffic_light" : false,
-    "traffic_control" : "none"
-  }, {
-    "latitude" : 33.77054,
-    "longitude" : -84.385085,
-    "street_name" : "Local Street",
-    "speed_limit" : 35,
-    "has_traffic_light" : true,
-    "traffic_control" : "traffic_light"
-  }, {
-    "latitude" : 33.769011,
-    "longitude" : -84.385224,
-    "street_name" : "Local Street",
-    "speed_limit" : 35,
-    "has_traffic_light" : false,
-    "traffic_control" : "none"
-  }, {
-    "latitude" : 33.768597,
-    "longitude" : -84.38527,
-    "street_name" : "Local Street",
-    "speed_limit" : 35,
-    "has_traffic_light" : false,
-    "traffic_control" : "none"
-  }, {
-    "latitude" : 33.767062,
-    "longitude" : -84.385412,
-    "street_name" : "Local Street",
-    "speed_limit" : 35,
-    "has_traffic_light" : false,
-    "traffic_control" : "none"
-  }, {
-    "latitude" : 33.766758,
-    "longitude" : -84.385421,
-    "street_name" : "Local Street",
-    "speed_limit" : 35,
-    "has_traffic_light" : true,
-    "traffic_control" : "traffic_light"
-  }, {
-    "latitude" : 33.7654,
-    "longitude" : -84.385477,
-    "street_name" : "Local Street",
-    "speed_limit" : 35,
-    "has_traffic_light" : false,
-    "traffic_control" : "none"
-  }, {
-    "latitude" : 33.764547,
-    "longitude" : -84.385757,
-    "street_name" : "Local Street",
-    "speed_limit" : 35,
-    "has_traffic_light" : false,
-    "traffic_control" : "none"
-  }, {
-    "latitude" : 33.763078,
-    "longitude" : -84.386921,
-    "street_name" : "Local Street",
-    "speed_limit" : 35,
-    "has_traffic_light" : false,
-    "traffic_control" : "none"
-  }, {
-    "latitude" : 33.761766,
-    "longitude" : -84.387547,
-    "street_name" : "Local Street",
-    "speed_limit" : 35,
-    "has_traffic_light" : true,
-    "traffic_control" : "traffic_light"
-  }, {
-    "latitude" : 33.759703,
-    "longitude" : -84.3876,
-    "street_name" : "Local Street",
-    "speed_limit" : 35,
-    "has_traffic_light" : false,
-    "traffic_control" : "none"
-  }, {
-    "latitude" : 33.757746,
-    "longitude" : -84.387653,
-    "street_name" : "Local Street",
-    "speed_limit" : 35,
-    "has_traffic_light" : false,
-    "traffic_control" : "none"
-  }, {
-    "latitude" : 33.756931,
-    "longitude" : -84.388119,
-    "street_name" : "Local Street",
-    "speed_limit" : 35,
-    "has_traffic_light" : false,
-    "traffic_control" : "none"
-  }, {
-    "latitude" : 33.755269,
-    "longitude" : -84.389064,
-    "street_name" : "Local Street",
-    "speed_limit" : 35,
-    "has_traffic_light" : true,
-    "traffic_control" : "traffic_light"
-  }, {
-    "latitude" : 33.754324,
-    "longitude" : -84.389793,
-    "street_name" : "Local Street",
-    "speed_limit" : 35,
-    "has_traffic_light" : false,
-    "traffic_control" : "none"
-  }, {
-    "latitude" : 33.75346,
-    "longitude" : -84.390742,
-    "street_name" : "End: Peachtree Street",
-    "speed_limit" : 25,
-    "has_traffic_light" : true,
-    "traffic_control" : "traffic_light"
-  } ]
+  "name": "peachtree_south",
+  "description": "Peachtree Street from Midtown to Downtown Atlanta",
+  "start_location": "Peachtree Street, Midtown, Atlanta, GA",
+  "end_location": "Peachtree Street, Downtown, Atlanta, GA",
+  "waypoints": [
+    {
+      "latitude": 33.7885,
+      "longitude": -84.3845,
+      "street_name": "Peachtree St at Peachtree Battle Ave (Brookwood)",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.7810,
+      "longitude": -84.3850,
+      "street_name": "Peachtree St at 17th Street",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.7765,
+      "longitude": -84.3850,
+      "street_name": "Peachtree St at 14th Street (Midtown)",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.7720,
+      "longitude": -84.3855,
+      "street_name": "Peachtree St at 12th Street",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.7680,
+      "longitude": -84.3855,
+      "street_name": "Peachtree St at 10th Street (Midtown)",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.7620,
+      "longitude": -84.3860,
+      "street_name": "Peachtree St at 5th Street",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.7590,
+      "longitude": -84.3865,
+      "street_name": "Peachtree St at North Ave (Georgia Tech)",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.7550,
+      "longitude": -84.3880,
+      "street_name": "Peachtree St at Ponce de Leon Ave",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.7515,
+      "longitude": -84.3890,
+      "street_name": "Peachtree St at Baker Street",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.7490,
+      "longitude": -84.3900,
+      "street_name": "Peachtree St at Peachtree Center (Downtown)",
+      "speed_limit": 25,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    }
+  ]
 }

@@ -7,314 +7,66 @@
     {
       "latitude": 34.0061,
       "longitude": -84.0725,
-      "street_name": "Residential Driveway",
+      "street_name": "Parking Exit",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 34.006339,
-      "longitude": -84.073941,
-      "street_name": "I-285 (Perimeter)",
+      "latitude": 34.0055,
+      "longitude": -84.0780,
+      "street_name": "Sugarloaf Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.0050,
+      "longitude": -84.0850,
+      "street_name": "I-85 South On-Ramp",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.0040,
+      "longitude": -84.0950,
+      "street_name": "I-85 South",
       "speed_limit": 70,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 34.006578,
-      "longitude": -84.075382,
-      "street_name": "Henderson Mill Road",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.006816,
-      "longitude": -84.076823,
-      "street_name": "Crossville Road",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.007055,
-      "longitude": -84.078263,
-      "street_name": "Veterans Memorial Highway",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.007292,
-      "longitude": -84.079706,
-      "street_name": "North Avenue",
-      "speed_limit": 35,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 34.007531,
-      "longitude": -84.081145,
-      "street_name": "Briarcliff Road",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.00777,
-      "longitude": -84.082588,
-      "street_name": "Ralph McGill Boulevard",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.008008,
-      "longitude": -84.084029,
-      "street_name": "Emory Road",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 34.008246,
-      "longitude": -84.085469,
-      "street_name": "Roswell Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.008485,
-      "longitude": -84.086911,
-      "street_name": "Holiday Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.008723,
-      "longitude": -84.088352,
-      "street_name": "Oakdale Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.008962,
-      "longitude": -84.089792,
-      "street_name": "Roswell Road",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 34.0092,
-      "longitude": -84.091232,
-      "street_name": "Peachtree Dunwoody Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.009439,
-      "longitude": -84.092675,
-      "street_name": "West Wesley Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.009677,
-      "longitude": -84.094116,
-      "street_name": "Satellite Boulevard",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.009916,
-      "longitude": -84.095557,
-      "street_name": "Powder Springs Road",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 34.010154,
-      "longitude": -84.096997,
-      "street_name": "Satellite Boulevard",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.010392,
-      "longitude": -84.098439,
-      "street_name": "LaVista Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.01063,
-      "longitude": -84.099879,
-      "street_name": "Atlanta Highway",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.010869,
-      "longitude": -84.101321,
-      "street_name": "Howell Mill Road",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 34.011108,
-      "longitude": -84.102763,
-      "street_name": "Decatur Street",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.011346,
-      "longitude": -84.104203,
-      "street_name": "Marietta Highway",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.011585,
-      "longitude": -84.105644,
-      "street_name": "Westminster Drive",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.011824,
-      "longitude": -84.107085,
-      "street_name": "15th Street",
-      "speed_limit": 35,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 34.012062,
-      "longitude": -84.108526,
-      "street_name": "Friendship Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.0123,
-      "longitude": -84.109967,
-      "street_name": "Peachtree Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.012538,
-      "longitude": -84.111408,
-      "street_name": "Virginia Avenue",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.012777,
-      "longitude": -84.112849,
-      "street_name": "Highway 42",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.013014,
-      "longitude": -84.114289,
-      "street_name": "Piedmont Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.013254,
-      "longitude": -84.115731,
-      "street_name": "Edgewood Avenue",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.013492,
-      "longitude": -84.117173,
-      "street_name": "Indian Trail Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.01373,
-      "longitude": -84.118612,
-      "street_name": "DeKalb Avenue",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.01397,
-      "longitude": -84.120054,
-      "street_name": "16th Street",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.014207,
-      "longitude": -84.121495,
-      "street_name": "Drew Campground Road",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.014445,
-      "longitude": -84.122936,
-      "street_name": "I-20 West",
+      "latitude": 34.0030,
+      "longitude": -84.1050,
+      "street_name": "I-85 South",
       "speed_limit": 70,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 34.014686,
-      "longitude": -84.124378,
-      "street_name": "19th Street",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.014922,
-      "longitude": -84.125817,
-      "street_name": "Tuxedo Road",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.015162,
-      "longitude": -84.127259,
-      "street_name": "McFarland Parkway",
+      "latitude": 34.0020,
+      "longitude": -84.1150,
+      "street_name": "Pleasant Hill Road Exit",
       "speed_limit": 45,
       "has_traffic_light": false,
       "traffic_control": "none"
+    },
+    {
+      "latitude": 34.0080,
+      "longitude": -84.1200,
+      "street_name": "Pleasant Hill Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.0120,
+      "longitude": -84.1250,
+      "street_name": "Satellite Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
     },
     {
       "latitude": 34.0154,

@@ -1,133 +1,72 @@
 {
-  "name" : "ponce_de_leon",
-  "description" : "Ponce de Leon Avenue, Atlanta, GA → Ponce de Leon Avenue, Midtown, Atlanta, GA",
-  "start_location" : "Ponce de Leon Avenue, Atlanta, GA",
-  "end_location" : "Ponce de Leon Avenue, Midtown, Atlanta, GA",
-  "waypoints" : [ {
-    "latitude" : 33.773686,
-    "longitude" : -84.363444,
-    "street_name" : "Start: Ponce de Leon Avenue",
-    "speed_limit" : 35,
-    "has_traffic_light" : true,
-    "traffic_control" : "traffic_light"
-  }, {
-    "latitude" : 33.773346,
-    "longitude" : -84.365327,
-    "street_name" : "Local Street",
-    "speed_limit" : 35,
-    "has_traffic_light" : false,
-    "traffic_control" : "none"
-  }, {
-    "latitude" : 33.773442,
-    "longitude" : -84.36686,
-    "street_name" : "Local Street",
-    "speed_limit" : 35,
-    "has_traffic_light" : true,
-    "traffic_control" : "traffic_light"
-  }, {
-    "latitude" : 33.773633,
-    "longitude" : -84.368438,
-    "street_name" : "Local Street",
-    "speed_limit" : 35,
-    "has_traffic_light" : false,
-    "traffic_control" : "none"
-  }, {
-    "latitude" : 33.773851,
-    "longitude" : -84.369882,
-    "street_name" : "Local Street",
-    "speed_limit" : 35,
-    "has_traffic_light" : true,
-    "traffic_control" : "traffic_light"
-  }, {
-    "latitude" : 33.773471,
-    "longitude" : -84.371016,
-    "street_name" : "Local Street",
-    "speed_limit" : 35,
-    "has_traffic_light" : false,
-    "traffic_control" : "none"
-  }, {
-    "latitude" : 33.772066,
-    "longitude" : -84.371559,
-    "street_name" : "Local Street",
-    "speed_limit" : 35,
-    "has_traffic_light" : true,
-    "traffic_control" : "traffic_light"
-  }, {
-    "latitude" : 33.770969,
-    "longitude" : -84.371788,
-    "street_name" : "Local Street",
-    "speed_limit" : 35,
-    "has_traffic_light" : false,
-    "traffic_control" : "none"
-  }, {
-    "latitude" : 33.767902,
-    "longitude" : -84.371893,
-    "street_name" : "Local Street",
-    "speed_limit" : 35,
-    "has_traffic_light" : true,
-    "traffic_control" : "traffic_light"
-  }, {
-    "latitude" : 33.763961,
-    "longitude" : -84.372278,
-    "street_name" : "Local Street",
-    "speed_limit" : 35,
-    "has_traffic_light" : false,
-    "traffic_control" : "none"
-  }, {
-    "latitude" : 33.764027,
-    "longitude" : -84.375622,
-    "street_name" : "Local Street",
-    "speed_limit" : 35,
-    "has_traffic_light" : true,
-    "traffic_control" : "traffic_light"
-  }, {
-    "latitude" : 33.764146,
-    "longitude" : -84.379527,
-    "street_name" : "Local Street",
-    "speed_limit" : 35,
-    "has_traffic_light" : false,
-    "traffic_control" : "none"
-  }, {
-    "latitude" : 33.764249,
-    "longitude" : -84.382755,
-    "street_name" : "Local Street",
-    "speed_limit" : 35,
-    "has_traffic_light" : true,
-    "traffic_control" : "traffic_light"
-  }, {
-    "latitude" : 33.7623,
-    "longitude" : -84.38413,
-    "street_name" : "Local Street",
-    "speed_limit" : 35,
-    "has_traffic_light" : false,
-    "traffic_control" : "none"
-  }, {
-    "latitude" : 33.761523,
-    "longitude" : -84.387553,
-    "street_name" : "Local Street",
-    "speed_limit" : 35,
-    "has_traffic_light" : true,
-    "traffic_control" : "traffic_light"
-  }, {
-    "latitude" : 33.757638,
-    "longitude" : -84.387699,
-    "street_name" : "Local Street",
-    "speed_limit" : 35,
-    "has_traffic_light" : false,
-    "traffic_control" : "none"
-  }, {
-    "latitude" : 33.754973,
-    "longitude" : -84.389284,
-    "street_name" : "Local Street",
-    "speed_limit" : 35,
-    "has_traffic_light" : true,
-    "traffic_control" : "traffic_light"
-  }, {
-    "latitude" : 33.754503,
-    "longitude" : -84.389815,
-    "street_name" : "End: Ponce de Leon Avenue",
-    "speed_limit" : 25,
-    "has_traffic_light" : true,
-    "traffic_control" : "traffic_light"
-  } ]
+  "name": "ponce_de_leon",
+  "description": "Ponce de Leon Avenue from Virginia Highland to Midtown Atlanta",
+  "start_location": "Ponce de Leon Avenue, Virginia Highland, Atlanta, GA",
+  "end_location": "Ponce de Leon Avenue, Midtown, Atlanta, GA",
+  "waypoints": [
+    {
+      "latitude": 33.7745,
+      "longitude": -84.3530,
+      "street_name": "Ponce de Leon Ave at N Highland Ave (Virginia Highland)",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.7735,
+      "longitude": -84.3580,
+      "street_name": "Ponce de Leon Ave at Barnett St",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.7725,
+      "longitude": -84.3630,
+      "street_name": "Ponce de Leon Ave at Piedmont Park",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.7715,
+      "longitude": -84.3680,
+      "street_name": "Ponce de Leon Ave at Monroe Dr",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.7720,
+      "longitude": -84.3720,
+      "street_name": "Ponce de Leon Ave at 10th Street",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.7720,
+      "longitude": -84.3760,
+      "street_name": "Ponce de Leon Ave at Juniper St",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.7720,
+      "longitude": -84.3810,
+      "street_name": "Ponce de Leon Ave at W Peachtree St",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.7720,
+      "longitude": -84.3860,
+      "street_name": "Ponce de Leon Ave at Spring St (Midtown)",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    }
+  ]
 }

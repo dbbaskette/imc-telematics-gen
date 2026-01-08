@@ -89,12 +89,13 @@ public class TelematicsSimulator {
                 FlatTelematicsMessage message;
                 
                 // Check if this driver should have a crash event
-                if (selectedDriver.getCurrentState().name().equals("DRIVING") && 
+                if (selectedDriver.getCurrentState().name().equals("DRIVING") &&
                     shouldSimulateCrash(selectedDriver)) {
-                    
+
                     logger.warn("💥💥💥 CRASH EVENT - Driver {}! 💥💥💥", selectedDriver.getDriverId());
                     message = dataGenerator.generateCrashEventData(selectedDriver);
-                    selectedDriver.recordCrashEvent();
+                    // Record crash with the accident type from the generated message
+                    selectedDriver.recordCrashEvent(message.accidentType());
                 } else {
                     // Generate normal telemetry based on driver state
                     message = dataGenerator.generateTelematicsData(selectedDriver);

@@ -1,125 +1,77 @@
 {
   "name": "derek_johnson_pharmacy_to_restaurant",
-  "description": "Derek Johnson: Pharmacy \u2192 Restaurant",
+  "description": "Derek Johnson: CVS Pharmacy to Mary Mac's Tea Room",
   "start_location": "33.76, -84.378",
   "end_location": "33.752, -84.392",
   "waypoints": [
     {
       "latitude": 33.76,
       "longitude": -84.378,
-      "street_name": "Residential Driveway",
+      "street_name": "CVS Pharmacy - Ponce de Leon Avenue NE",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.759429,
-      "longitude": -84.378999,
-      "street_name": "Pine Street",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.758857,
-      "longitude": -84.38,
-      "street_name": "Windy Hill Road",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.758286,
-      "longitude": -84.381,
-      "street_name": "Pharr Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.757713,
-      "longitude": -84.382,
-      "street_name": "Glen Iris Drive",
-      "speed_limit": 45,
+      "latitude": 33.7595,
+      "longitude": -84.3795,
+      "street_name": "Ponce de Leon Avenue NE at Juniper Street",
+      "speed_limit": 35,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.757143,
-      "longitude": -84.382999,
-      "street_name": "Sawnee Avenue",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.756572,
-      "longitude": -84.384,
-      "street_name": "Northlake Parkway",
-      "speed_limit": 45,
+      "latitude": 33.7590,
+      "longitude": -84.3810,
+      "street_name": "Ponce de Leon Avenue NE at Peachtree Street",
+      "speed_limit": 35,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.756,
-      "longitude": -84.385,
-      "street_name": "Peachtree Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
+      "latitude": 33.7580,
+      "longitude": -84.3830,
+      "street_name": "Ponce de Leon Avenue NE at Spring Street",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.755429,
-      "longitude": -84.386,
-      "street_name": "Lanier Islands Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.754856,
-      "longitude": -84.387,
-      "street_name": "Old Milton Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.754286,
-      "longitude": -84.388001,
-      "street_name": "7th Street",
+      "latitude": 33.7570,
+      "longitude": -84.3850,
+      "street_name": "Ponce de Leon Avenue NW",
       "speed_limit": 35,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.753715,
-      "longitude": -84.389001,
-      "street_name": "11th Street",
+      "latitude": 33.7555,
+      "longitude": -84.3870,
+      "street_name": "West Peachtree Street NW",
       "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.753142,
-      "longitude": -84.39,
-      "street_name": "Kimball Bridge Road",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "stop_sign"
+      "latitude": 33.7540,
+      "longitude": -84.3888,
+      "street_name": "West Peachtree Street NW at North Avenue",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.752572,
-      "longitude": -84.391,
-      "street_name": "Old Milton Parkway",
-      "speed_limit": 45,
+      "latitude": 33.7530,
+      "longitude": -84.3905,
+      "street_name": "Techwood Drive NW",
+      "speed_limit": 30,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
       "latitude": 33.752,
       "longitude": -84.392,
-      "street_name": "Destination Parking",
+      "street_name": "Mary Mac's Tea Room - Ponce de Leon Avenue",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"

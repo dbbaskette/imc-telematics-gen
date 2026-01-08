@@ -1,124 +1,76 @@
 {
   "name": "jennifer_taylor_art_supply_store_to_gallery_opening",
   "description": "Jennifer Taylor: Art_Supply_Store \u2192 Gallery_Opening",
-  "start_location": "33.744, -84.372",
-  "end_location": "33.748, -84.368",
+  "start_location": "33.7735, -84.3625",
+  "end_location": "33.7585, -84.3765",
   "waypoints": [
     {
-      "latitude": 33.744,
-      "longitude": -84.372,
-      "street_name": "Residential Driveway",
+      "latitude": 33.7735,
+      "longitude": -84.3625,
+      "street_name": "Parking Exit",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.744287,
-      "longitude": -84.371715,
-      "street_name": "10th Street",
+      "latitude": 33.7742,
+      "longitude": -84.3645,
+      "street_name": "Virginia Avenue NE",
       "speed_limit": 25,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.744571,
-      "longitude": -84.371429,
-      "street_name": "Habersham Road",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.744858,
-      "longitude": -84.371142,
-      "street_name": "Highway 42",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.745144,
-      "longitude": -84.370857,
-      "street_name": "Virginia Avenue",
-      "speed_limit": 45,
+      "latitude": 33.7752,
+      "longitude": -84.3672,
+      "street_name": "Monroe Drive NE",
+      "speed_limit": 35,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.745428,
-      "longitude": -84.370571,
-      "street_name": "Northlake Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.745714,
-      "longitude": -84.370285,
-      "street_name": "Steve Reynolds Boulevard",
-      "speed_limit": 45,
+      "latitude": 33.7728,
+      "longitude": -84.3695,
+      "street_name": "10th Street NE",
+      "speed_limit": 35,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.746,
-      "longitude": -84.37,
-      "street_name": "Peachtree Street NW",
+      "latitude": 33.7695,
+      "longitude": -84.3725,
+      "street_name": "Piedmont Avenue NE",
       "speed_limit": 35,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.746285,
-      "longitude": -84.369713,
-      "street_name": "Castleberry Road",
-      "speed_limit": 45,
+      "latitude": 33.7658,
+      "longitude": -84.3745,
+      "street_name": "Piedmont Avenue NE",
+      "speed_limit": 35,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.746571,
-      "longitude": -84.369428,
-      "street_name": "I-20 West",
-      "speed_limit": 70,
-      "has_traffic_light": false,
-      "traffic_control": "none"
+      "latitude": 33.7618,
+      "longitude": -84.3758,
+      "street_name": "Edgewood Avenue NE",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.746857,
-      "longitude": -84.369142,
-      "street_name": "Ponce de Leon Avenue",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.747143,
-      "longitude": -84.368858,
-      "street_name": "Lawrenceville Highway",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.747428,
-      "longitude": -84.368572,
-      "street_name": "Marietta Highway",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.747714,
-      "longitude": -84.368287,
-      "street_name": "DeKalb Avenue",
+      "latitude": 33.7595,
+      "longitude": -84.3762,
+      "street_name": "Broad Street NW",
       "speed_limit": 25,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.748,
-      "longitude": -84.368,
+      "latitude": 33.7585,
+      "longitude": -84.3765,
       "street_name": "Destination Parking",
       "speed_limit": 15,
       "has_traffic_light": false,

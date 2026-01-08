@@ -1,125 +1,69 @@
 {
   "name": "sarah_chen_grocery_store_to_gym",
-  "description": "Sarah Chen: Grocery_Store \u2192 Gym",
+  "description": "Sarah Chen: Grocery Store to Gym (Midtown LA Fitness)",
   "start_location": "33.765, -84.378",
   "end_location": "33.762, -84.385",
   "waypoints": [
     {
       "latitude": 33.765,
       "longitude": -84.378,
-      "street_name": "Residential Driveway",
+      "street_name": "Publix Midtown - Piedmont Avenue NE",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.764785,
-      "longitude": -84.378499,
-      "street_name": "Northpoint Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.764571,
-      "longitude": -84.379,
-      "street_name": "Highway 85",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.764358,
-      "longitude": -84.3795,
-      "street_name": "Henderson Mill Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.764143,
-      "longitude": -84.38,
-      "street_name": "Satellite Boulevard",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.763928,
-      "longitude": -84.380501,
-      "street_name": "West Wesley Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.763714,
-      "longitude": -84.381,
-      "street_name": "I-985 North",
-      "speed_limit": 70,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.763501,
-      "longitude": -84.3815,
-      "street_name": "North Druid Hills Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.763286,
-      "longitude": -84.382,
-      "street_name": "Virginia Avenue",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 33.763072,
-      "longitude": -84.382501,
-      "street_name": "Circle 75 Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.762857,
-      "longitude": -84.383,
-      "street_name": "West Wesley Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.762644,
-      "longitude": -84.383499,
-      "street_name": "Pine Street",
+      "latitude": 33.7648,
+      "longitude": -84.3790,
+      "street_name": "Piedmont Avenue NE",
       "speed_limit": 35,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.762428,
-      "longitude": -84.384,
-      "street_name": "Marietta Street",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "stop_sign"
+      "latitude": 33.7645,
+      "longitude": -84.3800,
+      "street_name": "14th Street NE at Piedmont",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.762215,
-      "longitude": -84.3845,
-      "street_name": "Peachtree Dunwoody Road",
-      "speed_limit": 25,
+      "latitude": 33.7640,
+      "longitude": -84.3810,
+      "street_name": "14th Street NE",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.7635,
+      "longitude": -84.3820,
+      "street_name": "14th Street NE at Juniper Street",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.7630,
+      "longitude": -84.3830,
+      "street_name": "14th Street NE at Peachtree Street",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.7625,
+      "longitude": -84.3840,
+      "street_name": "West Peachtree Street NW",
+      "speed_limit": 35,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
       "latitude": 33.762,
       "longitude": -84.385,
-      "street_name": "Destination Parking",
+      "street_name": "LA Fitness Midtown - West Peachtree Street",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"

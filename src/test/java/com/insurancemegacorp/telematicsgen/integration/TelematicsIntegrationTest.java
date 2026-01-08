@@ -68,16 +68,19 @@ class TelematicsIntegrationTest {
     void shouldPublishCrashEventData() throws Exception {
         Driver testDriver = new Driver(999001, 200123, 300999, "1HGBH41JXMN109999", 40.7128, -74.0060);
         testDriver.setCurrentSpeed(35.0);
-        
+
         FlatTelematicsMessage crashMessage = dataGenerator.generateCrashEventData(testDriver);
-        
+
         // Test crash event data generation
         assertThat(crashMessage).isNotNull();
         assertThat(crashMessage.policyId()).isEqualTo(200123);
-        assertThat(crashMessage.speedMph()).isEqualTo(0.0); // Speed is zero during crash event
-        assertThat(crashMessage.accelerometerX()).isGreaterThan(4.0);
-        assertThat(crashMessage.accelerometerY()).isGreaterThan(3.0);
-        
+        // Speed at impact should be the driver's speed before the crash
+        assertThat(crashMessage.speedMph()).isEqualTo(35.0);
+        // G-force should be at least 6.0 (minimum crash threshold)
+        assertThat(crashMessage.gForce()).isGreaterThanOrEqualTo(6.0);
+        // Accident type should be set for crash events
+        assertThat(crashMessage.accidentType()).isNotNull();
+
         // Verify publishing works without exception
         publisher.publishTelematicsData(crashMessage, testDriver);
     }

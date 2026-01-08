@@ -1,124 +1,76 @@
 {
   "name": "jennifer_taylor_work___museum_to_art_supply_store",
   "description": "Jennifer Taylor: Work___Museum \u2192 Art_Supply_Store",
-  "start_location": "33.751, -84.375",
-  "end_location": "33.744, -84.372",
+  "start_location": "33.7905, -84.3855",
+  "end_location": "33.7735, -84.3625",
   "waypoints": [
     {
-      "latitude": 33.751,
-      "longitude": -84.375,
-      "street_name": "Residential Driveway",
+      "latitude": 33.7905,
+      "longitude": -84.3855,
+      "street_name": "Parking Exit",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.750501,
-      "longitude": -84.374785,
-      "street_name": "Duluth Highway",
-      "speed_limit": 55,
+      "latitude": 33.7885,
+      "longitude": -84.3842,
+      "street_name": "Arts Center Way NE",
+      "speed_limit": 25,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.749999,
-      "longitude": -84.374571,
-      "street_name": "Highway 92",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.749499,
-      "longitude": -84.374358,
-      "street_name": "Cypress Street",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.748999,
-      "longitude": -84.374143,
-      "street_name": "Peachtree Street NW",
+      "latitude": 33.7865,
+      "longitude": -84.3825,
+      "street_name": "Peachtree Street NE",
       "speed_limit": 35,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.748499,
-      "longitude": -84.373928,
-      "street_name": "Collier Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.748001,
-      "longitude": -84.373714,
-      "street_name": "Lanier Islands Parkway",
-      "speed_limit": 45,
+      "latitude": 33.7825,
+      "longitude": -84.3795,
+      "street_name": "14th Street NE",
+      "speed_limit": 35,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.747499,
-      "longitude": -84.3735,
-      "street_name": "Peachtree Street NW",
+      "latitude": 33.7795,
+      "longitude": -84.3755,
+      "street_name": "Piedmont Avenue NE",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.7765,
+      "longitude": -84.3705,
+      "street_name": "Piedmont Avenue NE",
       "speed_limit": 35,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.747,
-      "longitude": -84.373286,
-      "street_name": "Browns Bridge Road",
-      "speed_limit": 45,
+      "latitude": 33.7748,
+      "longitude": -84.3665,
+      "street_name": "Monroe Drive NE",
+      "speed_limit": 35,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.746501,
-      "longitude": -84.373072,
-      "street_name": "Freedom Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.746,
-      "longitude": -84.372857,
-      "street_name": "I-20 East",
-      "speed_limit": 70,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.745501,
-      "longitude": -84.372643,
-      "street_name": "I-985 North",
-      "speed_limit": 70,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.744999,
-      "longitude": -84.372429,
-      "street_name": "Beverly Road",
+      "latitude": 33.7738,
+      "longitude": -84.3638,
+      "street_name": "Virginia Avenue NE",
       "speed_limit": 25,
       "has_traffic_light": false,
       "traffic_control": "stop_sign"
     },
     {
-      "latitude": 33.744501,
-      "longitude": -84.372215,
-      "street_name": "Beaver Ruin Road",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.744,
-      "longitude": -84.372,
+      "latitude": 33.7735,
+      "longitude": -84.3625,
       "street_name": "Destination Parking",
       "speed_limit": 15,
       "has_traffic_light": false,

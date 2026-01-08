@@ -1,140 +1,76 @@
 {
   "name": "james_rodriguez_north_point_mall_to_alpharetta_country_club",
   "description": "James Rodriguez: North_Point_Mall \u2192 Alpharetta_Country_Club",
-  "start_location": "34.0883, -84.2946",
-  "end_location": "34.0838, -84.2733",
+  "start_location": "34.0553, -84.2721",
+  "end_location": "34.0725, -84.2885",
   "waypoints": [
     {
-      "latitude": 34.0883,
-      "longitude": -84.2946,
-      "street_name": "Residential Driveway",
+      "latitude": 34.0553,
+      "longitude": -84.2721,
+      "street_name": "Parking Exit",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 34.088019,
-      "longitude": -84.293268,
-      "street_name": "Browns Bridge Road",
+      "latitude": 34.0565,
+      "longitude": -84.2738,
+      "street_name": "North Point Circle",
       "speed_limit": 25,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 34.087738,
-      "longitude": -84.291937,
-      "street_name": "Perimeter Center East",
-      "speed_limit": 25,
+      "latitude": 34.0582,
+      "longitude": -84.2755,
+      "street_name": "North Point Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.0612,
+      "longitude": -84.2785,
+      "street_name": "Mansell Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.0648,
+      "longitude": -84.2815,
+      "street_name": "Mansell Road",
+      "speed_limit": 45,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 34.087456,
-      "longitude": -84.290607,
-      "street_name": "Briarcliff Road",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.087175,
-      "longitude": -84.289275,
+      "latitude": 34.0678,
+      "longitude": -84.2842,
       "street_name": "Old Alabama Road",
       "speed_limit": 45,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 34.086894,
-      "longitude": -84.287945,
-      "street_name": "Circle 75 Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.086613,
-      "longitude": -84.286613,
-      "street_name": "Marietta Highway",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.08633,
-      "longitude": -84.285282,
-      "street_name": "Peachtree Dunwoody Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.086049,
-      "longitude": -84.283949,
-      "street_name": "Scott Boulevard",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.085769,
-      "longitude": -84.282618,
-      "street_name": "Haynes Bridge Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.085488,
-      "longitude": -84.281288,
-      "street_name": "North Highland Avenue",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.085206,
-      "longitude": -84.279957,
-      "street_name": "I-285 (Perimeter)",
-      "speed_limit": 70,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.084925,
-      "longitude": -84.278625,
-      "street_name": "Perimeter Center West",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 34.084644,
-      "longitude": -84.277293,
-      "street_name": "12th Street",
+      "latitude": 34.0705,
+      "longitude": -84.2865,
+      "street_name": "Old Alabama Road",
       "speed_limit": 35,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 34.084362,
-      "longitude": -84.275962,
-      "street_name": "Johnson Ferry Road",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.084081,
-      "longitude": -84.274631,
-      "street_name": "Tuxedo Road",
+      "latitude": 34.0718,
+      "longitude": -84.2878,
+      "street_name": "Country Club Drive",
       "speed_limit": 25,
       "has_traffic_light": false,
       "traffic_control": "stop_sign"
     },
     {
-      "latitude": 34.0838,
-      "longitude": -84.2733,
+      "latitude": 34.0725,
+      "longitude": -84.2885,
       "street_name": "Destination Parking",
       "speed_limit": 15,
       "has_traffic_light": false,

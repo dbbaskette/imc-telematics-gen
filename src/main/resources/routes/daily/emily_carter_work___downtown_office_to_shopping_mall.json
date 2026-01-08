@@ -1,165 +1,93 @@
 {
   "name": "emily_carter_work___downtown_office_to_shopping_mall",
-  "description": "Emily Carter: Work___Downtown_Office \u2192 Shopping_Mall",
+  "description": "Emily Carter: Downtown Office to Underground Atlanta",
   "start_location": "33.755, -84.39",
   "end_location": "33.74, -84.375",
   "waypoints": [
     {
       "latitude": 33.755,
       "longitude": -84.39,
-      "street_name": "Residential Driveway",
-      "speed_limit": 15,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.754211,
-      "longitude": -84.389211,
-      "street_name": "19th Street",
+      "street_name": "Downtown Office - Spring Street NW",
       "speed_limit": 25,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.753422,
-      "longitude": -84.388421,
-      "street_name": "Castleberry Road",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.752631,
-      "longitude": -84.387632,
-      "street_name": "Holcomb Bridge Road",
+      "latitude": 33.7535,
+      "longitude": -84.3888,
+      "street_name": "Spring Street NW",
       "speed_limit": 35,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.751842,
-      "longitude": -84.386842,
-      "street_name": "Perimeter Center West",
-      "speed_limit": 45,
+      "latitude": 33.7520,
+      "longitude": -84.3875,
+      "street_name": "Spring Street NW at Marietta Street",
+      "speed_limit": 35,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.751052,
-      "longitude": -84.386053,
-      "street_name": "Juniper Street",
+      "latitude": 33.7505,
+      "longitude": -84.3860,
+      "street_name": "Peachtree Street NW",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.7490,
+      "longitude": -84.3845,
+      "street_name": "Peachtree Street NW at Auburn Avenue",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.7475,
+      "longitude": -84.3830,
+      "street_name": "Peachtree Street SW at Edgewood Avenue",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.7460,
+      "longitude": -84.3815,
+      "street_name": "Peachtree Street SW at Alabama Street",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.7445,
+      "longitude": -84.3800,
+      "street_name": "Central Avenue SW",
+      "speed_limit": 30,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.7430,
+      "longitude": -84.3785,
+      "street_name": "Central Avenue SW at MLK Jr Drive",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.7415,
+      "longitude": -84.3770,
+      "street_name": "Capitol Avenue SE",
       "speed_limit": 35,
       "has_traffic_light": false,
       "traffic_control": "none"
-    },
-    {
-      "latitude": 33.750263,
-      "longitude": -84.385264,
-      "street_name": "Highway 92",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.749474,
-      "longitude": -84.384474,
-      "street_name": "Webb Bridge Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.748685,
-      "longitude": -84.383685,
-      "street_name": "Broadland Road",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 33.747895,
-      "longitude": -84.382895,
-      "street_name": "Lawrenceville Highway",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.747105,
-      "longitude": -84.382106,
-      "street_name": "Lake Lanier Islands Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.746315,
-      "longitude": -84.381315,
-      "street_name": "Windward Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.745527,
-      "longitude": -84.380526,
-      "street_name": "Satellite Boulevard",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 33.744737,
-      "longitude": -84.379737,
-      "street_name": "Chamblee Tucker Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.743948,
-      "longitude": -84.378948,
-      "street_name": "McFarland Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.743158,
-      "longitude": -84.378158,
-      "street_name": "Cumberland Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.742369,
-      "longitude": -84.377368,
-      "street_name": "Cobb Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.741578,
-      "longitude": -84.376579,
-      "street_name": "Old Milton Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.740789,
-      "longitude": -84.37579,
-      "street_name": "Lower Roswell Road",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "stop_sign"
     },
     {
       "latitude": 33.74,
       "longitude": -84.375,
-      "street_name": "Destination Parking",
+      "street_name": "Underground Atlanta - Upper Alabama Street",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"

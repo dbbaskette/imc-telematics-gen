@@ -13,108 +13,36 @@
       "traffic_control": "none"
     },
     {
-      "latitude": 33.757571,
-      "longitude": -84.378286,
-      "street_name": "Ponce de Leon Avenue",
+      "latitude": 33.7570,
+      "longitude": -84.3785,
+      "street_name": "Peachtree Street NE",
       "speed_limit": 25,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.757142,
-      "longitude": -84.378572,
-      "street_name": "Lenox Road",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.756714,
-      "longitude": -84.378857,
-      "street_name": "Highway 85",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.756286,
-      "longitude": -84.379143,
-      "street_name": "Ponce de Leon Avenue",
-      "speed_limit": 45,
+      "latitude": 33.7560,
+      "longitude": -84.3795,
+      "street_name": "Andrew Young International Boulevard",
+      "speed_limit": 35,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.755857,
-      "longitude": -84.37943,
-      "street_name": "Northside Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
+      "latitude": 33.7550,
+      "longitude": -84.3805,
+      "street_name": "Marietta Street NW",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.755428,
-      "longitude": -84.379715,
-      "street_name": "I-985 North",
-      "speed_limit": 70,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.755,
-      "longitude": -84.379999,
-      "street_name": "Powers Ferry Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.754571,
-      "longitude": -84.380285,
-      "street_name": "Satellite Boulevard",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.754143,
-      "longitude": -84.380572,
-      "street_name": "Argonne Avenue",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.753715,
-      "longitude": -84.380857,
-      "street_name": "Satellite Boulevard",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.753286,
-      "longitude": -84.381144,
-      "street_name": "Drew Campground Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.752857,
-      "longitude": -84.38143,
-      "street_name": "Aqualand Drive",
+      "latitude": 33.7535,
+      "longitude": -84.3810,
+      "street_name": "Cone Street NW",
       "speed_limit": 25,
       "has_traffic_light": false,
       "traffic_control": "stop_sign"
-    },
-    {
-      "latitude": 33.752429,
-      "longitude": -84.381715,
-      "street_name": "Old Alabama Road",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
     },
     {
       "latitude": 33.752,

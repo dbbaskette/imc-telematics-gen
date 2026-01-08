@@ -1,125 +1,69 @@
 {
   "name": "michael_wang_barber_shop_to_friend's_house",
-  "description": "Michael Wang: Barber_Shop \u2192 Friend'S_House",
+  "description": "Michael Wang: Barber Shop to Friend's House (Ansley Park)",
   "start_location": "33.768, -84.386",
   "end_location": "33.762, -84.394",
   "waypoints": [
     {
       "latitude": 33.768,
       "longitude": -84.386,
-      "street_name": "Residential Driveway",
+      "street_name": "Barber Shop - North Highland Avenue NE",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.767571,
-      "longitude": -84.386571,
-      "street_name": "DeKalb Avenue",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.767143,
-      "longitude": -84.387144,
-      "street_name": "Spot Road",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.766714,
-      "longitude": -84.387715,
-      "street_name": "Piedmont Avenue",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.766285,
-      "longitude": -84.388286,
-      "street_name": "Clifton Road",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 33.765858,
-      "longitude": -84.388858,
-      "street_name": "Jimmy Carter Boulevard",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.76543,
-      "longitude": -84.389429,
-      "street_name": "Marietta Street",
+      "latitude": 33.7672,
+      "longitude": -84.3868,
+      "street_name": "North Highland Avenue NE",
       "speed_limit": 35,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.765001,
-      "longitude": -84.390001,
-      "street_name": "Habersham Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.764572,
-      "longitude": -84.390571,
-      "street_name": "DeKalb Avenue",
-      "speed_limit": 45,
+      "latitude": 33.7665,
+      "longitude": -84.3878,
+      "street_name": "Virginia Avenue NE at North Highland",
+      "speed_limit": 30,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.764143,
-      "longitude": -84.391144,
-      "street_name": "Bethelview Road",
-      "speed_limit": 45,
+      "latitude": 33.7658,
+      "longitude": -84.3888,
+      "street_name": "Virginia Avenue NE",
+      "speed_limit": 30,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.763715,
-      "longitude": -84.391715,
-      "street_name": "9th Street",
+      "latitude": 33.7650,
+      "longitude": -84.3898,
+      "street_name": "Piedmont Avenue NE at 15th Street",
       "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.7640,
+      "longitude": -84.3908,
+      "street_name": "Peachtree Circle NE",
+      "speed_limit": 30,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.763285,
-      "longitude": -84.392285,
-      "street_name": "Jimmy Carter Boulevard",
-      "speed_limit": 45,
+      "latitude": 33.7630,
+      "longitude": -84.3920,
+      "street_name": "The Prado NE (Ansley Park)",
+      "speed_limit": 25,
       "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.762858,
-      "longitude": -84.392858,
-      "street_name": "Buford Highway",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.762429,
-      "longitude": -84.393429,
-      "street_name": "Circle 75 Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
+      "traffic_control": "stop_sign"
     },
     {
       "latitude": 33.762,
       "longitude": -84.394,
-      "street_name": "Destination Parking",
+      "street_name": "Friend's House - Ansley Park",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"

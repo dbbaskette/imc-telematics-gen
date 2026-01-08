@@ -11,6 +11,7 @@ public class Driver {
     private final String vin;
     private final double baseLatitude;
     private final double baseLongitude;
+    private final boolean aggressive;
     private final AtomicLong messageCount;
     
     private volatile DriverState currentState;
@@ -32,13 +33,22 @@ public class Driver {
     private volatile double tripProgressPercent;
     private volatile Instant tripStartTime;
 
+    // Crash event snapshot data (frozen during POST_CRASH_IDLE)
+    private volatile Double crashSpeedAtImpact;
+    private volatile String crashAccidentType;
+
     public Driver(int driverId, int policyId, int vehicleId, String vin, double baseLatitude, double baseLongitude) {
+        this(driverId, policyId, vehicleId, vin, baseLatitude, baseLongitude, false);
+    }
+
+    public Driver(int driverId, int policyId, int vehicleId, String vin, double baseLatitude, double baseLongitude, boolean aggressive) {
         this.driverId = driverId;
         this.policyId = policyId;
         this.vehicleId = vehicleId;
         this.vin = vin;
         this.baseLatitude = baseLatitude;
         this.baseLongitude = baseLongitude;
+        this.aggressive = aggressive;
         this.currentLatitude = baseLatitude;
         this.currentLongitude = baseLongitude;
         this.messageCount = new AtomicLong(0);
@@ -73,6 +83,10 @@ public class Driver {
 
     public double getBaseLongitude() {
         return baseLongitude;
+    }
+
+    public boolean isAggressive() {
+        return aggressive;
     }
 
     public double getCurrentLatitude() {
@@ -119,9 +133,33 @@ public class Driver {
     }
 
     public void recordCrashEvent() {
+        // Capture speed at impact before setting to zero
+        this.crashSpeedAtImpact = this.currentSpeed;
         this.lastCrashTime = Instant.now();
         setCurrentState(DriverState.POST_CRASH_IDLE);
         setCurrentSpeed(0.0);
+    }
+
+    public void recordCrashEvent(String accidentType) {
+        // Capture speed at impact and accident type before setting to zero
+        this.crashSpeedAtImpact = this.currentSpeed;
+        this.crashAccidentType = accidentType;
+        this.lastCrashTime = Instant.now();
+        setCurrentState(DriverState.POST_CRASH_IDLE);
+        setCurrentSpeed(0.0);
+    }
+
+    public Double getCrashSpeedAtImpact() {
+        return crashSpeedAtImpact;
+    }
+
+    public String getCrashAccidentType() {
+        return crashAccidentType;
+    }
+
+    public void clearCrashData() {
+        this.crashSpeedAtImpact = null;
+        this.crashAccidentType = null;
     }
 
     public long getMessageCount() {

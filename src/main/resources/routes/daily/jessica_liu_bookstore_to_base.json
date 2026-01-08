@@ -1,126 +1,62 @@
 {
   "name": "jessica_liu_bookstore_to_base",
-  "description": "Jessica Liu: Bookstore \u2192 Base",
+  "description": "Jessica Liu: A Cappella Books to Home (Midtown)",
   "start_location": "33.762, -84.388",
   "end_location": "33.76, -84.385",
   "waypoints": [
     {
       "latitude": 33.762,
       "longitude": -84.388,
-      "street_name": "Residential Driveway",
+      "street_name": "A Cappella Books - Juniper Street NE",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.761858,
-      "longitude": -84.387786,
-      "street_name": "Virginia Avenue",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.761715,
-      "longitude": -84.387572,
-      "street_name": "Spring Street",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.761571,
-      "longitude": -84.387357,
-      "street_name": "Argonne Avenue",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.761429,
-      "longitude": -84.387143,
-      "street_name": "Piedmont Circle",
-      "speed_limit": 45,
+      "latitude": 33.7618,
+      "longitude": -84.3875,
+      "street_name": "Juniper Street NE at 12th Street",
+      "speed_limit": 30,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.761286,
-      "longitude": -84.386929,
-      "street_name": "Broadland Road",
-      "speed_limit": 45,
+      "latitude": 33.7615,
+      "longitude": -84.3868,
+      "street_name": "12th Street NE",
+      "speed_limit": 30,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.761142,
-      "longitude": -84.386715,
-      "street_name": "19th Street",
+      "latitude": 33.7612,
+      "longitude": -84.3862,
+      "street_name": "12th Street NE at Piedmont Avenue",
+      "speed_limit": 30,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.7608,
+      "longitude": -84.3858,
+      "street_name": "Piedmont Avenue NE",
       "speed_limit": 35,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.761001,
-      "longitude": -84.3865,
-      "street_name": "Sawnee Avenue",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.760857,
-      "longitude": -84.386285,
-      "street_name": "West Wesley Road",
-      "speed_limit": 45,
+      "latitude": 33.7604,
+      "longitude": -84.3855,
+      "street_name": "10th Street NE at Piedmont Avenue",
+      "speed_limit": 30,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.760714,
-      "longitude": -84.386071,
-      "street_name": "Windward Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.760572,
-      "longitude": -84.385857,
-      "street_name": "Penn Avenue",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.760429,
-      "longitude": -84.385642,
-      "street_name": "Pharr Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.760285,
-      "longitude": -84.385429,
-      "street_name": "Pilgrim Mill Road",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "stop_sign"
-    },
-    {
-      "latitude": 33.760143,
-      "longitude": -84.385213,
-      "street_name": "Greenwood Avenue",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
       "latitude": 33.76,
       "longitude": -84.385,
-      "street_name": "Destination Parking",
-      "speed_limit": 15,
+      "street_name": "Home - 10th Street NE (Midtown)",
+      "speed_limit": 25,
       "has_traffic_light": false,
       "traffic_control": "none"
     }

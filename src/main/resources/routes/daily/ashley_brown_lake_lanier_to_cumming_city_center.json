@@ -1,124 +1,84 @@
 {
   "name": "ashley_brown_lake_lanier_to_cumming_city_center",
   "description": "Ashley Brown: Lake_Lanier \u2192 Cumming_City_Center",
-  "start_location": "34.2104, -84.1557",
-  "end_location": "34.207, -84.145",
+  "start_location": "34.1600, -84.0500",
+  "end_location": "34.2070, -84.1400",
   "waypoints": [
     {
-      "latitude": 34.2104,
-      "longitude": -84.1557,
-      "street_name": "Residential Driveway",
+      "latitude": 34.1600,
+      "longitude": -84.0500,
+      "street_name": "Parking Exit",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 34.210156,
-      "longitude": -84.154935,
-      "street_name": "Peachtree Street NE",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.209915,
-      "longitude": -84.154172,
-      "street_name": "Clairmont Road",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.209672,
-      "longitude": -84.153407,
-      "street_name": "Peachtree Industrial Blvd",
+      "latitude": 34.1550,
+      "longitude": -84.0580,
+      "street_name": "Buford Dam Road",
       "speed_limit": 45,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 34.209428,
-      "longitude": -84.152643,
-      "street_name": "19th Street",
-      "speed_limit": 35,
+      "latitude": 34.1500,
+      "longitude": -84.0700,
+      "street_name": "GA-20 West",
+      "speed_limit": 55,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 34.209186,
-      "longitude": -84.151878,
-      "street_name": "Perimeter Center West",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.208943,
-      "longitude": -84.151115,
-      "street_name": "Mansell Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.208699,
-      "longitude": -84.15035,
-      "street_name": "Glenwood Avenue",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.208457,
-      "longitude": -84.149586,
-      "street_name": "Peachtree Battle Avenue",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 34.208214,
-      "longitude": -84.148822,
-      "street_name": "Highway 9 (Roswell Road)",
+      "latitude": 34.1550,
+      "longitude": -84.0850,
+      "street_name": "GA-20 West",
       "speed_limit": 55,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 34.207972,
-      "longitude": -84.148056,
-      "street_name": "Broadland Road",
-      "speed_limit": 45,
+      "latitude": 34.1600,
+      "longitude": -84.1000,
+      "street_name": "GA-20 West",
+      "speed_limit": 55,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 34.207729,
-      "longitude": -84.147293,
-      "street_name": "Peachtree Industrial Blvd",
-      "speed_limit": 45,
+      "latitude": 34.1700,
+      "longitude": -84.1100,
+      "street_name": "GA-400 North",
+      "speed_limit": 65,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 34.207486,
-      "longitude": -84.146528,
-      "street_name": "Lakeshore Drive",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "stop_sign"
-    },
-    {
-      "latitude": 34.207242,
-      "longitude": -84.145764,
-      "street_name": "Satellite Boulevard",
-      "speed_limit": 45,
+      "latitude": 34.1850,
+      "longitude": -84.1200,
+      "street_name": "GA-400 North",
+      "speed_limit": 65,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 34.207,
-      "longitude": -84.145,
+      "latitude": 34.2000,
+      "longitude": -84.1350,
+      "street_name": "GA-400 North",
+      "speed_limit": 65,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.2050,
+      "longitude": -84.1380,
+      "street_name": "GA-20 (Cumming Highway)",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.2070,
+      "longitude": -84.1400,
       "street_name": "Destination Parking",
       "speed_limit": 15,
       "has_traffic_light": false,

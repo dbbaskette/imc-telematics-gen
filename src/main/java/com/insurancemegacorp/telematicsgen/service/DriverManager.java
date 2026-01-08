@@ -1,6 +1,5 @@
 package com.insurancemegacorp.telematicsgen.service;
 
-import com.insurancemegacorp.telematicsgen.model.Destination;
 import com.insurancemegacorp.telematicsgen.model.Driver;
 import com.insurancemegacorp.telematicsgen.model.DriverState;
 import com.insurancemegacorp.telematicsgen.model.RoutePoint;
@@ -24,7 +23,6 @@ public class DriverManager {
     private final SecureRandom random = new SecureRandom();
     private final List<Driver> drivers = new CopyOnWriteArrayList<>();
     private final FileBasedRouteService routeService;
-    private final DestinationRouteService destinationRouteService;
     private final DriverConfigService driverConfigService;
     private final DailyRoutineService dailyRoutineService;
 
@@ -67,9 +65,8 @@ public class DriverManager {
 
     private volatile boolean randomAccidentsEnabled = false;
 
-    public DriverManager(FileBasedRouteService routeService, DestinationRouteService destinationRouteService, DriverConfigService driverConfigService, DailyRoutineService dailyRoutineService) {
+    public DriverManager(FileBasedRouteService routeService, DriverConfigService driverConfigService, DailyRoutineService dailyRoutineService) {
         this.routeService = routeService;
-        this.destinationRouteService = destinationRouteService;
         this.driverConfigService = driverConfigService;
         this.dailyRoutineService = dailyRoutineService;
     }
@@ -121,9 +118,10 @@ public class DriverManager {
                 double driverLon = startPoint.longitude() + lonOffset;
                 
                 // Create driver with VIN from configuration
-                Driver driver = new Driver(config.getDriverId(), config.policyId(), config.vehicleId(), config.vin(), driverLat, driverLon);
+                Driver driver = new Driver(config.getDriverId(), config.policyId(), config.vehicleId(), config.vin(), driverLat, driverLon, config.aggressive());
                 driver.setCurrentRoute(route);
                 driver.setCurrentStreet(startPoint.streetName());
+                driver.setSpeedLimit(startPoint.speedLimit());
                 driver.setRouteIndex(randomIndex); // Start at the random point along the route
                 driver.setCurrentBearing(0.0); // Will be calculated during movement
                 
@@ -333,27 +331,43 @@ public class DriverManager {
             // Slow down at intersections
             driver.setCurrentSpeed(Math.max(10.0, driver.getCurrentSpeed() * 0.7));
         } else {
-            // Use route speed limit with some variation
-            double targetSpeed = point.speedLimit() + (random.nextDouble() - 0.5) * 10.0;
-            driver.setCurrentSpeed(Math.max(15.0, Math.min(85.0, targetSpeed))); // Allow higher speeds on highways
+            // Use route speed limit with variation
+            double baseVariation = (random.nextDouble() - 0.5) * 10.0; // ±5 mph
+            double targetSpeed;
+            if (driver.isAggressive()) {
+                // Aggressive drivers consistently exceed speed limit by 10-20 mph
+                double speedingBonus = 10.0 + random.nextDouble() * 10.0;
+                targetSpeed = point.speedLimit() + baseVariation + speedingBonus;
+                driver.setCurrentSpeed(Math.max(15.0, Math.min(95.0, targetSpeed)));
+            } else {
+                // Normal drivers stay near the speed limit
+                targetSpeed = point.speedLimit() + baseVariation;
+                driver.setCurrentSpeed(Math.max(15.0, Math.min(85.0, targetSpeed)));
+            }
         }
     }
     
     private void assignNewRoute(Driver driver) {
-        // Generate a random destination within 40-mile radius
-        Destination destination = destinationRouteService.generateRandomDestination();
-        
-        // Generate route from current location to destination
-        List<RoutePoint> newRoute = destinationRouteService.generateRouteToDestination(
-            driver.getCurrentLatitude(), driver.getCurrentLongitude(), destination);
-        
-        // Update driver with new route and destination
-        driver.setCurrentRoute(newRoute);
-        driver.setCurrentDestination(destination);
+        // Routes are circular - driver completed their loop, restart from beginning
+        List<RoutePoint> currentRoute = driver.getCurrentRoute();
+
+        if (currentRoute == null || currentRoute.isEmpty()) {
+            logger.warn("⚠️ No route available for driver {}", driver.getDriverId());
+            return;
+        }
+
+        // Reset to beginning of the same circular route
         driver.setRouteIndex(0);
-        
-        logger.info("🛣️  {} assigned new destination: {} ({:.1f} miles away)", 
-            driver.getDriverId(), destination.name(), destination.distanceFromOriginMiles());
+        driver.setCurrentDestination(null);
+
+        // Update speed limit and street from first route point
+        RoutePoint startPoint = currentRoute.get(0);
+        driver.setSpeedLimit(startPoint.speedLimit());
+        driver.setCurrentStreet(startPoint.streetName());
+
+        String routeDescription = getRouteDescription(currentRoute);
+        logger.info("🔄 {} restarting circular route: {} ({} waypoints)",
+            driver.getDriverId(), routeDescription, currentRoute.size());
     }
     
     /**
@@ -428,28 +442,32 @@ public class DriverManager {
             .filter(d -> d.getDriverId() == driverId)
             .findFirst()
             .orElse(null);
-            
+
         if (driver == null) {
             logger.warn("⚠️ Cannot trigger accident: Driver {} not found", driverId);
             return false;
         }
-        
+
         // Don't crash if already in crash state
-        if (driver.getCurrentState().name().contains("CRASH")) {
+        if (driver.getCurrentState() == DriverState.POST_CRASH_IDLE) {
             logger.warn("⚠️ Cannot trigger accident: Driver {} already in crash state", driverId);
             return false;
         }
-        
+
         // Don't crash too soon after the last crash
         if (driver.getTimeSinceCrashSeconds() < 300) { // 5 minutes minimum for demo
             logger.warn("⚠️ Cannot trigger accident: Driver {} crashed too recently", driverId);
             return false;
         }
-        
+
+        // Log pre-crash info
+        logger.info("🚨 Triggering accident for driver {} at {} mph on {} (speed limit: {} mph, state: {})",
+            driverId, String.format("%.1f", driver.getCurrentSpeed()),
+            driver.getCurrentStreet(), driver.getSpeedLimit(), driver.getCurrentState());
+
         // Trigger the crash by setting state and recording event
         driver.setCurrentState(DriverState.POST_CRASH_IDLE);
         driver.recordCrashEvent();
-        logger.info("🚨 Demo accident triggered for driver {}", driverId);
         return true;
     }
 
@@ -539,20 +557,36 @@ public class DriverManager {
         return randomAccidentsEnabled;
     }
 
+    /**
+     * Signal all drivers to start driving to their next route.
+     * Parked or idle drivers will be assigned a new destination and begin driving.
+     * @return the number of drivers that started driving
+     */
+    public int startAllDriving() {
+        int startedCount = 0;
+        for (Driver driver : drivers) {
+            if (driver.getCurrentState() != DriverState.DRIVING) {
+                // Assign a new destination and route
+                assignNewRoute(driver);
+                // Set to driving state
+                driver.setCurrentState(DriverState.DRIVING);
+                // Give initial speed
+                driver.setCurrentSpeed(15.0 + random.nextDouble() * 30.0);
+                startedCount++;
+            }
+        }
+        logger.info("🚦 Started {} drivers on their routes", startedCount);
+        return startedCount;
+    }
+
     // Time-based behavior methods
     
     /**
      * Check if current time is during night hours (reduced activity)
+     * Disabled - always returns false to keep drivers active for demos
      */
     private boolean isNightTime() {
-        int currentHour = LocalTime.now().getHour();
-        
-        // Handle overnight span (e.g., 20:00 to 06:00)
-        if (nightStartHour > nightEndHour) {
-            return currentHour >= nightStartHour || currentHour < nightEndHour;
-        } else {
-            return currentHour >= nightStartHour && currentHour < nightEndHour;
-        }
+        return false;
     }
     
     /**

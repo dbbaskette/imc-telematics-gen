@@ -1,124 +1,92 @@
 {
   "name": "ashley_brown_cumming_city_center_to_base",
   "description": "Ashley Brown: Cumming_City_Center \u2192 Base",
-  "start_location": "34.207, -84.145",
-  "end_location": "34.207, -84.14",
+  "start_location": "34.2070, -84.1400",
+  "end_location": "34.1289, -84.0561",
   "waypoints": [
     {
-      "latitude": 34.207,
-      "longitude": -84.145,
-      "street_name": "Residential Driveway",
+      "latitude": 34.2070,
+      "longitude": -84.1400,
+      "street_name": "Parking Exit",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 34.207,
-      "longitude": -84.144643,
-      "street_name": "Valley Road",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.206999,
-      "longitude": -84.144286,
-      "street_name": "Pine Street",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.207,
-      "longitude": -84.143929,
-      "street_name": "I-985 North",
-      "speed_limit": 70,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.207,
-      "longitude": -84.143572,
-      "street_name": "Windy Hill Road",
+      "latitude": 34.2050,
+      "longitude": -84.1380,
+      "street_name": "GA-20 (Cumming Highway)",
       "speed_limit": 45,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 34.206999,
-      "longitude": -84.143214,
-      "street_name": "Ponce de Leon Avenue",
+      "latitude": 34.2000,
+      "longitude": -84.1300,
+      "street_name": "Pilgrim Mill Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.1900,
+      "longitude": -84.1200,
+      "street_name": "Pilgrim Mill Road",
       "speed_limit": 45,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 34.207001,
-      "longitude": -84.142856,
-      "street_name": "West Peachtree Street",
+      "latitude": 34.1800,
+      "longitude": -84.1100,
+      "street_name": "Pilgrim Mill Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.1700,
+      "longitude": -84.1000,
+      "street_name": "Keith Bridge Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.1600,
+      "longitude": -84.0900,
+      "street_name": "Keith Bridge Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.1500,
+      "longitude": -84.0800,
+      "street_name": "Sanders Road",
       "speed_limit": 35,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 34.206999,
-      "longitude": -84.1425,
-      "street_name": "Sawnee Avenue",
-      "speed_limit": 45,
+      "latitude": 34.1400,
+      "longitude": -84.0700,
+      "street_name": "Bald Ridge Marina Road",
+      "speed_limit": 35,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 34.207,
-      "longitude": -84.142143,
-      "street_name": "Greenwood Avenue",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 34.207001,
-      "longitude": -84.141785,
-      "street_name": "Memorial Drive",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.207001,
-      "longitude": -84.141428,
-      "street_name": "Briarcliff Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.206999,
-      "longitude": -84.141071,
-      "street_name": "Boulevard",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.207001,
-      "longitude": -84.140714,
-      "street_name": "Collier Road",
+      "latitude": 34.1350,
+      "longitude": -84.0620,
+      "street_name": "Bald Ridge Marina Road",
       "speed_limit": 25,
       "has_traffic_light": false,
-      "traffic_control": "stop_sign"
-    },
-    {
-      "latitude": 34.206999,
-      "longitude": -84.140357,
-      "street_name": "Highway 92",
-      "speed_limit": 55,
-      "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 34.207,
-      "longitude": -84.14,
+      "latitude": 34.1289,
+      "longitude": -84.0561,
       "street_name": "Destination Parking",
       "speed_limit": 15,
       "has_traffic_light": false,

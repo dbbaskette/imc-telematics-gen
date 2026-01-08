@@ -18,7 +18,8 @@ public record DriverConfig(
     @JsonProperty("license_plate") String licensePlate,
     @JsonProperty("base_latitude") double baseLatitude,
     @JsonProperty("base_longitude") double baseLongitude,
-    @JsonProperty("preferred_route") String preferredRoute
+    @JsonProperty("preferred_route") String preferredRoute,
+    @JsonProperty("aggressive") boolean aggressive
 ) {
     
     /**

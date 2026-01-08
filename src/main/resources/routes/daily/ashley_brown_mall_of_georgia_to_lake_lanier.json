@@ -1,324 +1,92 @@
 {
   "name": "ashley_brown_mall_of_georgia_to_lake_lanier",
   "description": "Ashley Brown: Mall_Of_Georgia \u2192 Lake_Lanier",
-  "start_location": "34.1289, -84.0561",
-  "end_location": "34.2104, -84.1557",
+  "start_location": "34.0725, -83.9892",
+  "end_location": "34.1600, -84.0500",
   "waypoints": [
     {
-      "latitude": 34.1289,
-      "longitude": -84.0561,
-      "street_name": "Residential Driveway",
+      "latitude": 34.0725,
+      "longitude": -83.9892,
+      "street_name": "Parking Exit",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 34.130989,
-      "longitude": -84.058655,
-      "street_name": "Lower Roswell Road",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.133079,
-      "longitude": -84.061208,
-      "street_name": "Habersham Road",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.135169,
-      "longitude": -84.063761,
-      "street_name": "Roswell Road",
+      "latitude": 34.0750,
+      "longitude": -83.9950,
+      "street_name": "Mall of Georgia Boulevard",
       "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
     },
     {
-      "latitude": 34.137259,
-      "longitude": -84.066315,
-      "street_name": "Highway 138",
+      "latitude": 34.0800,
+      "longitude": -84.0050,
+      "street_name": "GA-20 West",
+      "speed_limit": 55,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.0900,
+      "longitude": -84.0150,
+      "street_name": "GA-20 West",
       "speed_limit": 55,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 34.139349,
-      "longitude": -84.068869,
-      "street_name": "16th Street",
-      "speed_limit": 35,
+      "latitude": 34.1000,
+      "longitude": -84.0250,
+      "street_name": "GA-20 West",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.1100,
+      "longitude": -84.0300,
+      "street_name": "GA-20 West",
+      "speed_limit": 55,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 34.141438,
-      "longitude": -84.071423,
-      "street_name": "19th Street",
-      "speed_limit": 35,
+      "latitude": 34.1200,
+      "longitude": -84.0350,
+      "street_name": "GA-20 West",
+      "speed_limit": 55,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 34.143528,
-      "longitude": -84.073977,
-      "street_name": "Rock Springs Road",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "yield"
-    },
-    {
-      "latitude": 34.145618,
-      "longitude": -84.076532,
-      "street_name": "Lakeshore Drive",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 34.147707,
-      "longitude": -84.079085,
-      "street_name": "Lower Roswell Road",
-      "speed_limit": 45,
+      "latitude": 34.1300,
+      "longitude": -84.0400,
+      "street_name": "GA-20 West",
+      "speed_limit": 55,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 34.149798,
-      "longitude": -84.081638,
-      "street_name": "Old Peachtree Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.151887,
-      "longitude": -84.084192,
-      "street_name": "Peachtree Industrial Blvd",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.153977,
-      "longitude": -84.086746,
-      "street_name": "Spot Road",
+      "latitude": 34.1400,
+      "longitude": -84.0450,
+      "street_name": "Buford Dam Road",
       "speed_limit": 45,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 34.156066,
-      "longitude": -84.089299,
-      "street_name": "Holiday Road",
+      "latitude": 34.1500,
+      "longitude": -84.0480,
+      "street_name": "Buford Dam Road",
       "speed_limit": 45,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 34.158156,
-      "longitude": -84.091854,
-      "street_name": "Penn Avenue",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.160246,
-      "longitude": -84.094408,
-      "street_name": "Peachtree Battle Avenue",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.162336,
-      "longitude": -84.096962,
-      "street_name": "Lilburn Stone Mountain Road",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 34.164426,
-      "longitude": -84.099515,
-      "street_name": "I-985 North",
-      "speed_limit": 70,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.166516,
-      "longitude": -84.102068,
-      "street_name": "Ponce de Leon Avenue",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.168605,
-      "longitude": -84.104622,
-      "street_name": "Powers Ferry Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.170695,
-      "longitude": -84.107177,
-      "street_name": "Piedmont Road",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 34.172784,
-      "longitude": -84.10973,
-      "street_name": "Abbotts Bridge Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.174875,
-      "longitude": -84.112284,
-      "street_name": "Clairmont Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.176963,
-      "longitude": -84.114839,
-      "street_name": "Greenwood Avenue",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.179053,
-      "longitude": -84.117391,
-      "street_name": "Sawnee Avenue",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 34.181144,
-      "longitude": -84.119946,
-      "street_name": "Northside Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.183234,
-      "longitude": -84.122501,
-      "street_name": "Jimmy Carter Boulevard",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.185324,
-      "longitude": -84.125053,
-      "street_name": "I-85 South",
-      "speed_limit": 70,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.187412,
-      "longitude": -84.127609,
-      "street_name": "14th Street",
-      "speed_limit": 35,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 34.189503,
-      "longitude": -84.130161,
-      "street_name": "Sawnee Avenue",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.191593,
-      "longitude": -84.132716,
-      "street_name": "Jimmy Carter Boulevard",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 34.193682,
-      "longitude": -84.13527,
-      "street_name": "Ansley Mall",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.195771,
-      "longitude": -84.137822,
-      "street_name": "Beverly Road",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.197861,
-      "longitude": -84.140377,
-      "street_name": "Oakdale Road",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.199952,
-      "longitude": -84.142931,
-      "street_name": "5th Street",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.202041,
-      "longitude": -84.145485,
-      "street_name": "Boulevard",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.204131,
-      "longitude": -84.148038,
-      "street_name": "Haynes Bridge Road",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.206221,
-      "longitude": -84.150591,
-      "street_name": "Spalding Drive",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.20831,
-      "longitude": -84.153146,
-      "street_name": "Rock Springs Road",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.2104,
-      "longitude": -84.1557,
+      "latitude": 34.1600,
+      "longitude": -84.0500,
       "street_name": "Destination Parking",
       "speed_limit": 15,
       "has_traffic_light": false,

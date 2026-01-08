@@ -1,124 +1,60 @@
 {
   "name": "christopher_thomas_brotherhood_hall_to_base",
   "description": "Christopher Thomas: Brotherhood_Hall \u2192 Base",
-  "start_location": "33.74, -84.399",
-  "end_location": "33.7411, -84.4012",
+  "start_location": "33.7455, -84.4015",
+  "end_location": "33.7385, -84.4125",
   "waypoints": [
     {
-      "latitude": 33.74,
-      "longitude": -84.399,
-      "street_name": "Residential Driveway",
+      "latitude": 33.7455,
+      "longitude": -84.4015,
+      "street_name": "Parking Exit",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.740078,
-      "longitude": -84.399157,
-      "street_name": "Indian Trail Road",
+      "latitude": 33.7448,
+      "longitude": -84.4032,
+      "street_name": "Simpson Street NW",
       "speed_limit": 25,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.740157,
-      "longitude": -84.399315,
-      "street_name": "Boulevard",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.740236,
-      "longitude": -84.399472,
-      "street_name": "I-285 (Perimeter)",
-      "speed_limit": 70,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.740314,
-      "longitude": -84.399628,
-      "street_name": "Pine Street",
+      "latitude": 33.7438,
+      "longitude": -84.4052,
+      "street_name": "Martin Luther King Jr Drive SW",
       "speed_limit": 35,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.740393,
-      "longitude": -84.399786,
-      "street_name": "Pleasant Hill Road",
-      "speed_limit": 45,
+      "latitude": 33.7425,
+      "longitude": -84.4075,
+      "street_name": "Joseph E Lowery Blvd SW",
+      "speed_limit": 35,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.740472,
-      "longitude": -84.399943,
-      "street_name": "Beaver Ruin Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
+      "latitude": 33.7408,
+      "longitude": -84.4095,
+      "street_name": "Ralph David Abernathy Blvd SW",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.740549,
-      "longitude": -84.400101,
-      "street_name": "Northside Drive",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.740629,
-      "longitude": -84.400256,
-      "street_name": "Lanier Islands Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.740707,
-      "longitude": -84.400414,
-      "street_name": "Argonne Avenue",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.740785,
-      "longitude": -84.400571,
-      "street_name": "Highway 42",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.740864,
-      "longitude": -84.400728,
-      "street_name": "Roswell Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.740943,
-      "longitude": -84.400886,
-      "street_name": "West Paces Ferry Road",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "stop_sign"
-    },
-    {
-      "latitude": 33.741022,
-      "longitude": -84.401043,
-      "street_name": "Peachtree Street NE",
+      "latitude": 33.7395,
+      "longitude": -84.4112,
+      "street_name": "Gordon Street SW",
       "speed_limit": 25,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.7411,
-      "longitude": -84.4012,
+      "latitude": 33.7385,
+      "longitude": -84.4125,
       "street_name": "Destination Parking",
       "speed_limit": 15,
       "has_traffic_light": false,

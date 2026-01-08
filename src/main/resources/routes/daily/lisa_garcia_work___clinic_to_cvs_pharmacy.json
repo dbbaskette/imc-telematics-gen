@@ -7,114 +7,34 @@
     {
       "latitude": 33.749,
       "longitude": -84.382,
-      "street_name": "Residential Driveway",
+      "street_name": "Parking Exit",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.749429,
-      "longitude": -84.382143,
-      "street_name": "Highway 92",
-      "speed_limit": 55,
+      "latitude": 33.7500,
+      "longitude": -84.3825,
+      "street_name": "Andrew Young International Boulevard NW",
+      "speed_limit": 35,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.749857,
-      "longitude": -84.382285,
-      "street_name": "Highway 316",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.750286,
-      "longitude": -84.382428,
-      "street_name": "Habersham Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.750715,
-      "longitude": -84.382571,
-      "street_name": "13th Street",
+      "latitude": 33.7515,
+      "longitude": -84.3830,
+      "street_name": "Peachtree Center Avenue NE",
       "speed_limit": 35,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.751143,
-      "longitude": -84.382715,
-      "street_name": "Old Alabama Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.751572,
-      "longitude": -84.382858,
-      "street_name": "Perimeter Center East",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.752001,
-      "longitude": -84.382999,
-      "street_name": "West Paces Ferry Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.752429,
-      "longitude": -84.383142,
-      "street_name": "Greenwood Avenue",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 33.752857,
-      "longitude": -84.383286,
-      "street_name": "Old Peachtree Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.753286,
-      "longitude": -84.383429,
-      "street_name": "Piedmont Circle",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.753715,
-      "longitude": -84.383572,
-      "street_name": "Sugarloaf Mills Circle",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.754144,
-      "longitude": -84.383715,
-      "street_name": "Boulevard",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 33.754571,
-      "longitude": -84.383858,
-      "street_name": "Cypress Street",
+      "latitude": 33.7530,
+      "longitude": -84.3835,
+      "street_name": "Carnegie Way NW",
       "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
     },
     {
       "latitude": 33.755,

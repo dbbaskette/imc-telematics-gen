@@ -155,22 +155,28 @@ public class DestinationRouteService {
     }
 
     /**
-     * Determine appropriate speed limit based on location and route characteristics
+     * Determine appropriate speed limit based on location and route characteristics.
+     * Uses realistic US speed limits: 25, 30, 35, 45, 55, 65, 70 mph.
      */
     private int determineSpeedLimit(double lat, double lon, double totalDistance, double progress) {
-        // Distance from Atlanta center
+        // Distance from Atlanta center (in miles)
         double distanceFromCenter = Destination.calculateDistance(
             ATLANTA_CENTER_LAT, ATLANTA_CENTER_LON, lat, lon);
-        
+
+        // Realistic speed limits based on road type
+        int[] urbanLimits = {25, 30, 35};        // Downtown streets
+        int[] suburbanLimits = {35, 45};          // Suburban roads
+        int[] highwayLimits = {55, 65, 70};       // Highways/interstates
+
         if (distanceFromCenter < 5) {
-            // Downtown/urban area
-            return 25 + random.nextInt(11); // 25-35 mph
+            // Downtown/urban area - 25, 30, or 35 mph
+            return urbanLimits[random.nextInt(urbanLimits.length)];
         } else if (distanceFromCenter < 15) {
-            // Suburban area
-            return 35 + random.nextInt(16); // 35-50 mph
+            // Suburban area - 35 or 45 mph
+            return suburbanLimits[random.nextInt(suburbanLimits.length)];
         } else {
-            // Highway/rural area
-            return 55 + random.nextInt(16); // 55-70 mph
+            // Highway/rural area - 55, 65, or 70 mph
+            return highwayLimits[random.nextInt(highwayLimits.length)];
         }
     }
 

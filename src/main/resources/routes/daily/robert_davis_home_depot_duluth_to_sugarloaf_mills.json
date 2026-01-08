@@ -7,312 +7,56 @@
     {
       "latitude": 34.0089,
       "longitude": -84.1374,
-      "street_name": "Residential Driveway",
+      "street_name": "Parking Exit",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 34.008828,
-      "longitude": -84.135735,
-      "street_name": "13th Street",
-      "speed_limit": 25,
+      "latitude": 34.0060,
+      "longitude": -84.1320,
+      "street_name": "Pleasant Hill Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.0030,
+      "longitude": -84.1250,
+      "street_name": "Steve Reynolds Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.0000,
+      "longitude": -84.1150,
+      "street_name": "I-85 North On-Ramp",
+      "speed_limit": 45,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 34.008757,
-      "longitude": -84.134073,
-      "street_name": "Highway 42",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.008686,
-      "longitude": -84.132407,
-      "street_name": "Highway 85",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.008612,
-      "longitude": -84.130743,
-      "street_name": "Highway 120",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.008541,
-      "longitude": -84.12908,
-      "street_name": "Stone Mountain Highway",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.00847,
-      "longitude": -84.127416,
-      "street_name": "I-285 (Perimeter)",
+      "latitude": 34.0020,
+      "longitude": -84.1000,
+      "street_name": "I-85 North",
       "speed_limit": 70,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 34.008397,
-      "longitude": -84.12575,
-      "street_name": "Indian Trail Road",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "yield"
-    },
-    {
-      "latitude": 34.008326,
-      "longitude": -84.124088,
-      "street_name": "Riverside Drive",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 34.008255,
-      "longitude": -84.122423,
-      "street_name": "I-75 North",
+      "latitude": 34.0040,
+      "longitude": -84.0850,
+      "street_name": "I-85 North",
       "speed_limit": 70,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 34.008183,
-      "longitude": -84.120758,
-      "street_name": "Holcomb Bridge Road",
+      "latitude": 34.0055,
+      "longitude": -84.0780,
+      "street_name": "Sugarloaf Parkway Exit",
       "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.00811,
-      "longitude": -84.119094,
-      "street_name": "Perimeter Center East",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.008039,
-      "longitude": -84.11743,
-      "street_name": "Peachtree Road",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 34.007967,
-      "longitude": -84.115767,
-      "street_name": "Scott Boulevard",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.007896,
-      "longitude": -84.114103,
-      "street_name": "I-675 South",
-      "speed_limit": 70,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.007823,
-      "longitude": -84.112439,
-      "street_name": "Highway 316",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.00775,
-      "longitude": -84.110774,
-      "street_name": "18th Street",
-      "speed_limit": 35,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 34.007679,
-      "longitude": -84.109109,
-      "street_name": "Samples Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.007608,
-      "longitude": -84.107447,
-      "street_name": "Scenic Highway",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.007535,
-      "longitude": -84.105783,
-      "street_name": "Haynes Bridge Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.007463,
-      "longitude": -84.104118,
-      "street_name": "Piedmont Road",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 34.007392,
-      "longitude": -84.102455,
-      "street_name": "Highway 120",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.00732,
-      "longitude": -84.10079,
-      "street_name": "19th Street",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.007249,
-      "longitude": -84.099125,
-      "street_name": "Austell Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.007177,
-      "longitude": -84.097461,
-      "street_name": "Keith Bridge Road",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 34.007105,
-      "longitude": -84.095798,
-      "street_name": "Moreland Avenue",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.007034,
-      "longitude": -84.094132,
-      "street_name": "Myrtle Street",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.006961,
-      "longitude": -84.092469,
-      "street_name": "Haynes Bridge Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.006891,
-      "longitude": -84.090806,
-      "street_name": "Webb Bridge Road",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 34.006818,
-      "longitude": -84.089141,
-      "street_name": "Drew Campground Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.006745,
-      "longitude": -84.087477,
-      "street_name": "5th Street",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.006674,
-      "longitude": -84.085812,
-      "street_name": "Monroe Circle",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.006603,
-      "longitude": -84.084149,
-      "street_name": "I-75 South",
-      "speed_limit": 70,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.006531,
-      "longitude": -84.082484,
-      "street_name": "Keith Bridge Road",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.00646,
-      "longitude": -84.080821,
-      "street_name": "Spot Road",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.006388,
-      "longitude": -84.079157,
-      "street_name": "Spot Road",
-      "speed_limit": 35,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 34.006314,
-      "longitude": -84.077492,
-      "street_name": "I-75 North",
-      "speed_limit": 70,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.006244,
-      "longitude": -84.075828,
-      "street_name": "6th Street",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.006171,
-      "longitude": -84.074164,
-      "street_name": "Chamblee Tucker Road",
-      "speed_limit": 25,
       "has_traffic_light": false,
       "traffic_control": "none"
     },

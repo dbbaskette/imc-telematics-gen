@@ -1,324 +1,92 @@
 {
   "name": "maria_martinez_town_center_cobb_to_family_home_smyrna",
   "description": "Maria Martinez: Town_Center_Cobb \u2192 Family_Home_Smyrna",
-  "start_location": "33.8751, -84.5816",
-  "end_location": "33.884, -84.5144",
+  "start_location": "33.9385, -84.5185",
+  "end_location": "33.8635, -84.5085",
   "waypoints": [
     {
-      "latitude": 33.8751,
-      "longitude": -84.5816,
-      "street_name": "Residential Driveway",
+      "latitude": 33.9385,
+      "longitude": -84.5185,
+      "street_name": "Parking Exit",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.875328,
-      "longitude": -84.579877,
-      "street_name": "Juniper Street",
+      "latitude": 33.9365,
+      "longitude": -84.5175,
+      "street_name": "Town Center Drive",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.9345,
+      "longitude": -84.5165,
+      "street_name": "Barrett Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.9285,
+      "longitude": -84.5145,
+      "street_name": "I-75 South On-Ramp",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.9145,
+      "longitude": -84.5125,
+      "street_name": "I-75 South",
+      "speed_limit": 65,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.8985,
+      "longitude": -84.5105,
+      "street_name": "I-75 South",
+      "speed_limit": 65,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.8825,
+      "longitude": -84.5085,
+      "street_name": "South Cobb Drive Exit",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.8745,
+      "longitude": -84.5075,
+      "street_name": "South Cobb Drive SE",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.8685,
+      "longitude": -84.5082,
+      "street_name": "Campbell Road SE",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.8655,
+      "longitude": -84.5085,
+      "street_name": "Spring Road SE",
       "speed_limit": 25,
       "has_traffic_light": false,
-      "traffic_control": "none"
+      "traffic_control": "stop_sign"
     },
     {
-      "latitude": 33.875557,
-      "longitude": -84.578154,
-      "street_name": "Bethelview Road",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.875785,
-      "longitude": -84.576431,
-      "street_name": "Pine Street",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.876013,
-      "longitude": -84.574707,
-      "street_name": "Marietta Highway",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.876241,
-      "longitude": -84.572985,
-      "street_name": "Kimball Bridge Road",
-      "speed_limit": 35,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 33.876469,
-      "longitude": -84.571261,
-      "street_name": "McGinnis Ferry Road",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.876697,
-      "longitude": -84.569538,
-      "street_name": "11th Street",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "yield"
-    },
-    {
-      "latitude": 33.876926,
-      "longitude": -84.567816,
-      "street_name": "Windward Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.877154,
-      "longitude": -84.566093,
-      "street_name": "West Paces Ferry Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.877383,
-      "longitude": -84.564368,
-      "street_name": "McFarland Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.877609,
-      "longitude": -84.562647,
-      "street_name": "Charles Allen Drive",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.877839,
-      "longitude": -84.560923,
-      "street_name": "Crossville Road",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 33.878068,
-      "longitude": -84.5592,
-      "street_name": "Briarcliff Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.878294,
-      "longitude": -84.557476,
-      "street_name": "Myrtle Street",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.878524,
-      "longitude": -84.555754,
-      "street_name": "13th Street",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.87875,
-      "longitude": -84.55403,
-      "street_name": "Highway 316",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.87898,
-      "longitude": -84.552307,
-      "street_name": "Peachtree Industrial Blvd",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.879207,
-      "longitude": -84.550584,
-      "street_name": "Rockbridge Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.879437,
-      "longitude": -84.548862,
-      "street_name": "Crossville Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.879665,
-      "longitude": -84.547138,
-      "street_name": "Northlake Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.879893,
-      "longitude": -84.545415,
-      "street_name": "Old Milton Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.880121,
-      "longitude": -84.543693,
-      "street_name": "Cumming City Beach Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.880349,
-      "longitude": -84.541969,
-      "street_name": "Briarcliff Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.880576,
-      "longitude": -84.540246,
-      "street_name": "North Decatur Road",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 33.880806,
-      "longitude": -84.538523,
-      "street_name": "Emory Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.881033,
-      "longitude": -84.5368,
-      "street_name": "Browns Bridge Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.881261,
-      "longitude": -84.535077,
-      "street_name": "Powder Springs Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.88149,
-      "longitude": -84.533353,
-      "street_name": "Browns Bridge Road",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 33.881719,
-      "longitude": -84.53163,
-      "street_name": "Windy Hill Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.881945,
-      "longitude": -84.529908,
-      "street_name": "Northside Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 33.882175,
-      "longitude": -84.528185,
-      "street_name": "Arden Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.882402,
-      "longitude": -84.526462,
-      "street_name": "Webb Bridge Road",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.88263,
-      "longitude": -84.524738,
-      "street_name": "Peachtree Street NW",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.882859,
-      "longitude": -84.523016,
-      "street_name": "Windward Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.883087,
-      "longitude": -84.521292,
-      "street_name": "Abbotts Bridge Road",
-      "speed_limit": 35,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 33.883315,
-      "longitude": -84.519569,
-      "street_name": "Samples Road",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.883545,
-      "longitude": -84.517846,
-      "street_name": "6th Street",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.883772,
-      "longitude": -84.516123,
-      "street_name": "North Druid Hills Road",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.884,
-      "longitude": -84.5144,
+      "latitude": 33.8635,
+      "longitude": -84.5085,
       "street_name": "Destination Parking",
       "speed_limit": 15,
       "has_traffic_light": false,

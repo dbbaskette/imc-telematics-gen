@@ -768,6 +768,38 @@ async function togglePause() {
     }
 }
 
+// Start All Driving
+async function startAllDriving() {
+    const btn = document.getElementById('startAllDrivingBtn');
+    const statusDiv = document.getElementById('accidentStatus');
+    if (!btn) return;
+    btn.disabled = true;
+    try {
+        const resp = await fetch('/api/drivers/start-all', { method: 'POST' });
+        const data = await resp.json();
+        if (data.status === 'OK') {
+            if (statusDiv) {
+                statusDiv.innerHTML = `🚦 ${data.message}`;
+                statusDiv.className = 'accident-status success';
+                setTimeout(() => { statusDiv.innerHTML = ''; }, 3000);
+            }
+        } else {
+            if (statusDiv) {
+                statusDiv.innerHTML = `❌ ${data.message}`;
+                statusDiv.className = 'accident-status error';
+            }
+        }
+    } catch (e) {
+        console.error('Failed to start all driving', e);
+        if (statusDiv) {
+            statusDiv.innerHTML = '❌ Failed to start drivers';
+            statusDiv.className = 'accident-status error';
+        }
+    } finally {
+        btn.disabled = false;
+    }
+}
+
 // Random Accidents Toggle
 function toggleRandomAccidents() {
     if (!dashboardInstance) {

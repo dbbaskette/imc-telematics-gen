@@ -1,320 +1,160 @@
 {
   "name": "ashley_brown_base_to_work___atlanta_marketing_agency",
   "description": "Ashley Brown: Base \u2192 Work___Atlanta_Marketing_Agency",
-  "start_location": "34.207, -84.14",
+  "start_location": "34.1289, -84.0561",
   "end_location": "33.755, -84.385",
   "waypoints": [
     {
-      "latitude": 34.207,
-      "longitude": -84.14,
+      "latitude": 34.1289,
+      "longitude": -84.0561,
       "street_name": "Residential Driveway",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 34.195411,
-      "longitude": -84.146283,
-      "street_name": "Emory Road",
+      "latitude": 34.1275,
+      "longitude": -84.0580,
+      "street_name": "Bald Ridge Marina Road",
       "speed_limit": 25,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 34.18382,
-      "longitude": -84.152564,
-      "street_name": "Druid Hills Road",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.17223,
-      "longitude": -84.158846,
-      "street_name": "North Highland Avenue",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.160642,
-      "longitude": -84.165128,
-      "street_name": "Cobb Parkway",
+      "latitude": 34.1220,
+      "longitude": -84.0650,
+      "street_name": "McEver Road",
       "speed_limit": 45,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 34.149052,
-      "longitude": -84.171411,
-      "street_name": "Northpoint Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.137463,
-      "longitude": -84.177693,
-      "street_name": "Jimmy Carter Boulevard",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 34.125871,
-      "longitude": -84.183974,
-      "street_name": "Druid Hills Road",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "yield"
-    },
-    {
-      "latitude": 34.114283,
-      "longitude": -84.190256,
-      "street_name": "Freedom Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.102693,
-      "longitude": -84.196539,
-      "street_name": "Freedom Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.091103,
-      "longitude": -84.20282,
-      "street_name": "Post Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.079513,
-      "longitude": -84.209103,
-      "street_name": "Marietta Street",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.067922,
-      "longitude": -84.215384,
-      "street_name": "Drew Campground Road",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 34.056334,
-      "longitude": -84.221667,
-      "street_name": "Stone Mountain Highway",
+      "latitude": 34.1100,
+      "longitude": -84.0720,
+      "street_name": "GA-347",
       "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.044744,
-      "longitude": -84.227949,
-      "street_name": "Emory Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.033153,
-      "longitude": -84.234231,
-      "street_name": "19th Street",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.021565,
-      "longitude": -84.240514,
-      "street_name": "Old Alabama Road",
-      "speed_limit": 45,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 34.009975,
-      "longitude": -84.246795,
-      "street_name": "Rock Springs Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.998385,
-      "longitude": -84.253076,
-      "street_name": "Beaver Ruin Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.986796,
-      "longitude": -84.259359,
-      "street_name": "I-75 North",
+      "latitude": 34.0850,
+      "longitude": -84.0900,
+      "street_name": "I-985 South",
       "speed_limit": 70,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.975205,
-      "longitude": -84.26564,
-      "street_name": "Friendship Road",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 33.963616,
-      "longitude": -84.271922,
-      "street_name": "Collier Road",
-      "speed_limit": 45,
+      "latitude": 34.0650,
+      "longitude": -84.1050,
+      "street_name": "I-985 South",
+      "speed_limit": 70,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.952026,
-      "longitude": -84.278205,
-      "street_name": "18th Street",
-      "speed_limit": 35,
+      "latitude": 34.0450,
+      "longitude": -84.1200,
+      "street_name": "I-85 South",
+      "speed_limit": 70,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.940435,
-      "longitude": -84.284488,
-      "street_name": "Windy Hill Road",
-      "speed_limit": 45,
+      "latitude": 34.0200,
+      "longitude": -84.1500,
+      "street_name": "I-85 South",
+      "speed_limit": 70,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.928847,
-      "longitude": -84.29077,
-      "street_name": "8th Street",
-      "speed_limit": 35,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 33.917257,
-      "longitude": -84.297051,
-      "street_name": "West Peachtree Street",
-      "speed_limit": 35,
+      "latitude": 33.9900,
+      "longitude": -84.1850,
+      "street_name": "I-85 South",
+      "speed_limit": 70,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.905667,
-      "longitude": -84.303333,
-      "street_name": "Canton Road",
-      "speed_limit": 45,
+      "latitude": 33.9600,
+      "longitude": -84.2200,
+      "street_name": "I-85 South",
+      "speed_limit": 65,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.894077,
-      "longitude": -84.309615,
-      "street_name": "Spalding Drive",
-      "speed_limit": 45,
+      "latitude": 33.9300,
+      "longitude": -84.2550,
+      "street_name": "I-85 South",
+      "speed_limit": 65,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.882488,
-      "longitude": -84.315897,
-      "street_name": "Spalding Drive",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 33.870898,
-      "longitude": -84.32218,
-      "street_name": "10th Street",
-      "speed_limit": 35,
+      "latitude": 33.9000,
+      "longitude": -84.2800,
+      "street_name": "I-85 South",
+      "speed_limit": 65,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.859308,
-      "longitude": -84.328461,
-      "street_name": "Auburn Avenue",
-      "speed_limit": 45,
+      "latitude": 33.8700,
+      "longitude": -84.3000,
+      "street_name": "I-85 South",
+      "speed_limit": 65,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.847718,
-      "longitude": -84.334743,
-      "street_name": "Clairmont Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.836129,
-      "longitude": -84.341026,
-      "street_name": "Freedom Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.824538,
-      "longitude": -84.347308,
-      "street_name": "Roswell Road",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.812948,
-      "longitude": -84.353589,
-      "street_name": "Veterans Memorial Highway",
+      "latitude": 33.8450,
+      "longitude": -84.3200,
+      "street_name": "I-85 South",
       "speed_limit": 55,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.801359,
-      "longitude": -84.359872,
-      "street_name": "Habersham Road",
+      "latitude": 33.8200,
+      "longitude": -84.3350,
+      "street_name": "I-85 South",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.7950,
+      "longitude": -84.3500,
+      "street_name": "I-75/I-85 South (Downtown Connector)",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.7750,
+      "longitude": -84.3650,
+      "street_name": "I-75/I-85 South (Downtown Connector)",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.7650,
+      "longitude": -84.3750,
+      "street_name": "Williams Street NW",
       "speed_limit": 35,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.789769,
-      "longitude": -84.366154,
-      "street_name": "Canton Road",
+      "latitude": 33.7600,
+      "longitude": -84.3800,
+      "street_name": "Marietta Street NW",
       "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.778179,
-      "longitude": -84.372435,
-      "street_name": "North Avenue",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.766589,
-      "longitude": -84.378718,
-      "street_name": "Dallas Highway",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
     },
     {
       "latitude": 33.755,

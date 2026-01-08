@@ -7,114 +7,34 @@
     {
       "latitude": 33.76,
       "longitude": -84.384,
-      "street_name": "Residential Driveway",
+      "street_name": "Parking Exit",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.760285,
-      "longitude": -84.383715,
-      "street_name": "Lake Lanier Islands Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.760571,
-      "longitude": -84.383428,
-      "street_name": "Highway 124",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.760858,
-      "longitude": -84.383144,
-      "street_name": "Clairmont Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.761143,
-      "longitude": -84.382857,
-      "street_name": "15th Street",
-      "speed_limit": 35,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 33.761428,
-      "longitude": -84.382572,
-      "street_name": "Argonne Avenue",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.761714,
-      "longitude": -84.382286,
-      "street_name": "Monroe Drive",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.762001,
-      "longitude": -84.382001,
-      "street_name": "Crossville Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.762286,
-      "longitude": -84.381714,
-      "street_name": "Riverside Drive",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 33.762571,
-      "longitude": -84.381429,
-      "street_name": "Sugarloaf Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.762858,
-      "longitude": -84.381142,
-      "street_name": "Mall of Georgia Boulevard",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.763143,
-      "longitude": -84.380857,
-      "street_name": "Peachtree Street NW",
+      "latitude": 33.7610,
+      "longitude": -84.3835,
+      "street_name": "10th Street NW",
       "speed_limit": 35,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.763428,
-      "longitude": -84.380571,
-      "street_name": "Monroe Circle",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "stop_sign"
+      "latitude": 33.7620,
+      "longitude": -84.3825,
+      "street_name": "Piedmont Avenue NE",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.763714,
-      "longitude": -84.380286,
-      "street_name": "Emory Road",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
+      "latitude": 33.7630,
+      "longitude": -84.3810,
+      "street_name": "Monroe Drive NE",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
     },
     {
       "latitude": 33.764,

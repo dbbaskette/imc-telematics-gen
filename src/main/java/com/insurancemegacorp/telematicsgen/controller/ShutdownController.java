@@ -15,7 +15,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "*", maxAge = 3600)
+@CrossOrigin(originPatterns = "*", maxAge = 3600)
 public class ShutdownController {
 
     private static final Logger logger = LoggerFactory.getLogger(ShutdownController.class);
@@ -89,12 +89,12 @@ public class ShutdownController {
     @PostMapping("/trigger-crash")
     public ResponseEntity<Map<String, Object>> triggerRandomCrash() {
         logger.info("🚨 REST API crash trigger requested");
-        
+
         // Get a random active driver (not already in crash state)
         var activeDrivers = driverManager.getAllDrivers().stream()
             .filter(driver -> !driver.getCurrentState().name().contains("CRASH"))
             .toList();
-        
+
         if (activeDrivers.isEmpty()) {
             logger.warn("⚠️ No active drivers available for crash simulation");
             return ResponseEntity.ok(Map.of(
@@ -103,34 +103,44 @@ public class ShutdownController {
                 "timestamp", java.time.Instant.now().toString()
             ));
         }
-        
-        // Select random driver and trigger crash
-        var targetDriver = activeDrivers.get((int) (Math.random() * activeDrivers.size()));
-        boolean success = driverManager.triggerDemoAccident(targetDriver.getDriverId());
 
-        // If crash was successfully triggered, also publish a crash event
-        // TODO: Potential timing race condition - background TelematicsSimulator (500ms intervals) 
-        // may publish normal telemetry for same driver around same time as this crash event,
-        // potentially confusing crash detection analysis
-        if (success) {
-            try {
-                var crashMessage = dataGenerator.generateCrashEventData(targetDriver);
-                publisher.publishTelematicsData(crashMessage, targetDriver);
-                logger.info("🚗💥 Demo crash event published via REST API for {}", targetDriver.getDriverId());
-            } catch (Exception e) {
-                logger.warn("⚠️ Crash event publish failed for {}: {}", targetDriver.getDriverId(), e.getMessage());
-            }
+        // Select random driver
+        var targetDriver = activeDrivers.get((int) (Math.random() * activeDrivers.size()));
+
+        // Don't crash if already in crash state or crashed too recently
+        if (targetDriver.getTimeSinceCrashSeconds() < 300) {
+            return ResponseEntity.ok(Map.of(
+                "success", false,
+                "message", "Driver crashed too recently (5 min cooldown)",
+                "timestamp", java.time.Instant.now().toString()
+            ));
         }
 
-        logger.info("🚗💥 REST API crash {} for driver {}", 
-                   success ? "triggered" : "failed", targetDriver.getDriverId());
-        
+        // IMPORTANT: Generate crash event data BEFORE recording the crash
+        // This captures the speed at impact before it's set to 0
+        var crashMessage = dataGenerator.generateCrashEventData(targetDriver);
+
+        // Now record the crash (sets speed to 0 and state to POST_CRASH_IDLE)
+        targetDriver.recordCrashEvent(crashMessage.accidentType());
+
+        // Publish the crash event
+        try {
+            publisher.publishTelematicsData(crashMessage, targetDriver);
+            logger.info("🚗💥 Demo crash event published via REST API for {} at {} mph",
+                targetDriver.getDriverId(), crashMessage.speedMph());
+        } catch (Exception e) {
+            logger.warn("⚠️ Crash event publish failed for {}: {}", targetDriver.getDriverId(), e.getMessage());
+        }
+
+        logger.info("🚗💥 REST API crash triggered for driver {} - Speed at impact: {} mph, Type: {}",
+                   targetDriver.getDriverId(), crashMessage.speedMph(), crashMessage.accidentType());
+
         return ResponseEntity.ok(Map.of(
-            "success", success,
+            "success", true,
             "driver_id", targetDriver.getDriverId(),
-            "message", success ? 
-                "Crash triggered for " + targetDriver.getDriverId() : 
-                "Failed to trigger crash",
+            "speed_at_impact", crashMessage.speedMph(),
+            "accident_type", crashMessage.accidentType(),
+            "message", "Crash triggered for " + targetDriver.getDriverId(),
             "timestamp", java.time.Instant.now().toString()
         ));
     }
@@ -139,37 +149,69 @@ public class ShutdownController {
     public ResponseEntity<Map<String, Object>> triggerSpecificCrash(
             @org.springframework.web.bind.annotation.PathVariable String driverId) {
         logger.info("🚨 REST API crash trigger requested for specific driver: {}", driverId);
-        
+
         int driverIdInt = Integer.parseInt(driverId);
-        boolean success = driverManager.triggerDemoAccident(driverIdInt);
-        
-        // If crash was successfully triggered, publish crash event to RabbitMQ
-        if (success) {
-            var crashedDriver = driverManager.getAllDrivers().stream()
-                .filter(d -> d.getDriverId() == driverIdInt)
-                .findFirst()
-                .orElse(null);
-                
-            if (crashedDriver != null) {
-                try {
-                    var crashMessage = dataGenerator.generateCrashEventData(crashedDriver);
-                    publisher.publishTelematicsData(crashMessage, crashedDriver);
-                    logger.info("🚨 Manual crash event published to RabbitMQ via REST API for driver {}", driverId);
-                } catch (Exception e) {
-                    logger.warn("⚠️ Crash event publish failed for {}: {}", driverId, e.getMessage());
-                }
-            }
+
+        // Find the driver
+        var targetDriver = driverManager.getAllDrivers().stream()
+            .filter(d -> d.getDriverId() == driverIdInt)
+            .findFirst()
+            .orElse(null);
+
+        if (targetDriver == null) {
+            return ResponseEntity.ok(Map.of(
+                "success", false,
+                "driver_id", driverId,
+                "message", "Driver not found: " + driverId,
+                "timestamp", java.time.Instant.now().toString()
+            ));
         }
-        
-        logger.info("🚗💥 REST API crash {} for driver {}", 
-                   success ? "triggered" : "failed", driverId);
-        
+
+        // Don't crash if already in crash state
+        if (targetDriver.getCurrentState().name().contains("CRASH")) {
+            return ResponseEntity.ok(Map.of(
+                "success", false,
+                "driver_id", driverId,
+                "message", "Driver already in crash state",
+                "timestamp", java.time.Instant.now().toString()
+            ));
+        }
+
+        // Don't crash too soon after the last crash
+        if (targetDriver.getTimeSinceCrashSeconds() < 300) {
+            return ResponseEntity.ok(Map.of(
+                "success", false,
+                "driver_id", driverId,
+                "message", "Driver crashed too recently (5 min cooldown)",
+                "timestamp", java.time.Instant.now().toString()
+            ));
+        }
+
+        // IMPORTANT: Generate crash event data BEFORE recording the crash
+        // This captures the speed at impact before it's set to 0
+        var crashMessage = dataGenerator.generateCrashEventData(targetDriver);
+
+        // Now record the crash (sets speed to 0 and state to POST_CRASH_IDLE)
+        targetDriver.recordCrashEvent(crashMessage.accidentType());
+
+        // Publish the crash event
+        try {
+            publisher.publishTelematicsData(crashMessage, targetDriver);
+            logger.info("🚨 Manual crash event published to RabbitMQ for driver {} at {} mph",
+                driverId, crashMessage.speedMph());
+        } catch (Exception e) {
+            logger.warn("⚠️ Crash event publish failed for {}: {}", driverId, e.getMessage());
+        }
+
+        logger.info("🚗💥 REST API crash triggered for driver {} - Speed at impact: {} mph, Type: {}",
+                   driverId, crashMessage.speedMph(), crashMessage.accidentType());
+
         return ResponseEntity.ok(Map.of(
-            "success", success,
+            "success", true,
             "driver_id", driverId,
-            "message", success ? 
-                "Crash triggered for " + driverId : 
-                "Failed to trigger crash for " + driverId,
+            "speed_at_impact", crashMessage.speedMph(),
+            "accident_type", crashMessage.accidentType(),
+            "message", "Crash triggered for " + driverId,
             "timestamp", java.time.Instant.now().toString()
         ));
     }

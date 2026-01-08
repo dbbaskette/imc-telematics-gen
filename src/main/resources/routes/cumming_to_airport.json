@@ -1,6 +1,6 @@
 {
   "name": "cumming_to_airport",
-  "description": "Post Road, Cumming GA to Hartsfield-Jackson Airport",
+  "description": "Post Road, Cumming GA to Hartsfield-Jackson Airport via GA-400 and I-285",
   "start_location": "Post Road, Cumming, GA",
   "end_location": "Hartsfield-Jackson Atlanta International Airport",
   "waypoints": [
@@ -13,64 +13,96 @@
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 34.1500,
-      "longitude": -84.2000,
-      "street_name": "GA-400 South on-ramp",
+      "latitude": 34.1850,
+      "longitude": -84.1380,
+      "street_name": "GA-400 South on-ramp (Cumming)",
       "speed_limit": 45,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 34.0800,
-      "longitude": -84.2200,
+      "latitude": 34.1020,
+      "longitude": -84.2080,
+      "street_name": "GA-400 South (North Fulton)",
+      "speed_limit": 65,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.0230,
+      "longitude": -84.3080,
+      "street_name": "GA-400 South (Alpharetta)",
+      "speed_limit": 65,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.9320,
+      "longitude": -84.3580,
       "street_name": "GA-400 South (Sandy Springs)",
       "speed_limit": 65,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.9500,
-      "longitude": -84.2800,
+      "latitude": 33.8680,
+      "longitude": -84.3680,
       "street_name": "GA-400 South (Buckhead)",
       "speed_limit": 65,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.8200,
-      "longitude": -84.3200,
-      "street_name": "GA-400 & I-285 Junction",
+      "latitude": 33.8420,
+      "longitude": -84.3630,
+      "street_name": "I-285 West / GA-400 Interchange",
       "speed_limit": 55,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.7800,
-      "longitude": -84.3600,
-      "street_name": "I-285 West toward Airport",
+      "latitude": 33.8160,
+      "longitude": -84.4100,
+      "street_name": "I-285 West (Chamblee)",
       "speed_limit": 65,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.7200,
-      "longitude": -84.4000,
-      "street_name": "I-285 West (South Atlanta)",
+      "latitude": 33.7720,
+      "longitude": -84.4580,
+      "street_name": "I-285 West (Smyrna)",
       "speed_limit": 65,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.6800,
-      "longitude": -84.4200,
+      "latitude": 33.7180,
+      "longitude": -84.5120,
+      "street_name": "I-285 South (Mableton)",
+      "speed_limit": 65,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.6580,
+      "longitude": -84.5080,
+      "street_name": "I-285 South (College Park)",
+      "speed_limit": 65,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.6350,
+      "longitude": -84.4620,
       "street_name": "I-85 South toward Airport",
       "speed_limit": 65,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.6500,
-      "longitude": -84.4350,
+      "latitude": 33.6410,
+      "longitude": -84.4400,
       "street_name": "Airport Exit - Camp Creek Pkwy",
       "speed_limit": 45,
       "has_traffic_light": true,

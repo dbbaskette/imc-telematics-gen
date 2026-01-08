@@ -1,124 +1,68 @@
 {
   "name": "james_rodriguez_alpharetta_country_club_to_avalon_shopping",
   "description": "James Rodriguez: Alpharetta_Country_Club \u2192 Avalon_Shopping",
-  "start_location": "34.0838, -84.2733",
-  "end_location": "34.0912, -84.2767",
+  "start_location": "34.0725, -84.2885",
+  "end_location": "34.0702, -84.2752",
   "waypoints": [
     {
-      "latitude": 34.0838,
-      "longitude": -84.2733,
-      "street_name": "Residential Driveway",
+      "latitude": 34.0725,
+      "longitude": -84.2885,
+      "street_name": "Parking Exit",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 34.084328,
-      "longitude": -84.273543,
-      "street_name": "13th Street",
+      "latitude": 34.0718,
+      "longitude": -84.2872,
+      "street_name": "Country Club Drive",
       "speed_limit": 25,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 34.084857,
-      "longitude": -84.273786,
-      "street_name": "Auburn Avenue",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.085386,
-      "longitude": -84.274029,
-      "street_name": "Veterans Memorial Highway",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.085914,
-      "longitude": -84.274272,
-      "street_name": "Boulevard",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.086442,
-      "longitude": -84.274515,
-      "street_name": "Castleberry Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.086971,
-      "longitude": -84.274756,
-      "street_name": "17th Street",
+      "latitude": 34.0708,
+      "longitude": -84.2855,
+      "street_name": "Old Alabama Road",
       "speed_limit": 35,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 34.087499,
-      "longitude": -84.274999,
-      "street_name": "Rockbridge Road",
+      "latitude": 34.0698,
+      "longitude": -84.2832,
+      "street_name": "Old Alabama Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.0695,
+      "longitude": -84.2805,
+      "street_name": "Westside Parkway",
       "speed_limit": 45,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 34.088029,
-      "longitude": -84.275242,
-      "street_name": "Veterans Memorial Highway",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
+      "latitude": 34.0698,
+      "longitude": -84.2778,
+      "street_name": "Avalon Boulevard",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
     },
     {
-      "latitude": 34.088557,
-      "longitude": -84.275486,
-      "street_name": "Union Hill Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.089086,
-      "longitude": -84.275729,
-      "street_name": "Peachtree Battle Avenue",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.089613,
-      "longitude": -84.275971,
-      "street_name": "Peachtree Dunwoody Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 34.090143,
-      "longitude": -84.276215,
-      "street_name": "Glenwood Avenue",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "stop_sign"
-    },
-    {
-      "latitude": 34.090672,
-      "longitude": -84.276458,
-      "street_name": "12th Street",
+      "latitude": 34.0702,
+      "longitude": -84.2765,
+      "street_name": "Avalon Boulevard",
       "speed_limit": 25,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 34.0912,
-      "longitude": -84.2767,
+      "latitude": 34.0702,
+      "longitude": -84.2752,
       "street_name": "Destination Parking",
       "speed_limit": 15,
       "has_traffic_light": false,

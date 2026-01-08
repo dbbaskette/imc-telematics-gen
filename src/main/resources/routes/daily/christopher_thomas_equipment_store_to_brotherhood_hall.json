@@ -1,124 +1,52 @@
 {
   "name": "christopher_thomas_equipment_store_to_brotherhood_hall",
   "description": "Christopher Thomas: Equipment_Store \u2192 Brotherhood_Hall",
-  "start_location": "33.743, -84.403",
-  "end_location": "33.74, -84.399",
+  "start_location": "33.7515, -84.4085",
+  "end_location": "33.7455, -84.4015",
   "waypoints": [
     {
-      "latitude": 33.743,
-      "longitude": -84.403,
-      "street_name": "Residential Driveway",
+      "latitude": 33.7515,
+      "longitude": -84.4085,
+      "street_name": "Parking Exit",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.742786,
-      "longitude": -84.402715,
-      "street_name": "Highway 5",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.742571,
-      "longitude": -84.402429,
-      "street_name": "Emory Road",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.742358,
-      "longitude": -84.402142,
-      "street_name": "DeKalb Avenue",
+      "latitude": 33.7505,
+      "longitude": -84.4072,
+      "street_name": "Donald Lee Hollowell Parkway NW",
       "speed_limit": 45,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.742142,
-      "longitude": -84.401857,
-      "street_name": "Briarcliff Road",
-      "speed_limit": 45,
+      "latitude": 33.7488,
+      "longitude": -84.4055,
+      "street_name": "Joseph E Lowery Blvd NW",
+      "speed_limit": 35,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.741928,
-      "longitude": -84.401572,
-      "street_name": "12th Street",
+      "latitude": 33.7472,
+      "longitude": -84.4038,
+      "street_name": "Martin Luther King Jr Drive NW",
       "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.741714,
-      "longitude": -84.401285,
-      "street_name": "Spring Street",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.741501,
-      "longitude": -84.401001,
-      "street_name": "I-985 North",
-      "speed_limit": 70,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.741286,
-      "longitude": -84.400715,
-      "street_name": "Highway 78",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.741071,
-      "longitude": -84.400429,
-      "street_name": "North Druid Hills Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.740857,
-      "longitude": -84.400142,
-      "street_name": "McFarland Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.740643,
-      "longitude": -84.399857,
-      "street_name": "Northpoint Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.740428,
-      "longitude": -84.399571,
-      "street_name": "Memorial Drive",
+      "latitude": 33.7462,
+      "longitude": -84.4025,
+      "street_name": "Simpson Street NW",
       "speed_limit": 25,
       "has_traffic_light": false,
       "traffic_control": "stop_sign"
     },
     {
-      "latitude": 33.740215,
-      "longitude": -84.399286,
-      "street_name": "Perimeter Center West",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.74,
-      "longitude": -84.399,
+      "latitude": 33.7455,
+      "longitude": -84.4015,
       "street_name": "Destination Parking",
       "speed_limit": 15,
       "has_traffic_light": false,

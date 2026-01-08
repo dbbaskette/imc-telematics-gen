@@ -1,124 +1,84 @@
 {
   "name": "david_anderson_wework_to_coffee_roaster",
   "description": "David Anderson: Wework \u2192 Coffee_Roaster",
-  "start_location": "33.749, -84.377",
-  "end_location": "33.753, -84.373",
+  "start_location": "33.7855, -84.3835",
+  "end_location": "33.7585, -84.3565",
   "waypoints": [
     {
-      "latitude": 33.749,
-      "longitude": -84.377,
-      "street_name": "Residential Driveway",
+      "latitude": 33.7855,
+      "longitude": -84.3835,
+      "street_name": "Parking Exit",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.749286,
-      "longitude": -84.376714,
-      "street_name": "8th Street",
+      "latitude": 33.7835,
+      "longitude": -84.3825,
+      "street_name": "Crescent Avenue NE",
       "speed_limit": 25,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.749571,
-      "longitude": -84.376428,
-      "street_name": "Freedom Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.749857,
-      "longitude": -84.376144,
-      "street_name": "Sugarloaf Mills Circle",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.750143,
-      "longitude": -84.375857,
-      "street_name": "12th Street",
+      "latitude": 33.7808,
+      "longitude": -84.3815,
+      "street_name": "Peachtree Street NE",
       "speed_limit": 35,
       "has_traffic_light": true,
       "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.750428,
-      "longitude": -84.375571,
-      "street_name": "Veterans Memorial Highway",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
+      "latitude": 33.7765,
+      "longitude": -84.3795,
+      "street_name": "Peachtree Street NE",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.750715,
-      "longitude": -84.375285,
-      "street_name": "Westminster Drive",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
+      "latitude": 33.7718,
+      "longitude": -84.3782,
+      "street_name": "Ponce de Leon Avenue NE",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.751,
-      "longitude": -84.375001,
-      "street_name": "Town Center Boulevard",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.751286,
-      "longitude": -84.374715,
-      "street_name": "Dahlonega Highway",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.751572,
-      "longitude": -84.374429,
-      "street_name": "17th Street",
+      "latitude": 33.7695,
+      "longitude": -84.3712,
+      "street_name": "Ponce de Leon Avenue NE",
       "speed_limit": 35,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.751858,
-      "longitude": -84.374142,
-      "street_name": "Druid Hills Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
+      "latitude": 33.7668,
+      "longitude": -84.3645,
+      "street_name": "Ponce de Leon Avenue NE",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.752143,
-      "longitude": -84.373857,
-      "street_name": "I-75 North",
-      "speed_limit": 70,
-      "has_traffic_light": false,
-      "traffic_control": "none"
+      "latitude": 33.7625,
+      "longitude": -84.3595,
+      "street_name": "Moreland Avenue NE",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
     },
     {
-      "latitude": 33.752428,
-      "longitude": -84.373572,
-      "street_name": "Lilburn Stone Mountain Road",
+      "latitude": 33.7598,
+      "longitude": -84.3575,
+      "street_name": "Euclid Avenue NE",
       "speed_limit": 25,
       "has_traffic_light": false,
-      "traffic_control": "stop_sign"
-    },
-    {
-      "latitude": 33.752714,
-      "longitude": -84.373286,
-      "street_name": "Atlanta Highway",
-      "speed_limit": 55,
-      "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.753,
-      "longitude": -84.373,
+      "latitude": 33.7585,
+      "longitude": -84.3565,
       "street_name": "Destination Parking",
       "speed_limit": 15,
       "has_traffic_light": false,

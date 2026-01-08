@@ -7,114 +7,26 @@
     {
       "latitude": 33.764,
       "longitude": -84.38,
-      "street_name": "Residential Driveway",
+      "street_name": "Parking Exit",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.763857,
-      "longitude": -84.380144,
-      "street_name": "Veterans Memorial Highway",
-      "speed_limit": 55,
+      "latitude": 33.7635,
+      "longitude": -84.3805,
+      "street_name": "Monroe Drive NE",
+      "speed_limit": 35,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.763714,
-      "longitude": -84.380285,
-      "street_name": "Samples Road",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.763572,
-      "longitude": -84.380429,
-      "street_name": "Mall of Georgia Boulevard",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.763429,
-      "longitude": -84.380571,
-      "street_name": "Boulevard",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.763287,
-      "longitude": -84.380714,
-      "street_name": "Briarcliff Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.763142,
-      "longitude": -84.380857,
-      "street_name": "Dallas Highway",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.762999,
-      "longitude": -84.381,
-      "street_name": "Collier Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.762857,
-      "longitude": -84.381143,
-      "street_name": "Highway 9 (Roswell Road)",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.762715,
-      "longitude": -84.381286,
-      "street_name": "Post Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.762571,
-      "longitude": -84.381429,
-      "street_name": "Scott Boulevard",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.762429,
-      "longitude": -84.381572,
-      "street_name": "Beaver Ruin Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.762286,
-      "longitude": -84.381714,
-      "street_name": "Westminster Drive",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "stop_sign"
-    },
-    {
-      "latitude": 33.762143,
-      "longitude": -84.381857,
-      "street_name": "North Highland Avenue",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
+      "latitude": 33.7625,
+      "longitude": -84.3815,
+      "street_name": "Piedmont Avenue NE",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
     },
     {
       "latitude": 33.762,

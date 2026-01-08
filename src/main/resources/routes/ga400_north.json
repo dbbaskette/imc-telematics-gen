@@ -1,119 +1,72 @@
 {
-  "name" : "ga400_north",
-  "description" : "GA-400, Sandy Springs, GA → GA-400, Buckhead, Atlanta, GA",
-  "start_location" : "GA-400, Sandy Springs, GA",
-  "end_location" : "GA-400, Buckhead, Atlanta, GA",
-  "waypoints" : [ {
-    "latitude" : 33.881568,
-    "longitude" : -84.364734,
-    "street_name" : "Start: GA-400",
-    "speed_limit" : 65,
-    "has_traffic_light" : true,
-    "traffic_control" : "traffic_light"
-  }, {
-    "latitude" : 33.895298,
-    "longitude" : -84.363672,
-    "street_name" : "State Highway",
-    "speed_limit" : 65,
-    "has_traffic_light" : false,
-    "traffic_control" : "none"
-  }, {
-    "latitude" : 33.901301,
-    "longitude" : -84.358622,
-    "street_name" : "State Highway",
-    "speed_limit" : 65,
-    "has_traffic_light" : true,
-    "traffic_control" : "traffic_light"
-  }, {
-    "latitude" : 33.902958,
-    "longitude" : -84.357886,
-    "street_name" : "State Highway",
-    "speed_limit" : 65,
-    "has_traffic_light" : false,
-    "traffic_control" : "none"
-  }, {
-    "latitude" : 33.903875,
-    "longitude" : -84.360717,
-    "street_name" : "State Highway",
-    "speed_limit" : 65,
-    "has_traffic_light" : true,
-    "traffic_control" : "traffic_light"
-  }, {
-    "latitude" : 33.901873,
-    "longitude" : -84.361466,
-    "street_name" : "State Highway",
-    "speed_limit" : 65,
-    "has_traffic_light" : false,
-    "traffic_control" : "none"
-  }, {
-    "latitude" : 33.896967,
-    "longitude" : -84.363218,
-    "street_name" : "State Highway",
-    "speed_limit" : 65,
-    "has_traffic_light" : true,
-    "traffic_control" : "traffic_light"
-  }, {
-    "latitude" : 33.881953,
-    "longitude" : -84.365068,
-    "street_name" : "State Highway",
-    "speed_limit" : 65,
-    "has_traffic_light" : false,
-    "traffic_control" : "none"
-  }, {
-    "latitude" : 33.870526,
-    "longitude" : -84.365511,
-    "street_name" : "State Highway",
-    "speed_limit" : 65,
-    "has_traffic_light" : true,
-    "traffic_control" : "traffic_light"
-  }, {
-    "latitude" : 33.865051,
-    "longitude" : -84.369042,
-    "street_name" : "State Highway",
-    "speed_limit" : 65,
-    "has_traffic_light" : false,
-    "traffic_control" : "none"
-  }, {
-    "latitude" : 33.853334,
-    "longitude" : -84.370268,
-    "street_name" : "State Highway",
-    "speed_limit" : 65,
-    "has_traffic_light" : true,
-    "traffic_control" : "traffic_light"
-  }, {
-    "latitude" : 33.851912,
-    "longitude" : -84.369355,
-    "street_name" : "State Highway",
-    "speed_limit" : 65,
-    "has_traffic_light" : false,
-    "traffic_control" : "none"
-  }, {
-    "latitude" : 33.852546,
-    "longitude" : -84.365302,
-    "street_name" : "State Highway",
-    "speed_limit" : 65,
-    "has_traffic_light" : true,
-    "traffic_control" : "traffic_light"
-  }, {
-    "latitude" : 33.849559,
-    "longitude" : -84.363033,
-    "street_name" : "State Highway",
-    "speed_limit" : 65,
-    "has_traffic_light" : false,
-    "traffic_control" : "none"
-  }, {
-    "latitude" : 33.848941,
-    "longitude" : -84.36591,
-    "street_name" : "State Highway",
-    "speed_limit" : 65,
-    "has_traffic_light" : true,
-    "traffic_control" : "traffic_light"
-  }, {
-    "latitude" : 33.847421,
-    "longitude" : -84.367711,
-    "street_name" : "End: GA-400",
-    "speed_limit" : 25,
-    "has_traffic_light" : true,
-    "traffic_control" : "traffic_light"
-  } ]
+  "name": "ga400_north",
+  "description": "GA-400 from Sandy Springs to Buckhead",
+  "start_location": "GA-400, Sandy Springs, GA",
+  "end_location": "GA-400, Buckhead, Atlanta, GA",
+  "waypoints": [
+    {
+      "latitude": 33.9320,
+      "longitude": -84.3590,
+      "street_name": "GA-400 at Northridge Rd (Sandy Springs)",
+      "speed_limit": 65,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.9150,
+      "longitude": -84.3610,
+      "street_name": "GA-400 at Abernathy Rd",
+      "speed_limit": 65,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.8980,
+      "longitude": -84.3620,
+      "street_name": "GA-400 at Hammond Dr",
+      "speed_limit": 65,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.8820,
+      "longitude": -84.3650,
+      "street_name": "GA-400 at Glenridge Dr",
+      "speed_limit": 65,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.8680,
+      "longitude": -84.3680,
+      "street_name": "GA-400 at Lenox Rd (Buckhead)",
+      "speed_limit": 65,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.8520,
+      "longitude": -84.3650,
+      "street_name": "GA-400 at Piedmont Rd",
+      "speed_limit": 65,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.8420,
+      "longitude": -84.3630,
+      "street_name": "GA-400 / I-285 Interchange",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.8280,
+      "longitude": -84.3660,
+      "street_name": "GA-400 at Sidney Marcus Blvd",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
 }

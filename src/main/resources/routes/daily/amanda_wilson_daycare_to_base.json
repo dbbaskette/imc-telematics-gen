@@ -7,112 +7,16 @@
     {
       "latitude": 33.759,
       "longitude": -84.376,
-      "street_name": "Residential Driveway",
+      "street_name": "Parking Exit",
       "speed_limit": 15,
       "has_traffic_light": false,
       "traffic_control": "none"
     },
     {
-      "latitude": 33.758929,
-      "longitude": -84.376142,
-      "street_name": "17th Street",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.758857,
-      "longitude": -84.376286,
-      "street_name": "Peachtree Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.758786,
-      "longitude": -84.376429,
-      "street_name": "Keith Bridge Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.758715,
-      "longitude": -84.376572,
-      "street_name": "17th Street",
+      "latitude": 33.7585,
+      "longitude": -84.3770,
+      "street_name": "Piedmont Avenue NE",
       "speed_limit": 35,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 33.758644,
-      "longitude": -84.376713,
-      "street_name": "Cobb Parkway",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.75857,
-      "longitude": -84.376857,
-      "street_name": "Collier Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.758499,
-      "longitude": -84.376999,
-      "street_name": "Decatur Street",
-      "speed_limit": 35,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.758429,
-      "longitude": -84.377143,
-      "street_name": "Peachtree Industrial Blvd",
-      "speed_limit": 45,
-      "has_traffic_light": true,
-      "traffic_control": "traffic_light"
-    },
-    {
-      "latitude": 33.758358,
-      "longitude": -84.377286,
-      "street_name": "Webb Bridge Road",
-      "speed_limit": 45,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.758286,
-      "longitude": -84.377428,
-      "street_name": "I-985 North",
-      "speed_limit": 70,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.758214,
-      "longitude": -84.377572,
-      "street_name": "Dallas Highway",
-      "speed_limit": 55,
-      "has_traffic_light": false,
-      "traffic_control": "none"
-    },
-    {
-      "latitude": 33.758143,
-      "longitude": -84.377715,
-      "street_name": "13th Street",
-      "speed_limit": 25,
-      "has_traffic_light": false,
-      "traffic_control": "stop_sign"
-    },
-    {
-      "latitude": 33.758071,
-      "longitude": -84.377857,
-      "street_name": "Keith Bridge Road",
-      "speed_limit": 25,
       "has_traffic_light": false,
       "traffic_control": "none"
     },

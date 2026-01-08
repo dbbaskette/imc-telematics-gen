@@ -20,6 +20,7 @@ public record FlatTelematicsMessage(
     @JsonProperty("g_force") double gForce,
     @JsonProperty("driver_id") int driverId,
     @JsonProperty("current_street") String currentStreet,
+    @JsonProperty("accident_type") String accidentType,
     
     // GPS data fields (from sensors.gps)
     @JsonProperty("gps_latitude") double gpsLatitude,
