@@ -10,7 +10,8 @@ A Spring Boot application that simulates realistic vehicle telematics data for i
 - **9 Accident Types**: Rear-end, T-bone, head-on, rollover, side-swipe, hit-and-run, and more
 - **Realistic Crash Sensors**: Each accident type has characteristic accelerometer/gyroscope patterns
 - **Speed at Impact**: Captures actual driver speed when crash occurs
-- **Real-Time Dashboard**: Live map visualization with crash triggering controls
+- **Real-Time Dashboard**: Modern UI with live map, dark mode, and crash notification popups
+- **Accident Visualization**: Visual popups with accident type images when crashes occur
 - **High-Volume Output**: 300+ messages/second to RabbitMQ
 
 ## Tech Stack
@@ -83,10 +84,26 @@ Flat JSON structure optimized for performance:
 
 ## Dashboard Controls
 
-- **Trigger Accident**: Manually trigger crash for selected driver
+- **Trigger Accident**: Manually trigger crash for selected or random driver
+- **Random Accidents**: Toggle automatic random crash events
 - **Start All Driving**: Get all parked drivers moving
 - **Pause/Resume**: Control simulation without stopping app
-- **Message Rate**: Adjust telemetry frequency (200-2000ms)
+- **Message Rate**: Adjust telemetry frequency
+- **Dark Mode**: Toggle between light and dark themes
+- **Driver Focus**: Click any driver in the list to center map on their location
+- **Map Filters**: Show/hide drivers by status (Driving, Stopped, Crash)
+
+## Accident Notifications
+
+When a crash occurs, a modal popup displays:
+- Accident type with corresponding image
+- Driver name and vehicle ID
+- Location (street name)
+- Speed at impact vs. speed limit
+- G-force measurement
+- Timestamp
+
+Accident type images are located in `src/main/resources/static/images/accidents/`.
 
 ## Configuration
 
