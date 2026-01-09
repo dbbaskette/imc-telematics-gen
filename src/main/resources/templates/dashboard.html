@@ -3,20 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IMC Insurance - Telematics Dashboard</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" 
+    <title>IMC Telematics Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
           integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
     <link rel="stylesheet" href="/css/dashboard.css">
 </head>
 <body>
     <div class="header">
         <div class="header-content">
-            <h1>🚗 IMC Insurance - Telematics Dashboard</h1>
+            <div class="header-brand">
+                <div class="header-logo">IMC</div>
+                <div>
+                    <h1>Telematics Dashboard</h1>
+                    <div class="header-subtitle">Real-time Vehicle Tracking</div>
+                </div>
+            </div>
             <div class="status-info">
+                <span class="live-indicator">Live</span>
                 <span class="driver-count">Tracking <span th:text="${driverCount}">0</span> Drivers</span>
-                <div class="connection-status" id="connectionStatus">⚪ Connecting...</div>
+                <div class="connection-status" id="connectionStatus">Connecting...</div>
                 <button id="darkModeToggle" class="dark-mode-toggle" onclick="toggleDarkMode()" title="Toggle dark mode">
-                    <span class="dark-mode-icon">🌙</span>
+                    <span class="dark-mode-icon">Moon</span>
                 </button>
             </div>
         </div>
@@ -24,73 +34,102 @@
 
     <div class="main-content">
         <div class="sidebar">
-            <div class="stats-panel">
-                <h3>📊 Real-Time Stats</h3>
-                <div class="stat-item">
-                    <span class="stat-label">Active Drivers:</span>
-                    <span class="stat-value" id="activeDrivers">0</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-label">Driving:</span>
-                    <span class="stat-value driving" id="drivingCount">0</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-label">Parked:</span>
-                    <span class="stat-value parked" id="parkedCount">0</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-label">Crashes Today:</span>
-                    <span class="stat-value crash" id="crashCount">0</span>
-                </div>
-                <div class="demo-controls">
-                    <!-- Accident Controls Group -->
-                    <div class="control-group">
-                        <h4 class="control-group-title">🚨 Accident Controls</h4>
-                        <div class="stat-item">
-                            <span class="stat-label">Random Accidents:</span>
-                            <span class="stat-value" id="randomAccidentsStatus">OFF</span>
-                        </div>
-                        <button id="randomAccidentsBtn" class="toggle-button" onclick="toggleRandomAccidents()">
-                            🎲 Random Accidents: OFF
-                        </button>
-                        <select id="driverSelect" class="driver-select">
-                            <option value="random">🎲 Random Driver</option>
-                        </select>
-                        <button id="triggerAccidentBtn" class="demo-button" onclick="triggerSelectedAccident()">
-                            🚨 Trigger Manual Accident
-                        </button>
+            <!-- Stats Panel -->
+            <div class="panel-section">
+                <div class="panel-header">
+                    <div class="panel-title">
+                        <span class="panel-title-icon">Stats</span>
+                        Real-Time Statistics
                     </div>
-                    
-                    <!-- Simulation Controls Group -->
-                    <div class="control-group">
-                        <h4 class="control-group-title">⚙️ Simulation Controls</h4>
-                        <button id="startAllDrivingBtn" class="demo-button" onclick="startAllDriving()">
-                            🚦 Start All Driving
-                        </button>
-                        <button id="pauseResumeBtn" class="stop-button" onclick="togglePause()">
-                            ⏸️ Pause Generation
-                        </button>
-                        <div class="control-row">
-                            <label for="rateSlider">Message Rate (ms):</label>
-                            <input type="range" id="rateSlider" min="10" max="100" step="5" />
-                            <span id="rateValue">Loading...</span>
-                        </div>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card total">
+                        <span class="stat-label">Active</span>
+                        <span class="stat-value" id="activeDrivers">0</span>
                     </div>
-                    
-                    
+                    <div class="stat-card driving">
+                        <span class="stat-label">Driving</span>
+                        <span class="stat-value" id="drivingCount">0</span>
+                    </div>
+                    <div class="stat-card parked">
+                        <span class="stat-label">Stopped</span>
+                        <span class="stat-value" id="parkedCount">0</span>
+                    </div>
+                    <div class="stat-card crash">
+                        <span class="stat-label">Crashes</span>
+                        <span class="stat-value" id="crashCount">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls Panel -->
+            <div class="panel-section">
+                <div class="panel-header">
+                    <div class="panel-title">
+                        <span class="panel-title-icon">Ctrl</span>
+                        Simulation Controls
+                    </div>
+                </div>
+
+                <!-- Accident Controls -->
+                <div class="control-group">
+                    <h4 class="control-group-title">Accident Simulation</h4>
+                    <div class="stat-item" style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                        <span style="font-size: 0.8rem; color: var(--color-text-secondary);">Random Accidents:</span>
+                        <span class="stat-value" id="randomAccidentsStatus" style="font-size: 0.8rem; padding: 2px 8px;">OFF</span>
+                    </div>
+                    <button id="randomAccidentsBtn" class="toggle-button" onclick="toggleRandomAccidents()">
+                        Random Accidents: OFF
+                    </button>
+                    <select id="driverSelect" class="driver-select">
+                        <option value="random">Random Driver</option>
+                    </select>
+                    <button id="triggerAccidentBtn" class="btn btn-danger" onclick="triggerSelectedAccident()">
+                        Trigger Manual Accident
+                    </button>
                     <div id="accidentStatus" class="accident-status"></div>
-                    <div id="stopStatus" class="stop-status"></div>
                 </div>
+
+                <!-- Simulation Controls -->
+                <div class="control-group">
+                    <h4 class="control-group-title">Playback Controls</h4>
+                    <button id="startAllDrivingBtn" class="demo-button" onclick="startAllDriving()">
+                        Start All Driving
+                    </button>
+                    <button id="pauseResumeBtn" class="stop-button" onclick="togglePause()">
+                        Pause Generation
+                    </button>
+                    <div class="control-row" style="margin-top: 0.75rem;">
+                        <label for="rateSlider">Message Rate:</label>
+                        <input type="range" id="rateSlider" min="10" max="100" step="5" />
+                        <span id="rateValue">50ms</span>
+                    </div>
+                </div>
+
+                <div id="stopStatus" class="stop-status"></div>
             </div>
 
-            <div class="drivers-panel">
-                <h3>👥 Driver Status</h3>
-                <div id="driversList"></div>
+            <!-- Drivers Panel -->
+            <div class="panel-section">
+                <div class="panel-header">
+                    <div class="panel-title">
+                        <span class="panel-title-icon">Drv</span>
+                        Driver Status
+                    </div>
+                    <span class="panel-badge" id="driverCountBadge">0 active</span>
+                </div>
+                <div id="driversList" class="drivers-list"></div>
             </div>
 
-            <div class="events-panel">
-                <h3>⚡ Recent Events</h3>
-                <div id="eventsList"></div>
+            <!-- Events Panel -->
+            <div class="panel-section">
+                <div class="panel-header">
+                    <div class="panel-title">
+                        <span class="panel-title-icon">Log</span>
+                        Recent Events
+                    </div>
+                </div>
+                <div id="eventsList" class="events-list"></div>
             </div>
         </div>
 
@@ -99,18 +138,18 @@
             <div class="map-overlay">
                 <div class="legend">
                     <div class="legend-row"><span class="legend-dot driving"></span> Driving</div>
-                    <div class="legend-row"><span class="legend-dot parked"></span> Parked/Stops</div>
+                    <div class="legend-row"><span class="legend-dot parked"></span> Stopped</div>
                     <div class="legend-row"><span class="legend-dot crash"></span> Crash</div>
                 </div>
                 <div class="map-controls">
                     <div class="filters">
                         <label><input type="checkbox" id="filterDriving" checked /> Driving</label>
-                        <label><input type="checkbox" id="filterParked" checked /> Parked</label>
+                        <label><input type="checkbox" id="filterParked" checked /> Stopped</label>
                         <label><input type="checkbox" id="filterCrash" checked /> Crash</label>
                     </div>
                     <div class="buttons">
-                        <button id="fitAllBtn" class="mini-btn">Fit to All</button>
-                        <label class="follow"><input type="checkbox" id="followSelected" /> Follow Selected</label>
+                        <button id="fitAllBtn" class="mini-btn">Fit All</button>
+                        <label class="follow"><input type="checkbox" id="followSelected" /> Follow</label>
                     </div>
                 </div>
             </div>
@@ -122,7 +161,7 @@
         <div class="accident-modal-content">
             <span class="accident-modal-close" onclick="closeAccidentModal()">&times;</span>
             <div class="accident-modal-header">
-                <h2>🚨 ACCIDENT REPORTED</h2>
+                <h2>ACCIDENT REPORTED</h2>
             </div>
             <div class="accident-modal-body">
                 <div class="accident-image-container">

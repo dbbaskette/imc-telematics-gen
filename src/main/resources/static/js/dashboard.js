@@ -99,12 +99,12 @@ class TelematicsDashboard {
     updateRandomAccidentsUI() {
         const button = document.getElementById('randomAccidentsBtn');
         const status = document.getElementById('randomAccidentsStatus');
-        
+
         if (button) {
-            button.textContent = `🎲 Random Accidents: ${this.randomAccidentsEnabled ? 'ON' : 'OFF'}`;
+            button.textContent = `Random Accidents: ${this.randomAccidentsEnabled ? 'ON' : 'OFF'}`;
             button.classList.toggle('active', this.randomAccidentsEnabled);
         }
-        
+
         if (status) {
             status.textContent = this.randomAccidentsEnabled ? 'ON' : 'OFF';
             status.className = `stat-value ${this.randomAccidentsEnabled ? 'driving' : ''}`;
@@ -456,11 +456,17 @@ class TelematicsDashboard {
 
     updateStatsPanel() {
         const stats = this.calculateStats();
-        
+
         document.getElementById('activeDrivers').textContent = stats.total;
         document.getElementById('drivingCount').textContent = stats.driving;
         document.getElementById('parkedCount').textContent = stats.parked;
         document.getElementById('crashCount').textContent = this.crashCount;
+
+        // Update driver count badge
+        const badge = document.getElementById('driverCountBadge');
+        if (badge) {
+            badge.textContent = `${stats.total} active`;
+        }
     }
 
     calculateStats() {
@@ -491,16 +497,27 @@ class TelematicsDashboard {
         );
         
         driversList.innerHTML = filtered.map(driver => {
-            const stateClass = driver.is_crash_event || driver.state === 'POST_CRASH_IDLE' ? 'crash' : 
+            const stateClass = driver.is_crash_event || driver.state === 'POST_CRASH_IDLE' ? 'crash' :
                               driver.state === 'DRIVING' ? 'driving' : 'parked';
-            
+
+            // Get initials from driver_id (e.g., "D1" or first 2 chars)
+            const initials = String(driver.driver_id).substring(0, 2).toUpperCase();
+
+            // Format state for display
+            const stateDisplay = driver.state.replace(/_/g, ' ').toLowerCase()
+                .replace(/\b\w/g, c => c.toUpperCase());
+
             return `
-                <div class="driver-item ${stateClass}">
-                    <div class="driver-id">${driver.driver_id}</div>
-                    <div class="driver-info">
-                        <div class="driver-speed">${driver.speed_mph.toFixed(1)} mph • ${driver.state}</div>
-                        <div class="driver-street">${driver.current_street}</div>
+                <div class="driver-item ${stateClass}" onclick="dashboardInstance.focusOnDriver(${driver.driver_id})">
+                    <div class="driver-avatar">${initials}</div>
+                    <div class="driver-details">
+                        <div class="driver-name">Driver ${driver.driver_id}</div>
+                        <div class="driver-meta">
+                            <span class="driver-speed">${driver.speed_mph.toFixed(0)} mph</span>
+                            <span class="driver-street">${driver.current_street || 'Unknown'}</span>
+                        </div>
                     </div>
+                    <span class="driver-status-badge">${stateDisplay}</span>
                 </div>
             `;
         }).join('');
@@ -514,6 +531,20 @@ class TelematicsDashboard {
         if (!markers.length) return;
         const bounds = L.latLngBounds(markers.map(d => [d.latitude, d.longitude]));
         this.map.fitBounds(bounds.pad(0.2));
+    }
+
+    focusOnDriver(driverId) {
+        const driver = this.drivers.get(driverId);
+        if (driver) {
+            this.map.setView([driver.latitude, driver.longitude], 14, {
+                animate: true,
+                duration: 0.5
+            });
+            // Open popup if marker exists
+            if (driver.marker) {
+                driver.marker.openPopup();
+            }
+        }
     }
 
     updateFollowMode() {
@@ -533,7 +564,7 @@ class TelematicsDashboard {
         );
         
         // Clear existing options except the first one (Random Driver)
-        driverSelect.innerHTML = '<option value="random">🎲 Random Driver</option>';
+        driverSelect.innerHTML = '<option value="random">Random Driver</option>';
         
         // Add active drivers to dropdown
         activeDrivers.forEach(driver => {
@@ -552,38 +583,38 @@ class TelematicsDashboard {
     addEvent(driverUpdate) {
         let eventText = '';
         let eventClass = '';
-        
+
         if (driverUpdate.is_crash_event) {
             // Distinguish between random and manual crashes
-            const crashType = driverUpdate.manual_crash ? '🚨' : '🎲';
-            eventText = `${crashType} ${driverUpdate.driver_id} crashed on ${driverUpdate.current_street}`;
+            const crashType = driverUpdate.manual_crash ? 'Manual' : 'Random';
+            eventText = `${crashType} crash: Driver ${driverUpdate.driver_id} on ${driverUpdate.current_street}`;
             eventClass = 'crash';
         } else if (driverUpdate.state === 'DRIVING' && this.events.length === 0) {
-            eventText = `🚗 ${driverUpdate.driver_id} started driving on ${driverUpdate.current_street}`;
+            eventText = `Driver ${driverUpdate.driver_id} started on ${driverUpdate.current_street}`;
         } else {
             return; // Don't add routine updates as events
         }
-        
+
         const event = {
             text: eventText,
             time: new Date(driverUpdate.timestamp),
             class: eventClass
         };
-        
+
         this.events.unshift(event);
         if (this.events.length > this.maxEvents) {
             this.events = this.events.slice(0, this.maxEvents);
         }
-        
+
         this.updateEventsList();
     }
 
     updateEventsList() {
         const eventsList = document.getElementById('eventsList');
-        
+
         eventsList.innerHTML = this.events.map(event => `
             <div class="event-item ${event.class}">
-                <div>${event.text}</div>
+                <div class="event-text">${event.text}</div>
                 <div class="event-time">${event.time.toLocaleTimeString()}</div>
             </div>
         `).join('');
