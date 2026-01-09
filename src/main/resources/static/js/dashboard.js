@@ -115,8 +115,15 @@ class TelematicsDashboard {
         const button = document.getElementById('darkModeToggle');
         if (button) {
             button.classList.toggle('active', enabled);
-            // Update tooltip
             button.title = enabled ? 'Switch to light mode' : 'Switch to dark mode';
+
+            // Toggle between moon and sun icons
+            const moonIcon = button.querySelector('.moon-icon');
+            const sunIcon = button.querySelector('.sun-icon');
+            if (moonIcon && sunIcon) {
+                moonIcon.style.display = enabled ? 'none' : 'block';
+                sunIcon.style.display = enabled ? 'block' : 'none';
+            }
         }
     }
 
