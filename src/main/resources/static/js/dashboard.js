@@ -179,10 +179,6 @@ class TelematicsDashboard {
         const filterParked = document.getElementById('filterParked');
         const filterCrash = document.getElementById('filterCrash');
         [filterDriving, filterParked, filterCrash].forEach(cb => cb && cb.addEventListener('change', () => this.updateDriversList()));
-        const followSelected = document.getElementById('followSelected');
-        if (followSelected) {
-            followSelected.addEventListener('change', () => this.updateFollowMode());
-        }
     }
 
     toggleMapTheme(darkMode) {
@@ -437,30 +433,6 @@ class TelematicsDashboard {
         `;
     }
 
-    handleCrashEvent(driverUpdate) {
-        this.crashCount++;
-        
-        // Flash the marker
-        if (driverUpdate.marker) {
-            const marker = driverUpdate.marker;
-            let flashCount = 0;
-            const flashInterval = setInterval(() => {
-                marker.getElement().style.transform = flashCount % 2 === 0 ? 'scale(1.5)' : 'scale(1)';
-                flashCount++;
-                if (flashCount > 6) {
-                    clearInterval(flashInterval);
-                    marker.getElement().style.transform = 'scale(1)';
-                }
-            }, 300);
-        }
-        
-        // Pan map to crash location
-        this.map.setView([driverUpdate.latitude, driverUpdate.longitude], 15, {
-            animate: true,
-            duration: 1
-        });
-    }
-
     updateStatsPanel() {
         const stats = this.calculateStats();
 
@@ -554,10 +526,6 @@ class TelematicsDashboard {
         }
     }
 
-    updateFollowMode() {
-        // No-op; handled on each update
-    }
-    
     updateDriverDropdown() {
         const driverSelect = document.getElementById('driverSelect');
         if (!driverSelect) return;

@@ -45,8 +45,6 @@ class DriverManagerTest {
 
         DailyRoutineService mockDailyRoutineService = mock(DailyRoutineService.class);
         driverManager = new DriverManager(mockRouteService, mockDriverConfigService, mockDailyRoutineService);
-        ReflectionTestUtils.setField(driverManager, "driverCount", 2);
-        ReflectionTestUtils.setField(driverManager, "crashFrequency", 10);
         ReflectionTestUtils.setField(driverManager, "postCrashIdleMinutes", 1);
         ReflectionTestUtils.setField(driverManager, "randomStopProbability", 0.1);
         ReflectionTestUtils.setField(driverManager, "breakDurationMinutes", 1);

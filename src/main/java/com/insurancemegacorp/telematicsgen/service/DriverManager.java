@@ -26,12 +26,6 @@ public class DriverManager {
     private final DriverConfigService driverConfigService;
     private final DailyRoutineService dailyRoutineService;
 
-    @Value("${telematics.simulation.driver-count:3}")
-    private int driverCount;
-
-    @Value("${telematics.simulation.crash-frequency:50}")
-    private int crashFrequency;
-
     @Value("${telematics.behavior.post-crash-idle-minutes:10}")
     private int postCrashIdleMinutes;
 
@@ -507,16 +501,26 @@ public class DriverManager {
         }
     }
 
+    /**
+     * Get a description of a route (start → end)
+     */
+    public String getRouteDescription(Driver driver) {
+        if (driver == null || driver.getCurrentRoute() == null || driver.getCurrentRoute().isEmpty()) {
+            return "No route";
+        }
+        return getRouteDescription(driver.getCurrentRoute());
+    }
+
     private String getRouteDescription(List<RoutePoint> route) {
         if (route == null || route.isEmpty()) {
             return "No route";
         }
-        
+
         RoutePoint start = route.get(0);
         RoutePoint end = route.get(route.size() - 1);
-        
-        return String.format("%s → %s", 
-            start.streetName().split(" & ")[0], // Extract main street name
+
+        return String.format("%s → %s",
+            start.streetName().split(" & ")[0],
             end.streetName().split(" & ")[0]
         );
     }

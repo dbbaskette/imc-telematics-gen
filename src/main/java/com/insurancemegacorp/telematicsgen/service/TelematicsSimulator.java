@@ -1,7 +1,6 @@
 package com.insurancemegacorp.telematicsgen.service;
 
 import com.insurancemegacorp.telematicsgen.model.Driver;
-import com.insurancemegacorp.telematicsgen.model.DriverState;
 import com.insurancemegacorp.telematicsgen.model.FlatTelematicsMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,7 +13,6 @@ import org.springframework.stereotype.Service;
 
 import jakarta.annotation.PreDestroy;
 
-import java.security.SecureRandom;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.atomic.AtomicLong;
 
@@ -27,7 +25,6 @@ public class TelematicsSimulator {
     private final TelematicsPublisher publisher;
     private final DriverManager driverManager;
     private final WebSocketBroadcastService webSocketService;
-    private final SecureRandom random = new SecureRandom();
     private final AtomicLong totalMessageCount = new AtomicLong(0);
 
     @Value("${telematics.simulation.interval-ms:100}")
@@ -87,32 +84,9 @@ public class TelematicsSimulator {
                 // Update driver behavior and state
                 driverManager.updateDriverBehavior(selectedDriver);
                 
-                FlatTelematicsMessage message;
-                
-                // Check if this driver should have a crash event
-                // Crashes can happen when DRIVING or at TRAFFIC_STOP (e.g., rear-ended at a light)
-                DriverState state = selectedDriver.getCurrentState();
-                boolean canCrash = state == DriverState.DRIVING || state == DriverState.TRAFFIC_STOP;
-
-                if (canCrash && shouldSimulateCrash(selectedDriver)) {
-                    boolean stoppedAtLight = (state == DriverState.TRAFFIC_STOP);
-                    if (stoppedAtLight) {
-                        logger.warn("💥💥💥 CRASH EVENT - Driver {} REAR-ENDED at traffic stop! 💥💥💥",
-                            selectedDriver.getDriverId());
-                        // When stopped at light, generate a rear-ended crash
-                        message = dataGenerator.generateCrashEventData(selectedDriver,
-                            com.insurancemegacorp.telematicsgen.model.AccidentType.REAR_ENDED);
-                    } else {
-                        logger.warn("💥💥💥 CRASH EVENT - Driver {}! 💥💥💥", selectedDriver.getDriverId());
-                        // When driving, use random accident type
-                        message = dataGenerator.generateCrashEventData(selectedDriver);
-                    }
-                    // Record crash with the accident type from the generated message
-                    selectedDriver.recordCrashEvent(message.accidentType());
-                } else {
-                    // Generate normal telemetry based on driver state
-                    message = dataGenerator.generateTelematicsData(selectedDriver);
-                }
+                // Generate telemetry based on driver state
+                // Note: Crash events are handled in DriverManager.updateDriverState()
+                FlatTelematicsMessage message = dataGenerator.generateTelematicsData(selectedDriver);
                 
                 selectedDriver.incrementMessageCount();
                 publisher.publishTelematicsData(message, selectedDriver);
@@ -145,11 +119,6 @@ public class TelematicsSimulator {
         logger.info("🛑 Multi-driver telematics simulation stopped. Total messages sent: {}", 
             totalMessageCount.get());
         logFinalDriverStats();
-    }
-
-    private boolean shouldSimulateCrash(Driver driver) {
-        // Use the driver manager's logic for crash determination
-        return false; // Driver manager handles this in updateDriverBehavior
     }
 
     private void logFinalDriverStats() {

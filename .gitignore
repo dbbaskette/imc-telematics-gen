@@ -51,3 +51,6 @@ application-*.properties
 sample.py
 release.sh
 .release-exec
+
+# Runtime artifacts
+.imc-telematics-gen.pid

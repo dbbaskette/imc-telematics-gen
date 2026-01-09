@@ -56,7 +56,7 @@ public class WebSocketController {
                 public final double speed_mph = driver.getCurrentSpeed();
                 public final String current_street = driver.getCurrentStreet();
                 public final String state = driver.getCurrentState().toString();
-                public final String route_description = getRouteDescription(driver);
+                public final String route_description = driverManager.getRouteDescription(driver);
                 public final boolean is_crash_event = false;
                 public final double g_force = 0.0;
                 public final String timestamp = java.time.Instant.now().toString();
@@ -182,20 +182,6 @@ public class WebSocketController {
         return result;
     }
 
-    // --- Simulation runtime controls ---
-    @MessageMapping("/sim/toggle-pause")
-    @SendTo("/topic/sim/status")
-    public Object togglePause() {
-        // Delegate to simulator via publisher/driverManager path; expose through DriverManager for now
-        // In absence of DI here, call directly via application context is avoided; use a static holder if needed.
-        // For simplicity, use DriverManager to access simulator via broadcast service dependency path is not available.
-        // Instead, publish a status-only event; REST endpoint handles actual toggle.
-        return new Object() {
-            public final boolean accepted = true;
-            public final String message = "Toggle requested";
-        };
-    }
-
     @MessageMapping("/sim/toggle-random-accidents")
     @SendTo("/topic/sim/random-accidents")
     public Object toggleRandomAccidents(String enabled) {
@@ -208,21 +194,6 @@ public class WebSocketController {
             public final String message = "Random accidents " + (isEnabled ? "enabled" : "disabled");
             public final String timestamp = java.time.Instant.now().toString();
         };
-    }
-
-    private String getRouteDescription(com.insurancemegacorp.telematicsgen.model.Driver driver) {
-        if (driver.getCurrentRoute() == null || driver.getCurrentRoute().isEmpty()) {
-            return "No route";
-        }
-
-        var route = driver.getCurrentRoute();
-        var start = route.get(0);
-        var end = route.get(route.size() - 1);
-
-        return String.format("%s → %s",
-            start.streetName().split(" & ")[0],
-            end.streetName().split(" & ")[0]
-        );
     }
 
     private String getDriverName(Driver driver) {

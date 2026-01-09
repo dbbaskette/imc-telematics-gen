@@ -25,7 +25,7 @@ public class WebSocketBroadcastService {
 
     public void broadcastDriverUpdate(Driver driver, FlatTelematicsMessage message) {
         try {
-            String routeDescription = getRouteDescription(driver);
+            String routeDescription = driverManager.getRouteDescription(driver);
             // Use pre-calculated G-force from the flat message instead of recalculating
             double gForce = message.gForce();
             
@@ -79,7 +79,7 @@ public class WebSocketBroadcastService {
                     driver.getCurrentSpeed(),
                     driver.getCurrentStreet() != null ? driver.getCurrentStreet() : "Unknown Street",
                     driver.getCurrentState(),
-                    getRouteDescription(driver),
+                    driverManager.getRouteDescription(driver),
                     false, // Not a crash event
                     0.0, // No G-force for bulk update
                     Instant.now()
@@ -92,21 +92,4 @@ public class WebSocketBroadcastService {
             logger.error("Failed to broadcast all drivers: {}", e.getMessage(), e);
         }
     }
-
-    private String getRouteDescription(Driver driver) {
-        if (driver.getCurrentRoute() == null || driver.getCurrentRoute().isEmpty()) {
-            return "No route";
-        }
-        
-        var route = driver.getCurrentRoute();
-        var start = route.get(0);
-        var end = route.get(route.size() - 1);
-        
-        return String.format("%s → %s", 
-            start.streetName().split(" & ")[0], 
-            end.streetName().split(" & ")[0]
-        );
-    }
-
-
 }
