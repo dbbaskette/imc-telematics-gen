@@ -1,0 +1,128 @@
+{
+  "name": "ashley_wilson_johns_creek_town_center_to_base",
+  "description": "Ashley Wilson: Johns_Creek_Town_Center \u2192 Base",
+  "start_location": "34.0288, -84.1972",
+  "end_location": "34.0289, -84.1986",
+  "waypoints": [
+    {
+      "latitude": 34.0288,
+      "longitude": -84.1972,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.028808,
+      "longitude": -84.1973,
+      "street_name": "Pharr Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.028814,
+      "longitude": -84.1974,
+      "street_name": "Aqualand Drive",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.028821,
+      "longitude": -84.1975,
+      "street_name": "DeKalb Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.028828,
+      "longitude": -84.197599,
+      "street_name": "Charles Allen Drive",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.028835,
+      "longitude": -84.197699,
+      "street_name": "Scenic Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.028843,
+      "longitude": -84.1978,
+      "street_name": "Johnson Ferry Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.02885,
+      "longitude": -84.1979,
+      "street_name": "Lilburn Stone Mountain Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.028856,
+      "longitude": -84.198,
+      "street_name": "Ponce de Leon Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.028864,
+      "longitude": -84.198099,
+      "street_name": "Northside Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.028872,
+      "longitude": -84.1982,
+      "street_name": "Peachtree Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.028878,
+      "longitude": -84.1983,
+      "street_name": "Roswell Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.028885,
+      "longitude": -84.198401,
+      "street_name": "North Highland Avenue",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "stop_sign"
+    },
+    {
+      "latitude": 34.028893,
+      "longitude": -84.1985,
+      "street_name": "Memorial Drive",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.0289,
+      "longitude": -84.1986,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

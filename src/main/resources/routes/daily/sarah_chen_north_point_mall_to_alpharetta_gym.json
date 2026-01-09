@@ -1,0 +1,160 @@
+{
+  "name": "sarah_chen_north_point_mall_to_alpharetta_gym",
+  "description": "Sarah Chen: North_Point_Mall \u2192 Alpharetta_Gym",
+  "start_location": "34.0583, -84.2946",
+  "end_location": "34.082, -84.29",
+  "waypoints": [
+    {
+      "latitude": 34.0583,
+      "longitude": -84.2946,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.059616,
+      "longitude": -84.294344,
+      "street_name": "Marietta Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.060933,
+      "longitude": -84.294088,
+      "street_name": "7th Street",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.06225,
+      "longitude": -84.293834,
+      "street_name": "Highway 85",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.063567,
+      "longitude": -84.293579,
+      "street_name": "I-675 South",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.064884,
+      "longitude": -84.293323,
+      "street_name": "West Wesley Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.066201,
+      "longitude": -84.293066,
+      "street_name": "Highway 316",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.067516,
+      "longitude": -84.292811,
+      "street_name": "Collier Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.068833,
+      "longitude": -84.292556,
+      "street_name": "Lower Roswell Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.070149,
+      "longitude": -84.292299,
+      "street_name": "Howell Mill Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.071467,
+      "longitude": -84.292045,
+      "street_name": "9th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.072783,
+      "longitude": -84.291788,
+      "street_name": "16th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.0741,
+      "longitude": -84.291533,
+      "street_name": "Bethelview Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.075416,
+      "longitude": -84.291279,
+      "street_name": "Holcomb Bridge Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.076733,
+      "longitude": -84.291023,
+      "street_name": "Castleberry Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.07805,
+      "longitude": -84.290767,
+      "street_name": "West Wesley Road",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.079366,
+      "longitude": -84.290511,
+      "street_name": "Monroe Drive",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.080684,
+      "longitude": -84.290256,
+      "street_name": "10th Street",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.082,
+      "longitude": -84.29,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

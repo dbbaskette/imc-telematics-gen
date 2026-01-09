@@ -1,0 +1,128 @@
+{
+  "name": "lauren_brown_brookhaven_marta_to_oglethorpe_university",
+  "description": "Lauren Brown: Brookhaven_Marta \u2192 Oglethorpe_University",
+  "start_location": "33.8608, -84.3391",
+  "end_location": "33.8693, -84.3328",
+  "waypoints": [
+    {
+      "latitude": 33.8608,
+      "longitude": -84.3391,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.861407,
+      "longitude": -84.33865,
+      "street_name": "10th Street",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.862015,
+      "longitude": -84.338199,
+      "street_name": "Keith Bridge Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.862622,
+      "longitude": -84.337751,
+      "street_name": "Highway 5",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.863228,
+      "longitude": -84.3373,
+      "street_name": "Northpoint Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.863837,
+      "longitude": -84.33685,
+      "street_name": "Lilburn Stone Mountain Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.864443,
+      "longitude": -84.336401,
+      "street_name": "Cumberland Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.86505,
+      "longitude": -84.335951,
+      "street_name": "Stone Mountain Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.865658,
+      "longitude": -84.335501,
+      "street_name": "Cobb Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.866263,
+      "longitude": -84.33505,
+      "street_name": "Veterans Memorial Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.866871,
+      "longitude": -84.334599,
+      "street_name": "Cumberland Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.867479,
+      "longitude": -84.334151,
+      "street_name": "Juniper Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.868085,
+      "longitude": -84.3337,
+      "street_name": "Roswell Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "stop_sign"
+    },
+    {
+      "latitude": 33.868694,
+      "longitude": -84.333251,
+      "street_name": "5th Street",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.8693,
+      "longitude": -84.3328,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

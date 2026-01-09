@@ -1,0 +1,328 @@
+{
+  "name": "amy_chen_work___midtown_to_eagles_landing",
+  "description": "Amy Chen: Work___Midtown \u2192 Eagles_Landing",
+  "start_location": "33.785, -84.385",
+  "end_location": "33.567, -84.2614",
+  "waypoints": [
+    {
+      "latitude": 33.785,
+      "longitude": -84.385,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.779411,
+      "longitude": -84.381831,
+      "street_name": "Highway 120",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.773821,
+      "longitude": -84.378661,
+      "street_name": "I-985 North",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.76823,
+      "longitude": -84.375493,
+      "street_name": "North Highland Avenue",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.762641,
+      "longitude": -84.372322,
+      "street_name": "Highway 316",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.757052,
+      "longitude": -84.369153,
+      "street_name": "Auburn Avenue",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.751461,
+      "longitude": -84.365984,
+      "street_name": "Lake Lanier Islands Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.745871,
+      "longitude": -84.362815,
+      "street_name": "Druid Hills Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "yield"
+    },
+    {
+      "latitude": 33.740282,
+      "longitude": -84.359646,
+      "street_name": "Spot Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.734692,
+      "longitude": -84.356476,
+      "street_name": "Monroe Circle",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.729102,
+      "longitude": -84.353308,
+      "street_name": "Highway 141 (Peachtree Rd)",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.723513,
+      "longitude": -84.350138,
+      "street_name": "Rock Springs Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.717924,
+      "longitude": -84.346969,
+      "street_name": "Ponce de Leon Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.712332,
+      "longitude": -84.3438,
+      "street_name": "Atlanta Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.706744,
+      "longitude": -84.340631,
+      "street_name": "8th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.701155,
+      "longitude": -84.337462,
+      "street_name": "Crossville Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.695564,
+      "longitude": -84.334293,
+      "street_name": "Lakeshore Drive",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.689974,
+      "longitude": -84.331122,
+      "street_name": "Ansley Mall",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.684385,
+      "longitude": -84.327955,
+      "street_name": "I-85 North",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.678796,
+      "longitude": -84.324784,
+      "street_name": "West Peachtree Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.673205,
+      "longitude": -84.321616,
+      "street_name": "11th Street",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.667615,
+      "longitude": -84.318446,
+      "street_name": "Canton Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.662026,
+      "longitude": -84.315278,
+      "street_name": "LaVista Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.656435,
+      "longitude": -84.312107,
+      "street_name": "Pilgrim Mill Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.650845,
+      "longitude": -84.308938,
+      "street_name": "Roswell Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.645257,
+      "longitude": -84.30577,
+      "street_name": "Aqualand Drive",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.639667,
+      "longitude": -84.302599,
+      "street_name": "Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.634077,
+      "longitude": -84.299431,
+      "street_name": "Pharr Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.628486,
+      "longitude": -84.296261,
+      "street_name": "Clairmont Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.622898,
+      "longitude": -84.293092,
+      "street_name": "Stone Mountain Freeway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.617308,
+      "longitude": -84.289922,
+      "street_name": "Spot Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.611719,
+      "longitude": -84.286755,
+      "street_name": "Mall of Georgia Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.606129,
+      "longitude": -84.283584,
+      "street_name": "Arden Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.600539,
+      "longitude": -84.280415,
+      "street_name": "Northside Drive",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.59495,
+      "longitude": -84.277246,
+      "street_name": "GA-400 South",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.589359,
+      "longitude": -84.274078,
+      "street_name": "Piedmont Road",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.58377,
+      "longitude": -84.270907,
+      "street_name": "Peachtree Dunwoody Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.57818,
+      "longitude": -84.267738,
+      "street_name": "Spalding Drive",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.572589,
+      "longitude": -84.264569,
+      "street_name": "Memorial Drive",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.567,
+      "longitude": -84.2614,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

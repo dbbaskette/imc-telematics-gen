@@ -1,0 +1,128 @@
+{
+  "name": "matthew_davis_oakhurst_village_to_base",
+  "description": "Matthew Davis: Oakhurst_Village \u2192 Base",
+  "start_location": "33.7627, -84.3044",
+  "end_location": "33.7748, -84.2963",
+  "waypoints": [
+    {
+      "latitude": 33.7627,
+      "longitude": -84.3044,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.763564,
+      "longitude": -84.303821,
+      "street_name": "Old Peachtree Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.764429,
+      "longitude": -84.303243,
+      "street_name": "Edgewood Avenue",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.765293,
+      "longitude": -84.302665,
+      "street_name": "I-75 South",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.766156,
+      "longitude": -84.302086,
+      "street_name": "Glen Iris Drive",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.767022,
+      "longitude": -84.301508,
+      "street_name": "Tuxedo Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.767885,
+      "longitude": -84.300929,
+      "street_name": "Pleasant Hill Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.768749,
+      "longitude": -84.30035,
+      "street_name": "Atlanta Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.769614,
+      "longitude": -84.299772,
+      "street_name": "Aqualand Drive",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.770478,
+      "longitude": -84.299192,
+      "street_name": "I-85 South",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.771344,
+      "longitude": -84.298615,
+      "street_name": "Lawrenceville Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.772207,
+      "longitude": -84.298035,
+      "street_name": "19th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.773071,
+      "longitude": -84.297458,
+      "street_name": "Northpoint Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.773935,
+      "longitude": -84.296878,
+      "street_name": "Jimmy Carter Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.7748,
+      "longitude": -84.2963,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

@@ -1,0 +1,328 @@
+{
+  "name": "michelle_wong_base_to_work___downtown",
+  "description": "Michelle Wong: Base \u2192 Work___Downtown",
+  "start_location": "33.7861, -84.4446",
+  "end_location": "33.756, -84.389",
+  "waypoints": [
+    {
+      "latitude": 33.7861,
+      "longitude": -84.4446,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.785329,
+      "longitude": -84.443175,
+      "street_name": "Peachtree Battle Avenue",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.784556,
+      "longitude": -84.44175,
+      "street_name": "Holiday Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.783785,
+      "longitude": -84.440323,
+      "street_name": "Monroe Drive",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.783012,
+      "longitude": -84.438898,
+      "street_name": "18th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.782242,
+      "longitude": -84.437471,
+      "street_name": "Chamblee Tucker Road",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.781469,
+      "longitude": -84.436046,
+      "street_name": "Stone Mountain Freeway",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.780698,
+      "longitude": -84.43462,
+      "street_name": "Jones Bridge Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "yield"
+    },
+    {
+      "latitude": 33.779925,
+      "longitude": -84.433196,
+      "street_name": "Old Milton Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.779154,
+      "longitude": -84.43177,
+      "street_name": "Perimeter Center East",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.778382,
+      "longitude": -84.430344,
+      "street_name": "5th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.777611,
+      "longitude": -84.428917,
+      "street_name": "8th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.776838,
+      "longitude": -84.427492,
+      "street_name": "Scott Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.776067,
+      "longitude": -84.426066,
+      "street_name": "Duluth Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.775295,
+      "longitude": -84.424641,
+      "street_name": "Spot Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.774522,
+      "longitude": -84.423214,
+      "street_name": "Cumberland Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.773752,
+      "longitude": -84.42179,
+      "street_name": "I-20 East",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.772979,
+      "longitude": -84.420365,
+      "street_name": "Moreland Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.772208,
+      "longitude": -84.418938,
+      "street_name": "Piedmont Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.771436,
+      "longitude": -84.417513,
+      "street_name": "Scott Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.770665,
+      "longitude": -84.416087,
+      "street_name": "West Paces Ferry Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.769891,
+      "longitude": -84.414662,
+      "street_name": "West Wesley Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.769121,
+      "longitude": -84.413235,
+      "street_name": "Johnson Ferry Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.768349,
+      "longitude": -84.411811,
+      "street_name": "17th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.767577,
+      "longitude": -84.410386,
+      "street_name": "Bethelview Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.766806,
+      "longitude": -84.40896,
+      "street_name": "Clairmont Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.766033,
+      "longitude": -84.407533,
+      "street_name": "Lanier Islands Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.765261,
+      "longitude": -84.406108,
+      "street_name": "DeKalb Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.764491,
+      "longitude": -84.404681,
+      "street_name": "Holiday Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.763718,
+      "longitude": -84.403256,
+      "street_name": "Drew Campground Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.762946,
+      "longitude": -84.401831,
+      "street_name": "18th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.762174,
+      "longitude": -84.400405,
+      "street_name": "Highway 9 (Roswell Road)",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.761403,
+      "longitude": -84.398979,
+      "street_name": "Ponce de Leon Avenue",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.760631,
+      "longitude": -84.397553,
+      "street_name": "Penn Avenue",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.75986,
+      "longitude": -84.396128,
+      "street_name": "Pleasant Hill Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.759087,
+      "longitude": -84.394702,
+      "street_name": "Valley Road",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.758316,
+      "longitude": -84.393278,
+      "street_name": "LaVista Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.757544,
+      "longitude": -84.391851,
+      "street_name": "Lake Lanier Islands Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.756772,
+      "longitude": -84.390425,
+      "street_name": "Stone Mountain Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.756,
+      "longitude": -84.389,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

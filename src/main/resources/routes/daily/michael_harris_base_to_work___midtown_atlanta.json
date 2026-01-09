@@ -1,0 +1,328 @@
+{
+  "name": "michael_harris_base_to_work___midtown_atlanta",
+  "description": "Michael Harris: Base \u2192 Work___Midtown_Atlanta",
+  "start_location": "34.0232, -84.3616",
+  "end_location": "33.7853, -84.3832",
+  "waypoints": [
+    {
+      "latitude": 34.0232,
+      "longitude": -84.3616,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.0171,
+      "longitude": -84.362154,
+      "street_name": "Marietta Street",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.011,
+      "longitude": -84.362708,
+      "street_name": "Old Alabama Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.0049,
+      "longitude": -84.363261,
+      "street_name": "Powder Springs Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.998799,
+      "longitude": -84.363815,
+      "street_name": "12th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.992701,
+      "longitude": -84.36437,
+      "street_name": "Westminster Drive",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.9866,
+      "longitude": -84.364923,
+      "street_name": "Lilburn Stone Mountain Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.980501,
+      "longitude": -84.365476,
+      "street_name": "West Paces Ferry Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "yield"
+    },
+    {
+      "latitude": 33.9744,
+      "longitude": -84.366031,
+      "street_name": "Powder Springs Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.968301,
+      "longitude": -84.366584,
+      "street_name": "Emory Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.9622,
+      "longitude": -84.367138,
+      "street_name": "Chamblee Tucker Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.9561,
+      "longitude": -84.367691,
+      "street_name": "Stone Mountain Freeway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.95,
+      "longitude": -84.368246,
+      "street_name": "Glen Iris Drive",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.943901,
+      "longitude": -84.368801,
+      "street_name": "Old Alabama Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.937799,
+      "longitude": -84.369353,
+      "street_name": "I-75 South",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.9317,
+      "longitude": -84.369907,
+      "street_name": "Greenwood Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.9256,
+      "longitude": -84.370462,
+      "street_name": "Spring Street",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.919501,
+      "longitude": -84.371015,
+      "street_name": "Highway 316",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.9134,
+      "longitude": -84.371568,
+      "street_name": "Spalding Drive",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.9073,
+      "longitude": -84.372124,
+      "street_name": "Ansley Mall",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.901201,
+      "longitude": -84.372678,
+      "street_name": "16th Street",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.8951,
+      "longitude": -84.373231,
+      "street_name": "Monroe Drive",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.889,
+      "longitude": -84.373784,
+      "street_name": "I-675 South",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.882899,
+      "longitude": -84.374338,
+      "street_name": "Valley Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.8768,
+      "longitude": -84.374892,
+      "street_name": "Habersham Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.870701,
+      "longitude": -84.375446,
+      "street_name": "Monroe Drive",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.864599,
+      "longitude": -84.376,
+      "street_name": "I-85 South",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.858501,
+      "longitude": -84.376554,
+      "street_name": "Atlanta Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.852399,
+      "longitude": -84.377108,
+      "street_name": "Freedom Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.8463,
+      "longitude": -84.377661,
+      "street_name": "Peachtree Industrial Blvd",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.8402,
+      "longitude": -84.378214,
+      "street_name": "Lanier Islands Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.834101,
+      "longitude": -84.378769,
+      "street_name": "Piedmont Circle",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.827999,
+      "longitude": -84.379323,
+      "street_name": "Highway 120",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.821901,
+      "longitude": -84.379876,
+      "street_name": "Peachtree Battle Avenue",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.815801,
+      "longitude": -84.380431,
+      "street_name": "Jimmy Carter Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.809699,
+      "longitude": -84.380984,
+      "street_name": "Drew Campground Road",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.803599,
+      "longitude": -84.381539,
+      "street_name": "Emory Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.7975,
+      "longitude": -84.382092,
+      "street_name": "Town Center Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.7914,
+      "longitude": -84.382645,
+      "street_name": "Sugarloaf Mills Circle",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.7853,
+      "longitude": -84.3832,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

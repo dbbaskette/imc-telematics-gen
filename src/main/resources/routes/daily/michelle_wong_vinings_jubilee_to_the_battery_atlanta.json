@@ -1,0 +1,160 @@
+{
+  "name": "michelle_wong_vinings_jubilee_to_the_battery_atlanta",
+  "description": "Michelle Wong: Vinings_Jubilee \u2192 The_Battery_Atlanta",
+  "start_location": "33.8651, -84.47",
+  "end_location": "33.8907, -84.4679",
+  "waypoints": [
+    {
+      "latitude": 33.8651,
+      "longitude": -84.47,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.866523,
+      "longitude": -84.469883,
+      "street_name": "Habersham Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.867944,
+      "longitude": -84.469767,
+      "street_name": "North Decatur Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.869367,
+      "longitude": -84.46965,
+      "street_name": "Briarcliff Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.870788,
+      "longitude": -84.469532,
+      "street_name": "Highway 124",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.872211,
+      "longitude": -84.469416,
+      "street_name": "Peachtree Street NE",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.873634,
+      "longitude": -84.469299,
+      "street_name": "Abbotts Bridge Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.875055,
+      "longitude": -84.469183,
+      "street_name": "West Paces Ferry Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.876478,
+      "longitude": -84.469067,
+      "street_name": "Highway 138",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.877899,
+      "longitude": -84.46895,
+      "street_name": "15th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.879322,
+      "longitude": -84.468832,
+      "street_name": "Lake Lanier Islands Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.880745,
+      "longitude": -84.468717,
+      "street_name": "North Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.882166,
+      "longitude": -84.4686,
+      "street_name": "Abbotts Bridge Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.883589,
+      "longitude": -84.468484,
+      "street_name": "Lenox Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.885012,
+      "longitude": -84.468367,
+      "street_name": "GA-400 North",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.886433,
+      "longitude": -84.46825,
+      "street_name": "Northlake Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.887856,
+      "longitude": -84.468134,
+      "street_name": "Peachtree Industrial Blvd",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.889277,
+      "longitude": -84.468016,
+      "street_name": "Peachtree Industrial Blvd",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.8907,
+      "longitude": -84.4679,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

@@ -1,0 +1,256 @@
+{
+  "name": "brandon_kim_outlet_shoppes_of_atlanta_to_rope_mill_park",
+  "description": "Brandon Kim: Outlet_Shoppes_Of_Atlanta \u2192 Rope_Mill_Park",
+  "start_location": "34.102, -84.531",
+  "end_location": "34.114, -84.498",
+  "waypoints": [
+    {
+      "latitude": 34.102,
+      "longitude": -84.531,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.102401,
+      "longitude": -84.529901,
+      "street_name": "6th Street",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.1028,
+      "longitude": -84.528801,
+      "street_name": "Arden Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.1032,
+      "longitude": -84.527701,
+      "street_name": "Sugarloaf Mills Circle",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.1036,
+      "longitude": -84.5266,
+      "street_name": "Glenwood Avenue",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.104001,
+      "longitude": -84.525501,
+      "street_name": "Valley Road",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.104399,
+      "longitude": -84.524401,
+      "street_name": "Scott Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.1048,
+      "longitude": -84.523301,
+      "street_name": "Canton Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.1052,
+      "longitude": -84.5222,
+      "street_name": "Edgewood Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.1056,
+      "longitude": -84.521099,
+      "street_name": "Habersham Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.106,
+      "longitude": -84.52,
+      "street_name": "Union Hill Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.106399,
+      "longitude": -84.5189,
+      "street_name": "Moreland Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.106799,
+      "longitude": -84.5178,
+      "street_name": "Tuxedo Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.1072,
+      "longitude": -84.516699,
+      "street_name": "Duluth Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.1076,
+      "longitude": -84.515601,
+      "street_name": "West Wesley Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.108,
+      "longitude": -84.514499,
+      "street_name": "Post Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.1084,
+      "longitude": -84.5134,
+      "street_name": "Auburn Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.1088,
+      "longitude": -84.5123,
+      "street_name": "Virginia Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.109199,
+      "longitude": -84.5112,
+      "street_name": "North Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.109601,
+      "longitude": -84.5101,
+      "street_name": "Tuxedo Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.11,
+      "longitude": -84.509,
+      "street_name": "Northside Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.110399,
+      "longitude": -84.507899,
+      "street_name": "Ponce de Leon Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.110799,
+      "longitude": -84.506801,
+      "street_name": "Austell Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.1112,
+      "longitude": -84.5057,
+      "street_name": "Briarcliff Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.1116,
+      "longitude": -84.5046,
+      "street_name": "Briarcliff Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.112,
+      "longitude": -84.5035,
+      "street_name": "I-675 South",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.112401,
+      "longitude": -84.5024,
+      "street_name": "Club Drive",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.112801,
+      "longitude": -84.501299,
+      "street_name": "Northpoint Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.1132,
+      "longitude": -84.5002,
+      "street_name": "5th Street",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.1136,
+      "longitude": -84.499101,
+      "street_name": "Briarcliff Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.114,
+      "longitude": -84.498,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

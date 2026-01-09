@@ -1,0 +1,328 @@
+{
+  "name": "christopher_garcia_base_to_work___midtown",
+  "description": "Christopher Garcia: Base \u2192 Work___Midtown",
+  "start_location": "34.0515, -84.0713",
+  "end_location": "33.787, -84.385",
+  "waypoints": [
+    {
+      "latitude": 34.0515,
+      "longitude": -84.0713,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.044718,
+      "longitude": -84.079343,
+      "street_name": "West Paces Ferry Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.037935,
+      "longitude": -84.087387,
+      "street_name": "Candler Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.031155,
+      "longitude": -84.095431,
+      "street_name": "Sugarloaf Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.024372,
+      "longitude": -84.103475,
+      "street_name": "Habersham Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.017589,
+      "longitude": -84.111518,
+      "street_name": "Cypress Street",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.010807,
+      "longitude": -84.119561,
+      "street_name": "Circle 75 Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.004026,
+      "longitude": -84.127606,
+      "street_name": "I-20 West",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.997244,
+      "longitude": -84.135649,
+      "street_name": "Lake Lanier Islands Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.990462,
+      "longitude": -84.143692,
+      "street_name": "Collier Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.98368,
+      "longitude": -84.151737,
+      "street_name": "Indian Trail Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.976898,
+      "longitude": -84.15978,
+      "street_name": "I-20 West",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.970115,
+      "longitude": -84.167824,
+      "street_name": "Steve Reynolds Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.963334,
+      "longitude": -84.175866,
+      "street_name": "Charles Allen Drive",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.956552,
+      "longitude": -84.183911,
+      "street_name": "Abbotts Bridge Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.94977,
+      "longitude": -84.191954,
+      "street_name": "Henderson Mill Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.942987,
+      "longitude": -84.199998,
+      "street_name": "Habersham Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.936205,
+      "longitude": -84.208041,
+      "street_name": "Howell Mill Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.929423,
+      "longitude": -84.216085,
+      "street_name": "LaVista Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.922641,
+      "longitude": -84.224128,
+      "street_name": "Habersham Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.915859,
+      "longitude": -84.232171,
+      "street_name": "Broadland Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.909077,
+      "longitude": -84.240215,
+      "street_name": "Highway 316",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.902296,
+      "longitude": -84.248258,
+      "street_name": "Atlanta Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.895512,
+      "longitude": -84.256303,
+      "street_name": "Greenwood Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.88873,
+      "longitude": -84.264346,
+      "street_name": "West Paces Ferry Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.881949,
+      "longitude": -84.272391,
+      "street_name": "Sugarloaf Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.875167,
+      "longitude": -84.280433,
+      "street_name": "GA-400 North",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.868384,
+      "longitude": -84.288478,
+      "street_name": "Northlake Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.861602,
+      "longitude": -84.29652,
+      "street_name": "Collier Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.854821,
+      "longitude": -84.304564,
+      "street_name": "Decatur Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.848038,
+      "longitude": -84.312609,
+      "street_name": "Roswell Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.841257,
+      "longitude": -84.320651,
+      "street_name": "Bethelview Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.834474,
+      "longitude": -84.328694,
+      "street_name": "North Decatur Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.827692,
+      "longitude": -84.336738,
+      "street_name": "Pine Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.820911,
+      "longitude": -84.344783,
+      "street_name": "I-675 South",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.814128,
+      "longitude": -84.352826,
+      "street_name": "Clairmont Road",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.807347,
+      "longitude": -84.360868,
+      "street_name": "Highway 42",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.800564,
+      "longitude": -84.368913,
+      "street_name": "I-575 North",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.793783,
+      "longitude": -84.376957,
+      "street_name": "Mansell Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.787,
+      "longitude": -84.385,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

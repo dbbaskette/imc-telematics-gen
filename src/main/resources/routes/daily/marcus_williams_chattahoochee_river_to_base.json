@@ -1,0 +1,160 @@
+{
+  "name": "marcus_williams_chattahoochee_river_to_base",
+  "description": "Marcus Williams: Chattahoochee_River \u2192 Base",
+  "start_location": "33.84, -84.45",
+  "end_location": "33.8451, -84.4728",
+  "waypoints": [
+    {
+      "latitude": 33.84,
+      "longitude": -84.45,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.840283,
+      "longitude": -84.451267,
+      "street_name": "Collier Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.840566,
+      "longitude": -84.452534,
+      "street_name": "Virginia Avenue",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.840851,
+      "longitude": -84.453801,
+      "street_name": "Clairmont Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.841134,
+      "longitude": -84.455066,
+      "street_name": "Windy Hill Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.841416,
+      "longitude": -84.456334,
+      "street_name": "West Peachtree Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.841701,
+      "longitude": -84.457601,
+      "street_name": "Highway 42",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.841983,
+      "longitude": -84.458867,
+      "street_name": "Peachtree Dunwoody Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.842268,
+      "longitude": -84.460133,
+      "street_name": "Buford Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.842549,
+      "longitude": -84.4614,
+      "street_name": "Old Peachtree Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.842832,
+      "longitude": -84.462667,
+      "street_name": "Bethelview Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.843117,
+      "longitude": -84.463934,
+      "street_name": "Oakdale Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.843399,
+      "longitude": -84.4652,
+      "street_name": "Highway 120",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.843684,
+      "longitude": -84.466468,
+      "street_name": "LaVista Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.843967,
+      "longitude": -84.467733,
+      "street_name": "North Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.844251,
+      "longitude": -84.468999,
+      "street_name": "14th Street",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.844533,
+      "longitude": -84.470267,
+      "street_name": "I-20 East",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.844817,
+      "longitude": -84.471534,
+      "street_name": "Pine Street",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.8451,
+      "longitude": -84.4728,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

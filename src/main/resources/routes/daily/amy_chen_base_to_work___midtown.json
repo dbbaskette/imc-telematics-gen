@@ -1,0 +1,328 @@
+{
+  "name": "amy_chen_base_to_work___midtown",
+  "description": "Amy Chen: Base \u2192 Work___Midtown",
+  "start_location": "33.6509, -84.2335",
+  "end_location": "33.785, -84.385",
+  "waypoints": [
+    {
+      "latitude": 33.6509,
+      "longitude": -84.2335,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.654339,
+      "longitude": -84.237384,
+      "street_name": "Chamblee Tucker Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.657776,
+      "longitude": -84.241269,
+      "street_name": "Jimmy Carter Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.661215,
+      "longitude": -84.245153,
+      "street_name": "Piedmont Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.664654,
+      "longitude": -84.249038,
+      "street_name": "Old Alabama Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.668092,
+      "longitude": -84.252923,
+      "street_name": "Memorial Drive",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.671531,
+      "longitude": -84.256808,
+      "street_name": "Spring Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.674969,
+      "longitude": -84.260691,
+      "street_name": "North Druid Hills Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "yield"
+    },
+    {
+      "latitude": 33.678408,
+      "longitude": -84.264576,
+      "street_name": "Highway 124",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.681847,
+      "longitude": -84.268461,
+      "street_name": "Scott Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.685286,
+      "longitude": -84.272347,
+      "street_name": "Jimmy Carter Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.688723,
+      "longitude": -84.27623,
+      "street_name": "Ponce de Leon Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.692161,
+      "longitude": -84.280115,
+      "street_name": "Jones Bridge Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.6956,
+      "longitude": -84.284,
+      "street_name": "Jones Bridge Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.699038,
+      "longitude": -84.287885,
+      "street_name": "Post Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.702478,
+      "longitude": -84.291768,
+      "street_name": "GA-400 South",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.705916,
+      "longitude": -84.295655,
+      "street_name": "Lenox Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.709355,
+      "longitude": -84.299538,
+      "street_name": "Ponce de Leon Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.712792,
+      "longitude": -84.303423,
+      "street_name": "Valley Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.716231,
+      "longitude": -84.307309,
+      "street_name": "Satellite Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.719668,
+      "longitude": -84.311191,
+      "street_name": "17th Street",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.723107,
+      "longitude": -84.315078,
+      "street_name": "I-985 North",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.726546,
+      "longitude": -84.318961,
+      "street_name": "16th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.729984,
+      "longitude": -84.322846,
+      "street_name": "Cumming City Beach Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.733423,
+      "longitude": -84.32673,
+      "street_name": "13th Street",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.736862,
+      "longitude": -84.330615,
+      "street_name": "Ponce de Leon Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.7403,
+      "longitude": -84.3345,
+      "street_name": "Decatur Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.743738,
+      "longitude": -84.338384,
+      "street_name": "8th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.747178,
+      "longitude": -84.34227,
+      "street_name": "Rockbridge Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.750615,
+      "longitude": -84.346154,
+      "street_name": "North Highland Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.754054,
+      "longitude": -84.350038,
+      "street_name": "Howell Mill Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.757492,
+      "longitude": -84.353923,
+      "street_name": "Highway 85",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.760931,
+      "longitude": -84.357808,
+      "street_name": "Spalding Drive",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.764369,
+      "longitude": -84.361692,
+      "street_name": "17th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.767808,
+      "longitude": -84.365576,
+      "street_name": "Drew Campground Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.771246,
+      "longitude": -84.369461,
+      "street_name": "Scenic Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.774685,
+      "longitude": -84.373345,
+      "street_name": "Clifton Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.778123,
+      "longitude": -84.377232,
+      "street_name": "Aqualand Drive",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.781562,
+      "longitude": -84.381115,
+      "street_name": "I-75 North",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.785,
+      "longitude": -84.385,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

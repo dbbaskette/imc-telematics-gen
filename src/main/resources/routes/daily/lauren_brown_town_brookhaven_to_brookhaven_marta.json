@@ -1,0 +1,128 @@
+{
+  "name": "lauren_brown_town_brookhaven_to_brookhaven_marta",
+  "description": "Lauren Brown: Town_Brookhaven \u2192 Brookhaven_Marta",
+  "start_location": "33.8636, -84.3383",
+  "end_location": "33.8608, -84.3391",
+  "waypoints": [
+    {
+      "latitude": 33.8636,
+      "longitude": -84.3383,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.863399,
+      "longitude": -84.338357,
+      "street_name": "Memorial Drive",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.8632,
+      "longitude": -84.338414,
+      "street_name": "Old Alabama Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.863001,
+      "longitude": -84.338471,
+      "street_name": "Peachtree Battle Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.862799,
+      "longitude": -84.338529,
+      "street_name": "Penn Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.8626,
+      "longitude": -84.338585,
+      "street_name": "Club Drive",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.8624,
+      "longitude": -84.338642,
+      "street_name": "Roswell Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.862201,
+      "longitude": -84.338701,
+      "street_name": "Steve Reynolds Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.861999,
+      "longitude": -84.338757,
+      "street_name": "Keith Bridge Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.861799,
+      "longitude": -84.338815,
+      "street_name": "14th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.8616,
+      "longitude": -84.338871,
+      "street_name": "Spring Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.861401,
+      "longitude": -84.338928,
+      "street_name": "Cumming City Beach Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.861201,
+      "longitude": -84.338986,
+      "street_name": "Auburn Avenue",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "stop_sign"
+    },
+    {
+      "latitude": 33.861,
+      "longitude": -84.339043,
+      "street_name": "Juniper Street",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.8608,
+      "longitude": -84.3391,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

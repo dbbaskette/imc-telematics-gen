@@ -643,6 +643,8 @@ function triggerSelectedAccident() {
             if (response.success) {
                 statusDiv.innerHTML = `✅ ${response.message}`;
                 statusDiv.className = 'accident-status success';
+                // Show the accident notification popup
+                showAccidentModal(response);
             } else {
                 statusDiv.innerHTML = `❌ ${response.message}`;
                 statusDiv.className = 'accident-status error';
@@ -878,8 +880,103 @@ function toggleDarkMode() {
     
     // Show feedback
     dashboardInstance.showStatusMessage(
-        `✅ Dark mode ${dashboardInstance.darkModeEnabled ? 'enabled' : 'disabled'}`, 
-        'success', 
+        `✅ Dark mode ${dashboardInstance.darkModeEnabled ? 'enabled' : 'disabled'}`,
+        'success',
         2000
     );
 }
+
+// Accident type display names and image mappings
+const ACCIDENT_TYPE_INFO = {
+    'REAR_ENDED': { name: 'Rear-Ended', description: 'Vehicle was struck from behind' },
+    'REAR_END_COLLISION': { name: 'Rear-End Collision', description: 'Vehicle struck another from behind' },
+    'T_BONE': { name: 'T-Bone Collision', description: 'Side impact from perpendicular vehicle' },
+    'SIDE_SWIPE': { name: 'Side-Swipe', description: 'Glancing side impact while traveling' },
+    'HEAD_ON': { name: 'Head-On Collision', description: 'Frontal collision with oncoming vehicle' },
+    'ROLLOVER': { name: 'Rollover', description: 'Vehicle rolled over during accident' },
+    'SINGLE_VEHICLE': { name: 'Single Vehicle', description: 'Collision with fixed object' },
+    'MULTI_VEHICLE_PILEUP': { name: 'Multi-Vehicle Pileup', description: 'Chain-reaction collision' },
+    'HIT_AND_RUN': { name: 'Hit and Run', description: 'Struck by vehicle that fled scene' }
+};
+
+// Show accident notification modal
+function showAccidentModal(accidentData) {
+    const modal = document.getElementById('accidentModal');
+    if (!modal) return;
+
+    const accidentType = accidentData.accident_type || 'UNKNOWN';
+    const typeInfo = ACCIDENT_TYPE_INFO[accidentType] || { name: accidentType, description: '' };
+
+    // Set accident image
+    const imgElement = document.getElementById('accidentImage');
+    imgElement.src = `/images/accidents/${accidentType.toLowerCase()}.png`;
+    imgElement.alt = typeInfo.name;
+    imgElement.onerror = function() {
+        // Fallback if image not found
+        this.src = '/images/accidents/default.png';
+        this.onerror = null;
+    };
+
+    // Set accident type name
+    document.getElementById('accidentTypeName').textContent = typeInfo.name;
+
+    // Set driver info
+    document.getElementById('accidentDriver').textContent =
+        accidentData.driver_name || `Driver ${accidentData.driver_id}`;
+
+    // Set vehicle
+    document.getElementById('accidentVehicle').textContent = accidentData.vehicle || 'Unknown';
+
+    // Set location
+    document.getElementById('accidentLocation').textContent = accidentData.street || 'Unknown location';
+
+    // Set speed at impact with speeding indicator
+    const speedAtImpact = accidentData.speed_at_impact || 0;
+    const speedLimit = accidentData.speed_limit || 0;
+    const speedCell = document.getElementById('accidentSpeed');
+    const wasSpeeding = speedAtImpact > speedLimit;
+    speedCell.textContent = `${speedAtImpact.toFixed(1)} mph${wasSpeeding ? ' ⚠️ SPEEDING' : ''}`;
+    speedCell.className = wasSpeeding ? 'speeding' : '';
+
+    // Set speed limit
+    document.getElementById('accidentSpeedLimit').textContent = `${speedLimit} mph`;
+
+    // Set G-force
+    const gForce = accidentData.g_force || 0;
+    document.getElementById('accidentGForce').textContent = `${gForce.toFixed(2)}g`;
+
+    // Set time
+    const timestamp = accidentData.timestamp ? new Date(accidentData.timestamp) : new Date();
+    document.getElementById('accidentTime').textContent = timestamp.toLocaleTimeString();
+
+    // Show modal
+    modal.style.display = 'flex';
+
+    // Auto-close after 10 seconds
+    setTimeout(() => {
+        closeAccidentModal();
+    }, 10000);
+}
+
+// Close accident modal
+function closeAccidentModal() {
+    const modal = document.getElementById('accidentModal');
+    if (modal) {
+        modal.style.display = 'none';
+    }
+}
+
+// Close modal when clicking outside
+document.addEventListener('click', function(event) {
+    const modal = document.getElementById('accidentModal');
+    if (event.target === modal) {
+        closeAccidentModal();
+    }
+});
+
+// Close modal with Escape key
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        closeAccidentModal();
+    }
+});

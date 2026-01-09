@@ -1,0 +1,328 @@
+{
+  "name": "nicole_foster_base_to_work___downtown",
+  "description": "Nicole Foster: Base \u2192 Work___Downtown",
+  "start_location": "33.689, -84.4533",
+  "end_location": "33.754, -84.39",
+  "waypoints": [
+    {
+      "latitude": 33.689,
+      "longitude": -84.4533,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.690666,
+      "longitude": -84.451677,
+      "street_name": "North Highland Avenue",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.692334,
+      "longitude": -84.450055,
+      "street_name": "Cheshire Bridge Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.693999,
+      "longitude": -84.448431,
+      "street_name": "Old Peachtree Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.695667,
+      "longitude": -84.446809,
+      "street_name": "Peachtree Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.697334,
+      "longitude": -84.445185,
+      "street_name": "Powers Ferry Road",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.699001,
+      "longitude": -84.443561,
+      "street_name": "Rockbridge Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.700666,
+      "longitude": -84.441939,
+      "street_name": "Highway 78",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.702333,
+      "longitude": -84.440315,
+      "street_name": "Satellite Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.704,
+      "longitude": -84.438693,
+      "street_name": "Stone Mountain Freeway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.705667,
+      "longitude": -84.43707,
+      "street_name": "19th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.707334,
+      "longitude": -84.435447,
+      "street_name": "Pilgrim Mill Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.708999,
+      "longitude": -84.433823,
+      "street_name": "Cypress Street",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.710667,
+      "longitude": -84.432201,
+      "street_name": "Northside Drive",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.712334,
+      "longitude": -84.430576,
+      "street_name": "Satellite Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.714,
+      "longitude": -84.428954,
+      "street_name": "Northpoint Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.715666,
+      "longitude": -84.427331,
+      "street_name": "Bethelview Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.717334,
+      "longitude": -84.425707,
+      "street_name": "North Decatur Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.719,
+      "longitude": -84.424085,
+      "street_name": "Chamblee Tucker Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.720667,
+      "longitude": -84.422461,
+      "street_name": "Greenwood Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.722333,
+      "longitude": -84.420838,
+      "street_name": "Satellite Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.723999,
+      "longitude": -84.419214,
+      "street_name": "Mansell Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.725667,
+      "longitude": -84.417592,
+      "street_name": "11th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.727333,
+      "longitude": -84.415969,
+      "street_name": "Edgewood Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.729,
+      "longitude": -84.414346,
+      "street_name": "Highway 124",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.730666,
+      "longitude": -84.412723,
+      "street_name": "Peachtree Dunwoody Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.732334,
+      "longitude": -84.4111,
+      "street_name": "Indian Trail Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.734,
+      "longitude": -84.409477,
+      "street_name": "Highway 78",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.735666,
+      "longitude": -84.407854,
+      "street_name": "Indian Trail Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.737334,
+      "longitude": -84.406231,
+      "street_name": "Marietta Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.739,
+      "longitude": -84.404608,
+      "street_name": "North Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.740667,
+      "longitude": -84.402985,
+      "street_name": "Dahlonega Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.742333,
+      "longitude": -84.401363,
+      "street_name": "Indian Trail Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.743999,
+      "longitude": -84.399739,
+      "street_name": "Peachtree Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.745668,
+      "longitude": -84.398116,
+      "street_name": "Monroe Drive",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.747332,
+      "longitude": -84.396493,
+      "street_name": "Emory Road",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.749,
+      "longitude": -84.39487,
+      "street_name": "Old Peachtree Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.750666,
+      "longitude": -84.393246,
+      "street_name": "18th Street",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.752334,
+      "longitude": -84.391623,
+      "street_name": "Glen Iris Drive",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.754,
+      "longitude": -84.39,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

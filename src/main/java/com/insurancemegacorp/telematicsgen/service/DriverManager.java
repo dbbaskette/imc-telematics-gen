@@ -445,7 +445,9 @@ public class DriverManager {
     }
     
     /**
-     * Manually trigger an accident for a specific driver (for demo purposes)
+     * Manually trigger an accident for a specific driver (for demo purposes).
+     * If the driver is stopped at a traffic light, they will be rear-ended.
+     * Otherwise, a random accident type is assigned.
      */
     public boolean triggerDemoAccident(int driverId) {
         Driver driver = drivers.stream()
@@ -470,9 +472,13 @@ public class DriverManager {
             return false;
         }
 
+        // Determine accident type based on current state
+        boolean stoppedAtLight = (driver.getCurrentState() == DriverState.TRAFFIC_STOP);
+        String accidentScenario = stoppedAtLight ? "REAR-ENDED at traffic stop" : "while driving";
+
         // Log pre-crash info
-        logger.info("🚨 Triggering accident for driver {} at {} mph on {} (speed limit: {} mph, state: {})",
-            driverId, String.format("%.1f", driver.getCurrentSpeed()),
+        logger.info("🚨 Triggering accident for driver {} {} at {} mph on {} (speed limit: {} mph, state: {})",
+            driverId, accidentScenario, String.format("%.1f", driver.getCurrentSpeed()),
             driver.getCurrentStreet(), driver.getSpeedLimit(), driver.getCurrentState());
 
         // Trigger the crash by setting state and recording event
@@ -482,30 +488,12 @@ public class DriverManager {
     }
 
     private void initializeRandomDriverState(Driver driver) {
-        double rand = random.nextDouble();
-        
-        if (rand < 0.4) {
-            // 40% chance - Start driving
-            driver.setCurrentState(DriverState.DRIVING);
-            driver.setCurrentSpeed(20.0 + random.nextDouble() * 25.0); // 20-45 mph
-            logger.debug("Driver {} initialized DRIVING at {:.1f} mph", 
-                driver.getDriverId(), driver.getCurrentSpeed());
-        } else if (rand < 0.7) {
-            // 30% chance - Start parked
-            driver.setCurrentState(DriverState.PARKED);
-            driver.setCurrentSpeed(0.0);
-            logger.debug("Driver {} initialized PARKED", driver.getDriverId());
-        } else if (rand < 0.85) {
-            // 15% chance - At a traffic stop
-            driver.setCurrentState(DriverState.TRAFFIC_STOP);
-            driver.setCurrentSpeed(0.0);
-            logger.debug("Driver {} initialized at TRAFFIC_STOP", driver.getDriverId());
-        } else {
-            // 15% chance - On a break
-            driver.setCurrentState(DriverState.BREAK_TIME);
-            driver.setCurrentSpeed(0.0);
-            logger.debug("Driver {} initialized on BREAK_TIME", driver.getDriverId());
-        }
+        // All drivers start DRIVING for demo purposes - they can take breaks and
+        // stop at lights naturally as the simulation progresses
+        driver.setCurrentState(DriverState.DRIVING);
+        driver.setCurrentSpeed(20.0 + random.nextDouble() * 25.0); // 20-45 mph
+        logger.debug("Driver {} initialized DRIVING at {:.1f} mph",
+            driver.getDriverId(), driver.getCurrentSpeed());
     }
 
     private DriverState selectRandomStopState() {

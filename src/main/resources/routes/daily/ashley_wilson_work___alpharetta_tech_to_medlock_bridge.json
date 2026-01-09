@@ -1,0 +1,328 @@
+{
+  "name": "ashley_wilson_work___alpharetta_tech_to_medlock_bridge",
+  "description": "Ashley Wilson: Work___Alpharetta_Tech \u2192 Medlock_Bridge",
+  "start_location": "34.06, -84.27",
+  "end_location": "34.0162, -84.1869",
+  "waypoints": [
+    {
+      "latitude": 34.06,
+      "longitude": -84.27,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.058876,
+      "longitude": -84.267869,
+      "street_name": "Jones Bridge Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.057755,
+      "longitude": -84.265739,
+      "street_name": "Scenic Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.056631,
+      "longitude": -84.263607,
+      "street_name": "Lilburn Stone Mountain Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.055508,
+      "longitude": -84.261476,
+      "street_name": "Broadland Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.054384,
+      "longitude": -84.259347,
+      "street_name": "Beaver Ruin Road",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.053262,
+      "longitude": -84.257215,
+      "street_name": "13th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.052138,
+      "longitude": -84.255085,
+      "street_name": "Lanier Islands Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.051016,
+      "longitude": -84.252954,
+      "street_name": "Peachtree Battle Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.049892,
+      "longitude": -84.250823,
+      "street_name": "I-20 East",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.04877,
+      "longitude": -84.248692,
+      "street_name": "Keith Bridge Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.047645,
+      "longitude": -84.246562,
+      "street_name": "North Highland Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.046523,
+      "longitude": -84.24443,
+      "street_name": "Sugarloaf Mills Circle",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.045401,
+      "longitude": -84.2423,
+      "street_name": "Post Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.044278,
+      "longitude": -84.240169,
+      "street_name": "Peachtree Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.043154,
+      "longitude": -84.238039,
+      "street_name": "Abbotts Bridge Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.042031,
+      "longitude": -84.235908,
+      "street_name": "Cumberland Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.040908,
+      "longitude": -84.233778,
+      "street_name": "Holiday Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.039784,
+      "longitude": -84.231646,
+      "street_name": "West Paces Ferry Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.038662,
+      "longitude": -84.229516,
+      "street_name": "I-20 East",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.037538,
+      "longitude": -84.227385,
+      "street_name": "Perimeter Center East",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.036416,
+      "longitude": -84.225254,
+      "street_name": "Lanier Islands Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.035292,
+      "longitude": -84.223124,
+      "street_name": "Oakdale Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.03417,
+      "longitude": -84.220992,
+      "street_name": "Ponce de Leon Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.033046,
+      "longitude": -84.218862,
+      "street_name": "Club Drive",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.031924,
+      "longitude": -84.21673,
+      "street_name": "Old Milton Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.0308,
+      "longitude": -84.214601,
+      "street_name": "Club Drive",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.029677,
+      "longitude": -84.212469,
+      "street_name": "Mansell Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.028555,
+      "longitude": -84.210338,
+      "street_name": "Druid Hills Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.027431,
+      "longitude": -84.208207,
+      "street_name": "Penn Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.026308,
+      "longitude": -84.206078,
+      "street_name": "I-285 (Perimeter)",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.025184,
+      "longitude": -84.203945,
+      "street_name": "Cumming City Beach Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.024062,
+      "longitude": -84.201815,
+      "street_name": "Lindbergh Drive",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.022938,
+      "longitude": -84.199685,
+      "street_name": "Candler Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.021815,
+      "longitude": -84.197553,
+      "street_name": "Argonne Avenue",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.020693,
+      "longitude": -84.195424,
+      "street_name": "12th Street",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.01957,
+      "longitude": -84.193292,
+      "street_name": "Samples Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.018447,
+      "longitude": -84.191161,
+      "street_name": "Howell Mill Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.017323,
+      "longitude": -84.18903,
+      "street_name": "Briarcliff Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.0162,
+      "longitude": -84.1869,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

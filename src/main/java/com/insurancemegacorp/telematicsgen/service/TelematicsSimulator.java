@@ -1,6 +1,7 @@
 package com.insurancemegacorp.telematicsgen.service;
 
 import com.insurancemegacorp.telematicsgen.model.Driver;
+import com.insurancemegacorp.telematicsgen.model.DriverState;
 import com.insurancemegacorp.telematicsgen.model.FlatTelematicsMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -89,11 +90,23 @@ public class TelematicsSimulator {
                 FlatTelematicsMessage message;
                 
                 // Check if this driver should have a crash event
-                if (selectedDriver.getCurrentState().name().equals("DRIVING") &&
-                    shouldSimulateCrash(selectedDriver)) {
+                // Crashes can happen when DRIVING or at TRAFFIC_STOP (e.g., rear-ended at a light)
+                DriverState state = selectedDriver.getCurrentState();
+                boolean canCrash = state == DriverState.DRIVING || state == DriverState.TRAFFIC_STOP;
 
-                    logger.warn("💥💥💥 CRASH EVENT - Driver {}! 💥💥💥", selectedDriver.getDriverId());
-                    message = dataGenerator.generateCrashEventData(selectedDriver);
+                if (canCrash && shouldSimulateCrash(selectedDriver)) {
+                    boolean stoppedAtLight = (state == DriverState.TRAFFIC_STOP);
+                    if (stoppedAtLight) {
+                        logger.warn("💥💥💥 CRASH EVENT - Driver {} REAR-ENDED at traffic stop! 💥💥💥",
+                            selectedDriver.getDriverId());
+                        // When stopped at light, generate a rear-ended crash
+                        message = dataGenerator.generateCrashEventData(selectedDriver,
+                            com.insurancemegacorp.telematicsgen.model.AccidentType.REAR_ENDED);
+                    } else {
+                        logger.warn("💥💥💥 CRASH EVENT - Driver {}! 💥💥💥", selectedDriver.getDriverId());
+                        // When driving, use random accident type
+                        message = dataGenerator.generateCrashEventData(selectedDriver);
+                    }
                     // Record crash with the accident type from the generated message
                     selectedDriver.recordCrashEvent(message.accidentType());
                 } else {

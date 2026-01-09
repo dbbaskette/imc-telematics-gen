@@ -32,12 +32,50 @@ public class TelematicsDataGenerator {
     }
 
     /**
-     * Generate crash event data with a random accident type.
+     * Generate crash event data with a weighted random accident type.
+     * Weights are based on real-world accident frequency statistics.
      */
     public FlatTelematicsMessage generateCrashEventData(Driver driver) {
-        AccidentType[] types = AccidentType.values();
-        AccidentType accidentType = types[random.nextInt(types.length)];
+        AccidentType accidentType = selectWeightedAccidentType();
         return generateCrashEventData(driver, accidentType);
+    }
+
+    /**
+     * Select an accident type using weighted probabilities based on real-world statistics.
+     * For MOVING drivers only - stopped drivers always get REAR_ENDED.
+     * Note: REAR_ENDED (being hit from behind) is rare when actively driving,
+     * so it's excluded here - use the specific method for stopped vehicles.
+     */
+    private AccidentType selectWeightedAccidentType() {
+        // Weights for MOVING vehicles (total = 100)
+        // REAR_ENDED excluded - that's for stopped vehicles
+        double roll = random.nextDouble() * 100;
+
+        if (roll < 35) {
+            // 35% - Rear-end collision (hitting someone ahead)
+            return AccidentType.REAR_END_COLLISION;
+        } else if (roll < 55) {
+            // 20% - Side-swipes common on highways and lane changes
+            return AccidentType.SIDE_SWIPE;
+        } else if (roll < 73) {
+            // 18% - T-bone at intersections
+            return AccidentType.T_BONE;
+        } else if (roll < 88) {
+            // 15% - Single vehicle (poles, barriers, run off road)
+            return AccidentType.SINGLE_VEHICLE;
+        } else if (roll < 94) {
+            // 6% - Hit and run
+            return AccidentType.HIT_AND_RUN;
+        } else if (roll < 97) {
+            // 3% - Multi-vehicle pileup (rare)
+            return AccidentType.MULTI_VEHICLE_PILEUP;
+        } else if (roll < 99) {
+            // 2% - Head-on (rare but severe)
+            return AccidentType.HEAD_ON;
+        } else {
+            // 1% - Rollover (rare)
+            return AccidentType.ROLLOVER;
+        }
     }
 
     /**

@@ -1,0 +1,184 @@
+{
+  "name": "benjamin_rivera_lake_lanier_to_collection_at_forsyth",
+  "description": "Benjamin Rivera: Lake_Lanier \u2192 Collection_At_Forsyth",
+  "start_location": "34.2104, -84.1557",
+  "end_location": "34.1975, -84.1367",
+  "waypoints": [
+    {
+      "latitude": 34.2104,
+      "longitude": -84.1557,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.209785,
+      "longitude": -84.154795,
+      "street_name": "Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.209172,
+      "longitude": -84.153891,
+      "street_name": "Powers Ferry Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.208556,
+      "longitude": -84.152985,
+      "street_name": "Canton Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.207942,
+      "longitude": -84.152081,
+      "street_name": "Pine Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.207328,
+      "longitude": -84.151176,
+      "street_name": "Highway 5",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.206713,
+      "longitude": -84.150271,
+      "street_name": "Club Drive",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.2061,
+      "longitude": -84.149367,
+      "street_name": "Emory Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.205485,
+      "longitude": -84.148461,
+      "street_name": "Johnson Ferry Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.204872,
+      "longitude": -84.147556,
+      "street_name": "12th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.204257,
+      "longitude": -84.146653,
+      "street_name": "18th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.203642,
+      "longitude": -84.145747,
+      "street_name": "Lindbergh Drive",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.203029,
+      "longitude": -84.144843,
+      "street_name": "Habersham Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.202415,
+      "longitude": -84.143938,
+      "street_name": "I-985 North",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.201799,
+      "longitude": -84.143034,
+      "street_name": "11th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.201185,
+      "longitude": -84.142128,
+      "street_name": "Monroe Circle",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.200572,
+      "longitude": -84.141224,
+      "street_name": "6th Street",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.199957,
+      "longitude": -84.140318,
+      "street_name": "I-285 (Perimeter)",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.199342,
+      "longitude": -84.139413,
+      "street_name": "Cheshire Bridge Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.198728,
+      "longitude": -84.138509,
+      "street_name": "Duluth Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.198114,
+      "longitude": -84.137604,
+      "street_name": "Penn Avenue",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.1975,
+      "longitude": -84.1367,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

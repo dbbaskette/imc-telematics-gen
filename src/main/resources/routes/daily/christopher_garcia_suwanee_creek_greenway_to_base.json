@@ -1,0 +1,128 @@
+{
+  "name": "christopher_garcia_suwanee_creek_greenway_to_base",
+  "description": "Christopher Garcia: Suwanee_Creek_Greenway \u2192 Base",
+  "start_location": "34.045, -84.06",
+  "end_location": "34.0515, -84.0713",
+  "waypoints": [
+    {
+      "latitude": 34.045,
+      "longitude": -84.06,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.045465,
+      "longitude": -84.060806,
+      "street_name": "Peachtree Battle Avenue",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.045928,
+      "longitude": -84.061614,
+      "street_name": "I-85 North",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.046392,
+      "longitude": -84.062422,
+      "street_name": "Circle 75 Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.046858,
+      "longitude": -84.063228,
+      "street_name": "Mall of Georgia Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.047322,
+      "longitude": -84.064036,
+      "street_name": "Glenwood Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.047786,
+      "longitude": -84.064842,
+      "street_name": "Piedmont Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.04825,
+      "longitude": -84.06565,
+      "street_name": "Roswell Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.048714,
+      "longitude": -84.066457,
+      "street_name": "Collier Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.049179,
+      "longitude": -84.067265,
+      "street_name": "Highway 141 (Peachtree Rd)",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.049643,
+      "longitude": -84.068071,
+      "street_name": "North Decatur Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.050108,
+      "longitude": -84.068879,
+      "street_name": "Peachtree Street NW",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.050571,
+      "longitude": -84.069686,
+      "street_name": "Sawnee Avenue",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "stop_sign"
+    },
+    {
+      "latitude": 34.051037,
+      "longitude": -84.070493,
+      "street_name": "Johnson Ferry Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.0515,
+      "longitude": -84.0713,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "name": "david_lee_gwinnett_place_mall_to_infinite_energy_center",
+  "description": "David Lee: Gwinnett_Place_Mall \u2192 Infinite_Energy_Center",
+  "start_location": "33.9432, -84.0721",
+  "end_location": "33.961, -84.074",
+  "waypoints": [
+    {
+      "latitude": 33.9432,
+      "longitude": -84.0721,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.944471,
+      "longitude": -84.072235,
+      "street_name": "Canton Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.945743,
+      "longitude": -84.07237,
+      "street_name": "Peachtree Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.947015,
+      "longitude": -84.072508,
+      "street_name": "Steve Reynolds Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.948286,
+      "longitude": -84.072643,
+      "street_name": "McFarland Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.949557,
+      "longitude": -84.072779,
+      "street_name": "Jimmy Carter Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.950829,
+      "longitude": -84.072914,
+      "street_name": "Sawnee Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.952099,
+      "longitude": -84.073051,
+      "street_name": "Steve Reynolds Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.953371,
+      "longitude": -84.073185,
+      "street_name": "Spot Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.954643,
+      "longitude": -84.073322,
+      "street_name": "Perimeter Center West",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.955915,
+      "longitude": -84.073457,
+      "street_name": "Clairmont Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.957187,
+      "longitude": -84.073593,
+      "street_name": "Auburn Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.958456,
+      "longitude": -84.073729,
+      "street_name": "Highway 42",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.959728,
+      "longitude": -84.073863,
+      "street_name": "Roswell Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.961,
+      "longitude": -84.074,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

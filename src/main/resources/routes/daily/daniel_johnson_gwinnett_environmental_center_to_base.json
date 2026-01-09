@@ -1,0 +1,232 @@
+{
+  "name": "daniel_johnson_gwinnett_environmental_center_to_base",
+  "description": "Daniel Johnson: Gwinnett_Environmental_Center \u2192 Base",
+  "start_location": "33.938, -84.067",
+  "end_location": "33.9562, -84.0445",
+  "waypoints": [
+    {
+      "latitude": 33.938,
+      "longitude": -84.067,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.938675,
+      "longitude": -84.066167,
+      "street_name": "Memorial Drive",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.939348,
+      "longitude": -84.065333,
+      "street_name": "8th Street",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.940023,
+      "longitude": -84.064499,
+      "street_name": "Peachtree Dunwoody Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.940697,
+      "longitude": -84.063666,
+      "street_name": "Valley Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.941369,
+      "longitude": -84.062834,
+      "street_name": "Habersham Road",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.942045,
+      "longitude": -84.061999,
+      "street_name": "Dallas Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.942719,
+      "longitude": -84.061167,
+      "street_name": "Marietta Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.943392,
+      "longitude": -84.060333,
+      "street_name": "Decatur Street",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.944066,
+      "longitude": -84.059499,
+      "street_name": "Glenwood Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.94474,
+      "longitude": -84.058666,
+      "street_name": "8th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.945416,
+      "longitude": -84.057833,
+      "street_name": "Myrtle Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.946089,
+      "longitude": -84.057,
+      "street_name": "Peachtree Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.946764,
+      "longitude": -84.056167,
+      "street_name": "14th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.947438,
+      "longitude": -84.055333,
+      "street_name": "Buford Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.948111,
+      "longitude": -84.054501,
+      "street_name": "Monroe Drive",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.948785,
+      "longitude": -84.053666,
+      "street_name": "Scott Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.949459,
+      "longitude": -84.052833,
+      "street_name": "Sawnee Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.950133,
+      "longitude": -84.052,
+      "street_name": "Drew Campground Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.950808,
+      "longitude": -84.051166,
+      "street_name": "Ponce de Leon Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.951482,
+      "longitude": -84.050333,
+      "street_name": "Union Hill Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.952155,
+      "longitude": -84.0495,
+      "street_name": "Perimeter Center East",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.95283,
+      "longitude": -84.048666,
+      "street_name": "Candler Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.953504,
+      "longitude": -84.047833,
+      "street_name": "Canton Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.954179,
+      "longitude": -84.047,
+      "street_name": "Clairmont Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.954852,
+      "longitude": -84.046167,
+      "street_name": "16th Street",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.955525,
+      "longitude": -84.045334,
+      "street_name": "Rock Springs Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.9562,
+      "longitude": -84.0445,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

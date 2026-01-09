@@ -1,0 +1,128 @@
+{
+  "name": "samantha_hayes_city_springs_to_hammond_park",
+  "description": "Samantha Hayes: City_Springs \u2192 Hammond_Park",
+  "start_location": "33.9325, -84.3638",
+  "end_location": "33.9435, -84.3525",
+  "waypoints": [
+    {
+      "latitude": 33.9325,
+      "longitude": -84.3638,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.933285,
+      "longitude": -84.362994,
+      "street_name": "Monroe Drive",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.934071,
+      "longitude": -84.362186,
+      "street_name": "Powers Ferry Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.934858,
+      "longitude": -84.361379,
+      "street_name": "I-575 North",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.935644,
+      "longitude": -84.360571,
+      "street_name": "Austell Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.936428,
+      "longitude": -84.359764,
+      "street_name": "19th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.937214,
+      "longitude": -84.358958,
+      "street_name": "11th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.938001,
+      "longitude": -84.35815,
+      "street_name": "West Paces Ferry Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.938786,
+      "longitude": -84.357343,
+      "street_name": "I-85 North",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.939571,
+      "longitude": -84.356536,
+      "street_name": "17th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.940357,
+      "longitude": -84.355728,
+      "street_name": "Johnson Ferry Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.941142,
+      "longitude": -84.354922,
+      "street_name": "Druid Hills Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.941929,
+      "longitude": -84.354115,
+      "street_name": "Emory Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "stop_sign"
+    },
+    {
+      "latitude": 33.942715,
+      "longitude": -84.353307,
+      "street_name": "Northside Drive",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.9435,
+      "longitude": -84.3525,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

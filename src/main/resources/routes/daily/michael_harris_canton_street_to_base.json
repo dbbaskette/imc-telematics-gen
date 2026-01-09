@@ -1,0 +1,128 @@
+{
+  "name": "michael_harris_canton_street_to_base",
+  "description": "Michael Harris: Canton_Street \u2192 Base",
+  "start_location": "34.025, -84.3565",
+  "end_location": "34.0232, -84.3616",
+  "waypoints": [
+    {
+      "latitude": 34.025,
+      "longitude": -84.3565,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.024871,
+      "longitude": -84.356864,
+      "street_name": "Scenic Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.024742,
+      "longitude": -84.357229,
+      "street_name": "I-285 (Perimeter)",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.024614,
+      "longitude": -84.357592,
+      "street_name": "Cheshire Bridge Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.024487,
+      "longitude": -84.357958,
+      "street_name": "Marietta Street",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.024357,
+      "longitude": -84.358322,
+      "street_name": "13th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.024228,
+      "longitude": -84.358685,
+      "street_name": "Clifton Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.0241,
+      "longitude": -84.359051,
+      "street_name": "Glenwood Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.023971,
+      "longitude": -84.359415,
+      "street_name": "Memorial Drive",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.023842,
+      "longitude": -84.359779,
+      "street_name": "North Highland Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.023715,
+      "longitude": -84.360143,
+      "street_name": "7th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.023587,
+      "longitude": -84.360507,
+      "street_name": "Lindbergh Drive",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.023457,
+      "longitude": -84.360872,
+      "street_name": "Pharr Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "stop_sign"
+    },
+    {
+      "latitude": 34.023329,
+      "longitude": -84.361235,
+      "street_name": "Indian Trail Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.0232,
+      "longitude": -84.3616,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

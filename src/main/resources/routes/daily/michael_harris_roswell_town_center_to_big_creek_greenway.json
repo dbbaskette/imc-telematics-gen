@@ -1,0 +1,200 @@
+{
+  "name": "michael_harris_roswell_town_center_to_big_creek_greenway",
+  "description": "Michael Harris: Roswell_Town_Center \u2192 Big_Creek_Greenway",
+  "start_location": "34.0238, -84.35",
+  "end_location": "34.04, -84.33",
+  "waypoints": [
+    {
+      "latitude": 34.0238,
+      "longitude": -84.35,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.024505,
+      "longitude": -84.349131,
+      "street_name": "Myrtle Street",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.025208,
+      "longitude": -84.34826,
+      "street_name": "Johnson Ferry Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.025912,
+      "longitude": -84.34739,
+      "street_name": "Dallas Highway",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.026617,
+      "longitude": -84.346521,
+      "street_name": "North Decatur Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.027321,
+      "longitude": -84.345651,
+      "street_name": "Lower Roswell Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.028026,
+      "longitude": -84.344783,
+      "street_name": "Browns Bridge Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.028731,
+      "longitude": -84.343913,
+      "street_name": "Peachtree Battle Avenue",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.029436,
+      "longitude": -84.343044,
+      "street_name": "Collier Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.030139,
+      "longitude": -84.342174,
+      "street_name": "Drew Campground Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.030844,
+      "longitude": -84.341304,
+      "street_name": "Collier Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.031547,
+      "longitude": -84.340435,
+      "street_name": "North Decatur Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.032252,
+      "longitude": -84.339565,
+      "street_name": "Freedom Parkway",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.032957,
+      "longitude": -84.338697,
+      "street_name": "Indian Trail Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.03366,
+      "longitude": -84.337826,
+      "street_name": "16th Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.034366,
+      "longitude": -84.336956,
+      "street_name": "Town Center Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.03507,
+      "longitude": -84.336086,
+      "street_name": "Piedmont Circle",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.035773,
+      "longitude": -84.335217,
+      "street_name": "Decatur Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.036478,
+      "longitude": -84.334348,
+      "street_name": "West Peachtree Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.037182,
+      "longitude": -84.333479,
+      "street_name": "Pilgrim Mill Road",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.037887,
+      "longitude": -84.332608,
+      "street_name": "Indian Trail Road",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 34.038591,
+      "longitude": -84.331739,
+      "street_name": "Westminster Drive",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "stop_sign"
+    },
+    {
+      "latitude": 34.039295,
+      "longitude": -84.330869,
+      "street_name": "Emory Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 34.04,
+      "longitude": -84.33,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

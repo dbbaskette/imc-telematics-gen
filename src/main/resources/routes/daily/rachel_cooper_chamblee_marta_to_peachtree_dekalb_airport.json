@@ -1,0 +1,128 @@
+{
+  "name": "rachel_cooper_chamblee_marta_to_peachtree_dekalb_airport",
+  "description": "Rachel Cooper: Chamblee_Marta \u2192 Peachtree_Dekalb_Airport",
+  "start_location": "33.8878, -84.3066",
+  "end_location": "33.8756, -84.302",
+  "waypoints": [
+    {
+      "latitude": 33.8878,
+      "longitude": -84.3066,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.886928,
+      "longitude": -84.306272,
+      "street_name": "Ralph McGill Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.886057,
+      "longitude": -84.305942,
+      "street_name": "Glenwood Avenue",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.885186,
+      "longitude": -84.305614,
+      "street_name": "Aqualand Drive",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.884314,
+      "longitude": -84.305286,
+      "street_name": "8th Street",
+      "speed_limit": 35,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.883443,
+      "longitude": -84.304957,
+      "street_name": "Juniper Street",
+      "speed_limit": 35,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.882572,
+      "longitude": -84.304628,
+      "street_name": "Highway 120",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.881701,
+      "longitude": -84.304299,
+      "street_name": "Powder Springs Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.880828,
+      "longitude": -84.303972,
+      "street_name": "I-675 South",
+      "speed_limit": 70,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.879958,
+      "longitude": -84.303642,
+      "street_name": "Tuxedo Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.879086,
+      "longitude": -84.303315,
+      "street_name": "Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.878214,
+      "longitude": -84.302986,
+      "street_name": "Highway 85",
+      "speed_limit": 55,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.877343,
+      "longitude": -84.302657,
+      "street_name": "Piedmont Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "stop_sign"
+    },
+    {
+      "latitude": 33.876471,
+      "longitude": -84.302328,
+      "street_name": "Clairmont Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.8756,
+      "longitude": -84.302,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

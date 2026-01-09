@@ -117,8 +117,35 @@
         </div>
     </div>
 
+    <!-- Accident Notification Modal -->
+    <div id="accidentModal" class="accident-modal" style="display: none;">
+        <div class="accident-modal-content">
+            <span class="accident-modal-close" onclick="closeAccidentModal()">&times;</span>
+            <div class="accident-modal-header">
+                <h2>🚨 ACCIDENT REPORTED</h2>
+            </div>
+            <div class="accident-modal-body">
+                <div class="accident-image-container">
+                    <img id="accidentImage" src="" alt="Accident Type" class="accident-type-image" />
+                </div>
+                <div class="accident-details">
+                    <div class="accident-type-name" id="accidentTypeName"></div>
+                    <table class="accident-info-table">
+                        <tr><td class="label">Driver:</td><td id="accidentDriver"></td></tr>
+                        <tr><td class="label">Vehicle:</td><td id="accidentVehicle"></td></tr>
+                        <tr><td class="label">Location:</td><td id="accidentLocation"></td></tr>
+                        <tr><td class="label">Speed at Impact:</td><td id="accidentSpeed"></td></tr>
+                        <tr><td class="label">Speed Limit:</td><td id="accidentSpeedLimit"></td></tr>
+                        <tr><td class="label">G-Force:</td><td id="accidentGForce"></td></tr>
+                        <tr><td class="label">Time:</td><td id="accidentTime"></td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Scripts -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" 
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
             integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>

@@ -3,180 +3,300 @@
     {
       "driver_id": 400001,
       "driver_name": "Sarah Chen",
-      "base_location": {"name": "Home", "latitude": 33.7701, "longitude": -84.3876},
+      "base_location": {"name": "Home - Alpharetta", "latitude": 34.0754, "longitude": -84.2941},
       "remote_locations": [
-        {"id": "A", "name": "Work - Tech Company", "latitude": 33.7580, "longitude": -84.3700, "description": "Technology park office"},
-        {"id": "B", "name": "Grocery Store", "latitude": 33.7650, "longitude": -84.3780, "description": "Weekly grocery shopping"},
-        {"id": "C", "name": "Gym", "latitude": 33.7620, "longitude": -84.3850, "description": "Fitness center"},
-        {"id": "D", "name": "Parents House", "latitude": 33.7750, "longitude": -84.3900, "description": "Family visit"}
+        {"id": "A", "name": "Work - Tech Park", "latitude": 33.7800, "longitude": -84.3880, "description": "Downtown Atlanta tech company"},
+        {"id": "B", "name": "Avalon Shopping", "latitude": 34.0712, "longitude": -84.2767, "description": "Upscale retail"},
+        {"id": "C", "name": "North Point Mall", "latitude": 34.0583, "longitude": -84.2946, "description": "Shopping mall"},
+        {"id": "D", "name": "Alpharetta Gym", "latitude": 34.0820, "longitude": -84.2900, "description": "Fitness center"}
       ],
       "standard_sequence": ["A", "B", "C", "D"], "sequence_probability": 0.9
     },
     {
       "driver_id": 400002,
-      "driver_name": "Emily Carter", 
-      "base_location": {"name": "Home", "latitude": 33.7490, "longitude": -84.3880},
+      "driver_name": "Emily Carter",
+      "base_location": {"name": "Home - Sandy Springs", "latitude": 33.9243, "longitude": -84.3786},
       "remote_locations": [
-        {"id": "A", "name": "Work - Downtown Office", "latitude": 33.7550, "longitude": -84.3900, "description": "Financial district office"},
-        {"id": "B", "name": "Shopping Mall", "latitude": 33.7400, "longitude": -84.3750, "description": "Shopping center"},
-        {"id": "C", "name": "Coffee Shop", "latitude": 33.7520, "longitude": -84.3820, "description": "Regular coffee meetup"},
-        {"id": "D", "name": "Library", "latitude": 33.7460, "longitude": -84.3950, "description": "Public library"}
+        {"id": "A", "name": "Work - Perimeter", "latitude": 33.9215, "longitude": -84.3420, "description": "Perimeter Mall area office"},
+        {"id": "B", "name": "Trader Joe's Sandy Springs", "latitude": 33.9350, "longitude": -84.3580, "description": "Grocery shopping"},
+        {"id": "C", "name": "Sandy Springs MARTA", "latitude": 33.9325, "longitude": -84.3507, "description": "Transit station"},
+        {"id": "D", "name": "Chastain Park", "latitude": 33.8857, "longitude": -84.3785, "description": "Recreation"}
       ],
       "standard_sequence": ["A", "B", "C", "D"], "sequence_probability": 0.9
     },
     {
       "driver_id": 400003,
-      "driver_name": "Derek Johnson",
-      "base_location": {"name": "Home", "latitude": 33.7550, "longitude": -84.3900},
+      "driver_name": "Benjamin Rivera",
+      "base_location": {"name": "Home - Cumming", "latitude": 34.2070, "longitude": -84.1400},
       "remote_locations": [
-        {"id": "A", "name": "Work - Hospital", "latitude": 33.7480, "longitude": -84.3850, "description": "Medical center"},
-        {"id": "B", "name": "Pharmacy", "latitude": 33.7600, "longitude": -84.3780, "description": "Prescription pickup"},
-        {"id": "C", "name": "Restaurant", "latitude": 33.7520, "longitude": -84.3920, "description": "Dinner location"},
-        {"id": "D", "name": "Gas Station", "latitude": 33.7580, "longitude": -84.3860, "description": "Fuel stop"}
+        {"id": "A", "name": "Work - Buckhead", "latitude": 33.8484, "longitude": -84.3782, "description": "Buckhead financial district"},
+        {"id": "B", "name": "Mall of Georgia", "latitude": 34.1289, "longitude": -84.0561, "description": "Large mall"},
+        {"id": "C", "name": "Lake Lanier", "latitude": 34.2104, "longitude": -84.1557, "description": "Lake recreation"},
+        {"id": "D", "name": "Collection at Forsyth", "latitude": 34.1975, "longitude": -84.1367, "description": "Shopping"}
       ],
       "standard_sequence": ["A", "B", "C", "D"], "sequence_probability": 0.9
     },
     {
       "driver_id": 400004,
-      "driver_name": "Jessica Liu",
-      "base_location": {"name": "Home", "latitude": 33.7600, "longitude": -84.3850},
+      "driver_name": "Michael Harris",
+      "base_location": {"name": "Home - Roswell", "latitude": 34.0232, "longitude": -84.3616},
       "remote_locations": [
-        {"id": "A", "name": "Work - Law Firm", "latitude": 33.7500, "longitude": -84.3800, "description": "Legal office"},
-        {"id": "B", "name": "Bank", "latitude": 33.7650, "longitude": -84.3900, "description": "Banking services"},
-        {"id": "C", "name": "Dry Cleaner", "latitude": 33.7580, "longitude": -84.3820, "description": "Clothing services"},
-        {"id": "D", "name": "Bookstore", "latitude": 33.7620, "longitude": -84.3880, "description": "Book shopping"}
+        {"id": "A", "name": "Work - Midtown Atlanta", "latitude": 33.7853, "longitude": -84.3832, "description": "Midtown office tower"},
+        {"id": "B", "name": "Roswell Town Center", "latitude": 34.0238, "longitude": -84.3500, "description": "Local shopping"},
+        {"id": "C", "name": "Big Creek Greenway", "latitude": 34.0400, "longitude": -84.3300, "description": "Trail running"},
+        {"id": "D", "name": "Canton Street", "latitude": 34.0250, "longitude": -84.3565, "description": "Restaurants"}
       ],
       "standard_sequence": ["A", "B", "C", "D"], "sequence_probability": 0.9
     },
     {
       "driver_id": 400005,
-      "driver_name": "Michael Wang",
-      "base_location": {"name": "Home", "latitude": 33.7650, "longitude": -84.3920},
+      "driver_name": "David Lee",
+      "base_location": {"name": "Home - Duluth", "latitude": 34.0032, "longitude": -84.1446},
       "remote_locations": [
-        {"id": "A", "name": "Work - Consulting", "latitude": 33.7520, "longitude": -84.3870, "description": "Business consulting office"},
-        {"id": "B", "name": "Electronics Store", "latitude": 33.7600, "longitude": -84.3800, "description": "Tech shopping"},
-        {"id": "C", "name": "Barber Shop", "latitude": 33.7680, "longitude": -84.3860, "description": "Grooming services"},
-        {"id": "D", "name": "Friend's House", "latitude": 33.7620, "longitude": -84.3940, "description": "Social visit"}
+        {"id": "A", "name": "Work - Tech Square", "latitude": 33.7770, "longitude": -84.3890, "description": "Georgia Tech area"},
+        {"id": "B", "name": "Gwinnett Place Mall", "latitude": 33.9432, "longitude": -84.0721, "description": "Asian mall"},
+        {"id": "C", "name": "Infinite Energy Center", "latitude": 33.9610, "longitude": -84.0740, "description": "Arena events"},
+        {"id": "D", "name": "Buford Highway Food", "latitude": 33.9100, "longitude": -84.2800, "description": "Restaurants"}
       ],
       "standard_sequence": ["A", "B", "C", "D"], "sequence_probability": 0.9
     },
     {
       "driver_id": 400006,
-      "driver_name": "Ashley Brown",
-      "base_location": {"name": "Home - Cumming", "latitude": 34.2070, "longitude": -84.1400},
+      "driver_name": "Jessica Thompson",
+      "base_location": {"name": "Home - Kennesaw", "latitude": 34.0234, "longitude": -84.6155},
       "remote_locations": [
-        {"id": "A", "name": "Work - Atlanta Marketing Agency", "latitude": 33.7550, "longitude": -84.3850, "description": "Downtown Atlanta commute"},
-        {"id": "B", "name": "Mall of Georgia", "latitude": 34.1289, "longitude": -84.0561, "description": "Suburban shopping"},
-        {"id": "C", "name": "Lake Lanier", "latitude": 34.2104, "longitude": -84.1557, "description": "Recreation"},
-        {"id": "D", "name": "Cumming City Center", "latitude": 34.2070, "longitude": -84.1450, "description": "Local errands"}
+        {"id": "A", "name": "Work - Downtown Atlanta", "latitude": 33.7550, "longitude": -84.3885, "description": "Downtown office"},
+        {"id": "B", "name": "Town Center at Cobb", "latitude": 33.8751, "longitude": -84.5816, "description": "Major mall"},
+        {"id": "C", "name": "Kennesaw State University", "latitude": 34.0379, "longitude": -84.5814, "description": "Campus area"},
+        {"id": "D", "name": "Kennesaw Mountain", "latitude": 33.9830, "longitude": -84.5780, "description": "Hiking"}
       ],
       "standard_sequence": ["A", "B", "C", "D"], "sequence_probability": 0.9
     },
     {
       "driver_id": 400007,
-      "driver_name": "Robert Davis",
-      "base_location": {"name": "Home - Duluth", "latitude": 34.0032, "longitude": -84.1446},
+      "driver_name": "Andrew Martinez",
+      "base_location": {"name": "Home - Marietta", "latitude": 33.9526, "longitude": -84.5499},
       "remote_locations": [
-        {"id": "A", "name": "Work - Construction Site Atlanta", "latitude": 33.7520, "longitude": -84.3900, "description": "I-85 South commute"},
-        {"id": "B", "name": "Home Depot Duluth", "latitude": 34.0089, "longitude": -84.1374, "description": "Tool supply"},
-        {"id": "C", "name": "Sugarloaf Mills", "latitude": 34.0061, "longitude": -84.0725, "description": "Shopping"},
-        {"id": "D", "name": "Sports Bar Gwinnett", "latitude": 34.0154, "longitude": -84.1287, "description": "Evening social"}
+        {"id": "A", "name": "Work - Buckhead", "latitude": 33.8400, "longitude": -84.3820, "description": "Buckhead office"},
+        {"id": "B", "name": "Marietta Square", "latitude": 33.9524, "longitude": -84.5494, "description": "Historic downtown"},
+        {"id": "C", "name": "The Avenue West Cobb", "latitude": 33.9365, "longitude": -84.5895, "description": "Shopping"},
+        {"id": "D", "name": "Life University", "latitude": 33.9148, "longitude": -84.5154, "description": "Campus visits"}
       ],
       "standard_sequence": ["A", "B", "C", "D"], "sequence_probability": 0.9
     },
     {
       "driver_id": 400008,
-      "driver_name": "Amanda Wilson",
-      "base_location": {"name": "Home", "latitude": 33.7580, "longitude": -84.3780},
+      "driver_name": "Ashley Wilson",
+      "base_location": {"name": "Home - Johns Creek", "latitude": 34.0289, "longitude": -84.1986},
       "remote_locations": [
-        {"id": "A", "name": "Work - School", "latitude": 33.7520, "longitude": -84.3820, "description": "Elementary school"},
-        {"id": "B", "name": "Teacher Supply Store", "latitude": 33.7600, "longitude": -84.3750, "description": "Classroom materials"},
-        {"id": "C", "name": "Starbucks", "latitude": 33.7560, "longitude": -84.3800, "description": "Coffee break"},
-        {"id": "D", "name": "Daycare", "latitude": 33.7590, "longitude": -84.3760, "description": "Child pickup"}
+        {"id": "A", "name": "Work - Alpharetta Tech", "latitude": 34.0600, "longitude": -84.2700, "description": "Tech corridor"},
+        {"id": "B", "name": "Medlock Bridge", "latitude": 34.0162, "longitude": -84.1869, "description": "Shopping center"},
+        {"id": "C", "name": "Newtown Park", "latitude": 34.0350, "longitude": -84.2100, "description": "Recreation"},
+        {"id": "D", "name": "Johns Creek Town Center", "latitude": 34.0288, "longitude": -84.1972, "description": "Local shops"}
       ],
       "standard_sequence": ["A", "B", "C", "D"], "sequence_probability": 0.9
     },
     {
       "driver_id": 400009,
-      "driver_name": "Kevin Miller",
-      "base_location": {"name": "Home", "latitude": 33.7620, "longitude": -84.3820},
+      "driver_name": "Christopher Garcia",
+      "base_location": {"name": "Home - Suwanee", "latitude": 34.0515, "longitude": -84.0713},
       "remote_locations": [
-        {"id": "A", "name": "Work - IT Company", "latitude": 33.7570, "longitude": -84.3870, "description": "Software development"},
-        {"id": "B", "name": "Best Buy", "latitude": 33.7650, "longitude": -84.3800, "description": "Electronics shopping"},
-        {"id": "C", "name": "Game Store", "latitude": 33.7600, "longitude": -84.3840, "description": "Gaming supplies"},
-        {"id": "D", "name": "Pizza Place", "latitude": 33.7640, "longitude": -84.3800, "description": "Dinner pickup"}
+        {"id": "A", "name": "Work - Midtown", "latitude": 33.7870, "longitude": -84.3850, "description": "Midtown office"},
+        {"id": "B", "name": "Suwanee Town Center", "latitude": 34.0513, "longitude": -84.0698, "description": "Town center park"},
+        {"id": "C", "name": "Mall of Georgia", "latitude": 34.1289, "longitude": -84.0561, "description": "Shopping"},
+        {"id": "D", "name": "Suwanee Creek Greenway", "latitude": 34.0450, "longitude": -84.0600, "description": "Trail"}
       ],
       "standard_sequence": ["A", "B", "C", "D"], "sequence_probability": 0.9
     },
     {
       "driver_id": 400010,
-      "driver_name": "Lisa Garcia",
-      "base_location": {"name": "Home", "latitude": 33.7530, "longitude": -84.3860},
+      "driver_name": "Amanda Rodriguez",
+      "base_location": {"name": "Home - Dunwoody", "latitude": 33.9462, "longitude": -84.3346},
       "remote_locations": [
-        {"id": "A", "name": "Work - Clinic", "latitude": 33.7490, "longitude": -84.3820, "description": "Medical clinic"},
-        {"id": "B", "name": "CVS Pharmacy", "latitude": 33.7550, "longitude": -84.3840, "description": "Prescription services"},
-        {"id": "C", "name": "Whole Foods", "latitude": 33.7510, "longitude": -84.3880, "description": "Organic grocery"},
-        {"id": "D", "name": "Nail Salon", "latitude": 33.7540, "longitude": -84.3850, "description": "Personal care"}
+        {"id": "A", "name": "Work - Downtown", "latitude": 33.7560, "longitude": -84.3910, "description": "Downtown office"},
+        {"id": "B", "name": "Perimeter Mall", "latitude": 33.9268, "longitude": -84.3420, "description": "Shopping"},
+        {"id": "C", "name": "Brook Run Park", "latitude": 33.9420, "longitude": -84.3290, "description": "Dog park"},
+        {"id": "D", "name": "Dunwoody Village", "latitude": 33.9410, "longitude": -84.3365, "description": "Local shops"}
       ],
       "standard_sequence": ["A", "B", "C", "D"], "sequence_probability": 0.9
     },
     {
       "driver_id": 400011,
-      "driver_name": "James Rodriguez",
-      "base_location": {"name": "Home - Alpharetta", "latitude": 34.0754, "longitude": -84.2941},
+      "driver_name": "Daniel Johnson",
+      "base_location": {"name": "Home - Lawrenceville", "latitude": 33.9562, "longitude": -84.0445},
       "remote_locations": [
-        {"id": "A", "name": "Work - Bank Buckhead", "latitude": 33.8484, "longitude": -84.3782, "description": "GA-400 South commute"},
-        {"id": "B", "name": "North Point Mall", "latitude": 34.0883, "longitude": -84.2946, "description": "Shopping"},
-        {"id": "C", "name": "Alpharetta Country Club", "latitude": 34.0838, "longitude": -84.2733, "description": "Golf"},
-        {"id": "D", "name": "Avalon Shopping", "latitude": 34.0912, "longitude": -84.2767, "description": "Upscale retail"}
+        {"id": "A", "name": "Work - Buckhead", "latitude": 33.8500, "longitude": -84.3750, "description": "Buckhead office"},
+        {"id": "B", "name": "Lawrenceville Square", "latitude": 33.9562, "longitude": -84.0434, "description": "Historic downtown"},
+        {"id": "C", "name": "Sugarloaf Mills", "latitude": 34.0061, "longitude": -84.0725, "description": "Outlet mall"},
+        {"id": "D", "name": "Gwinnett Environmental Center", "latitude": 33.9380, "longitude": -84.0670, "description": "Nature center"}
       ],
       "standard_sequence": ["A", "B", "C", "D"], "sequence_probability": 0.9
     },
     {
       "driver_id": 400012,
-      "driver_name": "Maria Martinez",
-      "base_location": {"name": "Home - Marietta", "latitude": 33.9526, "longitude": -84.5499},
+      "driver_name": "Lauren Brown",
+      "base_location": {"name": "Home - Brookhaven", "latitude": 33.8651, "longitude": -84.3393},
       "remote_locations": [
-        {"id": "A", "name": "Work - Restaurant Midtown", "latitude": 33.7480, "longitude": -84.3960, "description": "I-75 South commute"},
-        {"id": "B", "name": "Farmers Market Marietta", "latitude": 33.9563, "longitude": -84.5464, "description": "Local ingredients"},
-        {"id": "C", "name": "Town Center Cobb", "latitude": 33.8751, "longitude": -84.5816, "description": "Shopping"},
-        {"id": "D", "name": "Family Home Smyrna", "latitude": 33.8840, "longitude": -84.5144, "description": "Family visit"}
+        {"id": "A", "name": "Work - Midtown", "latitude": 33.7840, "longitude": -84.3870, "description": "Midtown office tower"},
+        {"id": "B", "name": "Town Brookhaven", "latitude": 33.8636, "longitude": -84.3383, "description": "Shopping center"},
+        {"id": "C", "name": "Brookhaven MARTA", "latitude": 33.8608, "longitude": -84.3391, "description": "Transit"},
+        {"id": "D", "name": "Oglethorpe University", "latitude": 33.8693, "longitude": -84.3328, "description": "Campus area"}
       ],
       "standard_sequence": ["A", "B", "C", "D"], "sequence_probability": 0.9
     },
     {
       "driver_id": 400013,
-      "driver_name": "David Anderson",
-      "base_location": {"name": "Home", "latitude": 33.7512, "longitude": -84.3749},
+      "driver_name": "Matthew Davis",
+      "base_location": {"name": "Home - Decatur", "latitude": 33.7748, "longitude": -84.2963},
       "remote_locations": [
-        {"id": "A", "name": "Work - Startup Office", "latitude": 33.7560, "longitude": -84.3720, "description": "Tech startup"},
-        {"id": "B", "name": "WeWork", "latitude": 33.7490, "longitude": -84.3770, "description": "Coworking space"},
-        {"id": "C", "name": "Coffee Roaster", "latitude": 33.7530, "longitude": -84.3730, "description": "Artisan coffee"},
-        {"id": "D", "name": "Bike Shop", "latitude": 33.7500, "longitude": -84.3760, "description": "Bicycle maintenance"}
+        {"id": "A", "name": "Work - Downtown Atlanta", "latitude": 33.7530, "longitude": -84.3920, "description": "Downtown office"},
+        {"id": "B", "name": "Decatur Square", "latitude": 33.7748, "longitude": -84.2963, "description": "Historic square"},
+        {"id": "C", "name": "Emory University", "latitude": 33.7925, "longitude": -84.3246, "description": "Campus area"},
+        {"id": "D", "name": "Oakhurst Village", "latitude": 33.7627, "longitude": -84.3044, "description": "Restaurants"}
       ],
       "standard_sequence": ["A", "B", "C", "D"], "sequence_probability": 0.9
     },
     {
       "driver_id": 400014,
-      "driver_name": "Jennifer Taylor",
-      "base_location": {"name": "Home", "latitude": 33.7465, "longitude": -84.3698},
+      "driver_name": "Stephanie Miller",
+      "base_location": {"name": "Home - Smyrna", "latitude": 33.8840, "longitude": -84.5144},
       "remote_locations": [
-        {"id": "A", "name": "Work - Museum", "latitude": 33.7510, "longitude": -84.3750, "description": "Art museum"},
-        {"id": "B", "name": "Art Supply Store", "latitude": 33.7440, "longitude": -84.3720, "description": "Creative materials"},
-        {"id": "C", "name": "Gallery Opening", "latitude": 33.7480, "longitude": -84.3680, "description": "Art event"},
-        {"id": "D", "name": "Design Studio", "latitude": 33.7450, "longitude": -84.3710, "description": "Freelance work"}
+        {"id": "A", "name": "Work - Buckhead", "latitude": 33.8430, "longitude": -84.3800, "description": "Buckhead office"},
+        {"id": "B", "name": "Smyrna Market Village", "latitude": 33.8830, "longitude": -84.5100, "description": "Town center"},
+        {"id": "C", "name": "The Battery Atlanta", "latitude": 33.8907, "longitude": -84.4679, "description": "Entertainment"},
+        {"id": "D", "name": "Silver Comet Trail", "latitude": 33.8695, "longitude": -84.5227, "description": "Trail running"}
       ],
       "standard_sequence": ["A", "B", "C", "D"], "sequence_probability": 0.9
     },
     {
       "driver_id": 400015,
-      "driver_name": "Christopher Thomas",
-      "base_location": {"name": "Home", "latitude": 33.7411, "longitude": -84.4012},
+      "driver_name": "Ryan Anderson",
+      "base_location": {"name": "Home - Peachtree City", "latitude": 33.3968, "longitude": -84.5930},
       "remote_locations": [
-        {"id": "A", "name": "Work - Fire Station", "latitude": 33.7450, "longitude": -84.3980, "description": "Fire department"},
-        {"id": "B", "name": "Gym", "latitude": 33.7390, "longitude": -84.4000, "description": "Fitness training"},
-        {"id": "C", "name": "Equipment Store", "latitude": 33.7430, "longitude": -84.4030, "description": "Safety gear"},
-        {"id": "D", "name": "Brotherhood Hall", "latitude": 33.7400, "longitude": -84.3990, "description": "Firefighter social"}
+        {"id": "A", "name": "Work - Airport Area", "latitude": 33.6367, "longitude": -84.4281, "description": "Airport business park"},
+        {"id": "B", "name": "Avenue Peachtree City", "latitude": 33.3940, "longitude": -84.5880, "description": "Shopping"},
+        {"id": "C", "name": "Lake Peachtree", "latitude": 33.3950, "longitude": -84.6000, "description": "Recreation"},
+        {"id": "D", "name": "Drake Field", "latitude": 33.3810, "longitude": -84.5900, "description": "Sports complex"}
+      ],
+      "standard_sequence": ["A", "B", "C", "D"], "sequence_probability": 0.9
+    },
+    {
+      "driver_id": 400016,
+      "driver_name": "Michelle Wong",
+      "base_location": {"name": "Home - Vinings", "latitude": 33.7861, "longitude": -84.4446},
+      "remote_locations": [
+        {"id": "A", "name": "Work - Downtown", "latitude": 33.7560, "longitude": -84.3890, "description": "Downtown office"},
+        {"id": "B", "name": "Vinings Jubilee", "latitude": 33.8651, "longitude": -84.4700, "description": "Shopping"},
+        {"id": "C", "name": "The Battery Atlanta", "latitude": 33.8907, "longitude": -84.4679, "description": "Entertainment"},
+        {"id": "D", "name": "Cochran Shoals", "latitude": 33.8688, "longitude": -84.4463, "description": "Trail"}
+      ],
+      "standard_sequence": ["A", "B", "C", "D"], "sequence_probability": 0.9
+    },
+    {
+      "driver_id": 400017,
+      "driver_name": "Jason Patel",
+      "base_location": {"name": "Home - Tucker", "latitude": 33.8121, "longitude": -84.1694},
+      "remote_locations": [
+        {"id": "A", "name": "Work - Midtown", "latitude": 33.7850, "longitude": -84.3830, "description": "Midtown office"},
+        {"id": "B", "name": "Tucker Town Center", "latitude": 33.8528, "longitude": -84.2080, "description": "Main street"},
+        {"id": "C", "name": "Stone Mountain", "latitude": 33.8120, "longitude": -84.1452, "description": "Park"},
+        {"id": "D", "name": "Northlake Mall Area", "latitude": 33.8480, "longitude": -84.2450, "description": "Shopping"}
+      ],
+      "standard_sequence": ["A", "B", "C", "D"], "sequence_probability": 0.9
+    },
+    {
+      "driver_id": 400018,
+      "driver_name": "Nicole Foster",
+      "base_location": {"name": "Home - East Point", "latitude": 33.6890, "longitude": -84.4533},
+      "remote_locations": [
+        {"id": "A", "name": "Work - Downtown", "latitude": 33.7540, "longitude": -84.3900, "description": "Downtown office"},
+        {"id": "B", "name": "Camp Creek Marketplace", "latitude": 33.6380, "longitude": -84.4900, "description": "Shopping"},
+        {"id": "C", "name": "College Park MARTA", "latitude": 33.6514, "longitude": -84.4489, "description": "Transit hub"},
+        {"id": "D", "name": "East Point Historic", "latitude": 33.6765, "longitude": -84.4397, "description": "Downtown"}
+      ],
+      "standard_sequence": ["A", "B", "C", "D"], "sequence_probability": 0.9
+    },
+    {
+      "driver_id": 400019,
+      "driver_name": "Brandon Kim",
+      "base_location": {"name": "Home - Woodstock", "latitude": 34.1026, "longitude": -84.5193},
+      "remote_locations": [
+        {"id": "A", "name": "Work - Buckhead", "latitude": 33.8480, "longitude": -84.3780, "description": "Buckhead office"},
+        {"id": "B", "name": "Woodstock Downtown", "latitude": 34.1015, "longitude": -84.5194, "description": "Main street"},
+        {"id": "C", "name": "Outlet Shoppes of Atlanta", "latitude": 34.1020, "longitude": -84.5310, "description": "Outlets"},
+        {"id": "D", "name": "Rope Mill Park", "latitude": 34.1140, "longitude": -84.4980, "description": "Mountain biking"}
+      ],
+      "standard_sequence": ["A", "B", "C", "D"], "sequence_probability": 0.9
+    },
+    {
+      "driver_id": 400020,
+      "driver_name": "Rachel Cooper",
+      "base_location": {"name": "Home - Chamblee", "latitude": 33.9207, "longitude": -84.2135},
+      "remote_locations": [
+        {"id": "A", "name": "Work - Midtown", "latitude": 33.7880, "longitude": -84.3820, "description": "Midtown office"},
+        {"id": "B", "name": "Buford Highway Corridor", "latitude": 33.9100, "longitude": -84.2800, "description": "International restaurants"},
+        {"id": "C", "name": "Chamblee MARTA", "latitude": 33.8878, "longitude": -84.3066, "description": "Transit"},
+        {"id": "D", "name": "Peachtree DeKalb Airport", "latitude": 33.8756, "longitude": -84.3020, "description": "Aviation area"}
+      ],
+      "standard_sequence": ["A", "B", "C", "D"], "sequence_probability": 0.9
+    },
+    {
+      "driver_id": 400021,
+      "driver_name": "Tyler Morgan",
+      "base_location": {"name": "Home - Douglasville", "latitude": 33.7513, "longitude": -84.7477},
+      "remote_locations": [
+        {"id": "A", "name": "Work - Downtown Atlanta", "latitude": 33.7520, "longitude": -84.3920, "description": "Downtown office"},
+        {"id": "B", "name": "Arbor Place Mall", "latitude": 33.7367, "longitude": -84.7467, "description": "Major mall"},
+        {"id": "C", "name": "Sweetwater Creek State Park", "latitude": 33.7569, "longitude": -84.6328, "description": "State park"},
+        {"id": "D", "name": "Douglas County Courthouse", "latitude": 33.7518, "longitude": -84.7478, "description": "Downtown"}
+      ],
+      "standard_sequence": ["A", "B", "C", "D"], "sequence_probability": 0.9
+    },
+    {
+      "driver_id": 400022,
+      "driver_name": "Samantha Hayes",
+      "base_location": {"name": "Home - Sandy Springs North", "latitude": 33.9885, "longitude": -84.3510},
+      "remote_locations": [
+        {"id": "A", "name": "Work - Buckhead", "latitude": 33.8450, "longitude": -84.3770, "description": "Buckhead office"},
+        {"id": "B", "name": "City Springs", "latitude": 33.9325, "longitude": -84.3638, "description": "Performing arts"},
+        {"id": "C", "name": "Hammond Park", "latitude": 33.9435, "longitude": -84.3525, "description": "Recreation"},
+        {"id": "D", "name": "Morgan Falls Overlook", "latitude": 34.0016, "longitude": -84.3637, "description": "Nature"}
+      ],
+      "standard_sequence": ["A", "B", "C", "D"], "sequence_probability": 0.9
+    },
+    {
+      "driver_id": 400023,
+      "driver_name": "Kevin O'Brien",
+      "base_location": {"name": "Home - Snellville", "latitude": 33.9352, "longitude": -84.0779},
+      "remote_locations": [
+        {"id": "A", "name": "Work - Downtown", "latitude": 33.7550, "longitude": -84.3900, "description": "Downtown office"},
+        {"id": "B", "name": "Snellville Towne Center", "latitude": 33.8573, "longitude": -84.0198, "description": "Shopping"},
+        {"id": "C", "name": "Briscoe Park", "latitude": 33.8611, "longitude": -84.0139, "description": "Sports complex"},
+        {"id": "D", "name": "Stone Mountain Park", "latitude": 33.8120, "longitude": -84.1452, "description": "Recreation"}
+      ],
+      "standard_sequence": ["A", "B", "C", "D"], "sequence_probability": 0.9
+    },
+    {
+      "driver_id": 400024,
+      "driver_name": "Amy Chen",
+      "base_location": {"name": "Home - Stockbridge", "latitude": 33.6509, "longitude": -84.2335},
+      "remote_locations": [
+        {"id": "A", "name": "Work - Midtown", "latitude": 33.7850, "longitude": -84.3850, "description": "Midtown office"},
+        {"id": "B", "name": "Eagles Landing", "latitude": 33.5670, "longitude": -84.2614, "description": "Shopping"},
+        {"id": "C", "name": "Panola Mountain State Park", "latitude": 33.6178, "longitude": -84.1736, "description": "Nature"},
+        {"id": "D", "name": "Henry County Courthouse", "latitude": 33.4518, "longitude": -84.1546, "description": "Downtown"}
+      ],
+      "standard_sequence": ["A", "B", "C", "D"], "sequence_probability": 0.9
+    },
+    {
+      "driver_id": 400025,
+      "driver_name": "Marcus Williams",
+      "base_location": {"name": "Home - Mableton", "latitude": 33.8451, "longitude": -84.4728},
+      "remote_locations": [
+        {"id": "A", "name": "Work - Buckhead", "latitude": 33.8460, "longitude": -84.3760, "description": "Buckhead office"},
+        {"id": "B", "name": "Mableton Parkway Shops", "latitude": 33.8160, "longitude": -84.5667, "description": "Local shopping"},
+        {"id": "C", "name": "Six Flags Over Georgia", "latitude": 33.7675, "longitude": -84.5514, "description": "Theme park"},
+        {"id": "D", "name": "Chattahoochee River", "latitude": 33.8400, "longitude": -84.4500, "description": "River park"}
       ],
       "standard_sequence": ["A", "B", "C", "D"], "sequence_probability": 0.9
     }

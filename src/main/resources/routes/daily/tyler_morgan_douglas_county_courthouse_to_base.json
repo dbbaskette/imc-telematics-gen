@@ -1,0 +1,128 @@
+{
+  "name": "tyler_morgan_douglas_county_courthouse_to_base",
+  "description": "Tyler Morgan: Douglas_County_Courthouse \u2192 Base",
+  "start_location": "33.7518, -84.7478",
+  "end_location": "33.7513, -84.7477",
+  "waypoints": [
+    {
+      "latitude": 33.7518,
+      "longitude": -84.7478,
+      "street_name": "Residential Driveway",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.751763,
+      "longitude": -84.747793,
+      "street_name": "Austell Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.75173,
+      "longitude": -84.747785,
+      "street_name": "Briarcliff Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.751694,
+      "longitude": -84.747778,
+      "street_name": "Keith Bridge Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.751658,
+      "longitude": -84.747771,
+      "street_name": "Spalding Drive",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.751621,
+      "longitude": -84.747765,
+      "street_name": "Lenox Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.751586,
+      "longitude": -84.747757,
+      "street_name": "Piedmont Road",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.751549,
+      "longitude": -84.747749,
+      "street_name": "Perimeter Center West",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.751514,
+      "longitude": -84.747744,
+      "street_name": "Pleasant Hill Road",
+      "speed_limit": 45,
+      "has_traffic_light": true,
+      "traffic_control": "traffic_light"
+    },
+    {
+      "latitude": 33.751479,
+      "longitude": -84.747736,
+      "street_name": "Jimmy Carter Boulevard",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.751443,
+      "longitude": -84.747729,
+      "street_name": "Westminster Drive",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.751406,
+      "longitude": -84.747721,
+      "street_name": "Sugarloaf Mills Circle",
+      "speed_limit": 45,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.751372,
+      "longitude": -84.747714,
+      "street_name": "Druid Hills Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "stop_sign"
+    },
+    {
+      "latitude": 33.751337,
+      "longitude": -84.747707,
+      "street_name": "Union Hill Road",
+      "speed_limit": 25,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    },
+    {
+      "latitude": 33.7513,
+      "longitude": -84.7477,
+      "street_name": "Destination Parking",
+      "speed_limit": 15,
+      "has_traffic_light": false,
+      "traffic_control": "none"
+    }
+  ]
+}

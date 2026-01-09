@@ -25,11 +25,10 @@ telematics:
   exchange:
     name: telematics_exchange
   simulation:
-    interval-ms: 50           # High-volume demo (20 messages/second)
-    driver-count: 3           # Legacy (random mode). Use max-drivers to cap file-based drivers
-    crash-frequency: 500       # Messages between crash events per driver
-    min-crash-gforce: 6.0     # Enforce minimum G-force for forced crashes
-    max-drivers: 15           # Cap number of drivers initialized from drivers.json (0 = no cap)
+    interval-ms: 50           # Messages per second (50ms = 20/sec)
+    crash-frequency: 500      # Messages between crash events per driver
+    min-crash-gforce: 6.0     # Minimum G-force for crashes
+    max-drivers: 25           # Number of drivers from drivers.json (0 = all)
   
   # Driver Behavior Configuration
   behavior:

@@ -1,7 +1,9 @@
 package com.insurancemegacorp.telematicsgen.controller;
 
 import com.insurancemegacorp.telematicsgen.model.Driver;
+import com.insurancemegacorp.telematicsgen.model.DriverConfig;
 import com.insurancemegacorp.telematicsgen.model.FlatTelematicsMessage;
+import com.insurancemegacorp.telematicsgen.service.DriverConfigService;
 import com.insurancemegacorp.telematicsgen.service.DriverManager;
 import com.insurancemegacorp.telematicsgen.service.TelematicsDataGenerator;
 import com.insurancemegacorp.telematicsgen.service.TelematicsPublisher;
@@ -19,13 +21,16 @@ public class WebSocketController {
     private static final Logger logger = LoggerFactory.getLogger(WebSocketController.class);
     private final WebSocketBroadcastService broadcastService;
     private final DriverManager driverManager;
+    private final DriverConfigService driverConfigService;
     private final TelematicsDataGenerator dataGenerator;
     private final TelematicsPublisher publisher;
 
     public WebSocketController(WebSocketBroadcastService broadcastService, DriverManager driverManager,
+                              DriverConfigService driverConfigService,
                               TelematicsDataGenerator dataGenerator, TelematicsPublisher publisher) {
         this.broadcastService = broadcastService;
         this.driverManager = driverManager;
+        this.driverConfigService = driverConfigService;
         this.dataGenerator = dataGenerator;
         this.publisher = publisher;
     }
@@ -63,29 +68,33 @@ public class WebSocketController {
     @SendTo("/topic/drivers/accident")
     public Object triggerRandomAccident() {
         logger.info("🚨 Demo accident trigger requested (random)");
-        
+
         // Get a random active driver (not already in crash state)
         var activeDrivers = driverManager.getAllDrivers().stream()
             .filter(driver -> !driver.getCurrentState().name().contains("CRASH"))
             .toList();
-        
+
         if (activeDrivers.isEmpty()) {
             logger.warn("⚠️ No active drivers available for accident simulation");
-            return new Object() {
-                public final boolean success = false;
-                public final String message = "No active drivers available";
-                public final String timestamp = java.time.Instant.now().toString();
-            };
+            return new java.util.HashMap<String, Object>() {{
+                put("success", false);
+                put("message", "No active drivers available");
+                put("timestamp", java.time.Instant.now().toString());
+            }};
         }
-        
-        // Select random driver and trigger accident
+
+        // Select random driver
         var targetDriver = activeDrivers.get((int) (Math.random() * activeDrivers.size()));
+
+        // Generate crash data BEFORE triggering (to capture speed at impact)
+        FlatTelematicsMessage crashMessage = dataGenerator.generateCrashEventData(targetDriver);
+
+        // Now trigger the accident (sets speed to 0)
         boolean success = driverManager.triggerDemoAccident(targetDriver.getDriverId());
 
-        // If crash was successfully triggered, also publish a crash event so stats appear in logs
+        // If crash was successfully triggered, publish crash event to RabbitMQ
         if (success) {
             try {
-                var crashMessage = dataGenerator.generateCrashEventData(targetDriver);
                 publisher.publishTelematicsData(crashMessage, targetDriver);
                 logger.info("🚗💥 Demo crash event published for {}", targetDriver.getDriverId());
             } catch (Exception e) {
@@ -93,62 +102,84 @@ public class WebSocketController {
             }
         }
 
-        logger.info("🚗💥 Demo accident {} for driver {}", 
+        logger.info("🚗💥 Demo accident {} for driver {}",
                    success ? "triggered" : "failed", targetDriver.getDriverId());
-        
-        final boolean finalSuccess = success;
-        final int finalDriverId = targetDriver.getDriverId();
-        
-        return new Object() {
-            public final boolean success = finalSuccess;
-            public final int driver_id = finalDriverId;
-            public final String message = finalSuccess ? 
-                "Accident triggered for " + finalDriverId : 
-                "Failed to trigger accident";
-            public final String timestamp = java.time.Instant.now().toString();
-        };
+
+        // Return comprehensive crash details for popup
+        var result = new java.util.HashMap<String, Object>();
+        result.put("success", success);
+        result.put("driver_id", targetDriver.getDriverId());
+        result.put("driver_name", getDriverName(targetDriver));
+        result.put("vehicle", targetDriver.getVin());
+        result.put("accident_type", crashMessage.accidentType());
+        result.put("speed_at_impact", crashMessage.speedMph());
+        result.put("speed_limit", crashMessage.speedLimitMph());
+        result.put("street", crashMessage.currentStreet());
+        result.put("g_force", crashMessage.gForce());
+        result.put("latitude", crashMessage.gpsLatitude());
+        result.put("longitude", crashMessage.gpsLongitude());
+        result.put("message", success ? "Accident triggered for " + targetDriver.getDriverId() : "Failed to trigger accident");
+        result.put("timestamp", java.time.Instant.now().toString());
+        return result;
     }
 
     @MessageMapping("/drivers/trigger-accident-specific")
     @SendTo("/topic/drivers/accident")
     public Object triggerSpecificAccident(String driverId) {
         logger.info("🚨 Demo accident trigger requested for specific driver: {}", driverId);
-        
+
         int driverIdInt = Integer.parseInt(driverId);
+
+        // Find the driver first
+        Driver targetDriver = driverManager.getAllDrivers().stream()
+            .filter(d -> d.getDriverId() == driverIdInt)
+            .findFirst()
+            .orElse(null);
+
+        if (targetDriver == null) {
+            var result = new java.util.HashMap<String, Object>();
+            result.put("success", false);
+            result.put("driver_id", driverIdInt);
+            result.put("message", "Driver not found: " + driverId);
+            result.put("timestamp", java.time.Instant.now().toString());
+            return result;
+        }
+
+        // Generate crash data BEFORE triggering (to capture speed at impact)
+        FlatTelematicsMessage crashMessage = dataGenerator.generateCrashEventData(targetDriver);
+
+        // Now trigger the accident (sets speed to 0)
         boolean success = driverManager.triggerDemoAccident(driverIdInt);
-        
+
         // If crash was successfully triggered, publish crash event to RabbitMQ
         if (success) {
-            Driver crashedDriver = driverManager.getAllDrivers().stream()
-                .filter(d -> d.getDriverId() == driverIdInt)
-                .findFirst()
-                .orElse(null);
-                
-            if (crashedDriver != null) {
-                try {
-                    FlatTelematicsMessage crashMessage = dataGenerator.generateCrashEventData(crashedDriver);
-                    publisher.publishTelematicsData(crashMessage, crashedDriver);
-                    logger.info("🚨 Manual crash event published to RabbitMQ for driver {}", driverId);
-                } catch (Exception e) {
-                    logger.warn("⚠️ Crash event publish failed for {}: {}", driverId, e.getMessage());
-                }
+            try {
+                publisher.publishTelematicsData(crashMessage, targetDriver);
+                logger.info("🚨 Manual crash event published to RabbitMQ for driver {}", driverId);
+            } catch (Exception e) {
+                logger.warn("⚠️ Crash event publish failed for {}: {}", driverId, e.getMessage());
             }
         }
-        
-        logger.info("🚗💥 Demo accident {} for driver {}", 
+
+        logger.info("🚗💥 Demo accident {} for driver {}",
                    success ? "triggered" : "failed", driverId);
-        
-        final boolean finalSuccess = success;
-        final int finalDriverId = driverIdInt;
-        
-        return new Object() {
-            public final boolean success = finalSuccess;
-            public final int driver_id = finalDriverId;
-            public final String message = finalSuccess ? 
-                "Accident triggered for " + finalDriverId : 
-                "Failed to trigger accident for " + finalDriverId;
-            public final String timestamp = java.time.Instant.now().toString();
-        };
+
+        // Return comprehensive crash details for popup
+        var result = new java.util.HashMap<String, Object>();
+        result.put("success", success);
+        result.put("driver_id", targetDriver.getDriverId());
+        result.put("driver_name", getDriverName(targetDriver));
+        result.put("vehicle", targetDriver.getVin());
+        result.put("accident_type", crashMessage.accidentType());
+        result.put("speed_at_impact", crashMessage.speedMph());
+        result.put("speed_limit", crashMessage.speedLimitMph());
+        result.put("street", crashMessage.currentStreet());
+        result.put("g_force", crashMessage.gForce());
+        result.put("latitude", crashMessage.gpsLatitude());
+        result.put("longitude", crashMessage.gpsLongitude());
+        result.put("message", success ? "Accident triggered for " + targetDriver.getDriverId() : "Failed to trigger accident for " + driverId);
+        result.put("timestamp", java.time.Instant.now().toString());
+        return result;
     }
 
     // --- Simulation runtime controls ---
@@ -183,14 +214,22 @@ public class WebSocketController {
         if (driver.getCurrentRoute() == null || driver.getCurrentRoute().isEmpty()) {
             return "No route";
         }
-        
+
         var route = driver.getCurrentRoute();
         var start = route.get(0);
         var end = route.get(route.size() - 1);
-        
-        return String.format("%s → %s", 
-            start.streetName().split(" & ")[0], 
+
+        return String.format("%s → %s",
+            start.streetName().split(" & ")[0],
             end.streetName().split(" & ")[0]
         );
+    }
+
+    private String getDriverName(Driver driver) {
+        return driverConfigService.getAllDriverConfigs().stream()
+            .filter(config -> config.getDriverId() == driver.getDriverId())
+            .findFirst()
+            .map(DriverConfig::driverName)
+            .orElse("Driver " + driver.getDriverId());
     }
 }
