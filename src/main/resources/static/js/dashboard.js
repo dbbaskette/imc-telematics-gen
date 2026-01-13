@@ -915,11 +915,11 @@ function showAccidentModal(accidentData) {
 
     // Set accident image
     const imgElement = document.getElementById('accidentImage');
-    imgElement.src = `/images/accidents/${accidentType.toLowerCase()}.png`;
+    imgElement.src = `/images/accidents/${accidentType.toLowerCase()}.jpg`;
     imgElement.alt = typeInfo.name;
     imgElement.onerror = function() {
         // Fallback if image not found
-        this.src = '/images/accidents/default.png';
+        this.src = '/images/accidents/default.jpg';
         this.onerror = null;
     };
 
