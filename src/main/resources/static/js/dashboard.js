@@ -38,30 +38,22 @@ class TelematicsDashboard {
     }
 
     async loadCurrentInterval() {
+        let interval = 50;
         try {
             const response = await fetch('/api/interval');
             if (response.ok) {
                 const data = await response.json();
-                const currentInterval = data.interval || 50; // Default to 50ms (center of 10-100ms range)
-                
-                // Update the slider and display
-                const rateSlider = document.getElementById('rateSlider');
-                const rateValue = document.getElementById('rateValue');
-                
-                if (rateSlider && rateValue) {
-                    rateSlider.value = currentInterval;
-                    rateValue.textContent = currentInterval;
-                }
+                interval = data.interval || 50;
             }
         } catch (e) {
             console.error('Failed to load current interval:', e);
-            // Set default value if API call fails
-            const rateSlider = document.getElementById('rateSlider');
-            const rateValue = document.getElementById('rateValue');
-            if (rateSlider && rateValue) {
-                rateSlider.value = 50;
-                rateValue.textContent = 50;
-            }
+        }
+
+        const rateSlider = document.getElementById('rateSlider');
+        const rateValue = document.getElementById('rateValue');
+        if (rateSlider && rateValue) {
+            rateSlider.value = interval;
+            rateValue.textContent = interval;
         }
     }
 
@@ -237,6 +229,10 @@ class TelematicsDashboard {
             this.stompClient.subscribe('/topic/drivers', (message) => {
                 try {
                     const driverUpdate = JSON.parse(message.body);
+                    // Debug: log crash-related updates
+                    if (driverUpdate.is_crash_event || driverUpdate.state === 'POST_CRASH_IDLE') {
+                        console.log('🚨 CRASH UPDATE:', driverUpdate.driver_id, 'state:', driverUpdate.state, 'is_crash_event:', driverUpdate.is_crash_event);
+                    }
                     this.updateDriver(driverUpdate);
                 } catch (e) {
                     console.error('Error parsing driver update:', e);
@@ -305,7 +301,7 @@ class TelematicsDashboard {
                         current_street: driver.currentStreet,
                         state: driver.state,
                         route_description: 'Loading...',
-                        is_crash_event: false,
+                        is_crash_event: driver.state === 'POST_CRASH_IDLE',
                         g_force: 0,
                         timestamp: new Date().toISOString()
                     };
@@ -363,11 +359,10 @@ class TelematicsDashboard {
             // Always use the same update logic for all state changes
             marker.setLatLng([driverUpdate.latitude, driverUpdate.longitude]);
             
-            // Update icon if state changed
-            if (existingDriver.state !== driverUpdate.state) {
+            // Update icon if state changed or if in crash state (ensure crash icon is applied)
+            if (existingDriver.state !== driverUpdate.state || driverUpdate.state === 'POST_CRASH_IDLE' || driverUpdate.is_crash_event) {
                 const newIcon = this.createIconForState(driverUpdate);
                 marker.setIcon(newIcon);
-                
             }
             
             // Update popup content
@@ -387,23 +382,27 @@ class TelematicsDashboard {
 
     createIconForState(driverUpdate) {
         let className = 'driver-marker-driving';
+        let bgColor = '#22c55e'; // green for driving
         // Use consistent size for all markers to prevent positioning issues
         const size = [20, 20];
-        
+
         if (driverUpdate.is_crash_event || driverUpdate.state === 'POST_CRASH_IDLE') {
             className = 'driver-marker-crash';
+            bgColor = '#ef4444'; // red for crash
+            console.log('🔴 Creating RED crash icon for driver:', driverUpdate.driver_id);
         } else if (driverUpdate.state === 'PARKED' || driverUpdate.state === 'TRAFFIC_STOP' || driverUpdate.state === 'BREAK_TIME') {
             className = 'driver-marker-parked';
+            bgColor = '#f59e0b'; // orange/yellow for parked
         }
-        
+
         // Consistent anchor point centered for all markers
         const anchor = [10, 10]; // Centered anchor for 20x20 icons
-        
+
         return L.divIcon({
-            className: className,
+            className: '', // Empty to avoid Leaflet's default leaflet-div-icon background
             iconSize: size,
             iconAnchor: anchor,
-            html: `<div style="width: 100%; height: 100%; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: bold; color: white;">${driverUpdate.driver_id}</div>`
+            html: `<div class="${className}" style="width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: bold; color: white; background-color: ${bgColor}; border: 2px solid white; box-shadow: 0 2px 6px rgba(0,0,0,0.3);">${driverUpdate.driver_id}</div>`
         });
     }
 
@@ -450,16 +449,18 @@ class TelematicsDashboard {
 
     calculateStats() {
         let total = 0, driving = 0, parked = 0;
-        
+
         this.drivers.forEach(driver => {
             total++;
             if (driver.state === 'DRIVING') {
                 driving++;
-            } else {
+            } else if (driver.state !== 'POST_CRASH_IDLE') {
+                // Only count as parked/stopped if not in crash state
                 parked++;
             }
+            // POST_CRASH_IDLE drivers are counted separately via crashCount
         });
-        
+
         return { total, driving, parked };
     }
 
@@ -529,28 +530,43 @@ class TelematicsDashboard {
     updateDriverDropdown() {
         const driverSelect = document.getElementById('driverSelect');
         if (!driverSelect) return;
-        
+
         // Preserve current selection
         const currentSelection = driverSelect.value;
-        
+
         const driversArray = Array.from(this.drivers.values());
-        const activeDrivers = driversArray.filter(driver => 
-            !driver.state.includes('CRASH') && driver.state !== 'POST_CRASH_IDLE'
-        );
-        
+        // Show all drivers (not just active) so user can select any driver
+        const sortedDrivers = driversArray.sort((a, b) => a.driver_id - b.driver_id);
+
+        // Get current driver IDs in dropdown (excluding "random")
+        const currentDriverIds = new Set();
+        for (let i = 1; i < driverSelect.options.length; i++) {
+            currentDriverIds.add(driverSelect.options[i].value);
+        }
+
+        // Get new driver IDs
+        const newDriverIds = new Set(sortedDrivers.map(d => String(d.driver_id)));
+
+        // Only rebuild if drivers have changed (added or removed)
+        const driversChanged = currentDriverIds.size !== newDriverIds.size ||
+            [...currentDriverIds].some(id => !newDriverIds.has(id)) ||
+            [...newDriverIds].some(id => !currentDriverIds.has(id));
+
+        if (!driversChanged) return;
+
         // Clear existing options except the first one (Random Driver)
         driverSelect.innerHTML = '<option value="random">Random Driver</option>';
-        
-        // Add active drivers to dropdown
-        activeDrivers.forEach(driver => {
+
+        // Add all drivers to dropdown (just ID, no state to avoid constant updates)
+        sortedDrivers.forEach(driver => {
             const option = document.createElement('option');
             option.value = driver.driver_id;
-            option.textContent = `${driver.driver_id} (${driver.state})`;
+            option.textContent = `Driver ${driver.driver_id}`;
             driverSelect.appendChild(option);
         });
-        
+
         // Restore selection if the driver is still available
-        if (currentSelection && (currentSelection === 'random' || activeDrivers.find(d => d.driver_id === currentSelection))) {
+        if (currentSelection && (currentSelection === 'random' || newDriverIds.has(currentSelection))) {
             driverSelect.value = currentSelection;
         }
     }
@@ -609,81 +625,65 @@ function triggerSelectedAccident() {
     const button = document.getElementById('triggerAccidentBtn');
     const statusDiv = document.getElementById('accidentStatus');
     const driverSelect = document.getElementById('driverSelect');
-    
-    if (!dashboardInstance || !dashboardInstance.stompClient) {
+
+    function resetButton() {
+        button.disabled = false;
+        button.innerHTML = '🚨 Trigger Accident';
+    }
+
+    function cleanupSubscription() {
+        if (dashboardInstance.accidentSubscription) {
+            try { dashboardInstance.accidentSubscription.unsubscribe(); } catch (_) {}
+            dashboardInstance.accidentSubscription = null;
+        }
+    }
+
+    if (!dashboardInstance?.stompClient) {
         statusDiv.innerHTML = 'WebSocket not connected!';
         statusDiv.className = 'accident-status error';
         return;
     }
-    
+
     const selectedDriver = driverSelect.value;
     const isRandom = selectedDriver === 'random';
-    
-    // Disable button and show loading state
+
     button.disabled = true;
     button.innerHTML = '⏳ Triggering...';
     statusDiv.innerHTML = isRandom ? 'Requesting random accident...' : `Triggering accident for ${selectedDriver}...`;
     statusDiv.className = 'accident-status loading';
-    
-    try {
-        // Subscribe BEFORE sending to avoid missing the response
-        if (dashboardInstance.accidentSubscription) {
-            try { dashboardInstance.accidentSubscription.unsubscribe(); } catch (_) {}
-        }
-        const timeoutHandle = setTimeout(() => {
-            // Fallback if no response arrives
-            button.disabled = false;
-            button.innerHTML = '🚨 Trigger Accident';
-            statusDiv.innerHTML = '⚠️ No response received';
-            statusDiv.className = 'accident-status error';
-            if (dashboardInstance.accidentSubscription) {
-                try { dashboardInstance.accidentSubscription.unsubscribe(); } catch (_) {}
-                dashboardInstance.accidentSubscription = null;
-            }
-        }, 7000);
 
-        dashboardInstance.accidentSubscription = dashboardInstance.stompClient.subscribe('/topic/drivers/accident', (message) => {
-            const response = JSON.parse(message.body);
-            console.log('Accident response:', response);
-            clearTimeout(timeoutHandle);
-            if (response.success) {
-                statusDiv.innerHTML = `✅ ${response.message}`;
-                statusDiv.className = 'accident-status success';
-                // Show the accident notification popup
-                showAccidentModal(response);
-            } else {
-                statusDiv.innerHTML = `❌ ${response.message}`;
-                statusDiv.className = 'accident-status error';
-            }
-            // Re-enable button and unsubscribe after short delay
-            setTimeout(() => {
-                button.disabled = false;
-                button.innerHTML = '🚨 Trigger Accident';
-                statusDiv.innerHTML = '';
-                statusDiv.className = 'accident-status';
-                if (dashboardInstance.accidentSubscription) {
-                    try { dashboardInstance.accidentSubscription.unsubscribe(); } catch (_) {}
-                    dashboardInstance.accidentSubscription = null;
-                }
-            }, 2000);
-        });
+    cleanupSubscription();
 
-        // Send appropriate accident trigger request via WebSocket
-        if (isRandom) {
-            dashboardInstance.stompClient.send('/app/drivers/trigger-accident', {}, JSON.stringify({}));
-        } else {
-            dashboardInstance.stompClient.send('/app/drivers/trigger-accident-specific', {}, selectedDriver);
-        }
-
-    } catch (error) {
-        console.error('Error triggering accident:', error);
-        statusDiv.innerHTML = 'Error: Failed to send request';
+    const timeoutHandle = setTimeout(() => {
+        resetButton();
+        statusDiv.innerHTML = '⚠️ No response received';
         statusDiv.className = 'accident-status error';
-        
-        // Re-enable button
-        button.disabled = false;
-        button.innerHTML = '🚨 Trigger Accident';
-    }
+        cleanupSubscription();
+    }, 7000);
+
+    dashboardInstance.accidentSubscription = dashboardInstance.stompClient.subscribe('/topic/drivers/accident', (message) => {
+        clearTimeout(timeoutHandle);
+        const response = JSON.parse(message.body);
+        console.log('Accident response:', response);
+
+        statusDiv.innerHTML = response.success ? `✅ ${response.message}` : `❌ ${response.message}`;
+        statusDiv.className = `accident-status ${response.success ? 'success' : 'error'}`;
+
+        if (response.success) {
+            showAccidentModal(response);
+        }
+
+        setTimeout(() => {
+            resetButton();
+            statusDiv.innerHTML = '';
+            statusDiv.className = 'accident-status';
+            cleanupSubscription();
+        }, 2000);
+    });
+
+    const endpoint = isRandom ? '/app/drivers/trigger-accident' : '/app/drivers/trigger-accident-specific';
+    const payload = isRandom ? JSON.stringify({}) : selectedDriver;
+    dashboardInstance.stompClient.send(endpoint, {}, payload);
 }
 
 // Function to stop the application
@@ -752,22 +752,22 @@ function stopApplication() {
     }
 }
 
-// Pause / Resume
+// Stop / Resume
 async function togglePause() {
     const btn = document.getElementById('pauseResumeBtn');
     if (!btn) return;
     btn.disabled = true;
     try {
         // naive toggle: read current label to decide
-        const isPause = btn.textContent.includes('Pause');
-        const endpoint = isPause ? '/api/pause' : '/api/resume';
+        const isStop = btn.textContent.includes('Stop');
+        const endpoint = isStop ? '/api/pause' : '/api/resume';
         const resp = await fetch(endpoint, { method: 'POST' });
         const data = await resp.json();
         if (data && 'paused' in data) {
-            btn.textContent = data.paused ? '▶️ Resume Generation' : '⏸️ Pause Generation';
+            btn.textContent = data.paused ? '▶️ Resume Generation' : '⏹️ Stop Generation';
         } else {
             // fallback toggle
-            btn.textContent = isPause ? '▶️ Resume Generation' : '⏸️ Pause Generation';
+            btn.textContent = isStop ? '▶️ Resume Generation' : '⏹️ Stop Generation';
         }
     } catch (e) {
         console.error('Failed to toggle pause', e);
@@ -790,6 +790,10 @@ async function startAllDriving() {
                 statusDiv.innerHTML = `🚦 ${data.message}`;
                 statusDiv.className = 'accident-status success';
                 setTimeout(() => { statusDiv.innerHTML = ''; }, 3000);
+            }
+            // Refresh driver data to update the counts and map
+            if (dashboardInstance) {
+                dashboardInstance.loadInitialData();
             }
         } else {
             if (statusDiv) {

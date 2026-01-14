@@ -322,33 +322,20 @@ public class DriverManager {
     
     private void updateSpeedForRoutePoint(Driver driver, RoutePoint point) {
         if (point.hasTrafficLight()) {
-            // Slow down at intersections
             driver.setCurrentSpeed(Math.max(10.0, driver.getCurrentSpeed() * 0.7));
-        } else {
-            // Use route speed limit with variation
-            double baseVariation = (random.nextDouble() - 0.5) * 10.0; // ±5 mph
-            double targetSpeed;
-
-            if (driver.isAggressive()) {
-                // Aggressive drivers: 70% chance to speed, 30% drive normally
-                if (random.nextDouble() < 0.7) {
-                    double speedingBonus = 10.0 + random.nextDouble() * 15.0; // 10-25 mph over
-                    targetSpeed = point.speedLimit() + baseVariation + speedingBonus;
-                } else {
-                    targetSpeed = point.speedLimit() + baseVariation;
-                }
-                driver.setCurrentSpeed(Math.max(15.0, Math.min(95.0, targetSpeed)));
-            } else {
-                // Normal drivers: 20% chance to speed occasionally
-                if (random.nextDouble() < 0.2) {
-                    double speedingBonus = 5.0 + random.nextDouble() * 10.0; // 5-15 mph over
-                    targetSpeed = point.speedLimit() + baseVariation + speedingBonus;
-                } else {
-                    targetSpeed = point.speedLimit() + baseVariation;
-                }
-                driver.setCurrentSpeed(Math.max(15.0, Math.min(85.0, targetSpeed)));
-            }
+            return;
         }
+
+        double baseVariation = (random.nextDouble() - 0.5) * 10.0;
+        double speedingProbability = driver.isAggressive() ? 0.2 : 0.1;
+        double maxSpeed = driver.isAggressive() ? 95.0 : 85.0;
+
+        double targetSpeed = point.speedLimit() + baseVariation;
+        if (random.nextDouble() < speedingProbability) {
+            targetSpeed += 15.0 + random.nextDouble() * 10.0;
+        }
+
+        driver.setCurrentSpeed(Math.max(15.0, Math.min(maxSpeed, targetSpeed)));
     }
     
     private void assignNewRoute(Driver driver) {
