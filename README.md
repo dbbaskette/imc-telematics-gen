@@ -1,143 +1,202 @@
-# Insurance Megacorp Telematics Generator
+# IMC Telematics Generator
 
-A Spring Boot application that simulates realistic vehicle telematics data for insurance use cases. Generates high-volume telemetry events including crash detection with multiple accident types.
+![Banner](docs/images/banner.png)
 
-## Features
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Java](https://img.shields.io/badge/Java-21-orange.svg)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.5.4-green.svg)
 
-- **Multi-Driver Simulation**: 15+ drivers with individual behaviors, vehicles, and daily routes
-- **Circular Daily Routes**: Each driver follows a realistic daily loop (home → work → errands → home)
-- **Real Atlanta Roads**: Routes use actual GPS coordinates with real speed limits from route data
-- **9 Accident Types**: Rear-end, T-bone, head-on, rollover, side-swipe, hit-and-run, and more
-- **Realistic Crash Sensors**: Each accident type has characteristic accelerometer/gyroscope patterns
-- **Speed at Impact**: Captures actual driver speed when crash occurs
-- **Real-Time Dashboard**: Modern UI with live map, dark mode, and crash notification popups
-- **Accident Visualization**: Visual popups with accident type images when crashes occur
-- **High-Volume Output**: 300+ messages/second to RabbitMQ
+Real-time vehicle telematics simulation for insurance risk analysis and crash detection.
 
-## Tech Stack
+## About
 
-- Java 21
-- Spring Boot 3.5.3
-- Spring AMQP (RabbitMQ)
-- Spring WebSocket
-- Leaflet.js (mapping)
+Insurance companies need realistic telematics data to develop and test crash detection algorithms, risk scoring models, and claims processing systems. IMC Telematics Generator simulates 25 drivers traveling around the Atlanta metro area, producing high-fidelity sensor data including GPS coordinates, accelerometer readings, and gyroscope measurements.
 
-## Quick Start
+The simulator models real-world driving patterns with aggressive vs. conservative drivers, time-of-day behavior changes, and 9 distinct accident types—each with characteristic sensor signatures that match actual crash telemetry.
 
-```bash
-# Start with all dependencies (RabbitMQ auto-managed)
-./imc-telematics-gen.sh --start
+## Key Features
 
-# Build and start
-./imc-telematics-gen.sh --build --start
+- **Multi-Driver Simulation** — 25 unique drivers with realistic profiles, vehicles, and daily routes
+- **Crash Detection Testing** — 9 accident types with physics-based sensor signatures
+- **Real-Time Dashboard** — Interactive map with live driver positions and crash notifications
+- **Behavior Modeling** — Aggressive vs. normal drivers with different speeding/braking patterns
+- **Time-Aware Patterns** — Rush hour boosts, nighttime reduction, random traffic stops
+- **RabbitMQ Integration** — Publishes to fanout exchange for downstream consumers
+- **Cloud-Ready** — Deploys to Cloud Foundry with service binding
 
-# Stop
-./imc-telematics-gen.sh --stop
+## Built With
+
+- [Spring Boot 3.5.4](https://spring.io/projects/spring-boot) — Application framework
+- [Spring Cloud Stream](https://spring.io/projects/spring-cloud-stream) — RabbitMQ messaging
+- [Spring WebSocket](https://docs.spring.io/spring-framework/reference/web/websocket.html) — Real-time updates
+- [Leaflet.js](https://leafletjs.com/) — Interactive mapping
+- [Thymeleaf](https://www.thymeleaf.org/) — Server-side templates
+
+## Architecture
+
+```mermaid
+flowchart LR
+    subgraph Generator
+        A[TelematicsSimulator] --> B[DriverManager]
+        B --> C[TelematicsDataGenerator]
+    end
+
+    C --> D[RabbitMQ Exchange]
+    C --> E[WebSocket]
+
+    D --> F[Crash Detection Service]
+    D --> G[Risk Scoring Service]
+    E --> H[Dashboard UI]
+
+    H --> I[Leaflet Map]
 ```
 
-**Dashboard**: http://localhost:8082
+## Getting Started
+
+### Prerequisites
+
+- Java 21+ ([download](https://adoptium.net/))
+- Maven 3.8+ ([download](https://maven.apache.org/download.cgi))
+- RabbitMQ 3.x ([install](https://www.rabbitmq.com/download.html)) or Docker
+
+### Installation
+
+1. Clone the repository
+   ```bash
+   git clone https://github.com/insurance-megacorp/imc-telematics-gen.git
+   cd imc-telematics-gen
+   ```
+
+2. Build the application
+   ```bash
+   ./mvnw clean package
+   ```
+
+3. Start RabbitMQ (if using Docker)
+   ```bash
+   docker run -d --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management
+   ```
+
+4. Run the application
+   ```bash
+   java -jar target/telematicsgen-4.1.4.jar
+   ```
+
+5. Open the dashboard at http://localhost:8082
+
+## Usage
+
+### Dashboard Controls
+
+The web dashboard provides real-time visualization and control:
+
+- **Trigger Accident** — Manually trigger crash for a specific or random driver
+- **Random Accidents** — Toggle automatic random crash events
+- **Start All Driving** — Get all parked drivers moving
+- **Stop/Resume** — Pause or resume telemetry generation
+- **Message Rate** — Adjust telemetry frequency (10-100ms)
+
+### REST API
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/api/drivers` | Get all driver positions and states |
+| POST | `/api/drivers/start-all` | Start all parked drivers |
+| POST | `/api/pause` | Pause telemetry generation |
+| POST | `/api/resume` | Resume telemetry generation |
+| POST | `/api/interval?ms={value}` | Set message interval |
+
+### WebSocket Topics
+
+Subscribe via STOMP for real-time updates:
+
+| Topic | Description |
+|-------|-------------|
+| `/topic/drivers` | Driver location updates |
+| `/topic/drivers/accident` | Crash notifications with details |
+
+## Environment Variables
+
+| Variable | Description | Default |
+|----------|-------------|---------|
+| `SIMULATION_INTERVAL_MS` | Milliseconds between messages | `500` |
+| `DRIVER_COUNT` | Number of active drivers (max 25) | `3` |
+| `CRASH_FREQUENCY` | Messages between random crashes | `50` |
+| `POST_CRASH_IDLE_MINUTES` | Driver idle time after crash | `10` |
+| `RANDOM_STOP_PROBABILITY` | Chance of random traffic stop | `0.05` |
+| `TELEMATICS_EXCHANGE_NAME` | RabbitMQ exchange name | `telematics_exchange` |
 
 ## Accident Types
 
-Each accident type generates unique sensor signatures:
+Each accident type produces characteristic sensor signatures:
 
-| Type | Description | Sensor Pattern |
-|------|-------------|----------------|
-| REAR_ENDED | Struck from behind | Strong forward jolt (+X accel) |
-| REAR_END_COLLISION | Struck another from behind | Strong deceleration (-X accel) |
-| T_BONE | Side impact, perpendicular | High lateral force (+Y accel), roll |
-| SIDE_SWIPE | Glancing side contact | Moderate lateral, yaw deviation |
-| HEAD_ON | Frontal collision | Extreme deceleration, strong pitch |
-| ROLLOVER | Vehicle rolled over | Chaotic all axes, high Z variation |
-| SINGLE_VEHICLE | Hit fixed object | Strong frontal impact |
-| MULTI_VEHICLE_PILEUP | Chain reaction | Multiple impact signatures |
-| HIT_AND_RUN | Struck by fleeing vehicle | Variable based on impact angle |
+| Type | Probability | Signature |
+|------|-------------|-----------|
+| Rear-End Collision | 35% | Strong deceleration (-X accel) |
+| Side Swipe | 20% | Moderate lateral (Y accel) |
+| T-Bone | 18% | High lateral force, roll |
+| Single Vehicle | 15% | Strong frontal impact |
+| Hit and Run | 6% | Variable impact angles |
+| Multi-Vehicle Pileup | 3% | Multiple impact signatures |
+| Head-On | 2% | Extreme deceleration |
+| Rollover | 1% | Chaotic all axes |
 
-## Message Format
+## Driver Behavior
 
-Flat JSON structure optimized for performance:
+### Driver Types
 
-```json
-{
-  "driver_id": 400018,
-  "policy_id": 200018,
-  "vehicle_id": 300021,
-  "vin": "1HGBH41JXMN109186",
-  "event_time": "2024-01-15T10:30:45.123Z",
-  "speed_mph": 32.5,
-  "speed_limit_mph": 35,
-  "current_street": "Peachtree Street",
-  "g_force": 1.18,
-  "accident_type": null,
-  "gps_latitude": 33.7701,
-  "gps_longitude": -84.3876,
-  "accelerometer_x": 0.12,
-  "accelerometer_y": -0.05,
-  "accelerometer_z": 0.98,
-  "gyroscope_x": 0.02,
-  "gyroscope_y": -0.01,
-  "gyroscope_z": 0.15
-}
-```
+| Type | Count | Speeding | Hard Braking | Rapid Acceleration |
+|------|-------|----------|--------------|-------------------|
+| Aggressive | 7 | 20% (15-25 over) | 5% | 5% |
+| Normal | 18 | 10% (15-25 over) | 2% | 2% |
 
-**Crash events** include `accident_type` (e.g., "ROLLOVER") and elevated g-force/sensor values.
+### Time-Based Patterns
 
-## Dashboard Controls
+- **Night (8 PM - 6 AM)** — 70% driving reduction, 85% parked
+- **Rush Hour (7-8 AM, 5-6 PM)** — 1.5x driving activity
 
-- **Trigger Accident**: Manually trigger crash for selected or random driver
-- **Random Accidents**: Toggle automatic random crash events
-- **Start All Driving**: Get all parked drivers moving
-- **Pause/Resume**: Control simulation without stopping app
-- **Message Rate**: Adjust telemetry frequency
-- **Dark Mode**: Toggle between light and dark themes
-- **Driver Focus**: Click any driver in the list to center map on their location
-- **Map Filters**: Show/hide drivers by status (Driving, Stopped, Crash)
+## Deployment
 
-## Accident Notifications
-
-When a crash occurs, a modal popup displays:
-- Accident type with corresponding image
-- Driver name and vehicle ID
-- Location (street name)
-- Speed at impact vs. speed limit
-- G-force measurement
-- Timestamp
-
-Accident type images are located in `src/main/resources/static/images/accidents/`.
-
-## Configuration
-
-Key settings in `application.yml`:
-
-```yaml
-telematics:
-  simulation:
-    interval-ms: 50              # Message frequency
-    max-drivers: 15              # Number of active drivers
-  behavior:
-    post-crash-idle-minutes: 10  # Time driver sits after crash
-    random-stop-probability: 0.05
-```
-
-## Driver Routes
-
-Drivers follow circular daily routes stored in `src/main/resources/routes/daily/`. Each route includes:
-- Real GPS coordinates
-- Actual speed limits per road segment
-- Street names
-- Traffic control points
-
-When a driver completes their route, they restart from the beginning (circular pattern).
-
-## Docker
+### Docker
 
 ```bash
-docker compose build
-docker compose up -d
+docker build -t imc-telematics-gen .
+docker run -p 8082:8082 -e SPRING_RABBITMQ_HOST=host.docker.internal imc-telematics-gen
 ```
 
-## Testing
+### Cloud Foundry
 
 ```bash
-mvn test
+./mvnw clean package -DskipTests
+cf push
 ```
+
+Requires bound RabbitMQ service. See `manifest.yml` for configuration.
+
+## Monitoring
+
+- **Health**: `/actuator/health`
+- **Metrics**: `/actuator/metrics`
+- **Prometheus**: `/actuator/prometheus`
+
+## Roadmap
+
+- [x] Multi-driver simulation with routes
+- [x] 9 accident types with sensor signatures
+- [x] Real-time dashboard with Leaflet
+- [x] Driver behavior modeling
+- [ ] Historical replay mode
+- [ ] Custom route editor
+- [ ] Machine learning training export
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+Distributed under the MIT License. See [LICENSE](LICENSE) for details.

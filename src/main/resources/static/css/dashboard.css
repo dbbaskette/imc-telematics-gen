@@ -929,6 +929,12 @@ body {
 }
 
 /* Custom Leaflet Markers */
+/* Override Leaflet's default div-icon background */
+.leaflet-div-icon {
+    background: transparent !important;
+    border: none !important;
+}
+
 .driver-marker-driving {
     background-color: var(--color-success);
     border: 3px solid white;

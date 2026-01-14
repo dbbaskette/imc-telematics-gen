@@ -155,10 +155,34 @@ public class TelematicsDataGenerator {
     }
 
     private FlatTelematicsMessage generateDrivingData(Driver driver) {
-        // Normal driving accelerometer data
-        double accelX = roundToFourDecimals((random.nextDouble() - 0.5) * 1.0);
-        double accelY = roundToFourDecimals((random.nextDouble() - 0.5) * 1.0);
-        double accelZ = roundToFourDecimals(0.8 + random.nextDouble() * 0.4);
+        double accelX;
+        double accelY;
+        double accelZ;
+
+        // Event probabilities based on driver type
+        // Aggressive: 5% hard braking, 5% rapid acceleration (10% total events)
+        // Normal: 2% hard braking, 2% rapid acceleration (4% total events)
+        double hardBrakingThreshold = driver.isAggressive() ? 0.05 : 0.02;
+        double rapidAccelThreshold = driver.isAggressive() ? 0.10 : 0.04;
+
+        double eventRoll = random.nextDouble();
+
+        if (eventRoll < hardBrakingThreshold) {
+            // Hard braking event (accelX < -0.8, g_force >= 0.5)
+            accelX = roundToFourDecimals(-0.9 - random.nextDouble() * 0.5); // -0.9 to -1.4
+            accelY = roundToFourDecimals((random.nextDouble() - 0.5) * 0.3);
+            accelZ = roundToFourDecimals(0.9 + random.nextDouble() * 0.2);
+        } else if (eventRoll < rapidAccelThreshold) {
+            // Rapid acceleration event (accelX > 0.7, g_force >= 0.5)
+            accelX = roundToFourDecimals(0.8 + random.nextDouble() * 0.4); // 0.8 to 1.2
+            accelY = roundToFourDecimals((random.nextDouble() - 0.5) * 0.3);
+            accelZ = roundToFourDecimals(0.9 + random.nextDouble() * 0.2);
+        } else {
+            // Normal driving accelerometer data
+            accelX = roundToFourDecimals((random.nextDouble() - 0.5) * 1.0);
+            accelY = roundToFourDecimals((random.nextDouble() - 0.5) * 1.0);
+            accelZ = roundToFourDecimals(0.8 + random.nextDouble() * 0.4);
+        }
 
         // Calculate G-force from accelerometer data
         double gForce = Math.sqrt(accelX * accelX + accelY * accelY + accelZ * accelZ);
